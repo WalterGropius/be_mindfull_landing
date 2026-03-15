@@ -22,23 +22,23 @@ export function CoursesSection() {
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           <div className="lg:w-1/2">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] shadow-xl">
-               <img src="/AdobeStock_1844492057.jpeg" alt="Foundations Course" className="w-full h-full object-cover" />
+               <img src="/Pictures/AdobeStock_1844492057.jpeg" alt="Foundations Course" className="w-full h-full object-cover" />
             </div>
           </div>
           <div className="lg:w-1/2">
             <h3 className="text-3xl font-bold text-[#2D2C2B] uppercase">be.mindful FOUNDATIONS</h3>
             <p className="mt-6 text-base text-[#4B4C4D] leading-relaxed">
-              You are at the beginning of your mindfulness journey or want to strengthen your foundation to reset your life with ease? Great! Than this is for you!
+              Krok za krokem k větší lehkosti a prostoru v životě pro každého, kdo chce začít s mindfulness. Budete odolnější a budete jednat s větším klidem a nadhledem.
             </p>
             <p className="mt-4 text-base text-[#4B4C4D] leading-relaxed">
-              This 4-week online course is for everyone who wants to start implementing mindfulness into their daily life - with minimum effort, but lots of fun.
+              Tento 4týdenní online kurz je pro každého, kdo chce začít implementovat mindfulness do každodenního života – s minimálním úsilím, ale spoustou zábavy.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-4 text-base font-bold text-white hover:bg-[#008F7A]">
-                <Link href="/courses/foundations">Learn more</Link>
+                <Link href="/kurzy/foundations">Více informací</Link>
               </Button>
               <Button asChild variant="outline" className="h-auto rounded-full border-2 border-[#7BC0A4] bg-transparent px-8 py-4 text-base font-bold text-[#7BC0A4] hover:bg-white">
-                <Link href="/courses/free">FREE 3-days course</Link>
+                <Link href="/kurzy/start-to-pause">ZDARMA 3denní kurz</Link>
               </Button>
             </div>
           </div>
@@ -48,21 +48,21 @@ export function CoursesSection() {
         <div className="mt-32 flex flex-col-reverse items-center gap-12 lg:flex-row lg:gap-16">
           <div className="lg:w-1/2">
             <h3 className="text-sm font-bold uppercase tracking-[0.15em] text-[#7BC0A4]">
-              GROUP COURSES in Prague
+              SKUPINOVÉ KURZY v Praze
             </h3>
-            <h3 className="text-3xl mt-2 font-bold text-[#2D2C2B] uppercase">Join the community</h3>
+            <h3 className="text-3xl mt-2 font-bold text-[#2D2C2B] uppercase"></h3>
             <p className="mt-6 text-base text-[#4B4C4D] leading-relaxed">
-              Looking for personal guidance and a group of people to master mindfulness together?
+              Hledáte osobní vedení a skupinu kolem sebe, abyste společně zvládli mindfulness?
             </p>
             <p className="mt-4 text-base text-[#4B4C4D] leading-relaxed">
-              You will strengthen your inner compass. You will react differently to everyday problems. Group courses are a powerful space for maximum live support, guaranteeing rapid results and joy with every step.
+              Posílíte svůj vnitřní kompas. Začnete jinak reagovat na každodenní problémy. Skupinové kurzy jsou silným prostorem pro maximální živou podporu, která garantuje rychlé výsledky a radost s každým krokem na vaší cestě.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-4 text-base font-bold text-white hover:bg-[#008F7A]">
-                <Link href="/courses/group">Learn more</Link>
+                <Link href="/kurzy/skupinovy-kurz">Více informací</Link>
               </Button>
               <Button variant="outline" className="h-auto rounded-full border-2 border-[#7BC0A4] bg-transparent px-8 py-4 text-base font-bold text-[#7BC0A4] hover:bg-white">
-                FREE Masterclass
+                ZDARMA Masterclass
               </Button>
             </div>
           </div>
@@ -73,16 +73,16 @@ export function CoursesSection() {
         <div className="mt-32 flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           <div className="aspect-[4/3] w-full lg:w-1/2"><ImagePlaceholder /></div>
           <div className="lg:w-1/2">
-            <h3 className="text-3xl font-bold text-[#2D2C2B] uppercase">Mindfulness for COMPANIES</h3>
+            <h3 className="text-3xl font-bold text-[#2D2C2B] uppercase">Mindfulness pro FIRMY</h3>
             <p className="mt-6 text-base text-[#4B4C4D] leading-relaxed">
-              From stress to resilience. Feeling better means leading better – learn how to shift from stress to inner stability.
+              Od stresu k odolnosti. Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
             </p>
             <p className="mt-4 text-base text-[#4B4C4D] leading-relaxed">
-              From a short introduction to mindfulness, through applicable topics, to an extended mindfulness program - let me tailor mindfulness to the needs of your company.
+              Od krátkého úvodu do mindfulness, přes aplikovatelná témata až po rozšířený mindfulness program – nechte mě přizpůsobit mindfulness potřebám vaší firmy.
             </p>
             <div className="mt-8">
               <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-4 text-base font-bold text-white hover:bg-[#008F7A]">
-                <Link href="/courses/companies">Learn more</Link>
+                <Link href="/kurzy/firmy">Více informací</Link>
               </Button>
             </div>
           </div>

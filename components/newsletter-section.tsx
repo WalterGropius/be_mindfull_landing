@@ -6,9 +6,9 @@ import { useState } from "react"
 import { ArrowRight, Check } from "lucide-react"
 
 const benefits = [
-  "Free videos",
-  "Priority access to programs and courses",
-  "Stay connected to mindfulness topics",
+  "Bezplatná videa",
+  "Přednostní přístup k programům a kurzům",
+  "Zůstaňte propojeni s tématy mindfulness",
 ]
 
 export function NewsletterSection() {
@@ -21,7 +21,7 @@ export function NewsletterSection() {
           {/* Left - Title */}
           <div className="lg:w-1/3">
             <h2 className="text-2xl font-bold text-white lg:text-3xl">
-              Get all news,<br />updates and announcements!
+              Získejte všechny novinky,<br />aktualizace a oznámení!
             </h2>
           </div>
 
@@ -33,7 +33,7 @@ export function NewsletterSection() {
             >
               <Input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Zadejte svůj email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="h-12 flex-1 rounded-full border-0 bg-white px-5 text-base text-[#4B4C4D] placeholder:text-[#9DA59C]"
@@ -42,7 +42,7 @@ export function NewsletterSection() {
                 type="submit"
                 className="h-12 rounded-full bg-[#E2763A] px-6 text-sm font-bold text-white hover:bg-[#c9662f]"
               >
-                SUBSCRIBE
+                ODEBÍRAT
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </form>

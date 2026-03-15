@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="cs">
       <body className={`${notoSans.className} antialiased`}>
         {children}
         <Analytics />

@@ -12,9 +12,9 @@ function BlogIcon() {
 }
 
 const blogPosts = [
-  { title: "First step to greater calm", description: "A short introduction and quick steps you can take right now for immediate impact.", category: "beginners" },
-  { title: "How to keep your balance", description: "How to stay balanced even when life throws hurdles at you.", category: "membership" },
-  { title: "From pause to performance", description: "Why mindful pause is a forgotten skill for today's success.", category: "for companies" },
+  { title: "První krok k většímu klidu", description: "Krátký úvod a rychlé kroky, které můžete udělat hned s okamžitým dopadem.", category: "beginners" },
+  { title: "Jak si udržet rovnováhu", description: "Jak zůstat v rovnováze, i když vám život hází klacky pod nohy.", category: "membership" },
+  { title: "Od pauzy k výkonu", description: "Proč je všímavá pauza ztracená dovednost pro dnešní úspěch.", category: "for companies" },
 ]
 
 export function BlogSection() {
@@ -22,7 +22,7 @@ export function BlogSection() {
     <section className="bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-[#2D2C2B] uppercase">Explore the be.mindful blog</h2>
+          <h2 className="text-3xl font-bold text-[#2D2C2B] uppercase">Prozkoumej blog be.mindful</h2>
         </div>
         <div className="mt-16 grid gap-10 md:grid-cols-3">
           {blogPosts.map((post, index) => (
@@ -33,14 +33,14 @@ export function BlogSection() {
               <h3 className="text-xl font-bold text-[#2D2C2B]">{post.title}</h3>
               <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">{post.description}</p>
               <Button asChild variant="outline" className="mt-8 h-auto rounded-full border-2 border-[#7BC0A4] bg-transparent px-6 py-3 text-sm font-bold text-[#7BC0A4] hover:bg-[#E3FFE2]">
-                <Link href="/blog">Read full article</Link>
+                <Link href="/blog">Přečíst celý článek</Link>
               </Button>
             </div>
           ))}
         </div>
         <div className="mt-16 text-center">
           <Button asChild variant="outline" className="h-auto rounded-full border-2 border-[#C0D1C6] bg-transparent px-8 py-4 text-base font-bold text-[#7BC0A4] hover:bg-[#E3FFE2]">
-            <Link href="/blog">Read all articles here</Link>
+            <Link href="/blog">Přečti si všechny články zde</Link>
           </Button>
         </div>
       </div>
