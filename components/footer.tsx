@@ -1,22 +1,23 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 
 const footerLinks = {
   courses: [
-    { label: "be.mindful FOUNDATIONS", href: "/kurzy/foundations" },
-    { label: "be.mindful MEMBERSHIP", href: "/kurzy/membership" },
-    { label: "Skupinové kurzy Praha", href: "/kurzy/skupinovy-kurz" },
-    { label: "Mindfulness pro firmy", href: "/kurzy/firmy" },
+    { label: "be.mindful FOUNDATIONS", href: "/courses/foundations" },
+    { label: "be.mindful MEMBERSHIP", href: "/courses/membership" },
+    { label: "Group Courses Prague", href: "/courses/group" },
+    { label: "Mindfulness for companies", href: "/courses/companies" },
   ],
   bemindful: [
-    { label: "O mně", href: "/o-mne" },
-    { label: "Kontakt", href: "/kontakt" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
     { label: "Blog", href: "/blog" },
-    { label: "Podcast", href: "/blog" },
+    { label: "Podcast", href: "/podcast" },
   ],
   more: [
-    { label: "Členská zóna", href: "/kurzy/membership" },
-    { label: "Start-to-PAUSE", href: "/kurzy/start-to-pause" },
+    { label: "Member Area", href: "/courses/membership" },
+    { label: "Start-to-PAUSE", href: "/courses/start-to-pause" },
   ],
 }
 
@@ -35,47 +36,46 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-1">
-              <span className="text-2xl italic text-[#5E767E]" style={{ fontFamily: 'serif' }}>be.</span>
-              <span className="text-xl font-medium text-[#5E767E]">mindful</span>
+              <Image src="/bemindful_logo.svg" alt="be.mindful logo" width={150} height={40} className="h-8 w-auto opacity-70" />
             </Link>
-            <p className="mt-4 max-w-xs text-xs text-[#9DA59C]">
-              Síla jedné všímavé pauzy – posunout svůj život od stresu k prostoru.
+            <p className="mt-6 max-w-sm text-sm text-[#4B4C4D] leading-relaxed">
+              The power of one mindful pause – shift your life from stress to space.
             </p>
-            <div className="mt-4 flex items-center gap-2">
+            <div className="mt-6 flex items-center gap-3">
               {socialLinks.map((social) => (
-                <Link key={social.label} href={social.href} className="flex h-8 w-8 items-center justify-center rounded-full border border-[#C0D1C6] text-[#5E767E] transition-colors hover:bg-[#E3FFE2]" aria-label={social.label}>
-                  <social.icon className="h-3.5 w-3.5" />
+                <Link key={social.label} href={social.href} className="flex h-10 w-10 items-center justify-center rounded-full border border-[#C0D1C6] text-[#7BC0A4] transition-colors hover:bg-[#E3FFE2]" aria-label={social.label}>
+                  <social.icon className="h-4 w-4" />
                 </Link>
               ))}
             </div>
           </div>
           <div>
-            <h3 className="text-sm font-bold text-[#5E767E]">Kurzy</h3>
-            <ul className="mt-4 space-y-2">
+            <h3 className="text-base font-bold text-[#2D2C2B]">Courses</h3>
+            <ul className="mt-6 space-y-3">
               {footerLinks.courses.map((link) => (
-                <li key={link.label}><Link href={link.href} className="text-xs text-[#9DA59C] transition-colors hover:text-[#5E767E]">{link.label}</Link></li>
+                <li key={link.label}><Link href={link.href} className="text-sm text-[#4B4C4D] transition-colors hover:text-[#7BC0A4] font-medium">{link.label}</Link></li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-bold text-[#5E767E]">be.mindful</h3>
-            <ul className="mt-4 space-y-2">
+            <h3 className="text-base font-bold text-[#2D2C2B]">be.mindful</h3>
+            <ul className="mt-6 space-y-3">
               {footerLinks.bemindful.map((link) => (
-                <li key={link.label}><Link href={link.href} className="text-xs text-[#9DA59C] transition-colors hover:text-[#5E767E]">{link.label}</Link></li>
+                <li key={link.label}><Link href={link.href} className="text-sm text-[#4B4C4D] transition-colors hover:text-[#7BC0A4] font-medium">{link.label}</Link></li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-bold text-[#5E767E]">Více</h3>
-            <ul className="mt-4 space-y-2">
+            <h3 className="text-base font-bold text-[#2D2C2B]">More</h3>
+            <ul className="mt-6 space-y-3">
               {footerLinks.more.map((link) => (
-                <li key={link.label}><Link href={link.href} className="text-xs text-[#9DA59C] transition-colors hover:text-[#5E767E]">{link.label}</Link></li>
+                <li key={link.label}><Link href={link.href} className="text-sm text-[#4B4C4D] transition-colors hover:text-[#7BC0A4] font-medium">{link.label}</Link></li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="mt-10 border-t border-[#C0D1C6] pt-6">
-          <p className="text-xs text-[#9DA59C]">Copyright &copy; 2025 be.mindful | Všechna práva vyhrazena</p>
+        <div className="mt-16 border-t border-[#C0D1C6] pt-8">
+          <p className="text-sm text-[#4B4C4D] text-center">Copyright &copy; 2026 be.mindful | All rights reserved</p>
         </div>
       </div>
     </footer>

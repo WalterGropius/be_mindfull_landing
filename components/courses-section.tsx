@@ -1,32 +1,13 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-function PhoneMockup() {
-  return (
-    <div className="relative mx-auto w-48 lg:w-56">
-      <div className="rounded-[2rem] border-4 border-[#5E767E] bg-white p-2 shadow-xl">
-        <div className="rounded-[1.5rem] bg-[#E3FFE2] p-4">
-          <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-[#C0D1C6]" />
-          <div className="space-y-3">
-            <div className="h-2 w-full rounded bg-[#C0D1C6]" />
-            <div className="h-2 w-3/4 rounded bg-[#C0D1C6]" />
-            <div className="h-20 w-full rounded-lg bg-[#E3FFE2]" />
-            <div className="h-2 w-full rounded bg-[#C0D1C6]" />
-            <div className="h-2 w-1/2 rounded bg-[#C0D1C6]" />
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 function ImagePlaceholder() {
   return (
-    <div className="flex h-full w-full items-center justify-center bg-[#E3FFE2] rounded-lg">
+    <div className="flex h-full w-full items-center justify-center bg-[#C0D1C6] rounded-[2rem]">
       <svg width="60" height="45" viewBox="0 0 60 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 35 L25 20 L35 35 Z" fill="#C0D1C6" />
+        <path d="M15 35 L25 20 L35 35 Z" fill="#E3FFE2" />
         <path d="M25 35 L40 15 L55 35 Z" fill="#9DA59C" />
-        <circle cx="18" cy="12" r="5" fill="#C0D1C6" />
+        <circle cx="18" cy="12" r="5" fill="#E3FFE2" />
       </svg>
     </div>
   )
@@ -34,55 +15,54 @@ function ImagePlaceholder() {
 
 export function CoursesSection() {
   return (
-    <section className="bg-[#E3FFE2] py-16 lg:py-24">
+    <section className="bg-[#E3FFE2] py-20 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-2xl font-bold text-[#5E767E] lg:text-3xl">Změňte svůj život už dnes</h2>
-          <p className="mt-4 text-sm text-[#9DA59C]">
-            Všechny kurzy vedu osobně. Ukážu vám snadnou, zábavnou a na míru šitou cestu k všímavému životu a práci – bez ohledu na to, kolik stresu, chaosu nebo málo prostoru máte.
-          </p>
-        </div>
-
+        
         {/* FOUNDATIONS */}
-        <div className="mt-16 flex flex-col items-center gap-10 lg:flex-row lg:gap-16">
-          <div className="lg:w-1/2"><PhoneMockup /></div>
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           <div className="lg:w-1/2">
-            <h3 className="text-lg font-bold text-[#5E767E]">be.mindful FOUNDATIONS</h3>
-            <p className="mt-3 text-sm text-[#9DA59C]">
-              Krok za krokem k větší lehkosti a prostoru v životě pro každého, kdo chce začít s mindfulness. Budete odolnější a budete jednat s větším klidem a nadhledem.
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] shadow-xl">
+               <img src="/AdobeStock_1844492057.jpeg" alt="Foundations Course" className="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div className="lg:w-1/2">
+            <h3 className="text-3xl font-bold text-[#2D2C2B] uppercase">be.mindful FOUNDATIONS</h3>
+            <p className="mt-6 text-base text-[#4B4C4D] leading-relaxed">
+              You are at the beginning of your mindfulness journey or want to strengthen your foundation to reset your life with ease? Great! Than this is for you!
             </p>
-            <p className="mt-3 text-sm text-[#9DA59C]">
-              Tento 4týdenní online kurz je pro každého, kdo chce začít implementovat mindfulness do každodenního života – s minimálním úsilím, ale spoustou zábavy.
+            <p className="mt-4 text-base text-[#4B4C4D] leading-relaxed">
+              This 4-week online course is for everyone who wants to start implementing mindfulness into their daily life - with minimum effort, but lots of fun.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-5 py-2.5 text-sm text-white hover:bg-[#008F7A]">
-                <Link href="/kurzy/foundations">Více informací</Link>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-4 text-base font-bold text-white hover:bg-[#008F7A]">
+                <Link href="/courses/foundations">Learn more</Link>
               </Button>
-              <Button asChild variant="outline" className="h-auto rounded-full border-[#C0D1C6] bg-transparent px-5 py-2.5 text-sm text-[#5E767E] hover:bg-white">
-                <Link href="/kurzy/start-to-pause">ZDARMA 3denní kurz</Link>
+              <Button asChild variant="outline" className="h-auto rounded-full border-2 border-[#7BC0A4] bg-transparent px-8 py-4 text-base font-bold text-[#7BC0A4] hover:bg-white">
+                <Link href="/courses/free">FREE 3-days course</Link>
               </Button>
             </div>
           </div>
         </div>
 
         {/* GROUP COURSES */}
-        <div className="mt-20 flex flex-col-reverse items-center gap-10 lg:flex-row lg:gap-16">
+        <div className="mt-32 flex flex-col-reverse items-center gap-12 lg:flex-row lg:gap-16">
           <div className="lg:w-1/2">
-            <h3 className="text-xs font-medium uppercase tracking-[0.15em] text-[#5E767E]">
-              SKUPINOVÉ KURZY v Praze
+            <h3 className="text-sm font-bold uppercase tracking-[0.15em] text-[#7BC0A4]">
+              GROUP COURSES in Prague
             </h3>
-            <p className="mt-4 text-sm text-[#9DA59C]">
-              Hledáte osobní vedení a skupinu kolem sebe, abyste společně zvládli mindfulness?
+            <h3 className="text-3xl mt-2 font-bold text-[#2D2C2B] uppercase">Join the community</h3>
+            <p className="mt-6 text-base text-[#4B4C4D] leading-relaxed">
+              Looking for personal guidance and a group of people to master mindfulness together?
             </p>
-            <p className="mt-3 text-sm text-[#9DA59C]">
-              Posílíte svůj vnitřní kompas. Začnete jinak reagovat na každodenní problémy. Skupinové kurzy jsou silným prostorem pro maximální živou podporu, která garantuje rychlé výsledky a radost s každým krokem na vaší cestě.
+            <p className="mt-4 text-base text-[#4B4C4D] leading-relaxed">
+              You will strengthen your inner compass. You will react differently to everyday problems. Group courses are a powerful space for maximum live support, guaranteeing rapid results and joy with every step.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-5 py-2.5 text-sm text-white hover:bg-[#008F7A]">
-                <Link href="/kurzy/skupinovy-kurz">Více informací</Link>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-4 text-base font-bold text-white hover:bg-[#008F7A]">
+                <Link href="/courses/group">Learn more</Link>
               </Button>
-              <Button variant="outline" className="h-auto rounded-full border-[#C0D1C6] bg-transparent px-5 py-2.5 text-sm text-[#5E767E] hover:bg-white">
-                ZDARMA Masterclass
+              <Button variant="outline" className="h-auto rounded-full border-2 border-[#7BC0A4] bg-transparent px-8 py-4 text-base font-bold text-[#7BC0A4] hover:bg-white">
+                FREE Masterclass
               </Button>
             </div>
           </div>
@@ -90,19 +70,19 @@ export function CoursesSection() {
         </div>
 
         {/* COMPANIES */}
-        <div className="mt-20 flex flex-col items-center gap-10 lg:flex-row lg:gap-16">
+        <div className="mt-32 flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
           <div className="aspect-[4/3] w-full lg:w-1/2"><ImagePlaceholder /></div>
           <div className="lg:w-1/2">
-            <h3 className="text-lg font-bold text-[#5E767E]">Mindfulness pro FIRMY</h3>
-            <p className="mt-3 text-sm text-[#9DA59C]">
-              Od stresu k odolnosti. Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
+            <h3 className="text-3xl font-bold text-[#2D2C2B] uppercase">Mindfulness for COMPANIES</h3>
+            <p className="mt-6 text-base text-[#4B4C4D] leading-relaxed">
+              From stress to resilience. Feeling better means leading better – learn how to shift from stress to inner stability.
             </p>
-            <p className="mt-3 text-sm text-[#9DA59C]">
-              Od krátkého úvodu do mindfulness, přes aplikovatelná témata až po rozšířený mindfulness program – nechte mě přizpůsobit mindfulness potřebám vaší firmy.
+            <p className="mt-4 text-base text-[#4B4C4D] leading-relaxed">
+              From a short introduction to mindfulness, through applicable topics, to an extended mindfulness program - let me tailor mindfulness to the needs of your company.
             </p>
-            <div className="mt-6">
-              <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-5 py-2.5 text-sm text-white hover:bg-[#008F7A]">
-                <Link href="/kurzy/firmy">Více informací</Link>
+            <div className="mt-8">
+              <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-4 text-base font-bold text-white hover:bg-[#008F7A]">
+                <Link href="/courses/companies">Learn more</Link>
               </Button>
             </div>
           </div>

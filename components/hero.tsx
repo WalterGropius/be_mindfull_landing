@@ -2,40 +2,28 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-function MountainIllustration() {
-  return (
-    <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-48 lg:w-64">
-      <path d="M40 120 L80 60 L120 120 Z" fill="#9DA59C" fillOpacity="0.4" />
-      <path d="M80 120 L130 50 L180 120 Z" fill="#5E767E" fillOpacity="0.5" />
-      <circle cx="150" cy="45" r="20" fill="#C0D1C6" fillOpacity="0.6" />
-      <line x1="20" y1="120" x2="180" y2="120" stroke="#9DA59C" strokeWidth="2" strokeOpacity="0.3" />
-    </svg>
-  )
-}
-
 export function Hero() {
   return (
-    <section className="relative w-full bg-[#E3FFE2]">
-      <div className="relative mx-auto flex min-h-[400px] max-w-7xl items-center px-6 py-16 lg:px-8">
+    <section className="relative w-full bg-[#C0D1C6] overflow-hidden">
+      {/* Background large circle */}
+      <div className="absolute right-[-20%] bottom-[-40%] w-[600px] h-[600px] rounded-full bg-[#7BC0A4] lg:w-[1100px] lg:h-[1100px] lg:right-[0%] lg:bottom-[-60%] pointer-events-none"></div>
+      
+      <div className="relative mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:px-8 z-10">
         <div className="flex w-full items-center justify-between">
-          <div className="max-w-lg">
-            <h1 className="text-balance text-3xl font-bold leading-tight text-[#5E767E] sm:text-4xl lg:text-[42px] lg:leading-[1.2]">
-              Zastav se a vytvoř si prostor pro změnu tvého života.
+          <div className="max-w-2xl">
+            <h1 className="text-balance text-4xl font-bold leading-tight text-[#2D2C2B] sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              A pause, that creates<br />space to shift your life.
             </h1>
-            <p className="mt-5 text-pretty text-base leading-relaxed text-[#9DA59C]">
-              Schopnost se zastavit patří dnes k nejdůležitějším dovednostem – pomáhá nám orientovat se v každodenních rozhodnutích, stresu a změnách s větší jasností a lehkostí.
+            <p className="mt-6 text-pretty text-lg font-normal leading-relaxed text-[#4B4C4D] max-w-md">
+              The ability to pause is one of todays most important skills – to navigate us through daily decisions, stress, and change with greater clarity and ease.
             </p>
             <div className="mt-8">
-              <Button asChild className="group h-auto rounded-full bg-[#7BC0A4] px-6 py-3 text-sm text-white transition-all hover:bg-[#008F7A]">
-                <Link href="/kurzy/foundations">
-                  Zobrazit kurzy
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Button asChild className="group h-auto rounded-full bg-[#E2763A] px-8 py-4 text-base font-bold text-white transition-all hover:bg-[#c9662f]">
+                <Link href="/courses">
+                  View Courses <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
             </div>
-          </div>
-          <div className="hidden lg:block">
-            <MountainIllustration />
           </div>
         </div>
       </div>

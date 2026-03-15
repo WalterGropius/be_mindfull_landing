@@ -5,15 +5,15 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: #5E767E;
+  --foreground: #4B4C4D;
   --card: #FFFFFF;
-  --card-foreground: #5E767E;
+  --card-foreground: #4B4C4D;
   --popover: #FFFFFF;
-  --popover-foreground: #5E767E;
+  --popover-foreground: #4B4C4D;
   --primary: #7BC0A4;
   --primary-foreground: #FFFFFF;
   --secondary: #E3FFE2;
-  --secondary-foreground: #5E767E;
+  --secondary-foreground: #4B4C4D;
   --muted: #E3FFE2;
   --muted-foreground: #9DA59C;
   --accent: #7BC0A4;
@@ -25,16 +25,16 @@
   --ring: #7BC0A4;
   --chart-1: #7BC0A4;
   --chart-2: #008F7A;
-  --chart-3: #5E767E;
+  --chart-3: #4B4C4D;
   --chart-4: #C0D1C6;
   --chart-5: #E2763A;
   --radius: 0.625rem;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #5E767E;
+  --sidebar-foreground: #4B4C4D;
   --sidebar-primary: #7BC0A4;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #E3FFE2;
-  --sidebar-accent-foreground: #5E767E;
+  --sidebar-accent-foreground: #4B4C4D;
   --sidebar-border: #C0D1C6;
   --sidebar-ring: #7BC0A4;
 }
@@ -121,5 +121,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-[#2D2C2B];
   }
 }

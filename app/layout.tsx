@@ -1,15 +1,15 @@
 import React from "react"
 import type { Metadata } from 'next'
-import { DM_Sans } from 'next/font/google'
+import { Noto_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
+const notoSans = Noto_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata: Metadata = {
   title: 'Mindfulness - Find Your Inner Peace',
   description: 'Discover mindfulness courses and resources to help you find inner peace and live a balanced life.',
-  generator: 'v0.app',
+  generator: 'be_mindfull_landing',
   icons: {
     icon: [
       {
@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${notoSans.className} antialiased`}>
         {children}
         <Analytics />
       </body>
