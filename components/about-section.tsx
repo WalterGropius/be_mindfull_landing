@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function AboutSection() {
   return (
-    <section className="bg-background py-16 lg:py-24">
+    <section className="bg-[#C0D1C6] py-16 lg:py-24">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
         <div className="lg:w-1/2">
           <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl leading-tight">
@@ -19,7 +19,7 @@ export function AboutSection() {
             Dnes jsem jediný Senior Mindfulness Teacher v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness tisícům lidí za posledních 15 let.
           </p>
           <div className="mt-10">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-4 text-base font-bold text-white hover:bg-[#008F7A]">
+            <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-4 text-base font-bold text-white shadow-md transition-all hover:bg-[#c9662f]">
               <Link href="/o-mne">Poznejte svého průvodce mindfulness</Link>
             </Button>
           </div>

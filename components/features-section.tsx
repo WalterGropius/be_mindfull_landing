@@ -11,33 +11,43 @@ export function FeaturesSection() {
           <p className="mt-8 text-base font-bold text-[#4B4C4D]">Tento program je pro vás, pokud chcete:</p>
           <div className="mt-8 space-y-6">
             <div className="flex items-start gap-4">
-              <img src="/Illustrations/brain1.svg" alt="Emotional Resilience" className="w-8 h-8 flex-shrink-0" />
-              <p className="text-base text-[#4B4C4D]">
-                <span className="font-bold">Budovat emoční odolnost:</span> naučit se zvládat těžké emoce a životní výzvy s větší stabilitou.
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
+                <img src="/Illustrations/brain1.svg" alt="Emotional Resilience" className="w-6 h-6" />
+              </div>
+              <p className="text-base text-[#4B4C4D] pt-3">
+                <span className="font-bold block text-lg mb-1">Budovat emoční odolnost:</span> naučit se zvládat těžké emoce a životní výzvy s větší stabilitou.
               </p>
             </div>
             <div className="flex items-start gap-4">
-              <img src="/Illustrations/brain2.svg" alt="Thought Control" className="w-8 h-8 flex-shrink-0" />
-              <p className="text-base text-[#4B4C4D]">
-                <span className="font-bold">Zlepšit kontrolu myšlenek:</span> a přerušit opakující se vzorce, které vám už neslouží.
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
+                <img src="/Illustrations/brain2.svg" alt="Thought Control" className="w-6 h-6" />
+              </div>
+              <p className="text-base text-[#4B4C4D] pt-3">
+                <span className="font-bold block text-lg mb-1">Zlepšit kontrolu myšlenek:</span> a přerušit opakující se vzorce, které vám už neslouží.
               </p>
             </div>
             <div className="flex items-start gap-4">
-              <img src="/Illustrations/brain00.svg" alt="Physical Health" className="w-8 h-8 flex-shrink-0" />
-              <p className="text-base text-[#4B4C4D]">
-                <span className="font-bold">Podpořit fyzické zdraví:</span> a snížit projevy stresu, jako je nespavost či úzkost, a zlepšit celkovou pohodu.
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
+                <img src="/Illustrations/brain00.svg" alt="Physical Health" className="w-6 h-6" />
+              </div>
+              <p className="text-base text-[#4B4C4D] pt-3">
+                <span className="font-bold block text-lg mb-1">Podpořit fyzické zdraví:</span> a snížit projevy stresu, jako je nespavost či úzkost, a zlepšit celkovou pohodu.
               </p>
             </div>
             <div className="flex items-start gap-4">
-              <img src="/Illustrations/brain01.svg" alt="Manage Stress" className="w-8 h-8 flex-shrink-0" />
-              <p className="text-base text-[#4B4C4D]">
-                <span className="font-bold">Lépe zvládat stres</span> naučit se techniky podložené vědeckými poznatky, které pomáhají přinést do práce i života více klidu.
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
+                <img src="/Illustrations/brain01.svg" alt="Manage Stress" className="w-6 h-6" />
+              </div>
+              <p className="text-base text-[#4B4C4D] pt-3">
+                <span className="font-bold block text-lg mb-1">Lépe zvládat stres:</span> naučit se techniky podložené vědeckými poznatky, které pomáhají přinést do práce i života více klidu.
               </p>
             </div>
             <div className="flex items-start gap-4">
-              <img src="/Illustrations/brain02.svg" alt="Compassion" className="w-8 h-8 flex-shrink-0" />
-              <p className="text-base text-[#4B4C4D]">
-                <span className="font-bold">Zlepšit vztahy a více soucitu</span> rozvíjet laskavost k sobě i druhým, posilovat vztahy a žít vyrovnanější život.
+              <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
+                <img src="/Illustrations/brain02.svg" alt="Compassion" className="w-6 h-6" />
+              </div>
+              <p className="text-base text-[#4B4C4D] pt-3">
+                <span className="font-bold block text-lg mb-1">Zlepšit vztahy a více soucitu:</span> rozvíjet laskavost k sobě i druhým, posilovat vztahy a žít vyrovnanější život.
               </p>
             </div>
           </div>
@@ -46,7 +56,7 @@ export function FeaturesSection() {
           </p>
         </div>
         <div className="lg:w-1/2">
-          <div className="aspect-[4/5] w-full lg:min-h-[600px] overflow-hidden rounded-[2rem] shadow-xl">
+          <div className="aspect-[4/5] w-full lg:min-h-[600px] overflow-hidden rounded-[2rem] rounded-tl-[8rem] shadow-xl">
             <img src="/Pictures/AdobeStock_313540527.jpeg" alt="Wellbeing" className="w-full h-full object-cover" />
           </div>
         </div>

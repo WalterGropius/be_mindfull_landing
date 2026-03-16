@@ -13,7 +13,7 @@ export function Header() {
     <header className="bg-background sticky top-0 z-50 w-full border-b border-[#C0D1C6]">
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-1">
-          <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={180} height={48} className="h-10 w-auto" />
+          <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={300} height={80} className="h-20 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -55,7 +55,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button variant="outline" className="rounded-full border-[#C0D1C6] border-2 px-6 py-2 text-[15px] font-bold text-[#7BC0A4] hover:bg-secondary bg-transparent h-auto">
+          <Button variant="outline" className="rounded-full border-[#7BC0A4] border-2 px-6 py-2 text-[15px] font-bold text-[#7BC0A4] hover:bg-secondary bg-transparent h-auto transition-colors">
             Přihlásit se
           </Button>
         </div>

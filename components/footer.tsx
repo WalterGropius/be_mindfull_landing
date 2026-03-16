@@ -4,20 +4,20 @@ import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 
 const footerLinks = {
   courses: [
-    { label: "be.mindful FOUNDATIONS", href: "/courses/foundations" },
-    { label: "be.mindful MEMBERSHIP", href: "/courses/membership" },
-    { label: "Skupinové kurzy Praha", href: "/courses/group" },
-    { label: "Mindfulness pro firmy", href: "/courses/companies" },
+    { label: "be.mindful FOUNDATIONS", href: "/kurzy/foundations" },
+    { label: "be.mindful MEMBERSHIP", href: "/kurzy/membership" },
+    { label: "Skupinové kurzy Praha", href: "/kurzy/skupinovy-kurz" },
+    { label: "Mindfulness pro firmy", href: "/kurzy/firmy" },
   ],
   bemindful: [
-    { label: "O mně", href: "/about" },
-    { label: "Kontakt", href: "/contact" },
+    { label: "O mně", href: "/o-mne" },
+    { label: "Kontakt", href: "/kontakt" },
     { label: "Blog", href: "/blog" },
-    { label: "Podcast", href: "/podcast" },
+    { label: "Podcast", href: "/blog" },
   ],
   more: [
-    { label: "Členská zóna", href: "/courses/membership" },
-    { label: "Start-to-PAUSE", href: "/courses/start-to-pause" },
+    { label: "Členská zóna", href: "/kurzy/membership" },
+    { label: "Start-to-PAUSE", href: "/kurzy/start-to-pause" },
   ],
 }
 
@@ -36,14 +36,14 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-1">
-              <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={150} height={40} className="h-8 w-auto opacity-70" />
+              <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={260} height={68} className="h-16 w-auto opacity-70" />
             </Link>
             <p className="mt-6 max-w-sm text-sm text-[#4B4C4D] leading-relaxed">
               Síla jedné všímavé pauzy – posunout svůj život od stresu k prostoru.
             </p>
             <div className="mt-6 flex items-center gap-3">
               {socialLinks.map((social) => (
-                <Link key={social.label} href={social.href} className="flex h-10 w-10 items-center justify-center rounded-full border border-[#C0D1C6] text-[#7BC0A4] transition-colors hover:bg-[#E3FFE2]" aria-label={social.label}>
+                <Link key={social.label} href={social.href} className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7BC0A4] text-white transition-transform hover:scale-110" aria-label={social.label}>
                   <social.icon className="h-4 w-4" />
                 </Link>
               ))}

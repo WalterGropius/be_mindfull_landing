@@ -28,19 +28,20 @@ export function NewsletterSection() {
           {/* Center - Form */}
           <div className="w-full lg:w-1/3 flex-1 lg:max-w-md">
             <form
-              className="flex items-center gap-2"
+              className="flex items-center gap-4 w-full"
               onSubmit={(e) => e.preventDefault()}
             >
               <Input
                 type="email"
-                placeholder="Zadejte svůj email"
+                placeholder="Váš e-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-12 flex-1 rounded-full border-0 bg-white px-5 text-base text-[#4B4C4D] placeholder:text-[#9DA59C]"
+                className="h-12 flex-1 rounded-none border-0 border-b-2 border-white/50 bg-transparent px-0 text-base text-white placeholder:text-white/70 focus-visible:ring-0 focus-visible:border-white"
               />
               <Button
                 type="submit"
-                className="h-12 rounded-full bg-[#E2763A] px-6 text-sm font-bold text-white hover:bg-[#c9662f]"
+                variant="outline"
+                className="h-12 rounded-full border-2 border-white bg-transparent px-6 text-sm font-bold text-white hover:bg-white hover:text-[#7BC0A4] transition-colors"
               >
                 ODEBÍRAT
                 <ArrowRight className="ml-2 h-4 w-4" />

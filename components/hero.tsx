@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative w-full bg-[#C0D1C6] overflow-hidden">
       {/* Background large circle */}
-      <div className="absolute right-[-20%] bottom-[-40%] w-[600px] h-[600px] rounded-full bg-[#C0D1C6] lg:w-[1100px] lg:h-[1100px] lg:right-[0%] lg:bottom-[-60%] pointer-events-none"></div>
+      <div className="absolute right-[-20%] bottom-[-40%] w-[600px] h-[600px] rounded-full bg-[#E3FFE2]/40 lg:w-[1100px] lg:h-[1100px] lg:right-[0%] lg:bottom-[-60%] pointer-events-none"></div>
       
       <div className="relative mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:px-8 z-10">
         <div className="flex w-full items-center justify-between">
