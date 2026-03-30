@@ -20,7 +20,7 @@ export function CoursesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         
         {/* FOUNDATIONS */}
-        <div className="bg-surface-white rounded-[1rem] overflow-hidden border border-border-subtle">
+        <div className="bg-[#f5f6f4] rounded-[1rem] overflow-hidden border border-border-subtle">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 h-64 lg:h-auto relative">
                <img src="/Pictures/WhatsApp%20Image%202026-03-02%20at%2013.29.56.jpeg" alt="Foundations Course" className="w-full h-full object-cover absolute inset-0" />
@@ -46,7 +46,7 @@ export function CoursesSection() {
         </div>
 
         {/* GROUP COURSES */}
-        <div className="mt-16 bg-secondary rounded-[1rem]  overflow-hidden border border-border-subtle">
+        <div className="mt-16 bg-[#f5f6f4] rounded-[1rem]  overflow-hidden border border-border-subtle">
           <div className="flex flex-col-reverse lg:flex-row">
             <div className="lg:w-1/2 p-8 lg:p-14 border-r border-white/40">
               <Typography variant="span" color="primary" className="text-sm font-bold uppercase tracking-[0.15em] mb-2 block">
@@ -74,7 +74,7 @@ export function CoursesSection() {
         </div>
 
         {/* COMPANIES */}
-        <div className="mt-16 bg-surface-white rounded-[1rem]  overflow-hidden border border-border-subtle">
+        <div className="mt-16 bg-[#f5f6f4] rounded-[1rem]  overflow-hidden border border-border-subtle ">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 h-64 lg:h-auto relative">
               <img src="/Pictures/AdobeStock_1844492057.jpeg" alt="Companies Courses" className="w-full h-full object-cover absolute inset-0" />

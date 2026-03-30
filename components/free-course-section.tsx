@@ -28,7 +28,7 @@ export function FreeCourseSection() {
 
   return (
     <section className="bg-[#9DA59C] relative overflow-hidden py-20 lg:py-28">
-      <div className="relative z-10 mb-10 mt-0 max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto z-10 mb-10 mt-0 max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           {/* Cloud Illustrations */}
           <div ref={ref} className="relative mx-auto w-[90%] md:w-[70%] max-w-[500px] h-[200px] lg:h-[250px] pointer-events-none">
@@ -51,16 +51,16 @@ export function FreeCourseSection() {
             </svg>
           </div>
 
-          <Typography variant="span" color="inverse" className="text-sm font-bold uppercase tracking-[0.2em] block">
+          <Typography variant="span" align="center" color="inverse" className="text-sm font-bold uppercase tracking-[0.2em] block">
             Bezplatný 3denní program
           </Typography>
-          <Typography variant="h2" className="mt-4">
+          <Typography variant="h2" align="center" className="mt-4">
             Start-to-PAUSE: Tři dny k větší rovnováze
           </Typography>
-          <Typography variant="p" className="mt-6">
+          <Typography variant="p" align="center" className="mt-6">
             Naučíte se zastavit uprostřed rušeného dne. Budete schopni rychleji zklidnit mysl a uvolnit tělo.
           </Typography>
-          <Typography variant="p" className="mt-4">
+          <Typography variant="p" align="center" className="mt-4">
             Odnesete si 3 konkrétní nástroje, které vám pomohou přepnout během pěti minut ze stresu do uvolnění.
           </Typography>
           <div className="mt-10 mx-auto max-w-md">
