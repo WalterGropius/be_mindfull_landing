@@ -28,6 +28,7 @@ export function Header() {
             <div className="pointer-events-none absolute left-0 top-full pt-2 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
               <div className="w-56 rounded-lg border border-[#C0D1C6] bg-background p-2 shadow-lg">
                 <Link href="/kurzy/foundations" className="block rounded-md px-3 py-2 text-sm text-[#4B4C4D] hover:bg-secondary hover:text-[#7BC0A4] font-medium">be.mindful FOUNDATIONS</Link>
+                <Link href="/kurzy/membership" className="block rounded-md px-3 py-2 text-sm text-[#4B4C4D] hover:bg-secondary hover:text-[#7BC0A4] font-medium">be.mindful MEMBERSHIP</Link>
                 <Link href="/kurzy/skupinovy-kurz" className="block rounded-md px-3 py-2 text-sm text-[#4B4C4D] hover:bg-secondary hover:text-[#7BC0A4] font-medium">Skupinové kurzy v Praze</Link>
                 <Link href="/kurzy/firmy" className="block rounded-md px-3 py-2 text-sm text-[#4B4C4D] hover:bg-secondary hover:text-[#7BC0A4] font-medium">Mindfulness pro firmy</Link>
               </div>
@@ -47,15 +48,15 @@ export function Header() {
           </div>
 
           <Link href="/o-mne" className="text-[15px] font-bold text-[#7BC0A4] transition-colors hover:opacity-80">
-            O mindfulness
+            O mně
           </Link>
-          <Link href="/contact" className="text-[15px] font-bold text-[#7BC0A4] transition-colors hover:opacity-80">
+          <Link href="/kontakt" className="text-[15px] font-bold text-[#7BC0A4] transition-colors hover:opacity-80">
             Kontakt
           </Link>
         </nav>
 
         <div className="hidden lg:block">
-          <Button variant="outline" className="rounded-full border-[#7BC0A4] border-2 px-6 py-2 text-[15px] font-bold text-[#7BC0A4] hover:bg-secondary bg-transparent h-auto transition-colors">
+          <Button variant="outline" className="rounded-full border-[#C0D1C6] border-[1.5px] px-6 py-2 text-[15px] font-bold text-[#7BC0A4] hover:bg-secondary bg-transparent h-auto transition-colors">
             Přihlásit se
           </Button>
         </div>
@@ -70,11 +71,12 @@ export function Header() {
           <nav className="flex flex-col gap-4 px-6 py-6">
             <Link href="/" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>Domů</Link>
             <Link href="/kurzy/foundations" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>Kurzy - Foundations</Link>
+            <Link href="/kurzy/membership" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>be.mindful MEMBERSHIP</Link>
             <Link href="/kurzy/skupinovy-kurz" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>Skupinové kurzy v Praze</Link>
             <Link href="/kurzy/firmy" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>Mindfulness pro firmy</Link>
-            <Link href="/o-mne" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>O mindfulness</Link>
+            <Link href="/o-mne" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>O mně</Link>
             <Link href="/blog" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>Zdroje</Link>
-            <Link href="/contact" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>Kontakt</Link>
+            <Link href="/kontakt" className="text-base font-bold text-[#7BC0A4]" onClick={() => setMobileMenuOpen(false)}>Kontakt</Link>
             <Button variant="outline" className="mt-2 w-fit rounded-full border-[#C0D1C6] border-2 px-6 py-2 text-base font-bold text-[#7BC0A4] bg-transparent h-auto">
               Přihlásit se
             </Button>

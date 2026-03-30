@@ -11,13 +11,10 @@ function BlogIcon() {
   )
 }
 
-const blogPosts = [
-  { title: "První krok k většímu klidu", description: "Krátký úvod a rychlé kroky, které můžete udělat hned s okamžitým dopadem.", category: "beginners" },
-  { title: "Jak si udržet rovnováhu", description: "Jak zůstat v rovnováze, i když vám život hází klacky pod nohy.", category: "membership" },
-  { title: "Od pauzy k výkonu", description: "Proč je všímavá pauza ztracená dovednost pro dnešní úspěch.", category: "for companies" },
-]
+import { getBlogPosts } from "@/lib/blog"
 
-export function BlogSection() {
+export async function BlogSection() {
+  const blogPosts = getBlogPosts().slice(0, 3)
   return (
     <section className="bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -25,23 +22,18 @@ export function BlogSection() {
           <h2 className="text-3xl font-bold text-[#2D2C2B] uppercase">Prozkoumej blog be.mindful</h2>
         </div>
         <div className="mt-16 grid gap-10 md:grid-cols-3">
-          {blogPosts.map((post, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
+          {blogPosts.map((post) => (
+            <div key={post.slug} className="flex flex-col items-center text-center">
               <div className="mb-6 flex h-32 w-32 items-center justify-center rounded-2xl bg-[#E3FFE2]">
                 <BlogIcon />
               </div>
               <h3 className="text-xl font-bold text-[#2D2C2B]">{post.title}</h3>
-              <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">{post.description}</p>
+              <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">{post.excerpt}</p>
               <Button asChild variant="outline" className="mt-8 h-auto rounded-full border-2 border-[#7BC0A4] bg-transparent px-6 py-3 text-sm font-bold text-[#7BC0A4] hover:bg-[#E3FFE2]">
-                <Link href="/blog">Přečíst celý článek</Link>
+                <Link href={`/blog/${post.slug}`}>Přečíst celý článek</Link>
               </Button>
             </div>
           ))}
-        </div>
-        <div className="mt-16 text-center">
-          <Button asChild variant="outline" className="h-auto rounded-full border-2 border-[#C0D1C6] bg-transparent px-8 py-4 text-base font-bold text-[#7BC0A4] hover:bg-[#E3FFE2]">
-            <Link href="/blog">Přečti si všechny články zde</Link>
-          </Button>
         </div>
       </div>
     </section>

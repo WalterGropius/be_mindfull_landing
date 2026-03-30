@@ -15,46 +15,10 @@ function BlogIcon() {
   )
 }
 
-const blogPosts = [
-  {
-    title: "První krok k většímu klidu",
-    description: "Krátký úvod a rychlé kroky, které můžete udělat hned s okamžitým dopadem. Naučte se základy mindfulness a jak je použít ve svém každodenním životě.",
-    category: "Začátečníci",
-    date: "15. ledna 2025",
-  },
-  {
-    title: "Jak si udržet rovnováhu",
-    description: "Jak zůstat v rovnováze, i když vám život hází klacky pod nohy. Praktické tipy pro udržení mindfulness v náročných obdobích.",
-    category: "Členství",
-    date: "8. ledna 2025",
-  },
-  {
-    title: "Od pauzy k výkonu",
-    description: "Proč je všímavá pauza ztracená dovednost pro dnešní úspěch. Jak krátké zastavení může zlepšit vaši produktivitu a kreativitu.",
-    category: "Pro firmy",
-    date: "1. ledna 2025",
-  },
-  {
-    title: "Mindfulness a spánek",
-    description: "Jak mindfulness pomáhá s nespavostí a zlepšuje kvalitu spánku. Techniky pro uklidnění mysli před usnutím.",
-    category: "Zdraví",
-    date: "20. prosince 2024",
-  },
-  {
-    title: "Vědomá komunikace",
-    description: "Jak mindfulness zlepšuje naše vztahy a komunikaci s ostatními. Naučte se naslouchat a reagovat s větším klidem.",
-    category: "Vztahy",
-    date: "12. prosince 2024",
-  },
-  {
-    title: "Emoční odolnost v praxi",
-    description: "Jak budovat emoční odolnost pomocí jednoduchých každodenních cvičení. Zvládejte těžké emoce s větší stabilitou.",
-    category: "Praxe",
-    date: "5. prosince 2024",
-  },
-]
+import { getBlogPosts } from "@/lib/blog"
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const blogPosts = getBlogPosts()
   return (
     <main className="min-h-screen font-sans">
       <Header />
@@ -73,8 +37,8 @@ export default function BlogPage() {
       <section className="bg-background py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.map((post, index) => (
-              <article key={index} className="flex flex-col rounded-xl border border-[#C0D1C6] bg-background overflow-hidden">
+            {blogPosts.map((post) => (
+              <article key={post.slug} className="flex flex-col rounded-xl border border-[#C0D1C6] bg-background overflow-hidden">
                 <div className="flex h-48 items-center justify-center bg-[#E3FFE2]">
                   <BlogIcon />
                 </div>
@@ -84,10 +48,12 @@ export default function BlogPage() {
                     <span className="text-xs text-[#9DA59C]">{post.date}</span>
                   </div>
                   <h2 className="mt-3 text-lg font-bold text-[#5E767E]">{post.title}</h2>
-                  <p className="mt-2 flex-1 text-sm text-[#9DA59C]">{post.description}</p>
+                  <p className="mt-2 flex-1 text-sm text-[#9DA59C]">{post.excerpt}</p>
                   <div className="mt-4">
-                    <Button variant="outline" className="h-auto rounded-full border-[#C0D1C6] bg-transparent px-5 py-2 text-sm text-[#5E767E] hover:bg-[#E3FFE2]">
-                      Přečíst celý článek <ArrowRight className="ml-2 h-3.5 w-3.5" />
+                    <Button asChild variant="outline" className="h-auto rounded-full border-[#C0D1C6] bg-transparent px-5 py-2 text-sm text-[#5E767E] hover:bg-[#E3FFE2]">
+                      <Link href={`/blog/${post.slug}`}>
+                        Přečíst celý článek <ArrowRight className="ml-2 h-3.5 w-3.5" />
+                      </Link>
                     </Button>
                   </div>
                 </div>
