@@ -28,8 +28,8 @@ export function Header() {
               Kurzy <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
             </button>
             <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="relative w-64 rounded-none bg-border-subtle py-2">
-                <div className="absolute -top-1.5 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 rounded-none bg-border-subtle"></div>
+              <div className="relative w-64 rounded-[0.2rem] bg-border-subtle py-2">
+                <div className="absolute -top-1.5 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 rounded-[0.2rem] bg-border-subtle"></div>
                 <div className="relative z-10 flex flex-col">
                   <Link href="/kurzy/foundations" className="block px-5 py-2.5 text-[15px] font-medium text-typography-body transition-colors hover:bg-black/5 hover:text-typography-heading">be.mindful FOUNDATIONS</Link>
                   <Link href="/kurzy/membership" className="block px-5 py-2.5 text-[15px] font-medium text-typography-body transition-colors hover:bg-black/5 hover:text-typography-heading">be.mindful MEMBERSHIP</Link>
@@ -45,8 +45,8 @@ export function Header() {
               Zdroje <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
             </button>
             <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="relative w-48 rounded-none bg-border-subtle py-2">
-                <div className="absolute -top-1.5 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 rounded-none bg-border-subtle"></div>
+              <div className="relative w-48 rounded-[0.2rem] bg-border-subtle py-2">
+                <div className="absolute -top-1.5 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 rounded-[0.2rem] bg-border-subtle"></div>
                 <div className="relative z-10 flex flex-col">
                   <Link href="/blog" className="block px-5 py-2.5 text-[15px] font-medium text-typography-body transition-colors hover:bg-black/5 hover:text-typography-heading">Blog</Link>
                   <Link href="/podcast" className="block px-5 py-2.5 text-[15px] font-medium text-typography-body transition-colors hover:bg-black/5 hover:text-typography-heading">Podcast</Link>
