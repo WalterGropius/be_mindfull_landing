@@ -50,7 +50,7 @@ export default async function BlogPage() {
                   <h2 className="mt-3 text-lg font-bold text-[#5E767E]">{post.title}</h2>
                   <p className="mt-2 flex-1 text-sm text-[#9DA59C]">{post.excerpt}</p>
                   <div className="mt-4">
-                    <Button asChild variant="outline" className="h-auto rounded-full border-[#C0D1C6] bg-transparent px-5 py-2 text-sm text-[#5E767E] hover:bg-[#E3FFE2]">
+                    <Button asChild variant="outline" className="h-auto rounded-full border-[#C0D1C6] bg-transparent text-sm text-[#5E767E] hover:bg-[#E3FFE2]">
                       <Link href={`/blog/${post.slug}`}>
                         Přečíst celý článek <ArrowRight className="ml-2 h-3.5 w-3.5" />
                       </Link>

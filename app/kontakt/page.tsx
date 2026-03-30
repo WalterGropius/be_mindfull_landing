@@ -120,6 +120,21 @@ export default function ContactPage() {
         </div>
       </section>
 
+          {/* Animated Brain Visuals */}
+          <div className="hidden lg:flex w-full max-w-[550px] relative justify-center items-center h-[550px] mr-0 lg:mr-10 pointer-events-none">
+            {/* Breathing Brain Background */}
+            <div className="absolute inset-0 flex items-center justify-center animate-breathe">
+                <img src="/Illustrations/brain00.svg" alt="" className="w-[480px] h-[480px] object-contain opacity-50" />
+            </div>
+            
+            {/* Floating Container for foreground brains */}
+            <div className="absolute inset-0 flex items-center justify-center animate-float">
+              {/* Brain 1 toggling */}
+              <img src="/Illustrations/brain01.svg" alt="" className="absolute w-[400px] h-[400px] object-contain animate-crossfade-1" />
+              {/* Brain 2 toggling */}
+              <img src="/Illustrations/brain02.svg" alt="" className="absolute w-[400px] h-[400px] object-contain animate-crossfade-2" />
+            </div>
+          </div>
       <Footer />
     </main>
   )

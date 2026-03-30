@@ -15,7 +15,7 @@ export async function BlogSection() {
         </div>
         <div className="mt-16 grid gap-10 md:grid-cols-3 justify-items-center">
           {blogPosts.map((post) => (
-            <div key={post.slug} className="flex flex-col w-full max-w-[388px] bg-surface-light rounded-[2rem] overflow-hidden">
+            <div key={post.slug} className="flex flex-col w-full max-w-[388px] bg-surface-light rounded-[1rem] overflow-hidden">
               <div className="relative w-full aspect-[4/3] shrink-0">
                 <Image src={post.image || "/placeholder.jpg"} alt={post.title} fill className="object-cover object-top" />
               </div>

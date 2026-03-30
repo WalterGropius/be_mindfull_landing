@@ -4,7 +4,7 @@ import { Typography } from "@/components/ui/typography"
 
 function ImagePlaceholder() {
   return (
-    <div className="flex h-full w-full items-center justify-center bg-[#C0D1C6] rounded-[2rem]">
+    <div className="flex h-full w-full items-center justify-center bg-[#C0D1C6] rounded-[1rem]">
       <svg width="60" height="45" viewBox="0 0 60 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M15 35 L25 20 L35 35 Z" fill="#E3FFE2" />
         <path d="M25 35 L40 15 L55 35 Z" fill="#9DA59C" />
@@ -20,7 +20,7 @@ export function CoursesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         
         {/* FOUNDATIONS */}
-        <div className="bg-surface-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden">
+        <div className="bg-surface-white rounded-[1rem] overflow-hidden border border-border-subtle">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 h-64 lg:h-auto relative">
                <img src="/Pictures/WhatsApp%20Image%202026-03-02%20at%2013.29.56.jpeg" alt="Foundations Course" className="w-full h-full object-cover absolute inset-0" />
@@ -46,7 +46,7 @@ export function CoursesSection() {
         </div>
 
         {/* GROUP COURSES */}
-        <div className="mt-16 bg-secondary rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden">
+        <div className="mt-16 bg-secondary rounded-[1rem]  overflow-hidden border border-border-subtle">
           <div className="flex flex-col-reverse lg:flex-row">
             <div className="lg:w-1/2 p-8 lg:p-14 border-r border-white/40">
               <Typography variant="span" color="primary" className="text-sm font-bold uppercase tracking-[0.15em] mb-2 block">
@@ -74,7 +74,7 @@ export function CoursesSection() {
         </div>
 
         {/* COMPANIES */}
-        <div className="mt-16 bg-surface-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.06)] overflow-hidden">
+        <div className="mt-16 bg-surface-white rounded-[1rem]  overflow-hidden border border-border-subtle">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 h-64 lg:h-auto relative">
               <img src="/Pictures/AdobeStock_1844492057.jpeg" alt="Companies Courses" className="w-full h-full object-cover absolute inset-0" />
