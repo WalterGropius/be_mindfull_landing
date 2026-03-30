@@ -20,7 +20,7 @@ export function Hero() {
             <div className="mt-8">
               <Button asChild className="group h-auto rounded-full bg-[#E2763A] px-8 py-4 text-base font-bold text-white transition-all hover:bg-[#c9662f]">
                 <Link href="/kurzy/foundations">
-                  Zobrazit kurzy <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                 <div  className="flex items-center">Zobrazit kurzy <div/><ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></div>
                 </Link>
               </Button>
             </div>
