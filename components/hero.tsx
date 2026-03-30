@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section className="relative w-full bg-[#C0D1C6] overflow-hidden">
+    <section className="relative w-full bg-[#7BC0A4] overflow-hidden">
       {/* Background large circle */}
       <div className="absolute right-[-20%] bottom-[-40%] w-[600px] h-[600px] rounded-full bg-[#E3FFE2]/40 lg:w-[1100px] lg:h-[1100px] lg:right-[0%] lg:bottom-[-60%] pointer-events-none"></div>
       
