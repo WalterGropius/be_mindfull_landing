@@ -1,26 +1,27 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Typography } from "@/components/ui/typography"
 
 export function Hero() {
   return (
-    <section className="relative w-full bg-[#bfd1c6] overflow-hidden">
+    <section className="relative w-full bg-primary-green-dark overflow-hidden">
       {/* Background large circle */}
-      <div className="absolute right-[-20%] bottom-[-40%] w-[500px] h-[500px] rounded-full bg-[#7BC0A4] lg:w-[950px] lg:h-[950px] lg:right-[0%] lg:bottom-[-60%] pointer-events-none"></div>
+      <div className="absolute right-[-20%] bottom-[-40%] w-[500px] h-[500px] rounded-full bg-primary-green lg:w-[950px] lg:h-[950px] lg:right-[0%] lg:bottom-[-60%] pointer-events-none"></div>
       
       <div className="relative mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:px-8 z-10">
         <div className="flex w-full items-center justify-between">
           <div className="max-w-2xl relative z-20">
-            <h1 className="text-balance text-4xl font-bold leading-tight text-[#2D2C2B] sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+            <Typography variant="display" className="text-balance sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
               Zastav se a vytvoř si<br />prostor pro změnu tvého života.
-            </h1>
-            <p className="mt-6 text-pretty text-lg font-normal leading-relaxed text-[#4B4C4D] max-w-md">
+            </Typography>
+            <Typography variant="p" className="mt-6 text-pretty max-w-md">
               Schopnost se zastavit patří dnes k nejdůležitějším dovednostem – pomáhá nám orientovat se v každodenních rozhodnutích, stresu a změnách s větší jasností a lehkostí.
-            </p>
+            </Typography>
             <div className="mt-8">
-              <Button asChild className="group h-auto rounded-full bg-[#E2763A] px-8 py-4 text-base font-bold text-white transition-all hover:bg-[#c9662f]">
+              <Button asChild variant="primary-orange" className="group">
                 <Link href="/kurzy/foundations">
-                 <div  className="flex items-center">Zobrazit kurzy <div/><ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></div>
+                  <span className="flex items-center gap-2">Zobrazit kurzy <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
                 </Link>
               </Button>
             </div>

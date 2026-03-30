@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { Typography } from "@/components/ui/typography"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
 import { ArrowRight, Check } from "lucide-react"
@@ -15,14 +16,14 @@ export function NewsletterSection() {
   const [email, setEmail] = useState("")
 
   return (
-    <section className="bg-[#7BC0A4] py-16">
+    <section className="bg-primary-green py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
           {/* Left - Title */}
           <div className="lg:w-1/3">
-            <h2 className="text-2xl font-bold text-white lg:text-3xl">
+            <Typography variant="h2" color="inverse">
               Získejte všechny novinky,<br />aktualizace a oznámení!
-            </h2>
+            </Typography>
           </div>
 
           {/* Center - Form */}
@@ -36,12 +37,12 @@ export function NewsletterSection() {
                 placeholder="Váš e-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-12 flex-1 rounded-none border-0 border-b-2 border-white/50 bg-transparent px-0 text-base text-white placeholder:text-white/70 focus-visible:ring-0 focus-visible:border-white"
+                className="h-12 flex-1 rounded-none border-0 border-b-2 border-surface-white/50 bg-transparent px-0 text-base text-surface-white placeholder:text-surface-white/70 focus-visible:ring-0 focus-visible:border-surface-white"
               />
               <Button
                 type="submit"
                 variant="outline"
-                className="h-12 rounded-full border-2 border-white bg-transparent px-6 text-sm font-bold text-white hover:bg-white hover:text-[#7BC0A4] transition-colors"
+                className="h-12 rounded-full border-2 border-surface-white bg-transparent px-6 text-sm font-bold text-surface-white hover:bg-surface-white hover:text-primary-green transition-colors"
               >
                 ODEBÍRAT
                 <ArrowRight className="ml-2 h-4 w-4" />
