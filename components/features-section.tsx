@@ -13,7 +13,7 @@ export function FeaturesSection() {
           <div className="mt-8 space-y-6">
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary">
-                <img src="/Illustrations/brain1.svg" alt="Emotional Resilience" className="w-6 h-6" />
+                <img src="/tic.png" alt="Emotional Resilience" className="w-6 h-6" />
               </div>
               <Typography variant="p" className="pt-3">
                 <span className="font-bold block mb-1">Budovat emoční odolnost:</span> naučit se zvládat těžké emoce a životní výzvy s větší stabilitou.
@@ -21,7 +21,7 @@ export function FeaturesSection() {
             </div>
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary">
-                <img src="/Illustrations/brain2.svg" alt="Thought Control" className="w-6 h-6" />
+                <img src="/tic.png" alt="Thought Control" className="w-6 h-6" />
               </div>
               <Typography variant="p" className="pt-3">
                 <span className="font-bold block mb-1">Zlepšit kontrolu myšlenek:</span> a přerušit opakující se vzorce, které vám už neslouží.
@@ -29,7 +29,7 @@ export function FeaturesSection() {
             </div>
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary">
-                <img src="/Illustrations/brain00.svg" alt="Physical Health" className="w-6 h-6" />
+                <img src="/tic.png" alt="Physical Health" className="w-6 h-6" />
               </div>
               <Typography variant="p" className="pt-3">
                 <span className="font-bold block mb-1">Podpořit fyzické zdraví:</span> a snížit projevy stresu, jako je nespavost či úzkost, a zlepšit celkovou pohodu.
@@ -37,7 +37,7 @@ export function FeaturesSection() {
             </div>
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary">
-                <img src="/Illustrations/brain01.svg" alt="Manage Stress" className="w-6 h-6" />
+                <img src="/tic.png" alt="Manage Stress" className="w-6 h-6" />
               </div>
               <Typography variant="p" className="pt-3">
                 <span className="font-bold block mb-1">Lépe zvládat stres:</span> naučit se techniky podložené vědeckými poznatky, které pomáhají přinést do práce i života více klidu.
@@ -45,19 +45,19 @@ export function FeaturesSection() {
             </div>
             <div className="flex items-start gap-4">
               <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-secondary">
-                <img src="/Illustrations/brain02.svg" alt="Compassion" className="w-6 h-6" />
+                <img src="/tic.png" alt="Compassion" className="w-6 h-6" />
               </div>
               <Typography variant="p" className="pt-3">
                 <span className="font-bold block mb-1">Zlepšit vztahy a více soucitu:</span> rozvíjet laskavost k sobě i druhým, posilovat vztahy a žít vyrovnanější život.
               </Typography>
             </div>
           </div>
-          <Typography variant="h4" className="mt-12 text-lg">
+          <Typography variant="h3" className="mt-12 ">
             Start to care about your own well-being and you will impact all the world around you in a positive way.
           </Typography>
         </div>
         <div className="lg:w-1/2">
-          <div className="aspect-[4/5] w-full lg:min-h-[600px] overflow-hidden rounded-[2rem] rounded-tl-[8rem] shadow-xl">
+          <div className="aspect-[4/5] w-full lg:min-h-[600px] overflow-hidden rounded-[2rem] shadow-xl">
             <img src="/Pictures/AdobeStock_313540527.jpeg" alt="Wellbeing" className="w-full h-full object-cover" />
           </div>
         </div>

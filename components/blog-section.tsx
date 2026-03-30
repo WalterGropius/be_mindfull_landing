@@ -15,14 +15,14 @@ export async function BlogSection() {
         </div>
         <div className="mt-16 grid gap-10 md:grid-cols-3 justify-items-center">
           {blogPosts.map((post) => (
-            <div key={post.slug} className="flex flex-col w-full max-w-[388px] bg-surface-white border border-border-subtle rounded-[24px] overflow-hidden">
-              <div className="relative w-full h-[360px] shrink-0">
+            <div key={post.slug} className="flex flex-col w-full max-w-[388px] bg-surface-light rounded-[2rem] overflow-hidden">
+              <div className="relative w-full aspect-[4/3] shrink-0">
                 <Image src={post.image || "/placeholder.jpg"} alt={post.title} fill className="object-cover object-top" />
               </div>
-              <div className="flex flex-col items-center flex-grow p-[24px] md:p-[32px] text-center w-full">
-                <Typography variant="display" as="h3" className="mt-[8px] mb-[12px]">{post.title}</Typography>
-                <Typography variant="p" className="flex-grow mb-[24px]">{post.excerpt}</Typography>
-                <Button asChild variant="secondary" className="mt-auto w-full max-w-[324px]">
+              <div className="flex flex-col items-center flex-grow px-8 pt-8 pb-10 text-center w-full">
+                <Typography variant="h3" className="mb-4 text-2xl font-bold text-typography-heading leading-tight">{post.title}</Typography>
+                <Typography variant="p" className="mb-8 text-typography-body">{post.excerpt}</Typography>
+                <Button asChild variant="secondary" className="mt-auto w-full rounded-full">
                   <Link href={`/blog/${post.slug}`}>Přečíst celý článek</Link>
                 </Button>
               </div>

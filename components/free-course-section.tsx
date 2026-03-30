@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input"
 
 export function FreeCourseSection() {
   return (
-    <section className="bg-secondary py-20 lg:py-28">
+    <section className="bg-primary-green-dark py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <Typography variant="span" color="primary" className="text-sm font-bold uppercase tracking-[0.2em] block">
