@@ -13,10 +13,7 @@ export function FreeCourseSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
+        setIsVisible(entry.isIntersecting)
       },
       { threshold: 0.1 }
     )
@@ -27,7 +24,7 @@ export function FreeCourseSection() {
   }, [])
 
   return (
-    <section className="bg-[#9DA59C] relative overflow-hidden py-20 lg:py-28">
+    <section className="bg-[#C0D1C6] relative overflow-hidden py-20 lg:py-28">
       <div className="relative mx-auto z-10 mb-10 mt-0 max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           {/* Cloud Illustrations */}

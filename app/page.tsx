@@ -6,7 +6,7 @@ import { FreeCourseSection } from "@/components/free-course-section"
 import { CoursesSection } from "@/components/courses-section"
 import { AboutSection } from "@/components/about-section"
 import { BlogSection } from "@/components/blog-section"
-import { NewsletterSection } from "@/components/newsletter-section"
+
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -20,7 +20,6 @@ export default function Home() {
       <CoursesSection />
       <AboutSection />
       <BlogSection />
-      <NewsletterSection />
       <Footer />
     </main>
   )

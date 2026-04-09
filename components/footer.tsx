@@ -1,7 +1,12 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin, Youtube, ArrowRight } from "lucide-react"
 import { Typography } from "@/components/ui/typography"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+import { useState } from "react"
 
 const footerLinks = {
   courses: [
@@ -31,15 +36,19 @@ const socialLinks = [
 ]
 
 export function Footer() {
+  const [email, setEmail] = useState("")
+
   return (
     <footer className="border-t border-border-subtle bg-surface-white">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+        <div className="mb-8">
+          <Link href="/" className="flex items-center gap-1">
+            <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={300} height={80} className="h-20 w-auto opacity-70" />
+          </Link>
+        </div>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-1">
-              <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={300} height={80} className="h-20 w-auto opacity-70" />
-            </Link>
-            <Typography variant="span" className="mt-6 max-w-sm block text-sm leading-relaxed text-typography-body">
+            <Typography variant="span" className="max-w-sm block text-sm leading-relaxed text-typography-body">
               Síla jedné všímavé pauzy – posunout svůj život od stresu k prostoru.
             </Typography>
             <div className="mt-6 flex items-center gap-3">
@@ -75,7 +84,35 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-16 border-t border-border-subtle pt-8">
+
+        {/* Newsletter sign-up */}
+        <div className="mt-12 border-t border-border-subtle pt-8">
+          <Typography variant="h4" className="text-base text-typography-heading mb-4">
+            Získejte všechny novinky, aktualizace a oznámení:
+          </Typography>
+          <form
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg"
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <Input
+              type="email"
+              placeholder="E-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="h-12 flex-1 rounded-full border border-border-subtle bg-surface-white px-5 text-base placeholder:text-muted-foreground focus-visible:ring-primary-green"
+            />
+            <Button
+              type="submit"
+              variant="primary-orange"
+              size="default"
+              className="group gap-0"
+            >
+              <span className="flex items-center gap-2">Odebírat <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+            </Button>
+          </form>
+        </div>
+
+        <div className="mt-8 border-t border-border-subtle pt-8">
           <Typography variant="p" className="text-sm text-center text-typography-body">Copyright &copy; 2026 be.mindful | Všechna práva vyhrazena</Typography>
         </div>
       </div>

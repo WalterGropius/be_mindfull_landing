@@ -5,7 +5,7 @@ import { Typography } from "@/components/ui/typography"
 
 export function VideoSection() {
   return (
-    <section className="bg-surface-white py-16 lg:py-24">
+    <section className="bg-[#E3FFE2] py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <Typography variant="h2" align="center" className="text-balance">
@@ -34,7 +34,7 @@ export function VideoSection() {
         <div className="relative mx-auto mt-12 max-w-5xl">
           <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[1rem] bg-secondary">
             <img src="/Pictures/_DSC7728.jpg" alt="Michal Dvořák" className="w-full h-full object-cover" />
-            <button className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl bg-border-subtle transition-transform hover:scale-110" aria-label="Play video">
+            <button className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-border-subtle transition-transform hover:scale-110" aria-label="Play video">
               <Play className="ml-1 h-8 w-8 fill-surface-white text-surface-white" />
             </button>
           </div>
