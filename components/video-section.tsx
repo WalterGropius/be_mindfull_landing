@@ -25,7 +25,7 @@ export function VideoSection() {
         </div>
       </div>
 
-      <div className="bg-[#F5F3F6] py-16 lg:py-24">
+      <div className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <Typography variant="span" color="primary" align="center" className="font-bold uppercase tracking-wider block">
