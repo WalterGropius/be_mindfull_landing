@@ -12,7 +12,7 @@ const buttonVariants = cva(
         primary: "bg-primary-green text-surface-white hover:bg-primary-green-hover",
         "primary-orange": "bg-primary-orange text-surface-white hover:bg-primary-orange-hover",
         secondary:
-          "bg-surface-white border-[1.5px] border-border-subtle text-primary-green hover:bg-[#C0D1C6]/10",
+          "bg-surface-white border-[1.5px] border-border-subtle text-primary-green hover:bg-[#F0F1EE]",
         outline:
           "border border-border-subtle bg-transparent text-typography-body hover:bg-accent hover:text-accent-foreground",
         ghost: "hover:bg-accent hover:text-accent-foreground",

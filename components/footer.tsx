@@ -44,7 +44,7 @@ export function Footer() {
         {/* Row 1: Logo + Column Headers */}
         <div className="grid gap-x-10 md:grid-cols-2 lg:grid-cols-5 items-end">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-1">
+            <Link href="/" className="flex items-center gap-1 translate-y-4">
               <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={300} height={80} className="h-20 w-auto opacity-70" />
             </Link>
           </div>
@@ -68,7 +68,7 @@ export function Footer() {
             <div className="mt-6 flex items-center gap-3">
               {socialLinks.map((social) => (
                 <Link key={social.label} href={social.href} className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-green text-surface-white transition-transform hover:scale-110 hover:bg-primary-green-hover" aria-label={social.label}>
-                  <social.icon className="h-4 w-4" />
+                  <social.icon className="h-4 w-4 fill-current" />
                 </Link>
               ))}
             </div>
@@ -111,7 +111,7 @@ export function Footer() {
                 placeholder="E-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-auto py-[18px] px-[24px] flex-1 rounded-2xl border border-border-subtle bg-surface-white text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:ring-primary-green"
+                className="h-auto py-[18px] px-[24px] flex-1 rounded-2xl border border-border-subtle bg-surface-white text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
               />
               <Button
                 type="submit"
@@ -125,7 +125,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-border-subtle pt-8">
+        <div className="mt-20 border-t border-border-subtle pt-8">
           <Typography variant="p" className="text-sm text-center text-typography-body">Copyright &copy; 2026 be.mindful | Všechna práva vyhrazena</Typography>
         </div>
       </div>
