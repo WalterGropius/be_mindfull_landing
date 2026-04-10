@@ -111,7 +111,7 @@ export function Footer() {
                 placeholder="E-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-12 flex-1 rounded-full border border-border-subtle bg-surface-white px-5 text-base placeholder:text-muted-foreground focus-visible:ring-primary-green"
+                className="h-auto py-[18px] px-[24px] flex-1 rounded-2xl border border-border-subtle bg-surface-white text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:ring-primary-green"
               />
               <Button
                 type="submit"
@@ -119,7 +119,7 @@ export function Footer() {
                 size="default"
                 className="group gap-0"
               >
-                <span className="flex items-center gap-2">Odebírat <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+                <span className="flex items-center gap-2">Odebírat <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
               </Button>
             </form>
           </div>
