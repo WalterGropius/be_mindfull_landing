@@ -2,7 +2,44 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, ArrowRight } from "lucide-react"
+import { Facebook, Twitter, Linkedin, ArrowRight } from "lucide-react"
+
+// Custom filled Instagram icon — outer rounded square with inner ring + dot cut out via SVG mask
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <defs>
+        <mask id="bemindful-ig-holes">
+          <rect width="24" height="24" fill="white" />
+          {/* Inner circle hole */}
+          <circle cx="12" cy="12" r="4" fill="black" />
+          {/* Corner lens dot hole */}
+          <circle cx="17.5" cy="6.5" r="1.5" fill="black" />
+        </mask>
+      </defs>
+      <rect x="2" y="2" width="20" height="20" rx="5" mask="url(#bemindful-ig-holes)" />
+    </svg>
+  )
+}
+
+// Custom filled YouTube icon — rounded rect with play triangle cut out via SVG mask
+function YoutubeIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <defs>
+        <mask id="bemindful-yt-hole">
+          <rect width="24" height="24" fill="white" />
+          {/* Play triangle hole — matches lucide's polygon "10 15 15 12 10 9" */}
+          <polygon points="10,15 15,12 10,9" fill="black" />
+        </mask>
+      </defs>
+      <path
+        d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+        mask="url(#bemindful-yt-hole)"
+      />
+    </svg>
+  )
+}
 import { Typography } from "@/components/ui/typography"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -19,7 +56,7 @@ const footerLinks = {
     { label: "O mně", href: "/o-mne" },
     { label: "Kontakt", href: "/kontakt" },
     { label: "Blog", href: "/blog" },
-    { label: "Podcast", href: "/podcast" },
+   /*  { label: "Podcast", href: "/podcast" }, */
   ],
   more: [
     { label: "Členská zóna", href: "/kurzy/membership" },
@@ -30,9 +67,9 @@ const footerLinks = {
 const socialLinks = [
   { icon: Facebook, href: "#", label: "Facebook" },
   { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: InstagramIcon, href: "#", label: "Instagram" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: YoutubeIcon, href: "#", label: "YouTube" },
 ]
 
 export function Footer() {

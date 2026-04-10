@@ -5,14 +5,14 @@ import { Typography } from "@/components/ui/typography"
 
 export function VideoSection() {
   return (
-    <section className="bg-[#E3FFE2] py-16 lg:py-24">
+    <section className="py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+         <div className="mx-auto max-w-2xl text-center">
           <Typography variant="h2" align="center" className="text-balance">
             Malé posuny, které přinášejí velké změny
           </Typography>
           <Typography variant="p" align="center" className="mt-5">
-            Pusťte představu, že jednou bude život bez výzev. To, jak k nim přistupujeme, dělá v životě ten skutečný rozdíl.
+            Pusťte představu, že jednou bude život bez výzev. <br></br>To, jak k nim přistupujeme, dělá v životě ten skutečný rozdíl.
           </Typography>
           <Typography variant="p" align="center" className="mt-4">
             Je překvapivé, jak málo stačí, aby se chaos proměnil v prostor, stres v klid. Dokáže to každý. Udělejte dnes první krok.
@@ -21,7 +21,7 @@ export function VideoSection() {
             Vytváření trvalé změny ve formě větší emoční odolnosti, lepší kontroly myšlenek, přerušení nefunkčních vzorců a fyzických přínosů pro zdraví.
           </Typography>
         </div>
-
+<div className="bg-[#F5F3F6]">
         <div className="mx-auto mt-24 max-w-3xl text-center">
           <Typography variant="span" color="primary" align="center" className="font-bold uppercase tracking-wider block">
             MINDFULNESS NENÍ JEDEN PŘÍSTUP PRO VŠECHNY
@@ -48,7 +48,9 @@ export function VideoSection() {
             <Link href="/kurzy/skupinovy-kurz">Skupinové kurzy v Praze</Link>
           </Button>
         </div>
-      </div>
+        </div>
+        </div>  
+
     </section>
   )
 }
