@@ -97,30 +97,32 @@ export function Footer() {
         </div>
 
         {/* Newsletter sign-up */}
-        <div className="mt-12 border-t border-border-subtle pt-8">
-          <Typography variant="h4" className="text-base text-typography-heading mb-4">
-            Získejte všechny novinky, aktualizace a oznámení:
-          </Typography>
-          <form
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <Input
-              type="email"
-              placeholder="E-mail"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="h-12 flex-1 rounded-full border border-border-subtle bg-surface-white px-5 text-base placeholder:text-muted-foreground focus-visible:ring-primary-green"
-            />
-            <Button
-              type="submit"
-              variant="primary-orange"
-              size="default"
-              className="group gap-0"
+        <div className="mt-12 grid gap-x-10 md:grid-cols-2 lg:grid-cols-5">
+          <div className="md:col-start-2 lg:col-start-3 lg:col-span-3">
+            <Typography variant="h4" className="text-base text-typography-heading mb-4">
+              Získejte všechny novinky, aktualizace a oznámení:
+            </Typography>
+            <form
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg"
+              onSubmit={(e) => e.preventDefault()}
             >
-              <span className="flex items-center gap-2">Odebírat <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
-            </Button>
-          </form>
+              <Input
+                type="email"
+                placeholder="E-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="h-12 flex-1 rounded-full border border-border-subtle bg-surface-white px-5 text-base placeholder:text-muted-foreground focus-visible:ring-primary-green"
+              />
+              <Button
+                type="submit"
+                variant="primary-orange"
+                size="default"
+                className="group gap-0"
+              >
+                <span className="flex items-center gap-2">Odebírat <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
+              </Button>
+            </form>
+          </div>
         </div>
 
         <div className="mt-8 border-t border-border-subtle pt-8">
