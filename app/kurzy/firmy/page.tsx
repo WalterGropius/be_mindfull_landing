@@ -76,7 +76,7 @@ export default function FirmyPage() {
       {/* Hero */}
       <section className="relative min-h-[500px] overflow-hidden bg-[#2D2C2B] lg:min-h-[600px]">
         <Image
-          src="/BeMindful_Letna2026AnnaSolcova.16.jpg"
+          src="/Theme_Companies.jpg"
           alt="Mindfulness pro firmy"
           fill
           className="object-cover opacity-45"

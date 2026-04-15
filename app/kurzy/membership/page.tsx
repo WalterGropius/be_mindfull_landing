@@ -73,7 +73,7 @@ export default function MembershipPage() {
       {/* Hero */}
       <section className="relative min-h-[500px] overflow-hidden bg-[#2D2C2B] lg:min-h-[600px]">
         <Image
-          src="/Pictures/AdobeStock_1844492057.jpeg"
+          src="/AdobeStock_431961372_Preview.jpeg"
           alt="be.mindful Membership"
           fill
           className="object-cover opacity-50"
@@ -121,7 +121,7 @@ export default function MembershipPage() {
           </div>
           <div className="relative overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/BeMindful_Letna2026AnnaSolcova.16.jpg"
+              src="/BeMindful_Letn†2026AnnaÊolcov†.98.jpg"
               alt="Mindfulness session"
               width={600}
               height={500}

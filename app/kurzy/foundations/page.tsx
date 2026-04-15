@@ -58,7 +58,7 @@ export default function FoundationsPage() {
       {/* Hero */}
       <section className="relative min-h-[500px] overflow-hidden bg-[#2D2C2B] lg:min-h-[600px]">
         <Image
-          src="/BeMindful_Letna2026AnnaSolcova.5.jpg"
+          src="/Theme_Foundations.jpg"
           alt="be.mindful Foundations"
           fill
           className="object-cover opacity-45"

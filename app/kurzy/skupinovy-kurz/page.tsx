@@ -59,7 +59,7 @@ export default function SkupinovyKurzPage() {
       {/* Hero */}
       <section className="relative min-h-[500px] overflow-hidden bg-[#2D2C2B] lg:min-h-[600px]">
         <Image
-          src="/BeMindful_Letna2026AnnaSolcova.8.jpg"
+          src="/Theme_8-weeks-course.jpg"
           alt="8týdenní kurz mindfulness"
           fill
           className="object-cover opacity-45"
