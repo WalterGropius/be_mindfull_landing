@@ -1,5 +1,15 @@
 import Image from "next/image"
 import { ArrowRight, Check, TrendingUp, Play } from "lucide-react"
+
+const clientLogos = [
+  { src: "/logos/cez-skupina_logo_vertikalni_cz_barva_pozitiv_rgb 1.png", alt: "ČEZ skupina" },
+  { src: "/logos/europool-logo 1.png", alt: "Europool" },
+  { src: "/logos/images-3 1.png", alt: "Client" },
+  { src: "/logos/kooperativa_logo 1.png", alt: "Kooperativa" },
+  { src: "/logos/mibcon 1.png", alt: "Mibcon" },
+  { src: "/logos/raiffeisen_BANK_logo.png 1.png", alt: "Raiffeisen Bank" },
+  { src: "/logos/Česká_spořitelna_-_logo_2023 1.png", alt: "Česká spořitelna" },
+]
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { NewsletterSection } from "@/components/newsletter-section"
@@ -92,9 +102,16 @@ export default function FirmyPage() {
       <section className="bg-white py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-xs font-bold uppercase tracking-widest text-[#9DA59C]">Naši klienti</p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-8 opacity-60">
-            {["Mafra.cz", "Štvr.cz", "wibcon", "Raiffeisen Bank"].map((logo) => (
-              <span key={logo} className="text-base font-bold text-[#9DA59C]">{logo}</span>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-10">
+            {clientLogos.map((logo) => (
+              <Image
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                width={120}
+                height={48}
+                className="h-10 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0"
+              />
             ))}
           </div>
         </div>
