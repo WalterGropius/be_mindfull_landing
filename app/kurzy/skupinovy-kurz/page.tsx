@@ -35,17 +35,17 @@ const courseModules = [
 
 const testimonials = [
   {
-    quote: "be.mindful brought me home to my body. I can hear my breath again.",
+    quote: "Pomohl mi začít přepínat z autopilota zpět na vědomé řízení.",
     name: "Běla Nedvědová",
     text: "Dřív jsem měla pocit, že se jen vezu – práce, povinnosti, stres, hlava plná myšlenek. Všechno jelo samo a já s tím. Teprve díky kurzu mindfulness jsem se naučila, jak můžu zpomalit, nadechnout se a začít znovu vědomě rozhodovat, jak chci reagovat.",
   },
   {
-    quote: "be.mindful brought me home to my body. I can hear my breath again.",
+    quote: "Víc vnímám dění v sobě i kolem sebe, bez hodnocení.",
     name: "Martina Junková",
     text: "Už se tolik neztotožňuji s tím, co se mi honí v hlavě. Víc vnímám dění v sobě i kolem sebe, bez hodnocení. To mi dává víc prostoru reagovat s klidem a nadhledem.",
   },
   {
-    quote: "be.mindful brought me home to my body. I can hear my breath again.",
+    quote: "Laskavější přístup ke svým myšlenkám.",
     name: "Michaela Brejchová",
     text: "Díky kurzu jsem si osvojila laskavější přístup ke svým myšlenkám a snížila tlak na to, jak by věci měly být.",
   },
@@ -119,9 +119,9 @@ export default function SkupinovyKurzPage() {
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Mindfulness is not a one-size-fits-it-all</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Ověřený a osobní přístup</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
-              Daily-life approved and personal: Your approach to mindfulness by Senior Mindfulness Teacher Michal Dvořák
+              Váš přístup k mindfulness se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
           <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl">
@@ -144,7 +144,7 @@ export default function SkupinovyKurzPage() {
       {/* Upcoming dates */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Upcoming dates</h2>
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Nadcházející termíny</h2>
           <p className="mt-2 text-center text-base text-[#4B4C4D]">8týdenní kurz mindfulness</p>
           <div className="mx-auto mt-10 max-w-xl space-y-3">
             {upcomingDates.map((d, i) => (
@@ -185,7 +185,7 @@ export default function SkupinovyKurzPage() {
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
             <div className="lg:w-1/2">
               <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">8týdenní kurz mindfulness</p>
-              <h2 className="mt-4 text-3xl font-bold text-[#2D2C2B]">This is what awaits you</h2>
+              <h2 className="mt-4 text-3xl font-bold text-[#2D2C2B]">Co vás čeká</h2>
               <div className="mt-8 overflow-hidden rounded-2xl border border-[#C0D1C6] bg-white">
                 {courseModules.map((m, i) => (
                   <div key={i} className={`flex items-center justify-between px-6 py-4 ${i < courseModules.length - 1 ? "border-b border-[#AAAAAA]/40" : ""}`}>
@@ -239,7 +239,7 @@ export default function SkupinovyKurzPage() {
       {/* Testimonials */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Voices of our participants</h2>
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Zkušenosti účastníků</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <div key={i} className="rounded-2xl bg-[#F5F6F4] p-7">
@@ -265,12 +265,12 @@ export default function SkupinovyKurzPage() {
             />
           </div>
           <div className="lg:w-3/5">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Hi, I&apos;m Michal Dvořák, founder of be.mindful</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Jsem Michal Dvořák, zakladatel be.mindful</p>
             <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
-              Mindfulness changed my life. As a result, my motivation has become to share mindfulness to help people in their everyday life. That&apos;s why I dedicated my life to it.
+              Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
-              Today I am the Senior Mindfulness Teacher in Czech Republic, which is key to be able to help people learn the tools to use in their life for the benefit of people now like and in years to come.
+              Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
             </p>
             <div className="mt-8 flex gap-12">
               {[{ num: "15+", label: "let praxe" }, { num: "2K+", label: "Absolventi" }, { num: "1", label: "Senior Mindfulness Teacher v ČR" }].map((s) => (

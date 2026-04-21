@@ -156,9 +156,9 @@ export default function FirmyPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Mindfulness is not a one-size-fits-it-all</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Ověřený a osobní přístup</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
-              Daily-life approved and personal: Your approach to mindfulness by Senior Mindfulness Teacher Michal Dvořák
+              Váš přístup k mindfulness se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
           <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl">
@@ -285,12 +285,12 @@ export default function FirmyPage() {
             />
           </div>
           <div className="lg:w-3/5">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Hi, I&apos;m Michal Dvořák, founder of be.mindful</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Jsem Michal Dvořák, zakladatel be.mindful</p>
             <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
-              Mindfulness changed my life. As a result, my motivation has become to share mindfulness to help people in their everyday life. That&apos;s why I dedicated my life to it.
+              Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
-              Today I am the Senior Mindfulness Teacher in Czech Republic, which is key to be able to help people learn the tools to use in their life for the benefit of people now like and in years to come.
+              Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
             </p>
             <div className="mt-8 flex gap-12">
               {[{ num: "15+", label: "let praxe" }, { num: "2K+", label: "Absolventi" }, { num: "1", label: "Senior Mindfulness Teacher v ČR" }].map((s) => (

@@ -6,12 +6,15 @@ import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 
 const benefits = [
-  'Posílíte „sval mindfulness": vytvořit prostor, kde můžete udržovat všímavost živou',
-  "Vytvoříte si silný vnitřní kompas, který vám pomůže rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích",
-  "Improve Thought Control & Break Cycles: escape repetitive patterns and break mental cycles, that are no longer serving.",
-  "Improve Physical Health Benefits: reduce stress-related symptoms like insomnia and anxiety.",
-  "Manage daily stress better for more calmness in work and life.",
-  "Gain more compassion and kindness and strengthen your relationships.",
+  "Posilujte „sval mindfulness" a udržujte svou všímavost živou",
+  "Důvěřujte sobě, že zvládnete životní výzvy",
+  "Vracejte se ke zdravým návykům, i když z nich někdy sejdete",
+  "Najděte podporu v náročných životních situacích",
+  "Zůstaňte dlouhodobě motivovaní a propojení díky ověřené struktuře",
+  "Zažijte neposuzující a pevnou komunitu",
+  "Vytvářejte trvalý pozitivní dopad na své zdraví a pohodu",
+  "Naučte se ovládat své myšlenky a měnit omezující přesvědčení",
+  "Budujte emoční odolnost",
 ]
 
 const includes = [
@@ -42,8 +45,8 @@ const includes = [
   },
   {
     icon: BookOpen,
-    title: "Audio recordings",
-    desc: "Each with a different focus—covering themes like better sleep, improved focus, stress management, and working with emotions.",
+    title: "Audio nahrávky",
+    desc: "Každá s jiným zaměřením – lepší spánek, soustředění, zvládání stresu a práce s emocemi.",
   },
 ]
 
@@ -87,7 +90,7 @@ export default function MembershipPage() {
               <p className="mt-4 text-lg text-white/80">Váš každodenní prostor k zastavení – udržujte rovnováhu</p>
               <div className="mt-8">
                 <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
-                  Join the Course <ArrowRight className="ml-2 h-4 w-4" />
+                  Přidat se <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
@@ -115,7 +118,7 @@ export default function MembershipPage() {
             </div>
             <div className="mt-8">
               <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
-                Join the Course <ArrowRight className="ml-2 h-4 w-4" />
+                Přidat se <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
@@ -135,9 +138,9 @@ export default function MembershipPage() {
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Mindfulness is not a one-size-fits-it-all</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Ověřený a osobní přístup</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
-              Daily-life approved and personal: Your approach to mindfulness by Senior Mindfulness Teacher Michal Dvořák
+              Váš přístup k mindfulness se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
           <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl">
@@ -166,9 +169,9 @@ export default function MembershipPage() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-16">
             {[
-              { num: "200+", label: "Video lessons" },
-              { num: "150 h", label: "Audio recordings" },
-              { num: "60", label: "Guided Meditations" },
+              { num: "200+", label: "Video lekcí" },
+              { num: "150 h", label: "Audio nahrávek" },
+              { num: "60", label: "Vedených meditací" },
             ].map((s) => (
               <div key={s.num} className="text-center">
                 <p className="text-5xl font-bold text-[#E3FFE2]">{s.num}</p>
@@ -182,9 +185,9 @@ export default function MembershipPage() {
       {/* What you get */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-center text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Mindfulness is not a one-size-fits-it-all</p>
-          <h2 className="mt-4 text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">be.mindfulness MEMBERSHIP</h2>
-          <p className="mt-2 text-center text-lg text-[#4B4C4D]">This is what you will get</p>
+          <p className="text-center text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">be.mindful MEMBERSHIP</p>
+          <h2 className="mt-4 text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Co získáte</h2>
+          <p className="mt-2 text-center text-lg text-[#4B4C4D]">Získáte přístup k celému 4týdennímu online kurzu, ke kterému se můžete vracet kdykoli potřebujete.</p>
           <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
             {includes.map((item, i) => (
               <div key={i} className="rounded-2xl border border-[#C0D1C6] bg-[#F5F6F4] p-7">
@@ -198,7 +201,7 @@ export default function MembershipPage() {
           </div>
           <div className="mt-12 text-center">
             <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
-              Become a member <ArrowRight className="ml-2 h-4 w-4" />
+              Staňte se členem <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
@@ -219,7 +222,7 @@ export default function MembershipPage() {
       {/* Testimonials */}
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Voices from participants</h2>
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Zkušenosti účastníků</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <div key={i} className="rounded-2xl bg-white p-7 shadow-sm">
@@ -245,12 +248,12 @@ export default function MembershipPage() {
             />
           </div>
           <div className="lg:w-3/5">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Hi, I&apos;m Michal Dvořák, founder of be.mindful</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Jsem Michal Dvořák, zakladatel be.mindful</p>
             <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
-              Mindfulness changed my life. As a result, my motivation has become to share mindfulness to help people in their everyday life. That&apos;s why I dedicated my life to it.
+              Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
-              Today I am the Senior Mindfulness Teacher in Czech Republic, which is key to be able to help people learn the tools to use in their life for the benefit of people now like and in years to come.
+              Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
             </p>
             <div className="mt-8 flex gap-12">
               {[{ num: "15+", label: "let praxe" }, { num: "2K+", label: "Absolventi" }, { num: "1", label: "Senior Mindfulness Teacher v ČR" }].map((s) => (
