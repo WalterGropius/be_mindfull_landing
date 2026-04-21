@@ -6,7 +6,7 @@ import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 
 const benefits = [
-  "Posilujte „sval mindfulness" a udržujte svou všímavost živou",
+  "Posilujte \u201Esval mindfulness\u201C a udržujte svou všímavost živou",
   "Důvěřujte sobě, že zvládnete životní výzvy",
   "Vracejte se ke zdravým návykům, i když z nich někdy sejdete",
   "Najděte podporu v náročných životních situacích",
