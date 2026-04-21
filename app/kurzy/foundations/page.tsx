@@ -145,7 +145,7 @@ export default function FoundationsPage() {
             </div>
             <div className="overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/BeMindful_Letna2026AnnaSolcova.17.jpg"
+                src="/Pictures/be.mindful FOUNDATIONS/AdobeStock_305273034.jpeg"
                 alt="Mindfulness practice"
                 width={600}
                 height={500}
@@ -154,10 +154,7 @@ export default function FoundationsPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button
-              variant="outline"
-              className="h-auto rounded-full border-[#7BC0A4] px-10 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white"
-            >
+            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
               Vstoupit do kurzu
             </Button>
           </div>
@@ -194,7 +191,7 @@ export default function FoundationsPage() {
             <div className="flex flex-col gap-5 lg:w-3/5">
               {howItWorks.map((h, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/20">
+                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/30">
                     <Check className="h-3 w-3 text-white" strokeWidth={3} />
                   </div>
                   <p className="text-sm leading-relaxed text-white/90">{h}</p>
@@ -206,18 +203,31 @@ export default function FoundationsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Hlasy účastníků</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
-              <div key={i} className="rounded-2xl bg-white p-7 shadow-md">
+              <div key={i} className="rounded-2xl bg-white p-7 shadow-sm">
                 <p className="text-base font-bold text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
                 <p className="mt-4 text-sm leading-relaxed text-[#4B4C4D]">{t.text}</p>
                 <p className="mt-5 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Device mockup */}
+      <section className="bg-white py-12 lg:py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <Image
+            src="/Pictures/be.mindful FOUNDATIONS/Device Set_v01_Mockup.png"
+            alt="be.mindful na všech zařízeních"
+            width={900}
+            height={560}
+            className="w-full object-contain"
+          />
         </div>
       </section>
 
@@ -300,9 +310,9 @@ export default function FoundationsPage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-[#2D5A4A] py-14">
+      <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x divide-white/20 text-center">
+          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
             {[
               { num: "15+", label: "Let praxe" },
               { num: "2K+", label: "Absolventi" },
@@ -310,7 +320,7 @@ export default function FoundationsPage() {
             ].map((s) => (
               <div key={s.num} className="px-6">
                 <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
-                <p className="mt-2 text-sm text-white/70">{s.label}</p>
+                <p className="mt-2 text-sm text-white/80">{s.label}</p>
               </div>
             ))}
           </div>
