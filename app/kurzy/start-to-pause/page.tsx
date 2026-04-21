@@ -67,7 +67,7 @@ export default function StartToPausePage() {
       </section>
 
       {/* Teacher video */}
-      <section className="bg-[#F5F6F4] py-16 lg:py-24">
+      <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
@@ -84,7 +84,7 @@ export default function StartToPausePage() {
               className="w-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#7BC0A4]/80 shadow-lg backdrop-blur-sm">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#C0D1C6] shadow-lg backdrop-blur-sm">
                 <Play className="ml-1 h-6 w-6 fill-white text-white" />
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function StartToPausePage() {
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#7BC0A4]/15">
+                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
                     <Check className="h-3.5 w-3.5 text-[#7BC0A4]" strokeWidth={3} />
                   </div>
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">{b}</p>
@@ -206,7 +206,7 @@ export default function StartToPausePage() {
       </section>
 
       {/* Teacher bio */}
-      <section className="bg-[#BFD8CC] py-16 lg:py-24">
+      <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
