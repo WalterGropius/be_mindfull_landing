@@ -46,7 +46,7 @@ export default function StartToPausePage() {
               </p>
               <div className="mt-8">
                 <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                  Join the Course <ArrowRight className="ml-2 h-4 w-4" />
+                  Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
@@ -70,9 +70,9 @@ export default function StartToPausePage() {
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness is not a one-size-fits-it-all</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
-              Daily-life approved and personal:<br />Your approach to mindfulness<br />by Senior Mindfulness Teacher Michal Dvořák
+              Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -121,7 +121,7 @@ export default function StartToPausePage() {
           </div>
           <div className="mt-12 text-center">
             <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Contact us for a personal offer
+              Kontaktujte nás pro osobní nabídku
             </Button>
           </div>
         </div>
@@ -159,9 +159,9 @@ export default function StartToPausePage() {
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
-            Mindfulness is not a one-size-fits-it-all
+            Mindfulness není pro každého stejné
           </p>
-          <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B]">FREE 4-days Online kurz</h2>
+          <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B]">ZDARMA 4denní online kurz</h2>
           <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">START to PAUSE</p>
 
           {/* Tabs */}
@@ -199,7 +199,7 @@ export default function StartToPausePage() {
 
           <div className="mt-8 text-center">
             <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Join START to PAUSE
+              Vstoupit do START to PAUSE
             </Button>
           </div>
         </div>
@@ -210,16 +210,16 @@ export default function StartToPausePage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
-              Hi, I&apos;m Michal Dvořák,<br />founder of be.mindful
+              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <p className="mt-5 text-base leading-relaxed text-[#2D2C2B]/80">
-              Mindfulness is not only an approach – it is deeply embedded into my life. XXXX brought me to my first mindfulness experience here xxx.
+              Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
-              From this situation xxx happened and I discovered, that xxx.
+              Z této situace xxx se stalo a zjistil jsem, že xxx.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
-              Today I am the only Senior Mindfulness Teacher in Czech Republic, and my specific and joyful way to makes mindfulness accessible for xxx amount of people over the last xxx years.
+              Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl lg:w-1/2">

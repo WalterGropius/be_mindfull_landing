@@ -6,17 +6,17 @@ import { Footer } from "@/components/footer"
 
 const benefits = [
   { bold: "Vytváříte si silný vnitřní kompas,", rest: " který vám pomáhá rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích" },
-  { bold: "Improve Thought Control & Break Cycles:", rest: " escape repetitive patterns and break mental cycles, that are no longer serving." },
-  { bold: "Improve Physical Health Benefits:", rest: " reduce stress-related symptoms like insomnia and anxiety." },
-  { bold: "Manage daily stress better", rest: " for more calmness in work and life." },
-  { bold: "Gain more compassion and kindness", rest: " and strengthen your relationships." },
+  { bold: "Zlepšíte kontrolu myšlenek a přerušíte cykly:", rest: " uniknete opakujícím se vzorcům a mentálním smyčkám, které vám neslouží." },
+  { bold: "Zlepšíte fyzické zdraví:", rest: " snížíte příznaky stresu, jako jsou nespavost a úzkost." },
+  { bold: "Lépe zvládnete každodenní stres", rest: " pro více klidu v práci i v životě." },
+  { bold: "Získáte více soucitu a laskavosti", rest: " a posílíte své vztahy." },
 ]
 
 const afterCourse = [
-  { bold: "Build Emotional Resilience:", rest: " handle difficult emotions and life challenges with greater stability." },
-  { bold: "Improve Thought Control & Break Cycles:", rest: " escape repetitive patterns and break mental cycles, that are no longer serving." },
-  { bold: "Improve Physical Health Benefits:", rest: " reduce stress-related symptoms like insomnia and anxiety." },
-  { bold: "Manage daily stress better", rest: " for more calmness in work and life." },
+  { bold: "Posílíte emoční odolnost:", rest: " zvládnete náročné emoce a životní výzvy s větší stabilitou." },
+  { bold: "Zlepšíte kontrolu myšlenek a přerušíte cykly:", rest: " uniknete opakujícím se vzorcům a mentálním smyčkám, které vám neslouží." },
+  { bold: "Zlepšíte fyzické zdraví:", rest: " snížíte příznaky stresu, jako jsou nespavost a úzkost." },
+  { bold: "Lépe zvládnete každodenní stres", rest: " pro více klidu v práci i v životě." },
 ]
 
 const upcomingDates = [
@@ -41,19 +41,19 @@ const tabs = ["Pondělí 10:00–12:30", "Praha 10", "16–18 min denní praxe",
 
 const testimonials = [
   {
-    quote: "be.mindful brought me home into my body. I know how to breath again.",
+    quote: "be.mindful mi pomohl najít cestu zpět do těla. Opět vím, jak dýchat.",
     name: "Betty R.",
     text: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své „wellbeing fitko pro mysl\".",
     image: "/Pictures/AdobeStock_1844492057.jpeg",
   },
   {
-    quote: "be.mindful brought me home into my body. I know how to breath again.",
+    quote: "be.mindful mi pomohl najít cestu zpět do těla. Opět vím, jak dýchat.",
     name: "Betty R.",
     text: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své „wellbeing fitko pro mysl\".",
     image: "/Pictures/AdobeStock_1844492057.jpeg",
   },
   {
-    quote: "be.mindful brought me home into my body. I know how to breath again.",
+    quote: "be.mindful mi pomohl najít cestu zpět do těla. Opět vím, jak dýchat.",
     name: "Betty R.",
     text: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své „wellbeing fitko pro mysl\".",
     image: "/Pictures/AdobeStock_313540527.jpeg",
@@ -85,7 +85,7 @@ export default function SkupinovyKurzPage() {
               </p>
               <div className="mt-8">
                 <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                  Join the Course <ArrowRight className="ml-2 h-4 w-4" />
+                  Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
@@ -109,9 +109,9 @@ export default function SkupinovyKurzPage() {
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness is not a one-size-fits-it-all</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
-              Daily-life approved and personal:<br />Your approach to mindfulness<br />by Senior Mindfulness Teacher Michal Dvořák
+              Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -192,7 +192,7 @@ export default function SkupinovyKurzPage() {
               variant="outline"
               className="h-auto rounded-full border-[#7BC0A4] px-10 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white"
             >
-              Join the Course
+              Vstoupit do kurzu
             </Button>
           </div>
         </div>
@@ -251,10 +251,10 @@ export default function SkupinovyKurzPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
-            Mindfulness is not a one-size-fits-it-all
+            Mindfulness není pro každého stejné
           </p>
           <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B]">8týdenní kurz mindfulness</h2>
-          <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">This is what awaits you</p>
+          <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">To vás čeká</p>
 
           {/* Tabs */}
           <div className="mt-8 flex overflow-x-auto border-b border-[#E5E5E5]">
@@ -294,7 +294,7 @@ export default function SkupinovyKurzPage() {
           <div className="mt-12 flex flex-col gap-8 lg:flex-row lg:items-center">
             <div className="lg:w-1/2">
               <h3 className="text-2xl font-bold text-[#2D2C2B]">
-                Bonus: Get the new<br />be.mindful app for FREE
+                Bonus: Získejte novou<br />aplikaci be.mindful ZDARMA
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-[#4B4C4D]">
                 Mindfulness is not only an approach – it is deeply embedded into my life. XXXX brought me to my first mindfulness experience here xxx.
@@ -304,10 +304,10 @@ export default function SkupinovyKurzPage() {
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-                  Join the Course
+                  Vstoupit do kurzu
                 </Button>
                 <button className="text-sm font-medium text-[#7BC0A4] underline hover:text-[#6BB194]">
-                  Watch the FREE Webinar
+                  Sledovat webinář zdarma
                 </button>
               </div>
             </div>
@@ -337,7 +337,7 @@ export default function SkupinovyKurzPage() {
       {/* Video testimonials */}
       <section className="bg-[#1A1A1A] pb-16 pt-4 lg:pb-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="mb-10 text-center text-2xl font-bold text-white">Voices of our participants</h2>
+          <h2 className="mb-10 text-center text-2xl font-bold text-white">Hlasy našich účastníků</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <div key={i} className="overflow-hidden rounded-2xl bg-white">
@@ -380,16 +380,16 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
-              Hi, I&apos;m Michal Dvořák,<br />founder of be.mindful
+              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <p className="mt-5 text-base leading-relaxed text-[#2D2C2B]/80">
-              Mindfulness is not only an approach – it is deeply embedded into my life. XXXX brought me to my first mindfulness experience here xxx.
+              Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
-              From this situation xxx happened and I discovered, that xxx.
+              Z této situace xxx se stalo a zjistil jsem, že xxx.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
-              Today I am the only Senior Mindfulness Teacher in Czech Republic, and my specific and joyful way to makes mindfulness accessible for xxx amount of people over the last xxx years.
+              Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
           <div className="overflow-hidden rounded-2xl lg:w-1/2">
