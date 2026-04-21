@@ -1,8 +1,7 @@
 import Image from "next/image"
-import { ArrowRight, Check, Clock, Video, Headphones, Play } from "lucide-react"
+import { ArrowRight, Check, Plus, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
-import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 
 const benefits = [
@@ -13,11 +12,14 @@ const benefits = [
   "Získáte základní vhled do fungování mysli a do toho, jak s ní můžeme vědomě pracovat",
 ]
 
-const modules = [
+const days = [
   { day: "DAY 1", title: "Síla mindfulness" },
   { day: "DAY 2", title: "Jak funguje mozek a jak mu mindfulness pomáhá" },
   { day: "DAY 3", title: "Jak využívat mindfulness během dne" },
+  { day: "DAY 4", title: "Jak vytvořit základ pro trvalou změnu" },
 ]
+
+const tabs = ["4denní", "Online", "5–10 min denní praxe", "WhatsApp podpora"]
 
 export default function StartToPausePage() {
   return (
@@ -25,23 +27,26 @@ export default function StartToPausePage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-[500px] overflow-hidden bg-[#2D2C2B] lg:min-h-[600px]">
+      <section className="relative min-h-[500px] overflow-hidden bg-[#1A1A1A] lg:min-h-[580px]">
         <Image
           src="/Theme_4-days_FREE.jpg"
           alt="FREE 4denní online kurz Start-to-PAUSE"
           fill
-          className="object-cover opacity-50"
+          className="object-cover opacity-55"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[600px]">
+        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="max-w-xl">
-              <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">FREE 3denní online kurz</p>
-              <h1 className="mt-3 text-4xl font-bold text-white lg:text-5xl">Start-to-PAUSE</h1>
-              <p className="mt-4 text-lg text-white/80">Zažijte, jak do svého života přinést trochu prostoru</p>
+              <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
+                FREE 4denní<br />online kurz<br />Start-to-PAUSE
+              </h1>
+              <p className="mt-4 text-sm text-white/75 max-w-xs">
+                Začněte, jak do svého života přidat trochu prostoru – a krok za krokem přeměníte způsoby, jak začleníte toto každodenního života.
+              </p>
               <div className="mt-8">
-                <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
-                  Přihlaste se zdarma <ArrowRight className="ml-2 h-4 w-4" />
+                <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                  Join the Course <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
@@ -49,32 +54,178 @@ export default function StartToPausePage() {
         </div>
       </section>
 
-      {/* How you will feel */}
+      {/* Intro — centered */}
+      <section className="bg-white py-20 lg:py-28">
+        <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
+          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            Ukážu vám,<br />jak silná může být krátká pauza!
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-[#4B4C4D]">
+            Schopnost se zastavit patří dnes k těm nejdůležitějším dovednostem. Právě v tom okamžiku se můžeme znovu propojit sami se sebou, obrátit pozornost dovnitř místo ven a tím najít větší jasnost, klid a prostor pro vědomou reakci místo automatické.
+          </p>
+        </div>
+      </section>
+
+      {/* Teacher video */}
+      <section className="bg-[#F5F6F4] py-16 lg:py-24">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness is not a one-size-fits-it-all</p>
+            <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+              Daily-life approved and personal:<br />Your approach to mindfulness<br />by Senior Mindfulness Teacher Michal Dvořák
+            </h2>
+          </div>
+          <div className="relative mt-10 overflow-hidden rounded-2xl">
+            <Image
+              src="/Pictures/_DSC7728.jpg"
+              alt="Michal Dvořák – Senior Mindfulness Teacher"
+              width={900}
+              height={560}
+              className="w-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#7BC0A4]/80 shadow-lg backdrop-blur-sm">
+                <Play className="ml-1 h-6 w-6 fill-white text-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
-          <div className="lg:w-1/2">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Jak se budete cítit po kurzu</p>
-            <h2 className="mt-4 text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Ukážu vám, jak silná může být krátká pauza!</h2>
-            <div className="mt-8 space-y-4">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            Jak se budete cítit po kurzu
+          </h2>
+          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
+            <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#7BC0A4]/15">
-                    <Check className="h-3 w-3 text-[#7BC0A4]" />
+                <div key={i} className="flex items-start gap-4">
+                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#7BC0A4]/15">
+                    <Check className="h-3.5 w-3.5 text-[#7BC0A4]" strokeWidth={3} />
                   </div>
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">{b}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-8">
-              <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
-                Vstoupit do kurzu zdarma <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+            <div className="overflow-hidden rounded-2xl lg:w-1/2">
+              <Image
+                src="/Pictures/FREE 4-days course/AdobeStock_542235713_Preview.jpeg"
+                alt="Mindfulness practice"
+                width={600}
+                height={500}
+                className="w-full object-cover"
+              />
             </div>
+          </div>
+          <div className="mt-12 text-center">
+            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              Contact us for a personal offer
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Research stats — glass SVG */}
+      <section className="bg-[#8ECDB5] py-16 lg:py-24">
+        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
+          <div className="mx-auto mb-6 flex justify-center">
+            <Image src="/Illustrations/glass1.svg" alt="" width={80} height={80} />
+          </div>
+          <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            Výzkumy potvrzují:<br />krátká každodenní praxe může mít překvapivě silný dopad!
+          </h2>
+          <p className="mt-6 text-xl font-bold text-[#2D2C2B] lg:text-2xl">
+            14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
+          </p>
+        </div>
+      </section>
+
+      {/* Device mockup */}
+      <section className="bg-white py-12 lg:py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <Image
+            src="/Pictures/be.mindful FOUNDATIONS/Device Set_v01_Mockup.png"
+            alt="be.mindful on all devices"
+            width={900}
+            height={560}
+            className="w-full object-contain"
+          />
+        </div>
+      </section>
+
+      {/* Course days */}
+      <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+          <p className="text-center text-sm font-semibold text-[#7BC0A4]">
+            Mindfulness is not a one-size-fits-it-all
+          </p>
+          <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B]">FREE 4-days Online kurz</h2>
+          <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">START to PAUSE</p>
+
+          {/* Tabs */}
+          <div className="mt-8 flex overflow-x-auto border-b border-[#E5E5E5]">
+            {tabs.map((tab, i) => (
+              <button
+                key={i}
+                className={`whitespace-nowrap px-5 pb-3 text-sm font-medium transition-colors ${
+                  i === 0
+                    ? "border-b-2 border-[#7BC0A4] text-[#7BC0A4]"
+                    : "text-[#9DA59C] hover:text-[#4B4C4D]"
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+
+          {/* Day rows */}
+          <div className="divide-y divide-[#E5E5E5]">
+            {days.map((d, i) => (
+              <div key={i} className="flex items-center justify-between py-5">
+                <div className="flex items-center gap-5">
+                  <span className="min-w-[48px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
+                    {d.day}
+                  </span>
+                  <span className="text-sm font-medium text-[#2D2C2B]">{d.title}</span>
+                </div>
+                <button className="ml-4 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#C0D1C6] text-[#9DA59C] hover:border-[#7BC0A4] hover:text-[#7BC0A4]">
+                  <Plus className="h-4 w-4" />
+                </button>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center">
+            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              Join START to PAUSE
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Teacher bio */}
+      <section className="bg-[#BFD8CC] py-16 lg:py-24">
+        <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
+          <div className="lg:w-1/2">
+            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+              Hi, I&apos;m Michal Dvořák,<br />founder of be.mindful
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-[#2D2C2B]/80">
+              Mindfulness is not only an approach – it is deeply embedded into my life. XXXX brought me to my first mindfulness experience here xxx.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+              From this situation xxx happened and I discovered, that xxx.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+              Today I am the only Senior Mindfulness Teacher in Czech Republic, and my specific and joyful way to makes mindfulness accessible for xxx amount of people over the last xxx years.
+            </p>
           </div>
           <div className="overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/BeMindful_Letna2026AnnaSolcova.17.jpg"
-              alt="Mindfulness practice"
+              src="/Pictures/_DSC7728.jpg"
+              alt="Michal Dvořák"
               width={600}
               height={500}
               className="w-full object-cover"
@@ -83,105 +234,24 @@ export default function StartToPausePage() {
         </div>
       </section>
 
-      {/* Teacher section */}
-      <section className="bg-[#F5F6F4] py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Ověřený a osobní přístup</p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
-              Váš přístup k mindfulness se Senior Mindfulness Teacherem Michalem Dvořákem
-            </h2>
-          </div>
-          <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl">
-            <Image
-              src="/Pictures/_DSC7728.jpg"
-              alt="Michal Dvořák – Senior Mindfulness Teacher"
-              width={900}
-              height={600}
-              className="w-full object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg">
-                <Play className="ml-1 h-6 w-6 text-[#5E767E]" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Research callout */}
+      {/* Stats bar */}
       <section className="bg-[#7BC0A4] py-14">
-        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <p className="text-sm font-bold uppercase tracking-widest text-[#E3FFE2]/80">Výzkumy potvrzují</p>
-          <p className="mt-3 text-xl font-bold text-[#E3FFE2]">
-            14–20% snížení stresu při 5–10 minutách meditace denně během osmi týdnů.
-          </p>
-        </div>
-      </section>
-
-      {/* Course Content */}
-      <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl">
-            <p className="text-center text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">FREE 3denní online kurz</p>
-            <h2 className="mt-4 text-center text-3xl font-bold text-[#2D2C2B]">START to PAUSE</h2>
-            <p className="mt-2 text-center text-base text-[#4B4C4D]">Získejte zpět svůj prostor za 3 dny</p>
-            <div className="mt-4 flex flex-wrap justify-center gap-8">
-              <div className="flex items-center gap-2 text-sm text-[#4B4C4D]"><Clock className="h-4 w-4 text-[#7BC0A4]" /> 15 minut denně</div>
-              <div className="flex items-center gap-2 text-sm text-[#4B4C4D]"><Video className="h-4 w-4 text-[#7BC0A4]" /> 3 video lekce</div>
-              <div className="flex items-center gap-2 text-sm text-[#4B4C4D]"><Headphones className="h-4 w-4 text-[#7BC0A4]" /> 3 audio nahrávky</div>
-              <div className="flex items-center gap-2 text-sm text-[#4B4C4D]"><Check className="h-4 w-4 text-[#7BC0A4]" /> Průvodní program</div>
-            </div>
-            <div className="mt-10 overflow-hidden rounded-2xl border border-[#C0D1C6] bg-[#F5F6F4]">
-              {modules.map((m, i) => (
-                <div key={i} className={`flex items-center gap-5 px-7 py-5 ${i < modules.length - 1 ? "border-b border-[#AAAAAA]/40" : ""}`}>
-                  <span className="text-sm font-bold text-[#7BC0A4]">{m.day}</span>
-                  <p className="text-sm font-bold text-[#2D2C2B]">{m.title}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8 text-center">
-              <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
-                Vstoupit do kurzu zdarma <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
+          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
+            {[
+              { num: "15+", label: "Let praxe" },
+              { num: "2K+", label: "Absolventi" },
+              { num: "1", label: "Senior Mindfulness Teacher v CR" },
+            ].map((s) => (
+              <div key={s.num} className="px-6">
+                <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
+                <p className="mt-2 text-sm text-white/80">{s.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* About teacher */}
-      <section className="bg-[#F5F6F4] py-16 lg:py-24">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-16 lg:px-8">
-          <div className="overflow-hidden rounded-2xl lg:w-2/5">
-            <Image
-              src="/Pictures/_DSC7728.jpg"
-              alt="Michal Dvořák"
-              width={500}
-              height={560}
-              className="w-full object-cover"
-            />
-          </div>
-          <div className="lg:w-3/5">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Jsem Michal Dvořák, zakladatel be.mindful</p>
-            <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
-              Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
-              Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
-            </p>
-            <div className="mt-8 flex gap-12">
-              {[{ num: "15+", label: "let praxe" }, { num: "2K+", label: "Absolventi" }, { num: "1", label: "Senior Mindfulness Teacher v ČR" }].map((s) => (
-                <div key={s.num}>
-                  <p className="text-3xl font-bold text-[#2D2C2B]">{s.num}</p>
-                  <p className="mt-1 text-xs text-[#4B4C4D]">{s.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <NewsletterSection />
       <Footer />
     </main>
   )
