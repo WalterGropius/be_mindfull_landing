@@ -1,50 +1,46 @@
 import Image from "next/image"
-import { ArrowRight, Check, TrendingUp, Video, BookOpen, Users, Play } from "lucide-react"
+import { ArrowRight, Check, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 
 const benefits = [
-  "Posilujte \u201Esval mindfulness\u201C a udržujte svou všímavost živou",
-  "Důvěřujte sobě, že zvládnete životní výzvy",
-  "Vracejte se ke zdravým návykům, i když z nich někdy sejdete",
-  "Najděte podporu v náročných životních situacích",
-  "Zůstaňte dlouhodobě motivovaní a propojení díky ověřené struktuře",
-  "Zažijte neposuzující a pevnou komunitu",
-  "Vytvářejte trvalý pozitivní dopad na své zdraví a pohodu",
-  "Naučte se ovládat své myšlenky a měnit omezující přesvědčení",
-  "Budujte emoční odolnost",
+  { bold: "Vytvoříte si silný vnitřní kompas,", rest: " který vám pomůže rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích." },
+  { bold: "Zlepšíte kontrolu myšlenek a přerušíte cykly:", rest: " uniknete opakujícím se vzorcům a mentálním smyčkám, které vám neslouží." },
+  { bold: "Zlepšíte fyzické zdraví:", rest: " snížíte příznaky stresu, jako jsou nespavost a úzkost." },
+  { bold: "Lépe zvládnete každodenní stres", rest: " pro více klidu v práci i v životě." },
+  { bold: "Získáte více soucitu a laskavosti", rest: " a posílíte své vztahy." },
 ]
 
 const includes = [
   {
-    icon: Video,
+    image: "/Pictures/_DSC7728.jpg",
     title: "Mindfulness FOUNDATIONS",
     desc: "Krátká 10minutová videa se základy mindfulness – jak vytvořit prostor v zahlcené mysli, jak nacházet klid v napětí.",
   },
   {
-    icon: BookOpen,
+    image: "/BeMindful_Letna2026AnnaSolcova.17.jpg",
     title: "be.mindful LIBRARY",
     desc: "12 měsíců neomezeného přístupu do knihovny plné tematických meditací, praktických tipů a rozhovorů.",
   },
   {
-    icon: Users,
+    image: "/Pictures/AdobeStock_1844492057.jpeg",
     title: "be.mindful COMMUNITY",
     desc: "Změna je týmová záležitost. V okamžicích, kdy ztrácíme nadhled, je důležité mít kolem sebe lidi, kteří už tou cestou prošli.",
   },
   {
-    icon: Play,
+    image: "/BeMindful_Letna2026AnnaSolcova.5.jpg",
     title: "Týdenní živé meditace + záznamy",
-    desc: 'Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své \u201Ewellbeing fitko pro mysl\u201C.',
+    desc: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své \u201Ewellbeing fitko pro mysl\u201C.",
   },
   {
-    icon: Users,
+    image: "/BeMindful_Letna2026AnnaSolcova.16.jpg",
     title: "Měsíční živá setkání + záznamy",
     desc: "Prostor pro vaše otázky a osobní podporu v konkrétních životních situacích. Skvělý způsob, jak vidět, že mindfulness funguje v reálném životě.",
   },
   {
-    icon: BookOpen,
+    image: "/Pictures/AdobeStock_313540527.jpeg",
     title: "Audio nahrávky",
     desc: "Každá s jiným zaměřením – lepší spánek, soustředění, zvládání stresu a práce s emocemi.",
   },
@@ -74,7 +70,7 @@ export default function MembershipPage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-[500px] overflow-hidden bg-[#2D2C2B] lg:min-h-[600px]">
+      <section className="relative min-h-[500px] overflow-hidden bg-[#1A1A1A] lg:min-h-[580px]">
         <Image
           src="/AdobeStock_431961372_Preview.jpeg"
           alt="be.mindful Membership"
@@ -82,14 +78,17 @@ export default function MembershipPage() {
           className="object-cover opacity-50"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[600px]">
+        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="max-w-xl">
-              <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">be.mindful</p>
-              <h1 className="mt-3 text-4xl font-bold text-white lg:text-5xl">MEMBERSHIP</h1>
-              <p className="mt-4 text-lg text-white/80">Váš každodenní prostor k zastavení – udržujte rovnováhu</p>
+              <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
+                be.mindful<br />MEMBERSHIP
+              </h1>
+              <p className="mt-4 text-base text-white/80">
+                Váš každodenní prostor k zastavení – udržujte rovnováhu
+              </p>
               <div className="mt-8">
-                <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
+                <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
                   Přidat se <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
@@ -99,108 +98,158 @@ export default function MembershipPage() {
       </section>
 
       {/* Intro */}
-      <section className="bg-white py-16 lg:py-24">
-        <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Zůstaňte propojeni – udržujte rovnováhu</h2>
-            <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
-              Život se skládá z okamžiků – a právě schopnost zastavit se je nástroj, který nám umožňuje být přítomní s tím, co se děje v nás i kolem nás. Díky tomu můžeme naplno vnímat krásu kolem sebe a zvládat výzvy s větší lehkostí.
-            </p>
-            <div className="mt-8 space-y-4">
-              {benefits.map((b, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#7BC0A4]">
-                    <Check className="h-3 w-3 text-white" />
-                  </div>
-                  <p className="text-sm leading-relaxed text-[#4B4C4D]">{b}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-8">
-              <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
-                Přidat se <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-          <div className="relative overflow-hidden rounded-2xl lg:w-1/2">
-            <Image
-              src="/BeMindful_Letn†2026AnnaÊolcov†.98.jpg"
-              alt="Mindfulness session"
-              width={600}
-              height={500}
-              className="w-full rounded-2xl object-cover"
-            />
-          </div>
+      <section className="bg-white py-20 lg:py-28">
+        <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
+          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            Zůstaňte propojeni –<br />udržujte rovnováhu
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-[#4B4C4D]">
+            Život se skládá z okamžiků – a právě schopnost zastavit se je nástroj, který nám umožňuje být přítomní s tím, co se děje v nás i kolem nás. Díky tomu můžeme naplno vnímat krásu kolem sebe a zvládat výzvy s větší lehkostí.
+          </p>
         </div>
       </section>
 
-      {/* Teacher section */}
-      <section className="bg-[#F5F6F4] py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      {/* Teacher video */}
+      <section className="bg-[#F5F6F7] py-16 lg:py-24">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Ověřený a osobní přístup</p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
-              Váš přístup k mindfulness se Senior Mindfulness Teacherem Michalem Dvořákem
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
+            <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+              Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
-          <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl">
+          <div className="relative mt-10 overflow-hidden rounded-2xl">
             <Image
               src="/Pictures/_DSC7728.jpg"
               alt="Michal Dvořák – Senior Mindfulness Teacher"
               width={900}
-              height={600}
+              height={560}
               className="w-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg">
-                <Play className="ml-1 h-6 w-6 text-[#5E767E]" />
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#C0D1C6] shadow-lg backdrop-blur-sm">
+                <Play className="ml-1 h-6 w-6 fill-white text-white" />
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="bg-white py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 className="text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            Posílíte \u201Esval mindfulness\u201C:<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
+          </h2>
+          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
+            <div className="flex flex-col gap-5 lg:w-1/2">
+              {benefits.map((b, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
+                    <Check className="h-3.5 w-3.5 text-[#7BC0A4]" strokeWidth={3} />
+                  </div>
+                  <p className="text-sm leading-relaxed text-[#4B4C4D]">
+                    <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
+                    {b.rest}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="overflow-hidden rounded-2xl lg:w-1/2">
+              <Image
+                src="/BeMindful_Letna2026AnnaSolcova.8.jpg"
+                alt="Mindfulness session"
+                width={600}
+                height={500}
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="mt-12 text-center">
+            <Button
+              variant="outline"
+              className="h-auto rounded-full border-[#7BC0A4] px-10 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white"
+            >
+              Přidat se
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Research / SVG section */}
+      <section className="bg-[#8ECDB5] py-16 lg:py-24">
+        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
+          <div className="mx-auto mb-6 flex justify-center">
+            <Image src="/Illustrations/pause1.svg" alt="" width={80} height={80} />
+          </div>
+          <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            Rovnováha se tvoří z okamžiků.
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-[#2D2C2B]/80">
+            Najdete zde všechny nástroje a podporu, které vám pomohou udržet rovnováhu a vrátit se k mindfulness, když život rozptýlí vaši pozornost.
+          </p>
         </div>
       </section>
 
       {/* Stats */}
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-center text-sm font-bold uppercase tracking-widest text-[#E3FFE2]/80">Rovnováha se tvoří z okamžiků.</p>
-          <p className="mx-auto mt-2 max-w-xl text-center text-base text-[#E3FFE2]">
-            Najdete zde všechny nástroje a podporu, které vám pomohou udržet rovnováhu a vrátit se k mindfulness, když život rozptýlí vaši pozornost.
-          </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-16">
+          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
             {[
               { num: "200+", label: "Video lekcí" },
               { num: "150 h", label: "Audio nahrávek" },
               { num: "60", label: "Vedených meditací" },
             ].map((s) => (
-              <div key={s.num} className="text-center">
-                <p className="text-5xl font-bold text-[#E3FFE2]">{s.num}</p>
-                <p className="mt-2 text-sm font-medium text-[#E3FFE2]/80">{s.label}</p>
+              <div key={s.num} className="px-6">
+                <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
+                <p className="mt-2 text-sm text-white/80">{s.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Device mockup */}
+      <section className="bg-white py-12 lg:py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <Image
+            src="/Pictures/be.mindful MEMBERSHIP/Device Set_v01_Mockup.png"
+            alt="be.mindful na všech zařízeních"
+            width={900}
+            height={560}
+            className="w-full object-contain"
+          />
+        </div>
+      </section>
+
       {/* What you get */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-center text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">be.mindful MEMBERSHIP</p>
-          <h2 className="mt-4 text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Co získáte</h2>
-          <p className="mt-2 text-center text-lg text-[#4B4C4D]">Získáte přístup k celému 4týdennímu online kurzu, ke kterému se můžete vracet kdykoli potřebujete.</p>
+          <p className="text-center text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
+          <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            be.mindful MEMBERSHIP<br />Co získáte
+          </h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
             {includes.map((item, i) => (
-              <div key={i} className="rounded-2xl border border-[#C0D1C6] bg-[#F5F6F4] p-7">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#7BC0A4]/15">
-                  <item.icon className="h-5 w-5 text-[#7BC0A4]" />
+              <div key={i} className="overflow-hidden rounded-2xl border border-[#C0D1C6] bg-[#F5F6F4]">
+                <div className="h-48 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={400}
+                    height={200}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
-                <h3 className="mt-4 text-base font-bold text-[#2D2C2B]">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#4B4C4D]">{item.desc}</p>
+                <div className="p-6">
+                  <h3 className="text-base font-bold text-[#2D2C2B]">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#4B4C4D]">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#008F7A]">
+            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
               Staňte se členem <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
@@ -220,9 +269,9 @@ export default function MembershipPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-[#F5F6F4] py-16 lg:py-24">
+      <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Zkušenosti účastníků</h2>
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Hlasy účastníků</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <div key={i} className="rounded-2xl bg-white p-7 shadow-sm">
@@ -256,7 +305,7 @@ export default function MembershipPage() {
               Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
             </p>
             <div className="mt-8 flex gap-12">
-              {[{ num: "15+", label: "let praxe" }, { num: "2K+", label: "Absolventi" }, { num: "1", label: "Senior Mindfulness Teacher v ČR" }].map((s) => (
+              {[{ num: "15+", label: "Let praxe" }, { num: "2K+", label: "Absolventi" }, { num: "1", label: "Senior Mindfulness Teacher v ČR" }].map((s) => (
                 <div key={s.num}>
                   <p className="text-3xl font-bold text-[#2D2C2B]">{s.num}</p>
                   <p className="mt-1 text-xs text-[#4B4C4D]">{s.label}</p>
