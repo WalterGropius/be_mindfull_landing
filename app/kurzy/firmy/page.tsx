@@ -84,11 +84,11 @@ export default function FirmyPage() {
           src="/Theme_Companies.jpg"
           alt="Mindfulness pro firmy"
           fill
-          className="object-cover opacity-45"
+          className="object-cover"
           priority
         />
         <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
                 Od stresu<br />k odolnosti

@@ -32,11 +32,11 @@ export default function StartToPausePage() {
           src="/Theme_4-days_FREE.jpg"
           alt="FREE 4denní online kurz Start-to-PAUSE"
           fill
-          className="object-cover opacity-55"
+          className="object-cover"
           priority
         />
         <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
                 FREE 4denní<br />online kurz<br />Start-to-PAUSE
@@ -158,7 +158,7 @@ export default function StartToPausePage() {
 
       {/* Course days */}
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
             Mindfulness není pro každého stejné
           </p>
@@ -182,18 +182,13 @@ export default function StartToPausePage() {
           </div>
 
           {/* Day rows */}
-          <div className="divide-y divide-[#E5E5E5]">
+          <div className="mt-2 flex flex-col gap-1">
             {days.map((d, i) => (
-              <div key={i} className="flex items-center justify-between py-5">
-                <div className="flex items-center gap-5">
-                  <span className="min-w-[48px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
-                    {d.day}
-                  </span>
-                  <span className="text-sm font-medium text-[#2D2C2B]">{d.title}</span>
-                </div>
-                <button className="ml-4 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#C0D1C6] text-[#9DA59C] hover:border-[#7BC0A4] hover:text-[#7BC0A4]">
-                  <Plus className="h-4 w-4" />
-                </button>
+              <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
+                <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
+                  {d.day}
+                </span>
+                <span className="text-sm font-bold text-[#2D2C2B]">{d.title}</span>
               </div>
             ))}
           </div>

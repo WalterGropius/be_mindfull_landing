@@ -63,11 +63,11 @@ export default function FoundationsPage() {
           src="/Theme_Foundations.jpg"
           alt="be.mindful Foundations"
           fill
-          className="object-cover opacity-50"
+          className="object-cover"
           priority
         />
         <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
                 be.mindful<br />FOUNDATIONS
@@ -256,16 +256,11 @@ export default function FoundationsPage() {
           {/* Accordion rows */}
           <div className="mt-2 flex flex-col gap-1">
             {courseModules.map((m, i) => (
-              <div key={i} className="flex items-center justify-between rounded-xl bg-[#F5F6F7] px-5 py-4">
-                <div className="flex items-center gap-4">
-                  <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
-                    {m.label}
-                  </span>
-                  <span className="text-sm font-bold text-[#2D2C2B]">{m.title}</span>
-                </div>
-                <button className="ml-4 shrink-0 text-[#9DA59C] hover:text-[#7BC0A4]">
-                  <Plus className="h-5 w-5" />
-                </button>
+              <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
+                <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
+                  {m.label}
+                </span>
+                <span className="text-sm font-bold text-[#2D2C2B]">{m.title}</span>
               </div>
             ))}
           </div>
