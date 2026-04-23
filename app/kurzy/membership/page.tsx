@@ -75,7 +75,7 @@ export default function MembershipPage() {
           src="/AdobeStock_431961372_Preview.jpeg"
           alt="be.mindful Membership"
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
         />
         <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
@@ -139,7 +139,7 @@ export default function MembershipPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
-            Posílíte \u201Esval mindfulness\u201C:<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
+            Posílíte „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
             <div className="flex flex-col gap-5 lg:w-1/2">
@@ -155,8 +155,8 @@ export default function MembershipPage() {
             </div>
             <div className="overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/BeMindful_Letna2026AnnaSolcova.8.jpg"
-                alt="Mindfulness session"
+                src="/membership-laptop.jpeg"
+                alt="be.mindful member watching session on laptop"
                 width={600}
                 height={500}
                 className="w-full object-cover"
@@ -164,10 +164,7 @@ export default function MembershipPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button
-              variant="outline"
-              className="h-auto rounded-full border-[#7BC0A4] px-10 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white"
-            >
+            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
               Přidat se
             </Button>
           </div>
@@ -178,7 +175,7 @@ export default function MembershipPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/pause1.svg" alt="" width={220} height={220} />
+            <Image src="/Illustrations/shapes1.svg" alt="" width={220} height={220} />
           </div>
           <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
             Rovnováha se tvoří z okamžiků.
@@ -229,7 +226,7 @@ export default function MembershipPage() {
           </h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
             {includes.map((item, i) => (
-              <div key={i} className="overflow-hidden rounded-2xl border border-[#C0D1C6] bg-[#F5F6F4]">
+              <div key={i} className="overflow-hidden rounded-2xl bg-[#F5F6F4]">
                 <div className="h-48 overflow-hidden">
                   <Image
                     src={item.image}
@@ -255,7 +252,7 @@ export default function MembershipPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="bg-[#9DA59C] py-14">
+      <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-white lg:text-4xl">Rovnováha se tvoří z okamžiků.</h2>
@@ -267,15 +264,15 @@ export default function MembershipPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-[#F5F6F7] py-16 lg:py-24">
+      <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Hlasy účastníků</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
-              <div key={i} className="rounded-2xl bg-white p-7 shadow-sm">
+              <div key={i} className="rounded-2xl bg-[#F5F6F7] p-7">
                 <p className="text-base font-bold text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
                 <p className="mt-4 text-sm leading-relaxed text-[#4B4C4D]">{t.text}</p>
-                <p className="mt-5 text-sm font-semibold text-[#7BC0A4]">{t.name}</p>
+                <p className="mt-5 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
               </div>
             ))}
           </div>

@@ -2,7 +2,6 @@ import Image from "next/image"
 import { ArrowRight, Check, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
-import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 
 const clientLogos = [
@@ -182,21 +181,21 @@ export default function FirmyPage() {
                   </p>
                 </div>
               ))}
-              <div className="mt-4">
-                <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-                  Kontaktujte nás pro osobní nabídku
-                </Button>
-              </div>
             </div>
             <div className="overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/BeMindful_Letna2026AnnaSolcova.17.jpg"
-                alt="Firemní mindfulness"
+                src="/Pictures/_DSC7728.jpg"
+                alt="Michal Dvořák"
                 width={600}
                 height={500}
                 className="w-full object-cover"
               />
             </div>
+          </div>
+          <div className="mt-12 text-center">
+            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              Kontaktujte nás pro osobní nabídku
+            </Button>
           </div>
         </div>
       </section>
@@ -205,7 +204,7 @@ export default function FirmyPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/pause1.svg" alt="" width={220} height={220} />
+            <Image src="/Illustrations/clouds1.svg" alt="" width={220} height={220} />
           </div>
           <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
             Pauza neznamená zpomalit výkon
@@ -248,26 +247,26 @@ export default function FirmyPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">Kurzy pro firmy a týmy</p>
           <h2 className="mt-2 text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Nabídka programů</h2>
-          <p className="mt-3 text-center text-base text-[#4B4C4D]">
+          <p className="mx-auto mt-3 max-w-3xl text-center text-base text-[#4B4C4D]">
             V době neustálého spěchu a hluku už pauza není luxus, ale klíčová dovednost, díky které firma může dosahovat klid. Tyto firmy musely kurzu naučit na míru na ní naučit.
           </p>
-          <div className="mt-12 flex flex-col divide-y divide-[#E5E5E5]">
+          <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2">
             {programs.map((p, i) => (
-              <div key={i} className="flex flex-col gap-6 py-8 lg:flex-row lg:items-center lg:gap-10">
-                <div className="overflow-hidden rounded-2xl lg:w-2/5">
+              <div key={i} className="flex flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] sm:flex-row">
+                <div className="sm:w-2/5">
                   <Image
                     src={p.image}
                     alt={p.title}
-                    width={500}
-                    height={320}
-                    className="h-52 w-full object-cover lg:h-60"
+                    width={400}
+                    height={400}
+                    className="h-56 w-full object-cover sm:h-full"
                   />
                 </div>
-                <div className="lg:w-3/5">
+                <div className="flex flex-col p-6 sm:w-3/5">
                   <p className="text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">{p.label}</p>
-                  <h3 className="mt-2 text-xl font-bold text-[#2D2C2B]">{p.title}</h3>
+                  <h3 className="mt-2 text-base font-bold text-[#2D2C2B]">{p.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#4B4C4D]">{p.desc}</p>
-                  <p className="mt-4 text-sm font-semibold text-[#7BC0A4]">Zjistit více →</p>
+                  <p className="mt-4 text-sm font-semibold text-[#2D2C2B]">Zjistit více →</p>
                 </div>
               </div>
             ))}
@@ -318,7 +317,6 @@ export default function FirmyPage() {
         </div>
       </section>
 
-      <NewsletterSection />
       <Footer />
     </main>
   )

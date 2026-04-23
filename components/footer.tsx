@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Linkedin, ArrowRight } from "lucide-react"
+import { Facebook, Twitter, Linkedin, ArrowRight, Check } from "lucide-react"
 
 // Custom filled Instagram icon — outer rounded square with inner ring + dot cut out via SVG mask
 function InstagramIcon({ className }: { className?: string }) {
@@ -139,6 +139,14 @@ export function Footer() {
             <Typography variant="h4" className="text-base text-typography-heading mb-4">
               Získejte všechny novinky, aktualizace a oznámení:
             </Typography>
+            <div className="mb-5 flex flex-wrap gap-x-6 gap-y-2">
+              {["Bezplatná videa", "Přednostní přístup k programům a kurzům", "Zůstaňte propojeni s tématy mindfulness"].map((b) => (
+                <div key={b} className="flex items-center gap-2 text-sm font-semibold text-primary-green">
+                  <Check className="h-4 w-4" />
+                  {b}
+                </div>
+              ))}
+            </div>
             <form
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg"
               onSubmit={(e) => e.preventDefault()}
