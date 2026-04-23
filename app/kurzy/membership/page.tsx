@@ -2,7 +2,6 @@ import Image from "next/image"
 import { ArrowRight, Check, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
-import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 
 const benefits = [
@@ -311,7 +310,6 @@ export default function MembershipPage() {
         </div>
       </section>
 
-      <NewsletterSection />
       <Footer />
     </main>
   )

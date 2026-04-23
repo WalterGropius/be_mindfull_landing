@@ -1,5 +1,4 @@
 import { Header } from "@/components/header"
-import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 import { Typography } from "@/components/ui/typography"
 
@@ -19,7 +18,6 @@ export default function PodcastPage() {
         </div>
       </section>
 
-      <NewsletterSection />
       <Footer />
     </main>
   )

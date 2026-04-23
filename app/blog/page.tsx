@@ -2,7 +2,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
-import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
 import { getBlogPosts } from "@/lib/blog"
 
@@ -52,8 +51,6 @@ export default async function BlogPage() {
           Načíst více
         </Button>
       </div>
-
-      <NewsletterSection />
       <Footer />
     </main>
   )
