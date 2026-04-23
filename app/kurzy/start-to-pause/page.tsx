@@ -102,8 +102,8 @@ export default function StartToPausePage() {
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
-                    <Check className="h-3.5 w-3.5 text-[#7BC0A4]" strokeWidth={3} />
+                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
+                    <img src="/tic.png" alt="" className="h-10 w-10" />
                   </div>
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">{b}</p>
                 </div>

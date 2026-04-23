@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight, Check, Plus, Play } from "lucide-react"
+import { ArrowRight, Plus, Play } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -133,8 +133,8 @@ export default function FoundationsPage() {
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E3FFE2]">
-                    <Check className="h-3.5 w-3.5 text-[#7BC0A4]" strokeWidth={3} />
+                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
+                    <img src="/tic.png" alt="" className="h-10 w-10" />
                   </div>
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
@@ -162,14 +162,17 @@ export default function FoundationsPage() {
       </section>
 
       {/* Research stats */}
-      <section className="bg-[#8ECDB5] py-16 lg:py-24">
-        <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/pause1.svg" alt="" width={80} height={80} />
+      <section className="bg-[#C0D1C6] pb-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="flex justify-center">
+            <Image src="/Illustrations/wave1.svg" alt="" width={320} height={140} />
           </div>
           <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
-            Výzkumy potvrzují:<br />krátká každodenní praxe může mít překvapivě silný dopad!
+            Výzkumy potvrzují:
           </h2>
+          <p className="mt-2 text-2xl text-[#2D2C2B] lg:text-3xl">
+            krátká každodenní praxe může mít překvapivě silný dopad!
+          </p>
           <p className="mt-6 text-xl font-bold text-[#2D2C2B] lg:text-2xl">
             14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
           </p>
@@ -177,24 +180,22 @@ export default function FoundationsPage() {
       </section>
 
       {/* How it works */}
-      <section className="bg-[#5B8A78] py-16 lg:py-24">
+      <section className="bg-[#8ECDB5] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
             <div className="lg:w-2/5">
-              <h2 className="text-3xl font-bold text-white lg:text-4xl">
+              <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
                 Ověřená cesta od pauzy k lehkosti
               </h2>
-              <p className="mt-4 text-base text-white/75">
+              <p className="mt-4 text-base font-semibold text-[#2D2C2B]/80">
                 Můj důkaz, proč tento přístup funguje – pro každého, kdo je otevřený začít.
               </p>
             </div>
             <div className="flex flex-col gap-5 lg:w-3/5">
               {howItWorks.map((h, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/30">
-                    <Check className="h-3 w-3 text-white" strokeWidth={3} />
-                  </div>
-                  <p className="text-sm leading-relaxed text-white/90">{h}</p>
+                <div key={i} className="flex items-center gap-4">
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
+                  <p className="text-sm leading-relaxed text-[#2D2C2B]">{h}</p>
                 </div>
               ))}
             </div>
@@ -203,12 +204,12 @@ export default function FoundationsPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-[#F5F6F7] py-16 lg:py-24">
+      <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Hlasy účastníků</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
-              <div key={i} className="rounded-2xl bg-white p-7 shadow-sm">
+              <div key={i} className="rounded-2xl bg-[#F5F6F7] p-7">
                 <p className="text-base font-bold text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
                 <p className="mt-4 text-sm leading-relaxed text-[#4B4C4D]">{t.text}</p>
                 <p className="mt-5 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
@@ -233,7 +234,7 @@ export default function FoundationsPage() {
 
       {/* Modules */}
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
             Mindfulness není pro každého stejné
           </p>
@@ -244,11 +245,10 @@ export default function FoundationsPage() {
             {tabs.map((tab, i) => (
               <button
                 key={i}
-                className={`whitespace-nowrap px-4 pb-3 text-sm font-medium transition-colors ${
-                  i === 0
-                    ? "border-b-2 border-[#7BC0A4] text-[#7BC0A4]"
-                    : "text-[#9DA59C] hover:text-[#4B4C4D]"
-                }`}
+                className={`whitespace-nowrap px-5 pb-3 text-sm font-medium transition-colors ${i === 0
+                  ? "border-b-2 border-[#7BC0A4] text-[#7BC0A4]"
+                  : "text-[#9DA59C] hover:text-[#4B4C4D]"
+                  }`}
               >
                 {tab}
               </button>
@@ -256,17 +256,17 @@ export default function FoundationsPage() {
           </div>
 
           {/* Accordion rows */}
-          <div className="divide-y divide-[#E5E5E5]">
+          <div className="mt-2 flex flex-col gap-1">
             {courseModules.map((m, i) => (
-              <div key={i} className="flex items-center justify-between py-4">
-                <div className="flex items-center gap-3">
-                  <span className="min-w-[72px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
+              <div key={i} className="flex items-center justify-between rounded-xl bg-[#F5F6F7] px-5 py-4">
+                <div className="flex items-center gap-4">
+                  <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
                     {m.label}
                   </span>
-                  <span className="text-sm font-medium text-[#2D2C2B]">{m.title}</span>
+                  <span className="text-sm font-bold text-[#2D2C2B]">{m.title}</span>
                 </div>
-                <button className="ml-4 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#C0D1C6] text-[#9DA59C] hover:border-[#7BC0A4] hover:text-[#7BC0A4]">
-                  <Plus className="h-4 w-4" />
+                <button className="ml-4 shrink-0 text-[#9DA59C] hover:text-[#7BC0A4]">
+                  <Plus className="h-5 w-5" />
                 </button>
               </div>
             ))}
@@ -312,15 +312,15 @@ export default function FoundationsPage() {
       {/* Stats bar */}
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
+          <div className="grid grid-cols-3 divide-x-2 divide-[#E3FFE2] text-center">
             {[
               { num: "15+", label: "Let praxe" },
               { num: "2K+", label: "Absolventi" },
               { num: "1", label: "Senior Mindfulness Teacher v CR" },
             ].map((s) => (
               <div key={s.num} className="px-6">
-                <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
-                <p className="mt-2 text-sm text-white/80">{s.label}</p>
+                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
+                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
               </div>
             ))}
           </div>
