@@ -175,9 +175,7 @@ export default function FirmyPage() {
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
-                    <img src="/tic.png" alt="" className="h-10 w-10" />
-                  </div>
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
@@ -204,10 +202,10 @@ export default function FirmyPage() {
       </section>
 
       {/* Pause section */}
-      <section className="bg-[#8ECDB5] py-16 lg:py-24">
+      <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/pause1.svg" alt="" width={80} height={80} />
+            <Image src="/Illustrations/pause1.svg" alt="" width={220} height={220} />
           </div>
           <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
             Pauza neznamená zpomalit výkon
@@ -236,9 +234,7 @@ export default function FirmyPage() {
             <div className="flex flex-col gap-4 lg:w-3/5">
               {investmentRight.map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
-                    <img src="/tic.png" alt="" className="h-10 w-10" />
-                  </div>
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">{item}</p>
                 </div>
               ))}

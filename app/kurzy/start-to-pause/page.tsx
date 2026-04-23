@@ -102,9 +102,7 @@ export default function StartToPausePage() {
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
-                    <img src="/tic.png" alt="" className="h-10 w-10" />
-                  </div>
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">{b}</p>
                 </div>
               ))}
@@ -127,15 +125,18 @@ export default function StartToPausePage() {
         </div>
       </section>
 
-      {/* Research stats — glass SVG */}
-      <section className="bg-[#8ECDB5] py-16 lg:py-24">
+      {/* Research stats */}
+      <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/glass1.svg" alt="" width={80} height={80} />
+            <Image src="/Illustrations/wave1.svg" alt="" width={220} height={220} />
           </div>
           <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
-            Výzkumy potvrzují:<br />krátká každodenní praxe může mít překvapivě silný dopad!
+            Výzkumy potvrzují:
           </h2>
+          <p className="mt-2 text-2xl text-[#2D2C2B] lg:text-3xl">
+            krátká každodenní praxe může mít překvapivě silný dopad!
+          </p>
           <p className="mt-6 text-xl font-bold text-[#2D2C2B] lg:text-2xl">
             14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
           </p>
@@ -237,15 +238,15 @@ export default function StartToPausePage() {
       {/* Stats bar */}
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
+          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
             {[
               { num: "15+", label: "Let praxe" },
               { num: "2K+", label: "Absolventi" },
               { num: "1", label: "Senior Mindfulness Teacher v CR" },
             ].map((s) => (
               <div key={s.num} className="px-6">
-                <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
-                <p className="mt-2 text-sm text-white/80">{s.label}</p>
+                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
+                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
               </div>
             ))}
           </div>

@@ -145,9 +145,7 @@ export default function MembershipPage() {
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
-                    <img src="/tic.png" alt="" className="h-10 w-10" />
-                  </div>
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
@@ -177,10 +175,10 @@ export default function MembershipPage() {
       </section>
 
       {/* Research / SVG section */}
-      <section className="bg-[#8ECDB5] py-16 lg:py-24">
+      <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/pause1.svg" alt="" width={80} height={80} />
+            <Image src="/Illustrations/pause1.svg" alt="" width={220} height={220} />
           </div>
           <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
             Rovnováha se tvoří z okamžiků.
@@ -194,15 +192,15 @@ export default function MembershipPage() {
       {/* Stats */}
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
+          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
             {[
               { num: "200+", label: "Video lekcí" },
               { num: "150 h", label: "Audio nahrávek" },
               { num: "60", label: "Vedených meditací" },
             ].map((s) => (
               <div key={s.num} className="px-6">
-                <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
-                <p className="mt-2 text-sm text-white/80">{s.label}</p>
+                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
+                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
               </div>
             ))}
           </div>

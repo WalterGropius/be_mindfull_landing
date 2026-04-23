@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight, Check, Plus, Play } from "lucide-react"
+import { ArrowRight, Plus, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -140,16 +140,16 @@ export default function SkupinovyKurzPage() {
             {upcomingDates.map((d, i) => (
               <div
                 key={i}
-                className={`flex items-center justify-between bg-[#7BC0A4] px-8 py-5 ${
-                  i < upcomingDates.length - 1 ? "border-b border-white/20" : ""
+                className={`flex items-center justify-between bg-[#7BC0A4] px-8 py-6 ${
+                  i < upcomingDates.length - 1 ? "border-b-2 border-[#BFD1C6]" : ""
                 }`}
               >
-                <div className="flex items-baseline gap-4">
-                  <span className="text-xl font-bold text-white">{d.date}</span>
-                  <span className="text-lg text-white/80">{d.location}</span>
+                <div className="flex items-baseline gap-5">
+                  <span className="text-3xl font-bold text-white">{d.date}</span>
+                  <span className="text-3xl text-white/80">{d.location}</span>
                 </div>
-                <button className="flex h-7 w-7 items-center justify-center rounded-full border border-white/50 text-white hover:bg-white/10">
-                  <Plus className="h-4 w-4" />
+                <button className="text-white hover:text-white/70">
+                  <Plus className="h-6 w-6" />
                 </button>
               </div>
             ))}
@@ -158,7 +158,7 @@ export default function SkupinovyKurzPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-white py-16 lg:py-24">
+      <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
             Posilíte si „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
@@ -167,9 +167,7 @@ export default function SkupinovyKurzPage() {
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
-                    <img src="/tic.png" alt="" className="h-10 w-10" />
-                  </div>
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
@@ -179,7 +177,7 @@ export default function SkupinovyKurzPage() {
             </div>
             <div className="overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/BeMindful_Letna2026AnnaSolcova.16.jpg"
+                src="/BeMindful_Letna2026AnnaSolcova.55.jpg"
                 alt="Group mindfulness session"
                 width={600}
                 height={500}
@@ -199,14 +197,17 @@ export default function SkupinovyKurzPage() {
       </section>
 
       {/* Research stats */}
-      <section className="bg-[#8ECDB5] py-16 lg:py-24">
+      <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/meditation1.svg" alt="" width={80} height={80} />
+            <Image src="/Illustrations/wave1.svg" alt="" width={220} height={220} />
           </div>
           <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
-            Výzkumy potvrzují:<br />krátká každodenní praxe může mít překvapivě silný dopad!
+            Výzkumy potvrzují:
           </h2>
+          <p className="mt-2 text-2xl text-[#2D2C2B] lg:text-3xl">
+            krátká každodenní praxe může mít překvapivě silný dopad!
+          </p>
           <p className="mt-6 text-xl font-bold text-[#2D2C2B] lg:text-2xl">
             14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
           </p>
@@ -214,30 +215,28 @@ export default function SkupinovyKurzPage() {
       </section>
 
       {/* After course feelings */}
-      <section className="bg-[#5B8A78] py-16 lg:py-24">
+      <section className="bg-[#8ECDB5] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
             <div className="lg:w-2/5">
-              <h2 className="text-3xl font-bold text-white lg:text-4xl">
+              <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
                 Jak se budete cítit po kurzu
               </h2>
-              <p className="mt-4 text-base text-white/75">
+              <p className="mt-4 text-base text-[#2D2C2B]/75">
                 Pravděpodobně se budete cítit lépe a také změna se nastejvá jak vám vás říkám vám:
               </p>
               <ul className="mt-5 space-y-2">
                 {["Zlepšení vztahů", "Více klidu a pohody", "Lepší zvládání stresu"].map((item) => (
-                  <li key={item} className="text-sm text-white/90">• {item}</li>
+                  <li key={item} className="text-sm text-[#2D2C2B]/90">• {item}</li>
                 ))}
               </ul>
             </div>
             <div className="flex flex-col gap-5 lg:w-3/5">
               {afterCourse.map((b, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/20">
-                    <Check className="h-3 w-3 text-white" strokeWidth={3} />
-                  </div>
-                  <p className="text-sm leading-relaxed text-white/90">
-                    <strong className="font-semibold text-white">{b.bold}</strong>
+                <div key={i} className="flex items-center gap-4">
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
+                  <p className="text-sm leading-relaxed text-[#2D2C2B]">
+                    <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
                   </p>
                 </div>
@@ -322,24 +321,24 @@ export default function SkupinovyKurzPage() {
       </section>
 
       {/* Daily practice CTA */}
-      <section className="bg-[#1A1A1A] py-16 lg:py-24">
+      <section className="bg-[#8ECDB5] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-white lg:text-4xl">
+          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
             Každodenní praxe. Skutečná podpora.<br />Trvalá změna.
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-white/65">
+          <p className="mt-6 text-base leading-relaxed text-[#2D2C2B]/75">
             Tento 8týdenní kurz je určen pro ty, kteří chtějí, aby mindfulness nebylo jen konceptem, ale součástí života. Naučíte se rozvíjet stálý vnitřní kompas, který vás povede i v období stresu, nejistoty a složitých situací s větší jasností a klidem.
           </p>
         </div>
       </section>
 
       {/* Video testimonials */}
-      <section className="bg-[#1A1A1A] pb-16 pt-4 lg:pb-24">
+      <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="mb-10 text-center text-2xl font-bold text-white">Hlasy našich účastníků</h2>
+          <h2 className="mb-10 text-center text-3xl font-bold text-[#2D2C2B]">Hlasy našich účastníků</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
-              <div key={i} className="overflow-hidden rounded-2xl bg-white">
+              <div key={i} className="overflow-hidden rounded-2xl bg-[#F5F6F7]">
                 <div className="relative">
                   <Image
                     src={t.image}
@@ -367,7 +366,7 @@ export default function SkupinovyKurzPage() {
             {[0, 1, 2, 3, 4].map((i) => (
               <div
                 key={i}
-                className={`h-2 w-2 rounded-full ${i === 0 ? "bg-white" : "bg-white/30"}`}
+                className={`h-2 w-2 rounded-full ${i === 0 ? "bg-[#7BC0A4]" : "bg-[#C0D1C6]"}`}
               />
             ))}
           </div>
@@ -406,15 +405,15 @@ export default function SkupinovyKurzPage() {
       {/* Stats bar */}
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
+          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
             {[
               { num: "15+", label: "Let praxe" },
               { num: "2K+", label: "Absolventi" },
               { num: "1", label: "Senior Mindfulness Teacher v CR" },
             ].map((s) => (
               <div key={s.num} className="px-6">
-                <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
-                <p className="mt-2 text-sm text-white/80">{s.label}</p>
+                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
+                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
               </div>
             ))}
           </div>
