@@ -58,14 +58,14 @@ export default async function BlogPage() {
 
 function BlogCard({ post }: { post: { slug: string; title: string; category: string; date: string; excerpt: string; image: string } }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-[#E5E5E5] bg-white shadow-sm">
-      <div className="h-52 overflow-hidden">
+    <article className="flex flex-col overflow-hidden rounded-2xl bg-[#F5F6F4]">
+      <div className="h-72 overflow-hidden">
         <Image
           src={post.image}
           alt={post.title}
           width={500}
           height={210}
-          className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          className="h-full w-full object-cover object-top transition-transform duration-300 hover:scale-105"
         />
       </div>
       <div className="flex flex-1 flex-col p-6">
