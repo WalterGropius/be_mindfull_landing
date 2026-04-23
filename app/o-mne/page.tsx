@@ -21,14 +21,14 @@ export default function AboutPage() {
       {/* Hero — full bleed, text right */}
       <section className="relative min-h-[520px] overflow-hidden bg-[#2D2C2B] lg:min-h-[620px]">
         <Image
-          src="/Pictures/_DSC7728.jpg"
+          src="/about-hero-98.jpg"
           alt="Michal Dvořák"
           fill
-          className="object-cover object-top opacity-70"
+          className="object-cover"
           priority
         />
         <div className="relative z-10 flex min-h-[520px] items-center lg:min-h-[620px]">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="w-full px-6 lg:px-16">
             <div className="ml-auto max-w-sm">
               <h1 className="text-4xl font-bold text-white lg:text-5xl">
                 Můj přístup<br />k mindfulness
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </div>
           <div className="overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/BeMindful_Letna2026AnnaSolcova.16.jpg"
+              src="/about-applifting-111.jpg"
               alt="Michal Dvořák při výuce"
               width={600}
               height={500}
@@ -84,7 +84,7 @@ export default function AboutPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="overflow-hidden rounded-2xl lg:w-2/5">
             <Image
-              src="/BeMindful_Letna2026AnnaSolcova.5.jpg"
+              src="/about-applifting-70.jpg"
               alt="Michal Dvořák"
               width={400}
               height={400}
@@ -109,7 +109,7 @@ export default function AboutPage() {
       </section>
 
       {/* Second quote — teal bg */}
-      <section className="bg-[#8ECDB5] py-20 lg:py-28">
+      <section className="bg-[#BFD1C6] py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <p className="text-xl font-bold leading-snug text-[#2D2C2B] lg:text-2xl">
             &ldquo;Mluvte přímo s lidmi, sdílejte něco osobního. Něco lehkého a přístupného.&rdquo;
@@ -138,9 +138,7 @@ export default function AboutPage() {
             <div className="flex flex-col gap-4 lg:w-3/5">
               {credentials.map((c, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-end justify-start rounded-full bg-[#E3FFE2]">
-                    <img src="/tic.png" alt="" className="h-10 w-10" />
-                  </div>
+                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#4B4C4D]">
                     <strong className="font-bold text-[#2D2C2B]">{c.bold}</strong>
                     {c.rest}
@@ -155,15 +153,15 @@ export default function AboutPage() {
       {/* Stats bar */}
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x divide-white/30 text-center">
+          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
             {[
               { num: "15+", label: "Let praxe" },
               { num: "2K+", label: "Absolventi" },
               { num: "1", label: "Senior Mindfulness Teacher v CR" },
             ].map((s) => (
               <div key={s.num} className="px-6">
-                <p className="text-4xl font-bold text-white lg:text-5xl">{s.num}</p>
-                <p className="mt-2 text-sm text-white/80">{s.label}</p>
+                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
+                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
               </div>
             ))}
           </div>
@@ -171,7 +169,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-[#F5F6F4] py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div>
