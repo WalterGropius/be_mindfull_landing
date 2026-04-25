@@ -70,7 +70,7 @@ function BlogCard({ post }: { post: { slug: string; title: string; category: str
       </div>
       <div className="flex flex-1 flex-col p-6">
         <div className="flex items-center gap-3">
-          <span className="rounded-full bg-[#E3FFE2] px-3 py-1 text-xs font-medium text-[#5E767E]">{post.category}</span>
+          <span className="rounded-full bg-[#C6D1C8] px-3 py-1 text-xs font-medium text-[#2D2C2B]">{post.category}</span>
           <span className="text-xs text-[#9DA59C]">{post.date}</span>
         </div>
         <h2 className="mt-3 text-lg font-bold leading-snug text-[#2D2C2B]">{post.title}</h2>

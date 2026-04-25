@@ -35,7 +35,7 @@ export default function StartToPausePage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
+        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">

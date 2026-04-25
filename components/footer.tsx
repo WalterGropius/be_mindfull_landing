@@ -141,8 +141,8 @@ export function Footer() {
             </Typography>
             <div className="mb-5 flex flex-wrap gap-x-6 gap-y-2">
               {["Bezplatná videa", "Přednostní přístup k programům a kurzům", "Zůstaňte propojeni s tématy mindfulness"].map((b) => (
-                <div key={b} className="flex items-center gap-2 text-sm font-semibold text-primary-green">
-                  <Check className="h-4 w-4" />
+                <div key={b} className="flex items-center gap-2 text-sm font-semibold text-typography-heading">
+                  <Check className="h-4 w-4 text-primary-green" />
                   {b}
                 </div>
               ))}

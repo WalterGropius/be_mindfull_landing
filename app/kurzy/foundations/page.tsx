@@ -1,9 +1,11 @@
 import Image from "next/image"
-import { ArrowRight, Plus, Play } from "lucide-react"
+import { ArrowRight, Play } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { StatsBar } from "@/components/stats-bar"
+import { SmileyIcon } from "@/components/list-icons"
 
 const benefits = [
   { bold: "Posílíte emoční odolnost:", rest: " zvládnete náročné emoce a životní výzvy s větší stabilitou." },
@@ -66,7 +68,7 @@ export default function FoundationsPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
+        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
@@ -192,7 +194,7 @@ export default function FoundationsPage() {
             <div className="flex flex-col gap-5 lg:w-3/5">
               {howItWorks.map((h, i) => (
                 <div key={i} className="flex items-center gap-4">
-                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
+                  <SmileyIcon className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#2D2C2B]">{h}</p>
                 </div>
               ))}
@@ -232,29 +234,26 @@ export default function FoundationsPage() {
 
       {/* Modules */}
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
             Mindfulness není pro každého stejné
           </p>
           <h2 className="mt-2 text-center text-3xl font-bold text-[#2D2C2B]">be.mindful FOUNDATIONS</h2>
 
-          {/* Tabs */}
-          <div className="mt-8 flex overflow-x-auto border-b border-[#E5E5E5]">
+          {/* Meta row (informational, not clickable tabs) */}
+          <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3">
             {tabs.map((tab, i) => (
-              <button
+              <span
                 key={i}
-                className={`whitespace-nowrap px-5 pb-3 text-sm font-medium transition-colors ${i === 0
-                  ? "border-b-2 border-[#7BC0A4] text-[#7BC0A4]"
-                  : "text-[#9DA59C] hover:text-[#4B4C4D]"
-                  }`}
+                className="whitespace-nowrap text-sm font-medium text-[#4B4C4D]"
               >
                 {tab}
-              </button>
+              </span>
             ))}
           </div>
 
           {/* Accordion rows */}
-          <div className="mt-2 flex flex-col gap-1">
+          <div className="mt-8 flex flex-col gap-1">
             {courseModules.map((m, i) => (
               <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
                 <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
@@ -303,22 +302,7 @@ export default function FoundationsPage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-[#7BC0A4] py-14">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x-2 divide-[#E3FFE2] text-center">
-            {[
-              { num: "15+", label: "Let praxe" },
-              { num: "2K+", label: "Absolventi" },
-              { num: "1", label: "Senior Mindfulness Teacher v CR" },
-            ].map((s) => (
-              <div key={s.num} className="px-6">
-                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
-                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsBar />
 
       <Footer />
     </main>

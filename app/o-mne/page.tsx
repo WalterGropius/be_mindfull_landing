@@ -1,9 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { StatsBar } from "@/components/stats-bar"
 
 const credentials = [
   { bold: "Vystudoval mindfulness na", rest: " UMASS Medical School a Brown University." },
@@ -27,7 +28,7 @@ export default function AboutPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[520px] items-center lg:min-h-[620px]">
+        <div className="relative z-10 flex min-h-[520px] items-center py-20 lg:min-h-[620px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="ml-auto max-w-sm">
               <h1 className="text-4xl font-bold text-white lg:text-5xl">
@@ -82,16 +83,16 @@ export default function AboutPage() {
       {/* Bio section 2 — gray bg */}
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
-          <div className="overflow-hidden rounded-2xl lg:w-2/5">
+          <div className="overflow-hidden rounded-2xl lg:w-3/5">
             <Image
               src="/about-applifting-70.jpg"
               alt="Michal Dvořák"
-              width={400}
-              height={400}
+              width={600}
+              height={500}
               className="w-full object-cover"
             />
           </div>
-          <div className="lg:w-3/5">
+          <div className="lg:w-2/5">
             <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
               Toto je jedna konkrétní věta z mého života s mindfulness
             </h2>
@@ -128,10 +129,7 @@ export default function AboutPage() {
               </p>
               <div className="mt-4 space-y-2">
                 {["Lepší komunikace a zdravější hranice", "Silnější vztahy postavené na empatii", "Ukotvenější leadership i v tlaku"].map((item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4 shrink-0 text-[#7BC0A4]" />
-                    <p className="text-sm text-[#4B4C4D]">{item}</p>
-                  </div>
+                  <p key={item} className="text-sm text-[#4B4C4D]">{item}</p>
                 ))}
               </div>
             </div>
@@ -151,22 +149,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-[#7BC0A4] py-14">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
-            {[
-              { num: "15+", label: "Let praxe" },
-              { num: "2K+", label: "Absolventi" },
-              { num: "1", label: "Senior Mindfulness Teacher v CR" },
-            ].map((s) => (
-              <div key={s.num} className="px-6">
-                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
-                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsBar />
 
       {/* CTA */}
       <section className="bg-[#F5F6F4] py-16 lg:py-20">
@@ -177,10 +160,12 @@ export default function AboutPage() {
               <p className="mt-2 text-base text-[#4B4C4D]">Začněte svou cestu k mindfulness s osobním vedením.</p>
             </div>
             <div className="flex shrink-0 flex-wrap gap-4">
-              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/kurzy/start-to-pause">Vstoupit do FREE kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Button asChild variant="primary-orange" className="group">
+                <Link href="/kurzy/start-to-pause">
+                  <span className="flex items-center gap-2">Vstoupit do FREE kurzu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                </Link>
               </Button>
-              <Button asChild variant="outline" className="h-auto rounded-full border-[#7BC0A4] px-8 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white">
+              <Button asChild variant="primary">
                 <Link href="/kontakt">Kontaktovat mě</Link>
               </Button>
             </div>

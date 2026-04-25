@@ -75,7 +75,7 @@ export default function ContactPage() {
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D]"
+                    className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
                     placeholder="Vaše jméno"
                   />
                 </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D]"
+                    className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
                     placeholder="vas@email.cz"
                   />
                 </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                   id="subject"
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D]"
+                  className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
                   placeholder="Čím vám mohu pomoct?"
                 />
               </div>
@@ -108,11 +108,11 @@ export default function ContactPage() {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full rounded-lg border border-[#C0D1C6] bg-background px-3 py-2 text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] focus:outline-none focus:ring-2 focus:ring-[#5E767E]"
+                  className="w-full rounded-lg border border-[#C0D1C6] bg-background px-3 py-2 text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] outline-none focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
                   placeholder="Vaše zpráva..."
                 />
               </div>
-              <Button type="submit" className="h-auto rounded-full bg-[#5E767E] px-8 py-3 text-sm text-white hover:bg-[#008F7A]">
+              <Button type="submit" className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm text-white hover:bg-[#6BB194]">
                 Odeslat zprávu <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </form>

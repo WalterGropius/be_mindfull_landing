@@ -1,8 +1,11 @@
 import Image from "next/image"
-import { ArrowRight, Plus, Play } from "lucide-react"
+import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { StatsBar } from "@/components/stats-bar"
+import { VideoTestimonialsCarousel } from "@/components/video-testimonials-carousel"
+import { UpcomingDates } from "@/components/upcoming-dates"
 
 const benefits = [
   { bold: "Vytváříte si silný vnitřní kompas,", rest: " který vám pomáhá rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích" },
@@ -74,7 +77,7 @@ export default function SkupinovyKurzPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
+        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
@@ -136,23 +139,8 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold text-[#2D2C2B]">Upcoming dates</h2>
           <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">8týdenní kurz mindfulness</p>
-          <div className="mt-10 overflow-hidden rounded-2xl">
-            {upcomingDates.map((d, i) => (
-              <div
-                key={i}
-                className={`flex items-center justify-between bg-[#7BC0A4] px-8 py-6 ${
-                  i < upcomingDates.length - 1 ? "border-b-2 border-[#BFD1C6]" : ""
-                }`}
-              >
-                <div className="flex items-baseline gap-5">
-                  <span className="text-3xl font-bold text-white">{d.date}</span>
-                  <span className="text-3xl text-white/80">{d.location}</span>
-                </div>
-                <button className="text-white hover:text-white/70">
-                  <Plus className="h-6 w-6" />
-                </button>
-              </div>
-            ))}
+          <div className="mt-10">
+            <UpcomingDates dates={upcomingDates} />
           </div>
         </div>
       </section>
@@ -160,7 +148,7 @@ export default function SkupinovyKurzPage() {
       {/* Benefits */}
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
             Posilíte si „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
@@ -248,31 +236,27 @@ export default function SkupinovyKurzPage() {
 
       {/* Modules */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
             Mindfulness není pro každého stejné
           </p>
           <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B]">8týdenní kurz mindfulness</h2>
           <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">To vás čeká</p>
 
-          {/* Tabs */}
-          <div className="mt-8 flex overflow-x-auto border-b border-[#E5E5E5]">
+          {/* Meta row (no underline / index line — these are not clickable tabs) */}
+          <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3">
             {tabs.map((tab, i) => (
-              <button
+              <span
                 key={i}
-                className={`whitespace-nowrap px-4 pb-3 text-sm font-medium transition-colors ${
-                  i === 0
-                    ? "border-b-2 border-[#7BC0A4] text-[#7BC0A4]"
-                    : "text-[#9DA59C] hover:text-[#4B4C4D]"
-                }`}
+                className="whitespace-nowrap text-sm font-medium text-[#4B4C4D]"
               >
                 {tab}
-              </button>
+              </span>
             ))}
           </div>
 
           {/* Accordion rows */}
-          <div className="mt-2 flex flex-col gap-1">
+          <div className="mt-8 flex flex-col gap-1">
             {courseModules.map((m, i) => (
               <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
                 <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
@@ -331,40 +315,7 @@ export default function SkupinovyKurzPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="mb-10 text-center text-3xl font-bold text-[#2D2C2B]">Hlasy našich účastníků</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <div key={i} className="overflow-hidden rounded-2xl bg-[#F5F6F7]">
-                <div className="relative">
-                  <Image
-                    src={t.image}
-                    alt={t.name}
-                    width={400}
-                    height={280}
-                    className="h-52 w-full object-cover"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#7BC0A4]/80 shadow-lg">
-                      <Play className="ml-1 h-5 w-5 fill-white text-white" />
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-base font-bold text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
-                  <p className="mt-3 text-sm leading-relaxed text-[#4B4C4D]">{t.text}</p>
-                  <p className="mt-4 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* Dots */}
-          <div className="mt-8 flex justify-center gap-2">
-            {[0, 1, 2, 3, 4].map((i) => (
-              <div
-                key={i}
-                className={`h-2 w-2 rounded-full ${i === 0 ? "bg-[#7BC0A4]" : "bg-[#C0D1C6]"}`}
-              />
-            ))}
-          </div>
+          <VideoTestimonialsCarousel testimonials={testimonials} />
         </div>
       </section>
 
@@ -398,22 +349,7 @@ export default function SkupinovyKurzPage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-[#7BC0A4] py-14">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
-            {[
-              { num: "15+", label: "Let praxe" },
-              { num: "2K+", label: "Absolventi" },
-              { num: "1", label: "Senior Mindfulness Teacher v CR" },
-            ].map((s) => (
-              <div key={s.num} className="px-6">
-                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
-                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsBar />
 
       <Footer />
     </main>

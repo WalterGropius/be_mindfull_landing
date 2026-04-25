@@ -8,8 +8,7 @@ const clientLogos = [
   { src: "/logos/Česká_spořitelna_-_logo_2023 1.png", alt: "Česká spořitelna" },
   { src: "/logos/cez-skupina_logo_vertikalni_cz_barva_pozitiv_rgb 1.png", alt: "ČEZ skupina" },
   { src: "/logos/europool-logo 1.png", alt: "Europool" },
-  { src: "/logos/images-3 1.png", alt: "Klient" },
-  { src: "/logos/shvcz.png", alt: "SHV" },
+  { src: "/logos/Wrapper.png", alt: "SHV" },
   { src: "/logos/kooperativa_logo 1.png", alt: "Kooperativa" },
   { src: "/logos/mibcon 1.png", alt: "Mibcon" },
   { src: "/logos/raiffeisen_BANK_logo.png 1.png", alt: "Raiffeisen Bank" },
@@ -86,7 +85,7 @@ export default function FirmyPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
+        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
@@ -123,16 +122,20 @@ export default function FirmyPage() {
       {/* Client logos */}
       <section className="bg-white py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-10">
+          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
             {clientLogos.map((logo) => (
-              <Image
+              <div
                 key={logo.alt}
-                src={logo.src}
-                alt={logo.alt}
-                width={120}
-                height={48}
-                className="h-10 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0"
-              />
+                className="relative flex h-12 w-32 items-center justify-center"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  fill
+                  sizes="128px"
+                  className="object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0"
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -167,7 +170,7 @@ export default function FirmyPage() {
       {/* Benefits */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
             Není to situace, která se změní,<br />ale způsob, jak na ni reagujete
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">

@@ -1,0 +1,71 @@
+"use client"
+
+import { useState } from "react"
+import { Plus, Minus } from "lucide-react"
+
+export type UpcomingDate = {
+  date: string
+  location: string
+  details?: string
+}
+
+export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
+  const [open, setOpen] = useState<number | null>(0)
+
+  return (
+    <div className="overflow-hidden rounded-2xl">
+      {dates.map((d, i) => {
+        const isOpen = open === i
+        return (
+          <div
+            key={i}
+            className={`bg-[#7BC0A4] ${
+              i < dates.length - 1 ? "border-b-2 border-[#BFD1C6]" : ""
+            }`}
+          >
+            <button
+              type="button"
+              onClick={() => setOpen(isOpen ? null : i)}
+              aria-expanded={isOpen}
+              className="flex w-full items-center justify-between px-8 py-6 text-left transition-colors hover:bg-[#6BB194]"
+            >
+              <div className="flex items-baseline gap-5">
+                <span className="text-3xl font-bold text-[#E3FFE2]">{d.date}</span>
+                <span className="text-3xl text-[#E3FFE2]">{d.location}</span>
+              </div>
+              <span className="text-[#E3FFE2]">
+                {isOpen ? (
+                  <Minus className="h-6 w-6" />
+                ) : (
+                  <Plus className="h-6 w-6" />
+                )}
+              </span>
+            </button>
+            <div
+              className={`grid transition-all duration-300 ease-out ${
+                isOpen
+                  ? "grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <div className="px-8 pb-6 text-sm leading-relaxed text-[#E3FFE2]/90">
+                  {d.details ?? (
+                    <>
+                      Mindfulness is not only an approach – it is deeply embedded into my life.
+                      <br />
+                      XXXX brought me to my first mindfulness experience here xxx.
+                      <br />
+                      <br />
+                      From this situation xxx happened and I discovered, that xxx.
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  )
+}

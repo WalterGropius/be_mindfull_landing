@@ -1,8 +1,9 @@
 import Image from "next/image"
-import { ArrowRight, Check, Play } from "lucide-react"
+import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { StatsBar } from "@/components/stats-bar"
 
 const benefits = [
   { bold: "Vytvoříte si silný vnitřní kompas,", rest: " který vám pomůže rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích." },
@@ -77,7 +78,7 @@ export default function MembershipPage() {
           className="object-cover object-top"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center lg:min-h-[580px]">
+        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
@@ -137,7 +138,7 @@ export default function MembershipPage() {
       {/* Benefits */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
             Posílíte „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
@@ -291,24 +292,21 @@ export default function MembershipPage() {
             />
           </div>
           <div className="lg:w-3/5">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#7BC0A4]">Jsem Michal Dvořák, zakladatel be.mindful</p>
+            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
+            </h2>
             <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
               Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
             </p>
             <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
               Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
             </p>
-            <div className="mt-8 flex gap-12">
-              {[{ num: "15+", label: "Let praxe" }, { num: "2K+", label: "Absolventi" }, { num: "1", label: "Senior Mindfulness Teacher v ČR" }].map((s) => (
-                <div key={s.num}>
-                  <p className="text-3xl font-bold text-[#2D2C2B]">{s.num}</p>
-                  <p className="mt-1 text-xs text-[#4B4C4D]">{s.label}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
+
+      {/* Stats bar */}
+      <StatsBar />
 
       <Footer />
     </main>
