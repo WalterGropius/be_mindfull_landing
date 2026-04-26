@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { StatsBar } from "@/components/stats-bar"
 import { VideoTestimonialsCarousel } from "@/components/video-testimonials-carousel"
 import { UpcomingDates } from "@/components/upcoming-dates"
+import { SmileyIcon } from "@/components/list-icons"
 
 const benefits = [
   { bold: "Vytváříte si silný vnitřní kompas,", rest: " který vám pomáhá rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích" },
@@ -222,7 +223,7 @@ export default function SkupinovyKurzPage() {
             <div className="flex flex-col gap-5 lg:w-3/5">
               {afterCourse.map((b, i) => (
                 <div key={i} className="flex items-center gap-4">
-                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
+                  <SmileyIcon className="h-10 w-10 shrink-0" />
                   <p className="text-sm leading-relaxed text-[#2D2C2B]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
