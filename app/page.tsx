@@ -1,6 +1,5 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
-import { ThemeCarousel } from "@/components/theme-carousel"
 import { VideoSection } from "@/components/video-section"
 import { FeaturesSection } from "@/components/features-section"
 import { FreeCourseSection } from "@/components/free-course-section"
@@ -15,7 +14,6 @@ export default function Home() {
     <main className="min-h-screen font-sans">
       <Header />
       <Hero />
-      <ThemeCarousel />
       <VideoSection />
       <FeaturesSection />
       <FreeCourseSection />
