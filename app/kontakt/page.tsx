@@ -22,8 +22,8 @@ export default function ContactPage() {
       <section className="bg-[#F5F6F4] py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Kontakt</h1>
-            <p className="mt-4 text-lg text-[#4B4C4D]">Ozvěte se mi, rád vám pomohu na vaší cestě k mindfulness.</p>
+            <h1 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B] sm:text-5xl lg:text-[64px] lg:leading-[1.1]">Kontakt</h1>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">Ozvěte se mi, rád vám pomohu na vaší cestě k mindfulness.</p>
           </div>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function ContactPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:gap-16 lg:px-8">
           {/* Info */}
           <div className="lg:w-1/3">
-            <h2 className="text-xl font-bold text-[#2D2C2B]">Kontaktní údaje</h2>
+            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Kontaktní údaje</h2>
             <div className="mt-8 space-y-6">
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#F5F6F4]">

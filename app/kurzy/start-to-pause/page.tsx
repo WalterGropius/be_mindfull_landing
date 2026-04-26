@@ -38,10 +38,10 @@ export default function StartToPausePage() {
         <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
-              <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
+              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
                 FREE 4denní<br />online kurz<br />Start-to-PAUSE
               </h1>
-              <p className="mt-4 text-sm text-white/75 max-w-xs">
+              <p className="mt-4 max-w-xs text-[18px] leading-[30px] text-white/75">
                 Začněte, jak do svého života přidat trochu prostoru – a krok za krokem přeměníte způsoby, jak začleníte toto každodenního života.
               </p>
               <div className="mt-8">
@@ -57,10 +57,10 @@ export default function StartToPausePage() {
       {/* Intro — centered */}
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Ukážu vám,<br />jak silná může být krátká pauza!
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#4B4C4D]">
+          <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
             Schopnost se zastavit patří dnes k těm nejdůležitějším dovednostem. Právě v tom okamžiku se můžeme znovu propojit sami se sebou, obrátit pozornost dovnitř místo ven a tím najít větší jasnost, klid a prostor pro vědomou reakci místo automatické.
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function StartToPausePage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
@@ -95,7 +95,7 @@ export default function StartToPausePage() {
       {/* Benefits */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Jak se budete cítit po kurzu
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
@@ -103,7 +103,7 @@ export default function StartToPausePage() {
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-sm leading-relaxed text-[#4B4C4D]">{b}</p>
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">{b}</p>
                 </div>
               ))}
             </div>
@@ -131,13 +131,13 @@ export default function StartToPausePage() {
           <div className="mx-auto mb-6 flex justify-center">
             <Image src="/Illustrations/wave1.svg" alt="" width={220} height={220} />
           </div>
-          <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Výzkumy potvrzují:
           </h2>
-          <p className="mt-2 text-2xl text-[#2D2C2B] lg:text-3xl">
+          <p className="mt-2 text-[28px] leading-[38px] text-[#2D2C2B]">
             krátká každodenní praxe může mít překvapivě silný dopad!
           </p>
-          <p className="mt-6 text-xl font-bold text-[#2D2C2B] lg:text-2xl">
+          <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
             14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
           </p>
         </div>
@@ -162,8 +162,8 @@ export default function StartToPausePage() {
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
             Mindfulness není pro každého stejné
           </p>
-          <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B]">ZDARMA 4denní online kurz</h2>
-          <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">START to PAUSE</p>
+          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">ZDARMA 4denní online kurz</h2>
+          <p className="mt-1 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">START to PAUSE</p>
 
           {/* Tabs */}
           <div className="mt-8 flex overflow-x-auto border-b border-[#E5E5E5]">
@@ -188,7 +188,7 @@ export default function StartToPausePage() {
                 <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
                   {d.day}
                 </span>
-                <span className="text-sm font-bold text-[#2D2C2B]">{d.title}</span>
+                <span className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{d.title}</span>
               </div>
             ))}
           </div>
@@ -205,16 +205,16 @@ export default function StartToPausePage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Z této situace xxx se stalo a zjistil jsem, že xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
@@ -241,7 +241,7 @@ export default function StartToPausePage() {
             ].map((s) => (
               <div key={s.num} className="px-6">
                 <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
-                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
+                <p className="mt-2 text-[18px] font-semibold leading-[30px] text-[#E4FFE3]">{s.label}</p>
               </div>
             ))}
           </div>

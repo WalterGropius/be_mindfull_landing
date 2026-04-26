@@ -37,8 +37,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span>{post.date}</span>
             <span>{post.readTime}</span>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6">{post.title}</h1>
-          <p className="text-lg text-[#4B4C4D] leading-relaxed">{post.excerpt}</p>
+          <h1 className="mb-6 text-[28px] font-bold tracking-tight leading-[38px] sm:text-5xl lg:text-[64px] lg:leading-[1.1]">{post.title}</h1>
+          <p className="text-[18px] leading-[30px] text-[#4B4C4D]">{post.excerpt}</p>
         </header>
 
         <div

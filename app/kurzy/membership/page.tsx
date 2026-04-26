@@ -81,10 +81,10 @@ export default function MembershipPage() {
         <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
-              <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
+              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
                 be.mindful<br />MEMBERSHIP
               </h1>
-              <p className="mt-4 text-base text-white/80">
+              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
                 Váš každodenní prostor k zastavení – udržujte rovnováhu
               </p>
               <div className="mt-8">
@@ -100,10 +100,10 @@ export default function MembershipPage() {
       {/* Intro */}
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Zůstaňte propojeni –<br />udržujte rovnováhu
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#4B4C4D]">
+          <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
             Život se skládá z okamžiků – a právě schopnost zastavit se je nástroj, který nám umožňuje být přítomní s tím, co se děje v nás i kolem nás. Díky tomu můžeme naplno vnímat krásu kolem sebe a zvládat výzvy s větší lehkostí.
           </p>
         </div>
@@ -114,7 +114,7 @@ export default function MembershipPage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
@@ -138,7 +138,7 @@ export default function MembershipPage() {
       {/* Benefits */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Posílíte „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
@@ -146,7 +146,7 @@ export default function MembershipPage() {
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-sm leading-relaxed text-[#4B4C4D]">
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
                   </p>
@@ -177,10 +177,10 @@ export default function MembershipPage() {
           <div className="mx-auto mb-6 flex justify-center">
             <Image src="/Illustrations/shapes1.svg" alt="" width={220} height={220} />
           </div>
-          <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Rovnováha se tvoří z okamžiků.
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#2D2C2B]/80">
+          <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/80">
             Najdete zde všechny nástroje a podporu, které vám pomohou udržet rovnováhu a vrátit se k mindfulness, když život rozptýlí vaši pozornost.
           </p>
         </div>
@@ -197,7 +197,7 @@ export default function MembershipPage() {
             ].map((s) => (
               <div key={s.num} className="px-6">
                 <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
-                <p className="mt-2 text-base font-semibold text-[#E4FFE3]">{s.label}</p>
+                <p className="mt-2 text-[18px] font-semibold leading-[30px] text-[#E4FFE3]">{s.label}</p>
               </div>
             ))}
           </div>
@@ -221,7 +221,7 @@ export default function MembershipPage() {
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
-          <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             be.mindful MEMBERSHIP<br />Co získáte
           </h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
@@ -237,8 +237,8 @@ export default function MembershipPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-base font-bold text-[#2D2C2B]">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[#4B4C4D]">{item.desc}</p>
+                  <h3 className="text-xl font-bold leading-snug text-[#2D2C2B]">{item.title}</h3>
+                  <p className="mt-2 text-[18px] leading-[30px] text-[#4B4C4D]">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -255,8 +255,8 @@ export default function MembershipPage() {
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-white lg:text-4xl">Rovnováha se tvoří z okamžiků.</h2>
-            <p className="mx-auto mt-4 max-w-xl text-base text-white/80">
+            <h2 className="text-[28px] font-bold leading-[38px] text-white">Rovnováha se tvoří z okamžiků.</h2>
+            <p className="mx-auto mt-4 max-w-xl text-[18px] leading-[30px] text-white/80">
               Najdete zde všechny nástroje a podporu, které vám pomohou udržet rovnováhu a vrátit se k mindfulness, když život rozptýlí vaši pozornost.
             </p>
           </div>
@@ -266,12 +266,12 @@ export default function MembershipPage() {
       {/* Testimonials */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B]">Hlasy účastníků</h2>
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Hlasy účastníků</h2>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <div key={i} className="rounded-2xl bg-[#F5F6F7] p-7">
-                <p className="text-base font-bold text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
-                <p className="mt-4 text-sm leading-relaxed text-[#4B4C4D]">{t.text}</p>
+                <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
+                <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">{t.text}</p>
                 <p className="mt-5 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
               </div>
             ))}
@@ -292,13 +292,13 @@ export default function MembershipPage() {
             />
           </div>
           <div className="lg:w-3/5">
-            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
+            <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
               Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
               Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
             </p>
           </div>

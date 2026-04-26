@@ -56,7 +56,7 @@ export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
                   >
                     {d.date}
                   </span>
-                  <div className="flex-1 text-sm leading-relaxed text-white">
+                  <div className="flex-1 text-[18px] leading-[30px] text-white">
                     {d.details ?? (
                       <>
                         Mindfulness is not only an approach – it is deeply embedded into my life.

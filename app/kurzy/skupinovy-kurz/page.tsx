@@ -81,10 +81,10 @@ export default function SkupinovyKurzPage() {
         <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
-              <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
+              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
                 8týdenní kurz<br />mindfulness
               </h1>
-              <p className="mt-4 text-base text-white/80">
+              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
                 Staňte se stabilními i v bouřlivých časech
               </p>
               <div className="mt-8">
@@ -100,10 +100,10 @@ export default function SkupinovyKurzPage() {
       {/* Intro — centered */}
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Hluboké propojení a vnitřní stabilita
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#4B4C4D]">
+          <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
             Tento pokročilý kurz je určen pro ty, kteří chtějí jít do hloubky a udělat z mindfulness pevnou a přirozenou součást každodenního života. Naučíte se rozvíjet stálý vnitřní kompas, který vás povede i v období stresu, nejistoty a složitých situací s větší jasností a klidem. Získáte podporu šitou na míru přesně tomu, kde se právě nacházíte – a stanete se součástí silné a propojené skupiny, která kráčí vpřed společně.
           </p>
         </div>
@@ -114,7 +114,7 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
@@ -138,8 +138,8 @@ export default function SkupinovyKurzPage() {
       {/* Upcoming dates */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <h2 className="text-center text-2xl font-bold text-[#2D2C2B]">Upcoming dates</h2>
-          <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">8týdenní kurz mindfulness</p>
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Upcoming dates</h2>
+          <p className="mt-1 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">8týdenní kurz mindfulness</p>
           <div className="mt-10">
             <UpcomingDates dates={upcomingDates} />
           </div>
@@ -149,7 +149,7 @@ export default function SkupinovyKurzPage() {
       {/* Benefits */}
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Posilíte si „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
@@ -157,7 +157,7 @@ export default function SkupinovyKurzPage() {
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-sm leading-relaxed text-[#4B4C4D]">
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
                   </p>
@@ -191,13 +191,13 @@ export default function SkupinovyKurzPage() {
           <div className="mx-auto mb-6 flex justify-center">
             <Image src="/Illustrations/wave1.svg" alt="" width={220} height={220} />
           </div>
-          <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Výzkumy potvrzují:
           </h2>
-          <p className="mt-2 text-2xl text-[#2D2C2B] lg:text-3xl">
+          <p className="mt-2 text-[28px] leading-[38px] text-[#2D2C2B]">
             krátká každodenní praxe může mít překvapivě silný dopad!
           </p>
-          <p className="mt-6 text-xl font-bold text-[#2D2C2B] lg:text-2xl">
+          <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
             14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
           </p>
         </div>
@@ -208,15 +208,15 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
             <div className="lg:w-2/5">
-              <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
                 Jak se budete cítit po kurzu
               </h2>
-              <p className="mt-4 text-base text-[#2D2C2B]/75">
+              <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/75">
                 Pravděpodobně se budete cítit lépe a také změna se nastejvá jak vám vás říkám vám:
               </p>
               <ul className="mt-5 space-y-2">
                 {["Zlepšení vztahů", "Více klidu a pohody", "Lepší zvládání stresu"].map((item) => (
-                  <li key={item} className="text-sm text-[#2D2C2B]/90">• {item}</li>
+                  <li key={item} className="text-[18px] leading-[30px] text-[#2D2C2B]/90">• {item}</li>
                 ))}
               </ul>
             </div>
@@ -224,7 +224,7 @@ export default function SkupinovyKurzPage() {
               {afterCourse.map((b, i) => (
                 <div key={i} className="flex items-center gap-4">
                   <SmileyIcon className="h-10 w-10 shrink-0" />
-                  <p className="text-sm leading-relaxed text-[#2D2C2B]">
+                  <p className="text-[18px] leading-[30px] text-[#2D2C2B]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
                   </p>
@@ -241,8 +241,8 @@ export default function SkupinovyKurzPage() {
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
             Mindfulness není pro každého stejné
           </p>
-          <h2 className="mt-2 text-center text-2xl font-bold text-[#2D2C2B]">8týdenní kurz mindfulness</h2>
-          <p className="mt-1 text-center text-2xl font-bold text-[#2D2C2B]">To vás čeká</p>
+          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">8týdenní kurz mindfulness</h2>
+          <p className="mt-1 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">To vás čeká</p>
 
           {/* Meta row (no underline / index line — these are not clickable tabs) */}
           <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3">
@@ -263,7 +263,7 @@ export default function SkupinovyKurzPage() {
                 <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
                   {m.label}
                 </span>
-                <span className="text-sm font-bold text-[#2D2C2B]">{m.title}</span>
+                <span className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{m.title}</span>
               </div>
             ))}
           </div>
@@ -271,13 +271,13 @@ export default function SkupinovyKurzPage() {
           {/* Bonus app section */}
           <div className="mt-12 flex flex-col gap-8 lg:flex-row lg:items-center">
             <div className="lg:w-1/2">
-              <h3 className="text-2xl font-bold text-[#2D2C2B]">
+              <h3 className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
                 Bonus: Získejte novou<br />aplikaci be.mindful ZDARMA
               </h3>
-              <p className="mt-4 text-sm leading-relaxed text-[#4B4C4D]">
+              <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
                 Mindfulness is not only an approach – it is deeply embedded into my life. XXXX brought me to my first mindfulness experience here xxx.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-[#4B4C4D]">
+              <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">
                 From this situation xxx happened and I discovered, that xxx.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -303,10 +303,10 @@ export default function SkupinovyKurzPage() {
       {/* Daily practice CTA */}
       <section className="bg-[#8ECDB5] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Každodenní praxe. Skutečná podpora.<br />Trvalá změna.
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#2D2C2B]/75">
+          <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/75">
             Tento 8týdenní kurz je určen pro ty, kteří chtějí, aby mindfulness nebylo jen konceptem, ale součástí života. Naučíte se rozvíjet stálý vnitřní kompas, který vás povede i v období stresu, nejistoty a složitých situací s větší jasností a klidem.
           </p>
         </div>
@@ -315,7 +315,7 @@ export default function SkupinovyKurzPage() {
       {/* Video testimonials */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="mb-10 text-center text-3xl font-bold text-[#2D2C2B]">Hlasy našich účastníků</h2>
+          <h2 className="mb-10 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Hlasy našich účastníků</h2>
           <VideoTestimonialsCarousel testimonials={testimonials} />
         </div>
       </section>
@@ -324,16 +324,16 @@ export default function SkupinovyKurzPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Z této situace xxx se stalo a zjistil jsem, že xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
