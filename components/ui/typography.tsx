@@ -8,10 +8,10 @@ const typographyVariants = cva(
     variants: {
       variant: {
         display: "text-[28px] leading-[38px] font-bold", // Special Heading Display 4
-        h1: "text-[32px] leading-[42px] font-bold", // Added as generic h1 fallback if needed
-        h2: "text-[28px] leading-[38px] font-bold", // Using Display 4 specs for h2 usually
-        h3: "text-[24px] leading-[34px] font-bold", // Heading H3
-        h4: "text-[20px] leading-[30px] font-bold", // Fallback for smaller headings
+        h1: "text-4xl leading-tight font-bold lg:text-5xl", // Page-level h1 fallback
+        h2: "text-3xl leading-tight font-bold lg:text-4xl", // Section heading
+        h3: "text-2xl leading-snug font-bold lg:text-3xl", // Sub-section heading
+        h4: "text-xl leading-snug font-bold lg:text-2xl", // Card title / smaller heading
         p: "text-[18px] leading-[30px] font-normal", // Body Default
         span: "text-[18px] leading-[30px] font-normal", // Inline Body Default
       },
