@@ -31,7 +31,7 @@ export default function AboutPage() {
         <div className="relative z-10 flex min-h-[520px] items-center py-20 lg:min-h-[620px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="ml-auto max-w-sm">
-              <h1 className="text-4xl font-bold text-white lg:text-5xl">
+              <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
                 Můj přístup<br />k mindfulness
               </h1>
               <p className="mt-4 text-base text-white/80">

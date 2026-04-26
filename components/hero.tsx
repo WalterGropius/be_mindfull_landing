@@ -101,7 +101,7 @@ export function Hero() {
             <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
               <div className="w-full px-6 lg:px-16">
                 <div className="max-w-xl">
-                  <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
+                  <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
                     {slide.title}
                   </h1>
                   <p className="mt-4 max-w-md text-base text-white/85">
