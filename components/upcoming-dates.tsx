@@ -49,17 +49,25 @@ export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
               }`}
             >
               <div className="overflow-hidden">
-                <div className="px-8 pb-6 text-sm leading-relaxed text-[#E3FFE2]/90">
-                  {d.details ?? (
-                    <>
-                      Mindfulness is not only an approach – it is deeply embedded into my life.
-                      <br />
-                      XXXX brought me to my first mindfulness experience here xxx.
-                      <br />
-                      <br />
-                      From this situation xxx happened and I discovered, that xxx.
-                    </>
-                  )}
+                <div className="flex items-start gap-5 px-8 pb-6">
+                  <span
+                    aria-hidden="true"
+                    className="invisible select-none whitespace-nowrap text-3xl font-bold leading-none"
+                  >
+                    {d.date}
+                  </span>
+                  <div className="flex-1 text-sm leading-relaxed text-white">
+                    {d.details ?? (
+                      <>
+                        Mindfulness is not only an approach – it is deeply embedded into my life.
+                        <br />
+                        XXXX brought me to my first mindfulness experience here xxx.
+                        <br />
+                        <br />
+                        From this situation xxx happened and I discovered, that xxx.
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
