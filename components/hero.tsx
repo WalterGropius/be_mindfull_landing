@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Typography } from "@/components/ui/typography"
 
@@ -49,9 +49,6 @@ export function Hero() {
     }, 6000)
     return () => clearInterval(id)
   }, [])
-
-  const prev = () => setIndex((i) => (i - 1 + totalSlides) % totalSlides)
-  const next = () => setIndex((i) => (i + 1) % totalSlides)
 
   return (
     <section className="relative w-full overflow-hidden">
@@ -129,23 +126,6 @@ export function Hero() {
           </div>
         ))}
       </div>
-
-      <button
-        type="button"
-        onClick={prev}
-        aria-label="Předchozí"
-        className="absolute left-4 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-[#2D2C2B] shadow transition hover:bg-white"
-      >
-        <ChevronLeft className="h-5 w-5" />
-      </button>
-      <button
-        type="button"
-        onClick={next}
-        aria-label="Další"
-        className="absolute right-4 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-[#2D2C2B] shadow transition hover:bg-white"
-      >
-        <ChevronRight className="h-5 w-5" />
-      </button>
 
       <div className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 gap-2">
         {Array.from({ length: totalSlides }, (_, i) => (
