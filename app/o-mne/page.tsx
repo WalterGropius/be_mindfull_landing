@@ -31,10 +31,10 @@ export default function AboutPage() {
         <div className="relative z-10 flex min-h-[520px] items-center py-20 lg:min-h-[620px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="ml-auto max-w-sm">
-              <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
+              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
                 Můj přístup<br />k mindfulness
               </h1>
-              <p className="mt-4 text-base text-white/80">
+              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
                 Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
               </p>
             </div>
@@ -45,7 +45,7 @@ export default function AboutPage() {
       {/* Big quote */}
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <p className="text-xl font-bold leading-snug text-[#2D2C2B] lg:text-2xl">
+          <p className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
             &ldquo;Toto je věta, která je pro mě velmi důležitá. Buď moje poslání, nebo něco podstatného o mindfulness.&rdquo;
           </p>
         </div>
@@ -55,16 +55,16 @@ export default function AboutPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Z této situace xxx se stalo a zjistil jsem, že xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#2D2C2B]/80">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
@@ -93,16 +93,16 @@ export default function AboutPage() {
             />
           </div>
           <div className="lg:w-2/5">
-            <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Toto je jedna konkrétní věta z mého života s mindfulness
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
+            <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
               Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
               Z této situace xxx se stalo a zjistil jsem, že xxx.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
               Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
       {/* Second quote — teal bg */}
       <section className="bg-[#BFD1C6] py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
-          <p className="text-xl font-bold leading-snug text-[#2D2C2B] lg:text-2xl">
+          <p className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
             &ldquo;Mluvte přímo s lidmi, sdílejte něco osobního. Něco lehkého a přístupného.&rdquo;
           </p>
         </div>
@@ -123,13 +123,13 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
             <div className="lg:w-2/5">
-              <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">15 let zkušeností</h2>
-              <p className="mt-5 text-base leading-relaxed text-[#4B4C4D]">
+              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">15 let zkušeností</h2>
+              <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
                 Dopad nekončí u vás – rozšiřuje se i na ostatní:
               </p>
               <div className="mt-4 space-y-2">
                 {["Lepší komunikace a zdravější hranice", "Silnější vztahy postavené na empatii", "Ukotvenější leadership i v tlaku"].map((item) => (
-                  <p key={item} className="text-sm text-[#4B4C4D]">{item}</p>
+                  <p key={item} className="text-[18px] leading-[30px] text-[#4B4C4D]">{item}</p>
                 ))}
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
               {credentials.map((c, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-sm leading-relaxed text-[#4B4C4D]">
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
                     <strong className="font-bold text-[#2D2C2B]">{c.bold}</strong>
                     {c.rest}
                   </p>
@@ -156,8 +156,8 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Připojte se k mé cestě</h2>
-              <p className="mt-2 text-base text-[#4B4C4D]">Začněte svou cestu k mindfulness s osobním vedením.</p>
+              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Připojte se k mé cestě</h2>
+              <p className="mt-2 text-[18px] leading-[30px] text-[#4B4C4D]">Začněte svou cestu k mindfulness s osobním vedením.</p>
             </div>
             <div className="flex shrink-0 flex-wrap gap-4">
               <Button asChild variant="primary-orange" className="group">

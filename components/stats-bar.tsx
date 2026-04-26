@@ -67,7 +67,7 @@ export function StatsBar({ stats = defaultStats }: { stats?: Stat[] }) {
               <p className="text-5xl font-bold text-[#E3FFE2] lg:text-6xl">
                 <AnimatedNumber value={s.num} />
               </p>
-              <p className="mt-2 text-base font-semibold text-[#E3FFE2]">{s.label}</p>
+              <p className="mt-2 text-[18px] font-semibold leading-[30px] text-[#E3FFE2]">{s.label}</p>
             </div>
           ))}
         </div>

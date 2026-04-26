@@ -18,8 +18,8 @@ export default async function BlogPage() {
       <section className="bg-white pt-16 pb-4 lg:pt-24 lg:pb-6">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Top Reads</h1>
-            <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
+            <h1 className="text-[36px] font-bold leading-[46px] text-[#2D2C2B]">Top Reads</h1>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
               V době neustálého spěchu a hluku už pauza není luxus, ale klíčová dovednost. Všímavé zastavení vytváří prostor mezi podnětem a reakcí, díky čemuž jednáme s jasností místo automatické reakce na stres.
             </p>
           </div>
@@ -35,7 +35,7 @@ export default async function BlogPage() {
       {morePosts.length > 0 && (
         <section className="bg-white py-12 lg:py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="mb-10 text-center text-2xl font-bold text-[#2D2C2B] lg:text-3xl">More about mindfulness</h2>
+            <h2 className="mb-10 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">More about mindfulness</h2>
             <div className="grid gap-6 md:grid-cols-3">
               {morePosts.map((post) => (
                 <BlogCard key={post.slug} post={post} />
@@ -73,12 +73,12 @@ function BlogCard({ post }: { post: { slug: string; title: string; category: str
           <span className="rounded-full bg-[#C6D1C8] px-3 py-1 text-xs font-medium text-[#2D2C2B]">{post.category}</span>
           <span className="text-xs text-[#9DA59C]">{post.date}</span>
         </div>
-        <h2 className="mt-3 text-lg font-bold leading-snug text-[#2D2C2B]">{post.title}</h2>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-[#4B4C4D]">{post.excerpt}</p>
+        <h2 className="mt-3 text-2xl font-bold leading-snug text-[#2D2C2B]">{post.title}</h2>
+        <p className="mt-2 flex-1 text-[18px] leading-[30px] text-[#4B4C4D]">{post.excerpt}</p>
         <div className="mt-5">
           <Link
             href={`/blog/${post.slug}`}
-            className="text-sm font-bold text-[#2D2C2B] underline underline-offset-2 hover:text-[#7BC0A4]"
+            className="text-base font-bold text-[#2D2C2B] underline underline-offset-2 hover:text-[#7BC0A4]"
           >
             Přečíst celý článek
           </Link>

@@ -88,10 +88,10 @@ export default function FirmyPage() {
         <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
           <div className="w-full px-6 lg:px-16">
             <div className="max-w-xl">
-              <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
+              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
                 Od stresu<br />k odolnosti
               </h1>
-              <p className="mt-4 text-base text-white/80">
+              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
                 Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
               </p>
               <div className="mt-8">
@@ -107,13 +107,13 @@ export default function FirmyPage() {
       {/* Intro */}
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Schopnost se zastavit – jedna z nejdůležitějších dovedností dneška
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#4B4C4D]">
+          <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
             V době neustálého spěchu a hluku už pauza není luxus, ale klíčová dovednost. Všímavé zastavení vytváří prostor mezi podnětem a reakcí, díky čemuž jednáme s jasností místo automatické reakce na stres.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-[#4B4C4D]">
+          <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
             Pomáhám firmám zavádět programy, které podporují zvládání stresu, soustředění a vnitřní rovnováhu i v náročném prostředí.
           </p>
         </div>
@@ -146,7 +146,7 @@ export default function FirmyPage() {
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+            <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
             </h2>
           </div>
@@ -170,7 +170,7 @@ export default function FirmyPage() {
       {/* Benefits */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Není to situace, která se změní,<br />ale způsob, jak na ni reagujete
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
@@ -178,7 +178,7 @@ export default function FirmyPage() {
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-sm leading-relaxed text-[#4B4C4D]">
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
                     <strong className="font-semibold text-[#2D2C2B]">{b.bold}</strong>
                     {b.rest}
                   </p>
@@ -209,10 +209,10 @@ export default function FirmyPage() {
           <div className="mx-auto mb-6 flex justify-center">
             <Image src="/Illustrations/clouds1.svg" alt="" width={220} height={220} />
           </div>
-          <h2 className="text-2xl font-bold text-[#2D2C2B] lg:text-3xl">
+          <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Pauza neznamená zpomalit výkon
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-[#2D2C2B]/80">
+          <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/80">
             Znamená získat nadhled a umět reagovat nejen na to, co se děje kolem nás, ale i v nás samotných. Pauza nemusí trvat dvacet minut, když víte, jak na to. Učíme praktické techniky, které zvládnete během pár minut.
           </p>
         </div>
@@ -221,7 +221,7 @@ export default function FirmyPage() {
       {/* Investment */}
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Investice, která se vrátí na všech úrovních
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
@@ -229,7 +229,7 @@ export default function FirmyPage() {
               {investmentLeft.map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <ArrowRight className="h-4 w-4 shrink-0 text-[#7BC0A4]" />
-                  <p className="text-sm font-medium text-[#2D2C2B]">{item}</p>
+                  <p className="text-[18px] font-medium leading-[30px] text-[#2D2C2B]">{item}</p>
                 </div>
               ))}
             </div>
@@ -237,7 +237,7 @@ export default function FirmyPage() {
               {investmentRight.map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-sm leading-relaxed text-[#4B4C4D]">{item}</p>
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">{item}</p>
                 </div>
               ))}
             </div>
@@ -249,8 +249,8 @@ export default function FirmyPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">Kurzy pro firmy a týmy</p>
-          <h2 className="mt-2 text-center text-3xl font-bold text-[#2D2C2B] lg:text-4xl">Nabídka programů</h2>
-          <p className="mx-auto mt-3 max-w-3xl text-center text-base text-[#4B4C4D]">
+          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Nabídka programů</h2>
+          <p className="mx-auto mt-3 max-w-3xl text-center text-[18px] leading-[30px] text-[#4B4C4D]">
             V době neustálého spěchu a hluku už pauza není luxus, ale klíčová dovednost, díky které firma může dosahovat klid. Tyto firmy musely kurzu naučit na míru na ní naučit.
           </p>
           <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2">
@@ -267,9 +267,9 @@ export default function FirmyPage() {
                 </div>
                 <div className="flex flex-col p-6 sm:w-3/5">
                   <p className="text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">{p.label}</p>
-                  <h3 className="mt-2 text-base font-bold text-[#2D2C2B]">{p.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[#4B4C4D]">{p.desc}</p>
-                  <p className="mt-4 text-sm font-semibold text-[#2D2C2B]">Zjistit více →</p>
+                  <h3 className="mt-2 text-xl font-bold leading-snug text-[#2D2C2B]">{p.title}</h3>
+                  <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">{p.desc}</p>
+                  <p className="mt-4 text-base font-semibold text-[#2D2C2B]">Zjistit více →</p>
                 </div>
               </div>
             ))}
@@ -280,8 +280,8 @@ export default function FirmyPage() {
       {/* CTA */}
       <section className="bg-[#7BC0A4] py-16 lg:py-24">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
-          <h2 className="text-3xl font-bold text-white lg:text-4xl">Požádejte o nabídku</h2>
-          <p className="mt-4 text-base text-white/80">
+          <h2 className="text-[28px] font-bold leading-[38px] text-white">Požádejte o nabídku</h2>
+          <p className="mt-4 text-[18px] leading-[30px] text-white/80">
             Vyplňte dotazník a my vám připravíme řešení na míru potřebám vaší firmy.
           </p>
           <div className="mt-8">
@@ -296,12 +296,12 @@ export default function FirmyPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-[#2D2C2B] lg:text-4xl">
+            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <div className="mt-8 space-y-4">
               {teacherPoints.map((p, i) => (
-                <p key={i} className="text-sm leading-relaxed text-[#2D2C2B]/80">
+                <p key={i} className="text-[18px] leading-[30px] text-[#2D2C2B]/80">
                   <strong className="font-bold text-[#2D2C2B]">{p.bold}</strong>
                   {p.rest}
                 </p>
