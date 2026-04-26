@@ -1,33 +1,164 @@
+"use client"
+
+import { useEffect, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Typography } from "@/components/ui/typography"
 
+const courseSlides = [
+  {
+    src: "/Theme_4-days_FREE.jpg",
+    title: "FREE 4denní online kurz Start-to-PAUSE",
+    subtitle: "Začněte, jak do svého života přidat trochu prostoru.",
+    cta: "Vstoupit do kurzu",
+    href: "/kurzy/start-to-pause",
+  },
+  {
+    src: "/Theme_Foundations.jpg",
+    title: "be.mindful FOUNDATIONS",
+    subtitle: "Vše, co potřebujete k přechodu od stresu k odolnosti.",
+    cta: "Vstoupit do kurzu",
+    href: "/kurzy/foundations",
+  },
+  {
+    src: "/Theme_8-weeks-course.jpg",
+    title: "8týdenní kurz mindfulness",
+    subtitle: "Staňte se stabilními i v bouřlivých časech.",
+    cta: "Vstoupit do kurzu",
+    href: "/kurzy/skupinovy-kurz",
+  },
+  {
+    src: "/Theme_Companies.jpg",
+    title: "Mindfulness pro firmy",
+    subtitle: "Cítit se lépe znamená vést lépe.",
+    cta: "Zobrazit programy",
+    href: "/kurzy/firmy",
+  },
+]
+
+const totalSlides = 1 + courseSlides.length
+
 export function Hero() {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % totalSlides)
+    }, 6000)
+    return () => clearInterval(id)
+  }, [])
+
+  const prev = () => setIndex((i) => (i - 1 + totalSlides) % totalSlides)
+  const next = () => setIndex((i) => (i + 1) % totalSlides)
+
   return (
-    <section className="relative w-full bg-primary-green-dark overflow-hidden">
-      {/* Background large circle */}
-      <div className="absolute left-1/2 bottom-[-40%] -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-primary-green lg:w-[950px] lg:h-[950px] lg:bottom-[-100%] pointer-events-none"></div>
-      
-      <div className="relative mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:px-8 z-10">
-        <div className="flex w-full items-center justify-between">
-          <div className="max-w-2xl relative z-20">
-            <Typography variant="display" className="text-balance sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              Zastav se a vytvoř si<br />prostor pro změnu tvého života.
-            </Typography>
-            <Typography variant="p" className="mt-6 text-pretty max-w-md">
-              Schopnost se zastavit patří dnes k nejdůležitějším dovednostem – pomáhá nám orientovat se v každodenních rozhodnutích, stresu a změnách s větší jasností a lehkostí.
-            </Typography>
-            <div className="mt-8">
-              <Button asChild variant="primary-orange" className="group">
-                <Link href="/kurzy/foundations">
-                  <span className="flex items-center gap-2">Zobrazit kurzy <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
-                </Link>
-              </Button>
+    <section className="relative w-full overflow-hidden">
+      <div
+        className="flex transition-transform duration-700 ease-out"
+        style={{ transform: `translateX(-${index * 100}%)` }}
+      >
+        {/* Slide 1: Homepage hero */}
+        <div className="relative min-h-[500px] min-w-full overflow-hidden bg-primary-green-dark lg:min-h-[580px]">
+          <div className="pointer-events-none absolute bottom-[-40%] left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary-green lg:bottom-[-100%] lg:h-[950px] lg:w-[950px]" />
+          <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8">
+            <div className="relative z-20 max-w-2xl">
+              <Typography
+                variant="display"
+                className="text-balance sm:text-5xl lg:text-[64px] lg:leading-[1.1]"
+              >
+                Zastav se a vytvoř si<br />prostor pro změnu tvého života.
+              </Typography>
+              <Typography variant="p" className="mt-6 max-w-md text-pretty">
+                Schopnost se zastavit patří dnes k nejdůležitějším dovednostem – pomáhá nám orientovat se v každodenních rozhodnutích, stresu a změnách s větší jasností a lehkostí.
+              </Typography>
+              <div className="mt-8">
+                <Button asChild variant="primary-orange" className="group">
+                  <Link href="/kurzy/foundations">
+                    <span className="flex items-center gap-2">
+                      Zobrazit kurzy{" "}
+                      <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
-
         </div>
+
+        {/* Course slides */}
+        {courseSlides.map((slide) => (
+          <div
+            key={slide.title}
+            className="relative min-h-[500px] min-w-full overflow-hidden bg-[#1A1A1A] lg:min-h-[580px]"
+          >
+            <Image
+              src={slide.src}
+              alt={slide.title}
+              fill
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
+            <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
+              <div className="w-full px-6 lg:px-16">
+                <div className="max-w-xl">
+                  <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
+                    {slide.title}
+                  </h1>
+                  <p className="mt-4 max-w-md text-base text-white/85">
+                    {slide.subtitle}
+                  </p>
+                  <div className="mt-8">
+                    <Button
+                      asChild
+                      className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]"
+                    >
+                      <Link href={slide.href}>
+                        <span className="flex items-center gap-2">
+                          {slide.cta}
+                          <ArrowRight className="h-4 w-4" />
+                        </span>
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <button
+        type="button"
+        onClick={prev}
+        aria-label="Předchozí"
+        className="absolute left-4 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-[#2D2C2B] shadow transition hover:bg-white"
+      >
+        <ChevronLeft className="h-5 w-5" />
+      </button>
+      <button
+        type="button"
+        onClick={next}
+        aria-label="Další"
+        className="absolute right-4 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-[#2D2C2B] shadow transition hover:bg-white"
+      >
+        <ChevronRight className="h-5 w-5" />
+      </button>
+
+      <div className="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 gap-2">
+        {Array.from({ length: totalSlides }, (_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => setIndex(i)}
+            aria-label={`Slide ${i + 1}`}
+            className={`h-2 rounded-full transition-all ${
+              i === index ? "w-6 bg-white" : "w-2 bg-white/60"
+            }`}
+          />
+        ))}
       </div>
     </section>
   )
