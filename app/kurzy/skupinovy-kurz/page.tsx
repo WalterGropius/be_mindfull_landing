@@ -236,7 +236,7 @@ export default function SkupinovyKurzPage() {
 
       {/* Modules */}
       <section className="bg-white py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
             Mindfulness není pro každého stejné
           </p>
