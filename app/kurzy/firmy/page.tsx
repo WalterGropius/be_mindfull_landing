@@ -5,13 +5,13 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 const clientLogos = [
-  { src: "/logos/Česká_spořitelna_-_logo_2023 1.png", alt: "Česká spořitelna" },
-  { src: "/logos/cez-skupina_logo_vertikalni_cz_barva_pozitiv_rgb 1.png", alt: "ČEZ skupina" },
-  { src: "/logos/europool-logo 1.png", alt: "Europool" },
-  { src: "/logos/Wrapper.png", alt: "SHV" },
-  { src: "/logos/kooperativa_logo 1.png", alt: "Kooperativa" },
-  { src: "/logos/mibcon 1.png", alt: "Mibcon" },
-  { src: "/logos/raiffeisen_BANK_logo.png 1.png", alt: "Raiffeisen Bank" },
+  { src: "/logos/clients/ceska-sporitelna.png", alt: "Česká spořitelna" },
+  { src: "/logos/clients/kooperativa.png", alt: "Kooperativa" },
+  { src: "/logos/clients/cez.png", alt: "ČEZ" },
+  { src: "/logos/clients/mibcon.png", alt: "mibcon" },
+  { src: "/logos/clients/t-mobile.png", alt: "T-Mobile" },
+  { src: "/logos/clients/raiffeisen.png", alt: "Raiffeisen Bank" },
+  { src: "/logos/clients/europool.png", alt: "Europool System" },
 ]
 
 const benefits = [
@@ -114,11 +114,11 @@ export default function FirmyPage() {
       {/* Client logos */}
       <section className="bg-white py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
             {clientLogos.map((logo) => (
               <div
                 key={logo.alt}
-                className="relative flex h-12 w-32 items-center justify-center"
+                className="relative flex h-16 w-32 items-center justify-center"
               >
                 <Image
                   src={logo.src}
