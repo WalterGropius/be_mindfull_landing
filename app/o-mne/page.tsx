@@ -28,16 +28,14 @@ export default function AboutPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[520px] items-center py-20 lg:min-h-[620px] lg:py-28">
-          <div className="w-full px-6 lg:px-16">
-            <div className="ml-auto max-w-sm">
-              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-                Můj přístup<br />k mindfulness
-              </h1>
-              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-                Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
-              </p>
-            </div>
+        <div className="relative z-10 mx-auto flex min-h-[520px] max-w-7xl items-center px-6 py-20 lg:min-h-[620px] lg:px-8 lg:py-28">
+          <div className="ml-auto max-w-xl">
+            <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              Můj přístup<br />k mindfulness
+            </h1>
+            <p className="mt-4 text-[18px] leading-[30px] text-white/80">
+              Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
+            </p>
           </div>
         </div>
       </section>
@@ -83,7 +81,7 @@ export default function AboutPage() {
       {/* Bio section 2 — gray bg */}
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
-          <div className="overflow-hidden rounded-2xl lg:w-3/5">
+          <div className="overflow-hidden rounded-2xl lg:w-1/2">
             <Image
               src="/about-applifting-70.jpg"
               alt="Michal Dvořák"
@@ -92,7 +90,7 @@ export default function AboutPage() {
               className="w-full object-cover"
             />
           </div>
-          <div className="lg:w-2/5">
+          <div className="lg:w-1/2">
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Toto je jedna konkrétní věta z mého života s mindfulness
             </h2>

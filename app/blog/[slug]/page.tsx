@@ -32,7 +32,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         <header className="mb-12 text-center text-[#2D2C2B]">
-          <div className="mb-6 flex items-center justify-center gap-3 text-sm text-[#9DA59C]">
+          <div className="mb-6 flex items-center justify-center gap-3 text-sm text-[#4B4C4D]">
             <span className="rounded-full bg-[#E3FFE2] px-3 py-1 text-[#5E767E]">{post.category}</span>
             <span>{post.date}</span>
             <span>{post.readTime}</span>

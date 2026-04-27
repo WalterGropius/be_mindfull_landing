@@ -68,20 +68,18 @@ export default function FoundationsPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
-          <div className="w-full px-6 lg:px-16">
-            <div className="max-w-xl">
-              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-                be.mindful<br />FOUNDATIONS
-              </h1>
-              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-                Vše, co potřebujete k přechodu od stresu k odolnosti
-              </p>
-              <div className="mt-8">
-                <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                  Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
+        <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
+          <div className="max-w-xl">
+            <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              be.mindful<br />FOUNDATIONS
+            </h1>
+            <p className="mt-4 text-[18px] leading-[30px] text-white/80">
+              Vše, co potřebujete k přechodu od stresu k odolnosti
+            </p>
+            <div className="mt-8">
+              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         </div>
@@ -256,7 +254,7 @@ export default function FoundationsPage() {
           <div className="mt-8 flex flex-col gap-1">
             {courseModules.map((m, i) => (
               <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
-                <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
+                <span className="min-w-[100px] text-[18px] font-bold uppercase tracking-wider leading-[30px] text-[#7BC0A4]">
                   {m.label}
                 </span>
                 <span className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{m.title}</span>

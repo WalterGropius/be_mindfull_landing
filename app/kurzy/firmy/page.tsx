@@ -22,12 +22,6 @@ const benefits = [
   { bold: "Získáte více soucitu a laskavosti", rest: " a posílíte své vztahy." },
 ]
 
-const investmentLeft = [
-  "Lepší komunikace a zdravější hranice",
-  "Silnější vztahy postavené na empatii",
-  "Ukotvenější leadership i v tlaku",
-]
-
 const investmentRight = [
   "Od přetížených lidí k vyšší odolnosti vůči stresu a stabilnímu výkonu",
   "Od emočních výkyvů ke zvládání náročných situací s větším klidem",
@@ -85,20 +79,18 @@ export default function FirmyPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
-          <div className="w-full px-6 lg:px-16">
-            <div className="max-w-xl">
-              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-                Od stresu<br />k odolnosti
-              </h1>
-              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-                Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
-              </p>
-              <div className="mt-8">
-                <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                  Zobrazit kurzy <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
+        <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
+          <div className="max-w-xl">
+            <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              Od stresu<br />k odolnosti
+            </h1>
+            <p className="mt-4 text-[18px] leading-[30px] text-white/80">
+              Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
+            </p>
+            <div className="mt-8">
+              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                Zobrazit kurzy <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         </div>
@@ -225,13 +217,10 @@ export default function FirmyPage() {
             Investice, která se vrátí na všech úrovních
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
-            <div className="space-y-4 lg:w-2/5">
-              {investmentLeft.map((item, i) => (
-                <div key={i} className="flex items-center gap-3">
-                  <ArrowRight className="h-4 w-4 shrink-0 text-[#7BC0A4]" />
-                  <p className="text-[18px] font-medium leading-[30px] text-[#2D2C2B]">{item}</p>
-                </div>
-              ))}
+            <div className="lg:w-2/5">
+              <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
+                Mindfulness ve firmě nejsou jen techniky pro jednotlivce – je to investice, která se promítá do celého týmu i kultury organizace. Lepší komunikace a zdravější hranice, silnější vztahy postavené na empatii a ukotvenější leadership i v tlaku jsou výsledkem, který přichází přirozeně, jakmile si lidé osvojí nástroje pro práci s pozorností a stresem.
+              </p>
             </div>
             <div className="flex flex-col gap-4 lg:w-3/5">
               {investmentRight.map((item, i) => (
@@ -253,23 +242,23 @@ export default function FirmyPage() {
           <p className="mx-auto mt-3 max-w-3xl text-center text-[18px] leading-[30px] text-[#4B4C4D]">
             V době neustálého spěchu a hluku už pauza není luxus, ale klíčová dovednost, díky které firma může dosahovat klid. Tyto firmy musely kurzu naučit na míru na ní naučit.
           </p>
-          <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2">
+          <div className="mt-12 flex flex-col gap-12">
             {programs.map((p, i) => (
-              <div key={i} className="flex flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] sm:flex-row">
-                <div className="sm:w-2/5">
-                  <Image
-                    src={p.image}
-                    alt={p.title}
-                    width={400}
-                    height={400}
-                    className="h-56 w-full object-cover sm:h-full"
-                  />
-                </div>
-                <div className="flex flex-col p-6 sm:w-3/5">
-                  <p className="text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">{p.label}</p>
-                  <h3 className="mt-2 text-xl font-bold leading-snug text-[#2D2C2B]">{p.title}</h3>
-                  <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">{p.desc}</p>
-                  <p className="mt-4 text-base font-semibold text-[#2D2C2B]">Zjistit více →</p>
+              <div key={i} className="overflow-hidden rounded-[1rem] bg-[#f5f6f4]">
+                <div className={`flex flex-col ${i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+                  <div className="relative h-64 lg:h-auto lg:w-1/2">
+                    <Image
+                      src={p.image}
+                      alt={p.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="flex flex-col p-8 lg:w-1/2 lg:p-14">
+                    <p className="text-sm font-bold uppercase tracking-[0.15em] text-[#7BC0A4]">{p.label}</p>
+                    <h3 className="mt-4 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">{p.title}</h3>
+                    <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">{p.desc}</p>
+                  </div>
                 </div>
               </div>
             ))}

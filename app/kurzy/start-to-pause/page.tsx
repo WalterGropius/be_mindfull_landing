@@ -35,20 +35,18 @@ export default function StartToPausePage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
-          <div className="w-full px-6 lg:px-16">
-            <div className="max-w-xl">
-              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-                FREE 4denní<br />online kurz<br />Start-to-PAUSE
-              </h1>
-              <p className="mt-4 max-w-xs text-[18px] leading-[30px] text-white/75">
-                Začněte, jak do svého života přidat trochu prostoru – a krok za krokem přeměníte způsoby, jak začleníte toto každodenního života.
-              </p>
-              <div className="mt-8">
-                <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                  Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
+        <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
+          <div className="max-w-xl">
+            <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              FREE 4denní<br />online kurz<br />Start-to-PAUSE
+            </h1>
+            <p className="mt-4 max-w-xs text-[18px] leading-[30px] text-white/75">
+              Začněte, jak do svého života přidat trochu prostoru – a krok za krokem přeměníte způsoby, jak začleníte toto každodenního života.
+            </p>
+            <div className="mt-8">
+              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         </div>
@@ -165,27 +163,23 @@ export default function StartToPausePage() {
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">ZDARMA 4denní online kurz</h2>
           <p className="mt-1 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">START to PAUSE</p>
 
-          {/* Tabs */}
-          <div className="mt-8 flex overflow-x-auto border-b border-[#E5E5E5]">
+          {/* Meta row (informational, not clickable tabs) */}
+          <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3">
             {tabs.map((tab, i) => (
-              <button
+              <span
                 key={i}
-                className={`whitespace-nowrap px-5 pb-3 text-sm font-medium transition-colors ${
-                  i === 0
-                    ? "border-b-2 border-[#7BC0A4] text-[#7BC0A4]"
-                    : "text-[#9DA59C] hover:text-[#4B4C4D]"
-                }`}
+                className="whitespace-nowrap text-sm font-medium text-[#4B4C4D]"
               >
                 {tab}
-              </button>
+              </span>
             ))}
           </div>
 
           {/* Day rows */}
-          <div className="mt-2 flex flex-col gap-1">
+          <div className="mt-8 flex flex-col gap-1">
             {days.map((d, i) => (
               <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
-                <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
+                <span className="min-w-[100px] text-[18px] font-bold uppercase tracking-wider leading-[30px] text-[#7BC0A4]">
                   {d.day}
                 </span>
                 <span className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{d.title}</span>

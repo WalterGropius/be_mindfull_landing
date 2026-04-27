@@ -51,15 +51,33 @@ const testimonials = [
     image: "/Pictures/AdobeStock_1844492057.jpeg",
   },
   {
-    quote: "be.mindful mi pomohl najít cestu zpět do těla. Opět vím, jak dýchat.",
-    name: "Betty R.",
-    text: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své „wellbeing fitko pro mysl\".",
+    quote: "Naučil jsem se dýchat dřív, než zareaguji – a to změnilo všechno.",
+    name: "Jakub M.",
+    text: "Skupinová dynamika a Michalovo vedení mi daly stabilní rámec, který drží i v náročných týdnech. Místo rychlých soudů přichází zvědavost.",
+    image: "/Pictures/AdobeStock_313540527.jpeg",
+  },
+  {
+    quote: "Po kurzu mi mindfulness konečně dává smysl v praxi, ne jen na papíře.",
+    name: "Lenka V.",
+    text: "Krátké každodenní praxe a sdílení s ostatními mi pomohly udržet rytmus i po skončení kurzu. Cítím se klidnější a víc ve svém těle.",
     image: "/Pictures/AdobeStock_1844492057.jpeg",
   },
   {
-    quote: "be.mindful mi pomohl najít cestu zpět do těla. Opět vím, jak dýchat.",
-    name: "Betty R.",
-    text: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své „wellbeing fitko pro mysl\".",
+    quote: "Konečně chápu, co znamená 'být tady a teď' – a co s tím dělat.",
+    name: "Martin K.",
+    text: "Skupina i Michal nabídli prostor bez tlaku. Naučil jsem se rozpoznávat automatické reakce dřív, než mě převálcují, a vracet pozornost k tomu, co opravdu chci.",
+    image: "/Pictures/AdobeStock_313540527.jpeg",
+  },
+  {
+    quote: "Mindfulness se stalo součástí mého dne, ne další položkou v kalendáři.",
+    name: "Tereza S.",
+    text: "Líbí se mi, jak Michal propojuje vědu s praxí. Po osmi týdnech mám konkrétní nástroje, které sahají dál než jen meditace u rána.",
+    image: "/Pictures/AdobeStock_1844492057.jpeg",
+  },
+  {
+    quote: "Skupina mě držela v praxi i ve chvílích, kdy bych sám/sama přestal/a.",
+    name: "Petr H.",
+    text: "Bez té skupinové podpory bych pravděpodobně po druhém týdnu skončil. Společné sdílení mi ukázalo, že nejsem v tom sám – a to je obrovsky úlevné.",
     image: "/Pictures/AdobeStock_313540527.jpeg",
   },
 ]
@@ -78,20 +96,18 @@ export default function SkupinovyKurzPage() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
-          <div className="w-full px-6 lg:px-16">
-            <div className="max-w-xl">
-              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-                8týdenní kurz<br />mindfulness
-              </h1>
-              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-                Staňte se stabilními i v bouřlivých časech
-              </p>
-              <div className="mt-8">
-                <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                  Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
+        <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
+          <div className="max-w-xl">
+            <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              8týdenní kurz<br />mindfulness
+            </h1>
+            <p className="mt-4 text-[18px] leading-[30px] text-white/80">
+              Staňte se stabilními i v bouřlivých časech
+            </p>
+            <div className="mt-8">
+              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         </div>
@@ -260,7 +276,7 @@ export default function SkupinovyKurzPage() {
           <div className="mt-8 flex flex-col gap-1">
             {courseModules.map((m, i) => (
               <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
-                <span className="min-w-[80px] text-xs font-bold uppercase tracking-wider text-[#7BC0A4]">
+                <span className="min-w-[100px] text-[18px] font-bold uppercase tracking-wider leading-[30px] text-[#7BC0A4]">
                   {m.label}
                 </span>
                 <span className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{m.title}</span>
