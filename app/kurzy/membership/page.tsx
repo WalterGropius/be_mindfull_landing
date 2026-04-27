@@ -78,20 +78,18 @@ export default function MembershipPage() {
           className="object-cover object-top"
           priority
         />
-        <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
-          <div className="w-full px-6 lg:px-16">
-            <div className="max-w-xl">
-              <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-                be.mindful<br />MEMBERSHIP
-              </h1>
-              <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-                Váš každodenní prostor k zastavení – udržujte rovnováhu
-              </p>
-              <div className="mt-8">
-                <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                  Přidat se <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
+        <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
+          <div className="max-w-xl">
+            <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              be.mindful<br />MEMBERSHIP
+            </h1>
+            <p className="mt-4 text-[18px] leading-[30px] text-white/80">
+              Váš každodenní prostor k zastavení – udržujte rovnováhu
+            </p>
+            <div className="mt-8">
+              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                Přidat se <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         </div>
@@ -187,22 +185,13 @@ export default function MembershipPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-[#7BC0A4] py-14">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
-            {[
-              { num: "200+", label: "Video lekcí" },
-              { num: "150 h", label: "Audio nahrávek" },
-              { num: "60", label: "Vedených meditací" },
-            ].map((s) => (
-              <div key={s.num} className="px-6">
-                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
-                <p className="mt-2 text-[18px] font-semibold leading-[30px] text-[#E4FFE3]">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsBar
+        stats={[
+          { num: "200+", label: "Video lekcí" },
+          { num: "150 h", label: "Audio nahrávek" },
+          { num: "60", label: "Vedených meditací" },
+        ]}
+      />
 
       {/* Device mockup */}
       <section className="bg-white py-12 lg:py-16">
@@ -278,35 +267,6 @@ export default function MembershipPage() {
           </div>
         </div>
       </section>
-
-      {/* About teacher */}
-      <section className="bg-white py-16 lg:py-24">
-        <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-16 lg:px-8">
-          <div className="overflow-hidden rounded-2xl lg:w-2/5">
-            <Image
-              src="/Pictures/_DSC7728.jpg"
-              alt="Michal Dvořák"
-              width={500}
-              height={560}
-              className="w-full object-cover"
-            />
-          </div>
-          <div className="lg:w-3/5">
-            <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
-            </h2>
-            <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
-            </p>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats bar */}
-      <StatsBar />
 
       <Footer />
     </main>

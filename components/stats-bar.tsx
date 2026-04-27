@@ -30,9 +30,13 @@ function AnimatedNumber({ value }: { value: string }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !startedRef.current) {
             startedRef.current = true
-            const duration = 1200
-            const start = performance.now()
+            const duration = 2200
+            const start = performance.now() + 250
             const tick = (now: number) => {
+              if (now < start) {
+                requestAnimationFrame(tick)
+                return
+              }
               const elapsed = now - start
               const progress = Math.min(1, elapsed / duration)
               const eased = 1 - Math.pow(1 - progress, 3)
@@ -43,7 +47,7 @@ function AnimatedNumber({ value }: { value: string }) {
           }
         })
       },
-      { threshold: 0.4 }
+      { threshold: 0.85 }
     )
     observer.observe(el)
     return () => observer.disconnect()

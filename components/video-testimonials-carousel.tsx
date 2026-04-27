@@ -1,15 +1,18 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight, Play } from "lucide-react"
+import { ChevronLeft, ChevronRight, Play, X } from "lucide-react"
 
 export type VideoTestimonial = {
   quote: string
   name: string
   text: string
   image: string
+  video?: string
 }
+
+const SAMPLE_VIDEO = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 
 export function VideoTestimonialsCarousel({
   testimonials,
@@ -17,6 +20,7 @@ export function VideoTestimonialsCarousel({
   testimonials: VideoTestimonial[]
 }) {
   const [start, setStart] = useState(0)
+  const [openIdx, setOpenIdx] = useState<number | null>(null)
   const visibleCount = 3
   const maxStart = Math.max(0, testimonials.length - visibleCount)
   const canPrev = start > 0
@@ -24,6 +28,22 @@ export function VideoTestimonialsCarousel({
 
   const prev = () => setStart((s) => Math.max(0, s - 1))
   const next = () => setStart((s) => Math.min(maxStart, s + 1))
+
+  useEffect(() => {
+    if (openIdx === null) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpenIdx(null)
+    }
+    window.addEventListener("keydown", onKey)
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      window.removeEventListener("keydown", onKey)
+      document.body.style.overflow = prevOverflow
+    }
+  }, [openIdx])
+
+  const openTestimonial = openIdx !== null ? testimonials[openIdx] : null
 
   return (
     <div className="relative">
@@ -49,8 +69,9 @@ export function VideoTestimonialsCarousel({
                 />
                 <button
                   type="button"
+                  onClick={() => setOpenIdx(i)}
                   aria-label={`Přehrát video ${t.name}`}
-                  className="absolute inset-0 flex items-center justify-center"
+                  className="group absolute inset-0 flex items-center justify-center"
                 >
                   <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#7BC0A4]/80 shadow-lg transition group-hover:scale-110">
                     <Play className="ml-1 h-5 w-5 fill-white text-white" />
@@ -99,6 +120,35 @@ export function VideoTestimonialsCarousel({
           />
         ))}
       </div>
+
+      {openTestimonial && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4 py-8"
+          onClick={() => setOpenIdx(null)}
+        >
+          <div
+            className="relative w-full max-w-3xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setOpenIdx(null)}
+              aria-label="Zavřít"
+              className="absolute -top-12 right-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            <video
+              key={openTestimonial.video ?? SAMPLE_VIDEO}
+              src={openTestimonial.video ?? SAMPLE_VIDEO}
+              controls
+              autoPlay
+              className="aspect-video w-full rounded-2xl bg-black"
+            />
+            <p className="mt-4 text-sm text-white/85">{openTestimonial.name}</p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

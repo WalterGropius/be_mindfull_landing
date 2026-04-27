@@ -98,28 +98,26 @@ export function Hero() {
               sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
-            <div className="relative z-10 flex min-h-[500px] items-center py-20 lg:min-h-[580px] lg:py-28">
-              <div className="w-full px-6 lg:px-16">
-                <div className="max-w-xl">
-                  <h1 className="text-5xl font-bold leading-tight text-white lg:text-[64px] lg:leading-[1.1]">
-                    {slide.title}
-                  </h1>
-                  <p className="mt-4 max-w-md text-base text-white/85">
-                    {slide.subtitle}
-                  </p>
-                  <div className="mt-8">
-                    <Button
-                      asChild
-                      className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]"
-                    >
-                      <Link href={slide.href}>
-                        <span className="flex items-center gap-2">
-                          {slide.cta}
-                          <ArrowRight className="h-4 w-4" />
-                        </span>
-                      </Link>
-                    </Button>
-                  </div>
+            <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
+              <div className="max-w-2xl">
+                <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+                  {slide.title}
+                </h1>
+                <p className="mt-4 max-w-md text-[18px] leading-[30px] text-white/85">
+                  {slide.subtitle}
+                </p>
+                <div className="mt-8">
+                  <Button
+                    asChild
+                    className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]"
+                  >
+                    <Link href={slide.href}>
+                      <span className="flex items-center gap-2">
+                        {slide.cta}
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>

@@ -29,8 +29,8 @@ export function Header() {
             </button>
             <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
               <div className="relative w-80 rounded-[0.2rem] bg-border-subtle py-2">
-                <div className="absolute -top-1.5 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 rounded-[0.2rem] bg-border-subtle"></div>
-                <div className="relative z-10 flex flex-col">
+                <div className="absolute -top-2 left-1/2 h-0 w-0 -translate-x-1/2 border-x-8 border-b-8 border-x-transparent border-b-border-subtle"></div>
+                <div className="flex flex-col">
                   <Link href="/kurzy/foundations" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">be.mindful FOUNDATIONS</Link>
                   <Link href="/kurzy/membership" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">be.mindful MEMBERSHIP</Link>
                   <Link href="/kurzy/skupinovy-kurz" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Skupinové kurzy v Praze</Link>
@@ -47,8 +47,8 @@ export function Header() {
             </button>
             <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
               <div className="relative w-48 rounded-[0.2rem] bg-border-subtle py-2">
-                <div className="absolute -top-1.5 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 rounded-[0.2rem] bg-border-subtle"></div>
-                <div className="relative z-10 flex flex-col">
+                <div className="absolute -top-2 left-1/2 h-0 w-0 -translate-x-1/2 border-x-8 border-b-8 border-x-transparent border-b-border-subtle"></div>
+                <div className="flex flex-col">
                   <Link href="/blog" className="block px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Blog</Link>
                   <Link href="/podcast" className="block px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Podcast</Link>
                 </div>
