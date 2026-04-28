@@ -129,8 +129,14 @@ export default function StartToPausePage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              state1Src="/Illustrations/pause1.svg"
-              state2Src="/Illustrations/pause2.svg"
+              outlineSrc="/Illustrations/glass_00.svg"
+              viewBox="0 0 170.08 170.08"
+              dots={[
+                {
+                  from: { cx: 72.53, cy: 130.29, r: 11.17 },
+                  to: { cx: 103.44, cy: 30.73, r: 11.17 },
+                },
+              ]}
               width={320}
               height={320}
             />

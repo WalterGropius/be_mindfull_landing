@@ -206,8 +206,14 @@ export default function FoundationsPage() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex justify-center">
             <ScrollAnimatedIllustration
-              state1Src="/Illustrations/wave1.svg"
-              state2Src="/Illustrations/wave2.svg"
+              outlineSrc="/Illustrations/wave_00.svg"
+              viewBox="0 0 170.08 170.08"
+              dots={[
+                {
+                  from: { cx: 99.28, cy: 121.57, r: 8.04 },
+                  to: { cx: 93.08, cy: 65.33, r: 8.04 },
+                },
+              ]}
               width={320}
               height={320}
             />

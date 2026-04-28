@@ -175,8 +175,14 @@ export default function MembershipPage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              state1Src="/Illustrations/shapes1.svg"
-              state2Src="/Illustrations/shapes2.svg"
+              outlineSrc="/Illustrations/shapes_00.svg"
+              viewBox="0 0 170.08 170.08"
+              dots={[
+                {
+                  from: { cx: 94.73, cy: 120.6, r: 5.62 },
+                  to: { cx: 47.06, cy: 46.98, r: 7.11 },
+                },
+              ]}
               width={320}
               height={320}
             />

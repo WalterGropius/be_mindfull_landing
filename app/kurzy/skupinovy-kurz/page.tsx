@@ -248,8 +248,14 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              state1Src="/Illustrations/meditation1.svg"
-              state2Src="/Illustrations/meditation2.svg"
+              outlineSrc="/Illustrations/meditation_00.svg"
+              viewBox="0 0 170.08 170.08"
+              dots={[
+                {
+                  from: { cx: 84.27, cy: 69.14, r: 6.31 },
+                  to: { cx: 84.27, cy: 69.14, r: 26.72 },
+                },
+              ]}
               width={320}
               height={320}
             />
