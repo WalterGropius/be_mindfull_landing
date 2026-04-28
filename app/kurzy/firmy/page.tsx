@@ -3,6 +3,7 @@ import { ArrowRight, Check, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 
 const clientLogos = [
   { src: "/logos/clients/ceska-sporitelna.png", alt: "Česká spořitelna" },
@@ -199,7 +200,12 @@ export default function FirmyPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/clouds1.svg" alt="" width={220} height={220} />
+            <ScrollAnimatedIllustration
+              state1Src="/Illustrations/clouds1.svg"
+              state2Src="/Illustrations/clouds2.svg"
+              width={360}
+              height={320}
+            />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Pauza neznamená zpomalit výkon

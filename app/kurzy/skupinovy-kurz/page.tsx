@@ -8,6 +8,7 @@ import { VideoTestimonialsCarousel } from "@/components/video-testimonials-carou
 import { UpcomingDates } from "@/components/upcoming-dates"
 import { SmileyIcon } from "@/components/list-icons"
 import { CourseModules } from "@/components/course-modules"
+import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 
 const benefits = [
   { bold: "Vytváříte si silný vnitřní kompas,", rest: " který vám pomáhá rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích" },
@@ -246,7 +247,12 @@ export default function SkupinovyKurzPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/wave1.svg" alt="" width={220} height={220} />
+            <ScrollAnimatedIllustration
+              state1Src="/Illustrations/meditation1.svg"
+              state2Src="/Illustrations/meditation2.svg"
+              width={320}
+              height={320}
+            />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Výzkumy potvrzují:
