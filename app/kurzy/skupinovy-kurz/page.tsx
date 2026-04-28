@@ -7,6 +7,7 @@ import { StatsBar } from "@/components/stats-bar"
 import { VideoTestimonialsCarousel } from "@/components/video-testimonials-carousel"
 import { UpcomingDates } from "@/components/upcoming-dates"
 import { SmileyIcon } from "@/components/list-icons"
+import { CourseModules } from "@/components/course-modules"
 
 const benefits = [
   { bold: "Vytváříte si silný vnitřní kompas,", rest: " který vám pomáhá rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích" },
@@ -31,14 +32,54 @@ const upcomingDates = [
 ]
 
 const courseModules = [
-  { label: "MODULE 1", title: "Základy mindfulness & vědomé jedení" },
-  { label: "MODULE 2", title: "Práce s myšlenkami a automatickými reakcemi" },
-  { label: "MODULE 3", title: "Radost, spokojenost a mindfulness pro potěšení" },
-  { label: "MODULE 4", title: "Přerušení stresových vzorců a práce s tělem" },
-  { label: "MODULE 5", title: "Jak zvládat stres a těžké emoce" },
-  { label: "MODULE 6", title: "Všímavá a náročná komunikace" },
-  { label: "MODULE 7", title: "Mindfulness v každodenním životě, práce s energií a návyky" },
-  { label: "MODULE 8", title: "Integrace" },
+  {
+    label: "MODULE 1",
+    title: "Základy mindfulness & vědomé jedení",
+    content:
+      "Položíme si základ celé praxe – co mindfulness je, co rozhodně není, a jak ho začít vnášet do běžného dne. Cvičení vědomého jedení vám ukáže, jak velký rozdíl dělá pozornost i v těch nejobyčejnějších situacích.",
+  },
+  {
+    label: "MODULE 2",
+    title: "Práce s myšlenkami a automatickými reakcemi",
+    content:
+      "Naučíte se rozpoznávat opakující se vzorce mysli a získáte nástroje, jak od myšlenek získat odstup. Místo automatické reakce přichází prostor pro vědomou volbu.",
+  },
+  {
+    label: "MODULE 3",
+    title: "Radost, spokojenost a mindfulness pro potěšení",
+    content:
+      "Mindfulness není jen o zvládání obtížných stavů. Tento týden se zaměříme na to, jak vědomě prohlubovat příjemné okamžiky a posilovat schopnost si jich všímat.",
+  },
+  {
+    label: "MODULE 4",
+    title: "Přerušení stresových vzorců a práce s tělem",
+    content:
+      "Tělo nese stres dřív, než si to uvědomíme. Naučíte se rozpoznávat tělesné signály a přerušovat stresovou reakci přímo v momentě, kdy začne.",
+  },
+  {
+    label: "MODULE 5",
+    title: "Jak zvládat stres a těžké emoce",
+    content:
+      "Praktické techniky pro chvíle, kdy je toho moc – ať už v práci, ve vztazích nebo uvnitř sebe. Naučíte se být s emocemi tak, aby vás nepřeválcovaly.",
+  },
+  {
+    label: "MODULE 6",
+    title: "Všímavá a náročná komunikace",
+    content:
+      "Jak naslouchat i mluvit s pozorností – i v rozhovorech, kde je napětí nebo nesouhlas. Mindfulness ve vztazích jako konkrétní dovednost, ne jen koncept.",
+  },
+  {
+    label: "MODULE 7",
+    title: "Mindfulness v každodenním životě, práce s energií a návyky",
+    content:
+      "Jak udržet praxi i poté, co skončí kurz. Vytvoříme si návyky a kotvy, které drží i v zaneprázdněných týdnech.",
+  },
+  {
+    label: "MODULE 8",
+    title: "Integrace",
+    content:
+      "Závěrečný týden propojuje vše předchozí. Podíváme se zpět na to, co se posunulo, a nastavíme si dlouhodobý plán, jak v praxi pokračovat samostatně.",
+  },
 ]
 
 const tabs = ["Pondělí 10:00–12:30", "Praha 10", "16–18 min denní praxe", "WhatsApp podpora"]
@@ -273,15 +314,8 @@ export default function SkupinovyKurzPage() {
           </div>
 
           {/* Accordion rows */}
-          <div className="mt-8 flex flex-col gap-1">
-            {courseModules.map((m, i) => (
-              <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
-                <span className="min-w-[100px] text-[18px] font-bold uppercase tracking-wider leading-[30px] text-[#7BC0A4]">
-                  {m.label}
-                </span>
-                <span className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{m.title}</span>
-              </div>
-            ))}
+          <div className="mt-8">
+            <CourseModules modules={courseModules} />
           </div>
 
           {/* Bonus app section */}

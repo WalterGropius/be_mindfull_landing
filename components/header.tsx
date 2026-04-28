@@ -31,11 +31,11 @@ export function Header() {
               <div className="relative w-80 rounded-[0.2rem] bg-border-subtle py-2">
                 <div className="absolute -top-2 left-1/2 h-0 w-0 -translate-x-1/2 border-x-8 border-b-8 border-x-transparent border-b-border-subtle"></div>
                 <div className="flex flex-col">
+                  <Link href="/kurzy/start-to-pause" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">ZASTAVIT (zdarma)</Link>
                   <Link href="/kurzy/foundations" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">be.mindful FOUNDATIONS</Link>
                   <Link href="/kurzy/membership" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">be.mindful MEMBERSHIP</Link>
-                  <Link href="/kurzy/skupinovy-kurz" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Skupinové kurzy v Praze</Link>
-                  <Link href="/kurzy/start-to-pause" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Start to PAUSE (zdarma)</Link>
-                  <Link href="/kurzy/firmy" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Mindfulness pro firmy</Link>
+                  <Link href="/kurzy/skupinovy-kurz" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">8týdenní kurz mindfulness (MBSR)</Link>
+                  <Link href="/kurzy/firmy" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Firemní kurzy mindfulness</Link>
                 </div>
               </div>
             </div>
@@ -79,11 +79,11 @@ export function Header() {
         <div className="border-t border-border-subtle bg-surface-white lg:hidden">
           <nav className="flex flex-col gap-4 px-6 py-6">
             <Link href="/" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Domů</Link>
-            <Link href="/kurzy/foundations" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Kurzy - Foundations</Link>
+            <Link href="/kurzy/start-to-pause" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>ZASTAVIT (zdarma)</Link>
+            <Link href="/kurzy/foundations" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>be.mindful FOUNDATIONS</Link>
             <Link href="/kurzy/membership" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>be.mindful MEMBERSHIP</Link>
-            <Link href="/kurzy/skupinovy-kurz" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Skupinové kurzy v Praze</Link>
-            <Link href="/kurzy/start-to-pause" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Start to PAUSE (zdarma)</Link>
-            <Link href="/kurzy/firmy" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Mindfulness pro firmy</Link>
+            <Link href="/kurzy/skupinovy-kurz" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>8týdenní kurz mindfulness (MBSR)</Link>
+            <Link href="/kurzy/firmy" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Firemní kurzy mindfulness</Link>
             <Link href="/o-mne" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>O mně</Link>
             <Link href="/blog" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Zdroje</Link>
             <Link href="/kontakt" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Kontakt</Link>
