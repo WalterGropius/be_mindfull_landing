@@ -3,6 +3,7 @@ import { ArrowRight, Check, Plus, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 
 const benefits = [
   "Naučíte se, jak se zastavit i v okamžicích, kdy máte pocit, že to nejde",
@@ -127,7 +128,12 @@ export default function StartToPausePage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/wave1.svg" alt="" width={220} height={220} />
+            <ScrollAnimatedIllustration
+              state1Src="/Illustrations/pause1.svg"
+              state2Src="/Illustrations/pause2.svg"
+              width={320}
+              height={320}
+            />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Výzkumy potvrzují:

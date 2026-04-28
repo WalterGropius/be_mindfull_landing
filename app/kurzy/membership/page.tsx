@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { StatsBar } from "@/components/stats-bar"
+import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 
 const benefits = [
   { bold: "Vytvoříte si silný vnitřní kompas,", rest: " který vám pomůže rozhodovat se pod tlakem a vědět, jak reagovat v náročných situacích." },
@@ -173,7 +174,12 @@ export default function MembershipPage() {
       <section className="bg-[#C0D1C6] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
-            <Image src="/Illustrations/shapes1.svg" alt="" width={220} height={220} />
+            <ScrollAnimatedIllustration
+              state1Src="/Illustrations/shapes1.svg"
+              state2Src="/Illustrations/shapes2.svg"
+              width={320}
+              height={320}
+            />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Rovnováha se tvoří z okamžiků.

@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer"
 import { StatsBar } from "@/components/stats-bar"
 import { SmileyIcon } from "@/components/list-icons"
 import { CourseModules } from "@/components/course-modules"
+import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 
 const benefits = [
   { bold: "Posílíte emoční odolnost:", rest: " zvládnete náročné emoce a životní výzvy s větší stabilitou." },
@@ -204,7 +205,12 @@ export default function FoundationsPage() {
       <section className="bg-[#C0D1C6] pb-20">
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex justify-center">
-            <Image src="/Illustrations/wave1.svg" alt="" width={320} height={140} />
+            <ScrollAnimatedIllustration
+              state1Src="/Illustrations/wave1.svg"
+              state2Src="/Illustrations/wave2.svg"
+              width={320}
+              height={320}
+            />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Výzkumy potvrzují:
