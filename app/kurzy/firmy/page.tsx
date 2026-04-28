@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Check, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -89,8 +90,8 @@ export default function FirmyPage() {
               Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
             </p>
             <div className="mt-8">
-              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                Zobrazit kurzy <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                <Link href="/kontakt">Zobrazit kurzy <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
@@ -189,8 +190,8 @@ export default function FirmyPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Kontaktujte nás pro osobní nabídku
+            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              <Link href="/kontakt">Kontaktujte nás pro osobní nabídku</Link>
             </Button>
           </div>
         </div>
@@ -201,7 +202,7 @@ export default function FirmyPage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              outlineSrc="/Illustrations/speech_00.svg"
+              outline={{ src: "/Illustrations/speech_00.svg" }}
               viewBox="0 0 170.08 170.08"
               dots={[
                 {
@@ -290,8 +291,8 @@ export default function FirmyPage() {
             Vyplňte dotazník a my vám připravíme řešení na míru potřebám vaší firmy.
           </p>
           <div className="mt-8">
-            <Button className="h-auto rounded-full bg-white px-10 py-3 text-sm font-semibold text-[#5E767E] hover:bg-white/90">
-              Kontaktujte nás <ArrowRight className="ml-2 h-4 w-4" />
+            <Button asChild className="h-auto rounded-full bg-white px-10 py-3 text-sm font-semibold text-[#5E767E] hover:bg-white/90">
+              <Link href="/kontakt">Kontaktujte nás <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
         </div>

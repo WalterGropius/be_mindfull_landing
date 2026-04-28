@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Play } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -119,8 +120,8 @@ export default function FoundationsPage() {
               Vše, co potřebujete k přechodu od stresu k odolnosti
             </p>
             <div className="mt-8">
-              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                <Link href="/objednavka">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
@@ -194,8 +195,8 @@ export default function FoundationsPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Vstoupit do kurzu
+            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              <Link href="/objednavka">Vstoupit do kurzu</Link>
             </Button>
           </div>
         </div>
@@ -206,7 +207,7 @@ export default function FoundationsPage() {
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex justify-center">
             <ScrollAnimatedIllustration
-              outlineSrc="/Illustrations/wave_00.svg"
+              outline={{ src: "/Illustrations/wave_00.svg" }}
               viewBox="0 0 170.08 170.08"
               dots={[
                 {
@@ -309,8 +310,8 @@ export default function FoundationsPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Vstoupit do kurzu
+            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              <Link href="/objednavka">Vstoupit do kurzu</Link>
             </Button>
           </div>
         </div>

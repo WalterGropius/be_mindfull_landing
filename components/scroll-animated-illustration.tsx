@@ -8,30 +8,46 @@ export type IllustrationDot = {
   fill?: string
 }
 
+type OutlineImg = {
+  src: string
+}
+
+type OutlineInline = {
+  paths: { d: string }[]
+  /** Fill colour for the inline paths. Use the section's bg colour to
+   * have the outline occlude any dots rendered behind it. */
+  fill?: string
+  /** Stroke colour. Defaults to #010101 to match the source SVGs. */
+  stroke?: string
+  strokeWidth?: number
+}
+
 type Props = {
-  /** path to the static outline SVG (e.g. /Illustrations/wave_00.svg) */
-  outlineSrc: string
-  /** SVG viewBox matching the outline + dot coordinate space */
+  outline: OutlineImg | OutlineInline
+  /** SVG viewBox matching the outline + dot coordinate space. */
   viewBox: string
-  /** one or more orange dots whose cx/cy/r interpolate from state 1 to state 2 */
   dots: IllustrationDot[]
+  /** When true, dots are rendered behind the outline so the outline
+   * occludes them (requires inline outline with a non-transparent fill). */
+  dotsBehind?: boolean
   width?: number
   height?: number
-  /** scroll progress (0..1 across the element's traversal of the viewport)
-   * at which the animation starts. Default 0.30 — the user has scrolled
-   * about a third of the way past the section's entry before motion begins,
-   * giving them a clear look at the initial state. */
+  /** Scroll progress (0..1 across the element's traversal of the
+   * viewport) at which the animation starts. Default 0.30. */
   startProgress?: number
-  /** scroll progress at which the animation reaches its final state.
-   * Default 0.65 — animation finishes before the section starts leaving
-   * the top of the viewport, so the final state is visible too. */
+  /** Scroll progress at which the animation ends. Default 0.65. */
   endProgress?: number
 }
 
+function isInline(o: OutlineImg | OutlineInline): o is OutlineInline {
+  return Array.isArray((o as OutlineInline).paths)
+}
+
 export function ScrollAnimatedIllustration({
-  outlineSrc,
+  outline,
   viewBox,
   dots,
+  dotsBehind = false,
   width = 320,
   height = 320,
   startProgress = 0.3,
@@ -74,32 +90,51 @@ export function ScrollAnimatedIllustration({
   const t = Math.min(1, Math.max(0, (progress - startProgress) / span))
   const lerp = (a: number, b: number) => a + (b - a) * t
 
+  const inline = isInline(outline)
+
+  const circles = dots.map((dot, i) => (
+    <circle
+      key={i}
+      cx={lerp(dot.from.cx, dot.to.cx)}
+      cy={lerp(dot.from.cy, dot.to.cy)}
+      r={lerp(dot.from.r, dot.to.r)}
+      fill={dot.fill ?? "#e58c34"}
+    />
+  ))
+
   return (
     <div
       ref={ref}
       className="relative pointer-events-none"
       style={{ width, height }}
     >
-      <img
-        src={outlineSrc}
-        alt=""
-        className="absolute inset-0 h-full w-full object-contain"
-      />
+      {!inline && (
+        <img
+          src={(outline as OutlineImg).src}
+          alt=""
+          className="absolute inset-0 h-full w-full object-contain"
+        />
+      )}
       <svg
         viewBox={viewBox}
         preserveAspectRatio="xMidYMid meet"
         className="absolute inset-0 h-full w-full"
         aria-hidden="true"
       >
-        {dots.map((dot, i) => (
-          <circle
-            key={i}
-            cx={lerp(dot.from.cx, dot.to.cx)}
-            cy={lerp(dot.from.cy, dot.to.cy)}
-            r={lerp(dot.from.r, dot.to.r)}
-            fill={dot.fill ?? "#e58c34"}
-          />
-        ))}
+        {dotsBehind && circles}
+        {inline &&
+          (outline as OutlineInline).paths.map((p, i) => (
+            <path
+              key={`p-${i}`}
+              d={p.d}
+              fill={(outline as OutlineInline).fill ?? "none"}
+              stroke={(outline as OutlineInline).stroke ?? "#010101"}
+              strokeWidth={(outline as OutlineInline).strokeWidth ?? 0.6}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          ))}
+        {!dotsBehind && circles}
       </svg>
     </div>
   )

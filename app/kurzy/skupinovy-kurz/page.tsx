@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -147,8 +148,8 @@ export default function SkupinovyKurzPage() {
               Staňte se stabilními i v bouřlivých časech
             </p>
             <div className="mt-8">
-              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                <Link href="/objednavka">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
@@ -234,10 +235,11 @@ export default function SkupinovyKurzPage() {
           </div>
           <div className="mt-12 text-center">
             <Button
+              asChild
               variant="outline"
               className="h-auto rounded-full border-[#7BC0A4] px-10 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white"
             >
-              Vstoupit do kurzu
+              <Link href="/objednavka">Vstoupit do kurzu</Link>
             </Button>
           </div>
         </div>
@@ -248,7 +250,15 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              outlineSrc="/Illustrations/meditation_00.svg"
+              outline={{
+                paths: [
+                  { d: "M109.78,125.68c-1.05-.03-4.33-.17-8.18-.17-7.31,0-16.68.5-16.68,3.2,0,2.84,5.01,3.2,7.82,3.27" },
+                  { d: "M91.06,131.9c-3.61.16-6.76,1.04-6.79,2.16-.04,2.13,6.25,2.63,9.33,2.78" },
+                  { d: "M93.6,136.85c-1.63.05-9.29,0-9.29,2.37,0,2.96,6.32,3.49,9.65,3.55,3.91.06,6.15.13,9.22.13,3.93,0,7.49.35,13.09.35,11.12,0,24.66-1.39,24.66-12.49,0-18.43-44.23-22.71-44.23-46.05,0-5.26,1.15-10.91,1.15-15.87,0-9.32-5.54-13.69-13.02-13.69-5.35,0-14.84,3.91-14.84,16.08,0,5.77,1.62,12.13,1.62,17.91,0,25-42.29,13.52-41.8,41.65.08,4.37,2.66,10.91,14.19,11.08s29.09.52,32.36.52c5.08,0,7.76-1.44,7.93-3.16s-9.48-2.35-9.48-2.35c0,0,8.85-.47,9.44-2.8s-9.11-2.28-9.11-2.28" },
+                  { d: "M76.33,131.73s8.3-1.08,8.59-3.02-14.96-3.44-18.22-3.58c-3.26-.14-19.5-.82-19.5-.82" },
+                ],
+                fill: "#C0D1C6",
+              }}
               viewBox="0 0 170.08 170.08"
               dots={[
                 {
@@ -256,6 +266,7 @@ export default function SkupinovyKurzPage() {
                   to: { cx: 84.27, cy: 69.14, r: 26.72 },
                 },
               ]}
+              dotsBehind
               width={320}
               height={320}
             />
@@ -343,8 +354,8 @@ export default function SkupinovyKurzPage() {
                 From this situation xxx happened and I discovered, that xxx.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Button className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-                  Vstoupit do kurzu
+                <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+                  <Link href="/objednavka">Vstoupit do kurzu</Link>
                 </Button>
                 <button className="text-sm font-medium text-[#7BC0A4] underline hover:text-[#6BB194]">
                   Sledovat webinář zdarma

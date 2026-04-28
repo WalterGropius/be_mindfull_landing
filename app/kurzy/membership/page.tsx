@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -88,8 +89,8 @@ export default function MembershipPage() {
               Váš každodenní prostor k zastavení – udržujte rovnováhu
             </p>
             <div className="mt-8">
-              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                Přidat se <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                <Link href="/objednavka">Přidat se <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
@@ -163,8 +164,8 @@ export default function MembershipPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Přidat se
+            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              <Link href="/objednavka">Přidat se</Link>
             </Button>
           </div>
         </div>
@@ -175,7 +176,7 @@ export default function MembershipPage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              outlineSrc="/Illustrations/shapes_00.svg"
+              outline={{ src: "/Illustrations/shapes_00.svg" }}
               viewBox="0 0 170.08 170.08"
               dots={[
                 {
@@ -245,8 +246,8 @@ export default function MembershipPage() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Staňte se členem <ArrowRight className="ml-2 h-4 w-4" />
+            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              <Link href="/objednavka">Staňte se členem <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
         </div>
