@@ -81,13 +81,12 @@ export default function AboutPage() {
       {/* Bio section 2 — gray bg */}
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
-          <div className="overflow-hidden rounded-2xl lg:w-1/2">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
               src="/about-applifting-70.jpg"
               alt="Michal Dvořák"
-              width={600}
-              height={500}
-              className="w-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
           <div className="lg:w-1/2">

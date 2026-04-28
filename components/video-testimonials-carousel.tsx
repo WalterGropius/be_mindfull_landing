@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight, Play, X } from "lucide-react"
+import { Play, X } from "lucide-react"
 
 export type VideoTestimonial = {
   quote: string
@@ -23,11 +23,14 @@ export function VideoTestimonialsCarousel({
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const visibleCount = 3
   const maxStart = Math.max(0, testimonials.length - visibleCount)
-  const canPrev = start > 0
-  const canNext = start < maxStart
 
-  const prev = () => setStart((s) => Math.max(0, s - 1))
-  const next = () => setStart((s) => Math.min(maxStart, s + 1))
+  useEffect(() => {
+    if (maxStart === 0 || openIdx !== null) return
+    const id = setInterval(() => {
+      setStart((s) => (s >= maxStart ? 0 : s + 1))
+    }, 6000)
+    return () => clearInterval(id)
+  }, [maxStart, openIdx])
 
   useEffect(() => {
     if (openIdx === null) return
@@ -87,25 +90,6 @@ export function VideoTestimonialsCarousel({
           ))}
         </div>
       </div>
-
-      <button
-        type="button"
-        onClick={prev}
-        disabled={!canPrev}
-        aria-label="Předchozí"
-        className="absolute -left-4 top-24 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition disabled:cursor-not-allowed disabled:opacity-40 hover:bg-[#F5F6F4] md:flex lg:-left-6"
-      >
-        <ChevronLeft className="h-5 w-5 text-[#2D2C2B]" />
-      </button>
-      <button
-        type="button"
-        onClick={next}
-        disabled={!canNext}
-        aria-label="Další"
-        className="absolute -right-4 top-24 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md transition disabled:cursor-not-allowed disabled:opacity-40 hover:bg-[#F5F6F4] md:flex lg:-right-6"
-      >
-        <ChevronRight className="h-5 w-5 text-[#2D2C2B]" />
-      </button>
 
       <div className="mt-8 flex justify-center gap-2">
         {Array.from({ length: maxStart + 1 }).map((_, i) => (
