@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ArrowRight, Check, Plus, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
@@ -45,8 +46,8 @@ export default function StartToPausePage() {
               Začněte, jak do svého života přidat trochu prostoru – a krok za krokem přeměníte způsoby, jak začleníte toto každodenního života.
             </p>
             <div className="mt-8">
-              <Button className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
+                <Link href="/objednavka">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
@@ -117,8 +118,8 @@ export default function StartToPausePage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Kontaktujte nás pro osobní nabídku
+            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              <Link href="/kontakt">Kontaktujte nás pro osobní nabídku</Link>
             </Button>
           </div>
         </div>
@@ -129,7 +130,7 @@ export default function StartToPausePage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              outlineSrc="/Illustrations/glass_00.svg"
+              outline={{ src: "/Illustrations/glass_00.svg" }}
               viewBox="0 0 170.08 170.08"
               dots={[
                 {
@@ -200,8 +201,8 @@ export default function StartToPausePage() {
           </div>
 
           <div className="mt-8 text-center">
-            <Button className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              Vstoupit do START to PAUSE
+            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+              <Link href="/objednavka">Vstoupit do START to PAUSE</Link>
             </Button>
           </div>
         </div>

@@ -20,7 +20,7 @@ export function AboutSection() {
             Dnes jsem jediný Senior Mindfulness Teacher v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness tisícům lidí za posledních 15 let.
           </Typography>
           <div className="mt-10">
-            <Button asChild variant="primary-orange" className="">
+            <Button asChild variant="primary-orange" className="h-auto whitespace-normal text-center">
               <Link href="/o-mne">Poznejte svého průvodce mindfulness</Link>
             </Button>
           </div>
