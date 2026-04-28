@@ -1,32 +1,44 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
+
+export type IllustrationDot = {
+  from: { cx: number; cy: number; r: number }
+  to: { cx: number; cy: number; r: number }
+  fill?: string
+}
 
 type Props = {
-  state1Src: string
-  state2Src: string
-  alt?: string
+  /** path to the static outline SVG (e.g. /Illustrations/wave_00.svg) */
+  outlineSrc: string
+  /** SVG viewBox matching the outline + dot coordinate space */
+  viewBox: string
+  /** one or more orange dots whose cx/cy/r interpolate from state 1 to state 2 */
+  dots: IllustrationDot[]
   width?: number
   height?: number
-  /**
-   * Fraction of the viewport (from top) at which the illustration's
-   * vertical centre triggers the swap to state 2. Lower values mean
-   * the swap happens later (after more scrolling). Default 0.45.
-   */
-  triggerAt?: number
+  /** scroll progress (0..1 across the element's traversal of the viewport)
+   * at which the animation starts. Default 0.30 — the user has scrolled
+   * about a third of the way past the section's entry before motion begins,
+   * giving them a clear look at the initial state. */
+  startProgress?: number
+  /** scroll progress at which the animation reaches its final state.
+   * Default 0.65 — animation finishes before the section starts leaving
+   * the top of the viewport, so the final state is visible too. */
+  endProgress?: number
 }
 
 export function ScrollAnimatedIllustration({
-  state1Src,
-  state2Src,
-  alt = "",
+  outlineSrc,
+  viewBox,
+  dots,
   width = 320,
   height = 320,
-  triggerAt = 0.45,
+  startProgress = 0.3,
+  endProgress = 0.65,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null)
-  const [advanced, setAdvanced] = useState(false)
+  const [progress, setProgress] = useState(0)
 
   useEffect(() => {
     const el = ref.current
@@ -36,9 +48,11 @@ export function ScrollAnimatedIllustration({
     const update = () => {
       frame = 0
       const rect = el.getBoundingClientRect()
-      const viewport = window.innerHeight
-      const elementCenter = rect.top + rect.height / 2
-      setAdvanced(elementCenter < viewport * triggerAt)
+      const viewport = window.innerHeight || document.documentElement.clientHeight
+      const total = viewport + rect.height
+      const traveled = viewport - rect.top
+      const p = Math.min(1, Math.max(0, traveled / total))
+      setProgress(p)
     }
 
     const onScroll = () => {
@@ -54,32 +68,39 @@ export function ScrollAnimatedIllustration({
       window.removeEventListener("resize", onScroll)
       if (frame) cancelAnimationFrame(frame)
     }
-  }, [triggerAt])
+  }, [])
+
+  const span = Math.max(0.001, endProgress - startProgress)
+  const t = Math.min(1, Math.max(0, (progress - startProgress) / span))
+  const lerp = (a: number, b: number) => a + (b - a) * t
 
   return (
     <div
       ref={ref}
-      className="relative"
+      className="relative pointer-events-none"
       style={{ width, height }}
     >
-      <Image
-        src={state1Src}
-        alt={alt}
-        width={width}
-        height={height}
-        className={`absolute inset-0 h-full w-full transition-opacity duration-300 ease-out ${
-          advanced ? "opacity-0" : "opacity-100"
-        }`}
+      <img
+        src={outlineSrc}
+        alt=""
+        className="absolute inset-0 h-full w-full object-contain"
       />
-      <Image
-        src={state2Src}
-        alt={alt}
-        width={width}
-        height={height}
-        className={`absolute inset-0 h-full w-full transition-opacity duration-300 ease-out ${
-          advanced ? "opacity-100" : "opacity-0"
-        }`}
-      />
+      <svg
+        viewBox={viewBox}
+        preserveAspectRatio="xMidYMid meet"
+        className="absolute inset-0 h-full w-full"
+        aria-hidden="true"
+      >
+        {dots.map((dot, i) => (
+          <circle
+            key={i}
+            cx={lerp(dot.from.cx, dot.to.cx)}
+            cy={lerp(dot.from.cy, dot.to.cy)}
+            r={lerp(dot.from.r, dot.to.r)}
+            fill={dot.fill ?? "#e58c34"}
+          />
+        ))}
+      </svg>
     </div>
   )
 }

@@ -201,9 +201,19 @@ export default function FirmyPage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              state1Src="/Illustrations/clouds1.svg"
-              state2Src="/Illustrations/clouds2.svg"
-              width={360}
+              outlineSrc="/Illustrations/speech_00.svg"
+              viewBox="0 0 170.08 170.08"
+              dots={[
+                {
+                  from: { cx: 53.62, cy: 74.43, r: 2.78 },
+                  to: { cx: 30.62, cy: 73.43, r: 2.78 },
+                },
+                {
+                  from: { cx: 53.57, cy: 88.44, r: 2.78 },
+                  to: { cx: 30.57, cy: 88.44, r: 2.78 },
+                },
+              ]}
+              width={320}
               height={320}
             />
           </div>
