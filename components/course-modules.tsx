@@ -40,7 +40,7 @@ export function CourseModules({ modules }: { modules: CourseModule[] }) {
               }`}
             >
               <div className="overflow-hidden">
-                <div className="px-5 pb-5 pl-[140px] text-[18px] leading-[30px] text-[#4B4C4D]">
+                <div className="px-5 pb-5 pl-[140px] pt-2 text-[18px] leading-[30px] text-[#4B4C4D]">
                   {m.content ?? "Více informací o tomto modulu brzy doplníme."}
                 </div>
               </div>

@@ -186,7 +186,7 @@ export default function FoundationsPage() {
             </div>
             <div className="overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/Pictures/be.mindful FOUNDATIONS/AdobeStock_305273034.jpeg"
+                src="/Pictures/be.mindful FOUNDATIONS/Portrety_BeMindful2026AnnaSolcova.22.jpg"
                 alt="Mindfulness practice"
                 width={600}
                 height={500}
@@ -275,7 +275,7 @@ export default function FoundationsPage() {
       <section className="bg-white py-12 lg:py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <Image
-            src="/Pictures/be.mindful FOUNDATIONS/Device Set_v01_Mockup.png"
+            src="/Mockup photos/Na bílém pozadí/nove_online.jpg"
             alt="be.mindful na všech zařízeních"
             width={900}
             height={560}

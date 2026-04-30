@@ -62,7 +62,7 @@ export function FeaturesSection() {
           </div>
           <div className="lg:w-1/2">
             <div className="h-full w-full min-h-[400px] overflow-hidden rounded-[1rem]">
-              <img src="/Pictures/AdobeStock_313540527.jpeg" alt="Wellbeing" className="w-full h-full object-cover object-top" />
+              <img src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg" alt="Wellbeing" className="w-full h-full object-cover object-top" />
             </div>
           </div>
         </div>

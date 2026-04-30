@@ -49,7 +49,7 @@ export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
               }`}
             >
               <div className="overflow-hidden">
-                <div className="flex items-start gap-5 px-8 pb-6">
+                <div className="flex items-start gap-5 px-8 pb-6 pt-3">
                   <span
                     aria-hidden="true"
                     className="invisible select-none whitespace-nowrap text-3xl font-bold leading-none"

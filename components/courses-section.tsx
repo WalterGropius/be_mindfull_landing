@@ -77,7 +77,7 @@ export function CoursesSection() {
         <div className="mt-16 bg-[#f5f6f4] rounded-[1rem] overflow-hidden">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 h-64 lg:h-auto relative">
-              <img src="/BeMindful_Letna2026AnnaSolcova.5.jpg" alt="Companies Courses" className="w-full h-full object-cover absolute inset-0" />
+              <img src="/Pictures/Homepage/BeMindful_Applifting2026Annaśolcov†.5.jpg" alt="Companies Courses" className="w-full h-full object-cover absolute inset-0" />
             </div>
             <div className="lg:w-1/2 p-8 lg:p-14">
               <Typography variant="h3" className="uppercase mb-6">Mindfulness pro FIRMY</Typography>

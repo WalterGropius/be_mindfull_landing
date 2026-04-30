@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
+import { StatsBar } from "@/components/stats-bar"
 
 const benefits = [
   "Naučíte se, jak se zastavit i v okamžicích, kdy máte pocit, že to nejde",
@@ -238,22 +239,7 @@ export default function StartToPausePage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-[#7BC0A4] py-14">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x-2 divide-[#E4FFE3] text-center">
-            {[
-              { num: "15+", label: "Let praxe" },
-              { num: "2K+", label: "Absolventi" },
-              { num: "1", label: "Senior Mindfulness Teacher v CR" },
-            ].map((s) => (
-              <div key={s.num} className="px-6">
-                <p className="text-5xl font-bold text-[#E4FFE3] lg:text-6xl">{s.num}</p>
-                <p className="mt-2 text-[18px] font-semibold leading-[30px] text-[#E4FFE3]">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StatsBar />
 
       <Footer />
     </main>

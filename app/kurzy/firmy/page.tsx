@@ -33,25 +33,25 @@ const investmentRight = [
 
 const programs = [
   {
-    image: "/BeMindful_Letna2026AnnaSolcova.16.jpg",
+    image: "/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.1.jpg",
     label: "Pro firemní kurzy mindfulness",
     title: "Rychlý restart mysli: Ochutnávka mindfulness v pracovním životě",
     desc: "Na workshopu se seznámíte se základními principy mindfulness a nejpouž ívanějšími postupy. Zjistíte, proč je mindfulness užitečné i pro vás, jak se vcítit do stresu a zaměřit se na vědomé napětí v různých situacích. Naslouchejte a uvidíte, jak se vaše věci změní nad tlakem a situacemi.",
   },
   {
-    image: "/BeMindful_Letna2026AnnaSolcova.17.jpg",
+    image: "/Pictures/Company Courses/Portrety_BeMindful2026AnnaSolcova.5.jpg",
     label: "Firemní kurz mindfulness",
     title: "Mozek pod tlakem: Jak získat klid a zvýšit výkon s mindfulness",
     desc: "Na tomto workshopu zjistíte, jak váš mozek reaguje na tlak a na pracovní místa. Naučí se vy sami přijímat stres prostě a s láskou. Zkušenosti a dobrý čas jsou základy pro dobrou a soustředěnou práci. Naslouchejte a ukáže vás na pozice a situacích v pracovním prostředí.",
   },
   {
-    image: "/BeMindful_Letna2026AnnaSolcova.5.jpg",
+    image: "/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.45.jpg",
     label: "Firemní kurz mindfulness",
     title: "Od multitaskingu k flow: Pro hlubší soustředění a klid",
     desc: "Jsou pracující lidé, kteří jsou schopni vnímat přítomný okamžik? Fungujete ve stresu. Nevíte, jak být ve flow stavu? Jsou to témata a dovednosti. Naučíte se vy sami přijímat práci, věnovat více pozornost věcem. Naučíte se vycítit vaše vlastní silné a slabé stránky a úspěšné techniky.",
   },
   {
-    image: "/BeMindful_Letna2026AnnaSolcova.8.jpg",
+    image: "/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.128.jpg",
     label: "Firemní kurz mindfulness",
     title: "Mindfulness v kapse: Pro lepší soustředění a klid",
     desc: "Aplikace, která vám pomůže chápat základy mindfulness přes dobrá témata a naučíte vás jak přistoupit k mindfulness, s minulostí i v práci. Umí 10minutovou lekci a podpůrné záznamy a naučíte je a zapamatujete všechny techniky, videa a základní psychologické principy.",
@@ -316,7 +316,7 @@ export default function FirmyPage() {
           </div>
           <div className="overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/Pictures/_DSC7728.jpg"
+              src="/Pictures/Company Courses/BeMindful_Letn†2026AnnaÊolcov†.98.jpg"
               alt="Michal Dvořák"
               width={600}
               height={500}

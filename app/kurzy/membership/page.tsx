@@ -22,27 +22,27 @@ const includes = [
     desc: "Krátká 10minutová videa se základy mindfulness – jak vytvořit prostor v zahlcené mysli, jak nacházet klid v napětí.",
   },
   {
-    image: "/BeMindful_Letna2026AnnaSolcova.17.jpg",
+    image: "/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.40.jpg",
     title: "be.mindful LIBRARY",
     desc: "12 měsíců neomezeného přístupu do knihovny plné tematických meditací, praktických tipů a rozhovorů.",
   },
   {
-    image: "/Pictures/AdobeStock_1844492057.jpeg",
+    image: "/Pictures/be.mindful MEMBERSHIP/BeMindful_Applifting2026Annaśolcov†.6.jpg",
     title: "be.mindful COMMUNITY",
     desc: "Změna je týmová záležitost. V okamžicích, kdy ztrácíme nadhled, je důležité mít kolem sebe lidi, kteří už tou cestou prošli.",
   },
   {
-    image: "/BeMindful_Letna2026AnnaSolcova.5.jpg",
+    image: "/Pictures/be.mindful MEMBERSHIP/_DSC7734.jpg",
     title: "Týdenní živé meditace + záznamy",
     desc: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své \u201Ewellbeing fitko pro mysl\u201C.",
   },
   {
-    image: "/BeMindful_Letna2026AnnaSolcova.16.jpg",
+    image: "/Mockup photos/Na bílém pozadí/nove_online.jpg",
     title: "Měsíční živá setkání + záznamy",
     desc: "Prostor pro vaše otázky a osobní podporu v konkrétních životních situacích. Skvělý způsob, jak vidět, že mindfulness funguje v reálném životě.",
   },
   {
-    image: "/Pictures/AdobeStock_313540527.jpeg",
+    image: "/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.36.jpg",
     title: "Audio nahrávky",
     desc: "Každá s jiným zaměřením – lepší spánek, soustředění, zvládání stresu a práce s emocemi.",
   },
@@ -74,7 +74,7 @@ export default function MembershipPage() {
       {/* Hero */}
       <section className="relative min-h-[500px] overflow-hidden bg-[#1A1A1A] lg:min-h-[580px]">
         <Image
-          src="/AdobeStock_431961372_Preview.jpeg"
+          src="/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.9.jpg"
           alt="be.mindful Membership"
           fill
           className="object-cover object-top"
@@ -210,7 +210,7 @@ export default function MembershipPage() {
       <section className="bg-white py-12 lg:py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <Image
-            src="/Pictures/be.mindful MEMBERSHIP/Device Set_v01_Mockup.png"
+            src="/Mockup photos/Na bílém pozadí/univerz.png"
             alt="be.mindful na všech zařízeních"
             width={900}
             height={560}

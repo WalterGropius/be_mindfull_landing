@@ -28,7 +28,7 @@ export function Header() {
               Kurzy <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
             </button>
             <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="relative w-80 rounded-[0.2rem] bg-border-subtle py-2">
+              <div className="relative w-96 rounded-[0.2rem] bg-border-subtle py-2">
                 <div className="absolute -top-2 left-1/2 h-0 w-0 -translate-x-1/2 border-x-8 border-b-8 border-x-transparent border-b-border-subtle"></div>
                 <div className="flex flex-col">
                   <Link href="/kurzy/start-to-pause" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">ZASTAVIT (zdarma)</Link>

@@ -1,18 +1,18 @@
-import { Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ExpandableItems } from "@/components/expandable-items"
 
 const includes = [
-  "8 x 2,5 hodinová setkání (1 setkání týdně)",
-  "1x celodenní setkání (6 hodin včetně přestávky)",
-  "Audio nahrávky vedených meditací pro každodenní praxi",
+  { title: "8 x 2,5 hodinová setkání (1 setkání týdně)" },
+  { title: "1x celodenní setkání (6 hodin včetně přestávky)" },
+  { title: "Audio nahrávky vedených meditací pro každodenní praxi" },
 ]
 
 const bonuses = [
-  "BONUS 1: Možnost soukromých konzultací během kurzu",
-  "BONUS 2: Prostor pro sdílení a otázky",
-  "BONUS 3: Přístup do členské sekce",
+  { title: "BONUS 1: Možnost soukromých konzultací během kurzu" },
+  { title: "BONUS 2: Prostor pro sdílení a otázky" },
+  { title: "BONUS 3: Přístup do členské sekce" },
 ]
 
 const plans = [
@@ -62,31 +62,11 @@ export default function CheckoutPage() {
                 8týdenní kurz mindfulness obsahuje:
               </p>
             </div>
-            <ul className="bg-[#A7CDB6]">
-              {includes.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-center justify-between gap-4 border-b border-white/40 px-6 py-5 text-[18px] leading-[30px] text-[#2D2C2B] last:border-b-0"
-                >
-                  <span>{item}</span>
-                  <Plus className="h-5 w-5 shrink-0 text-[#2D2C2B]/70" />
-                </li>
-              ))}
-            </ul>
+            <ExpandableItems items={includes} />
             <div className="bg-[#7BC0A4] px-6 py-5">
               <p className="text-[18px] font-bold leading-[30px] text-white">Bonusy</p>
             </div>
-            <ul className="bg-[#A7CDB6]">
-              {bonuses.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-center justify-between gap-4 border-b border-white/40 px-6 py-5 text-[18px] leading-[30px] text-[#2D2C2B] last:border-b-0"
-                >
-                  <span>{item}</span>
-                  <Plus className="h-5 w-5 shrink-0 text-[#2D2C2B]/70" />
-                </li>
-              ))}
-            </ul>
+            <ExpandableItems items={bonuses} />
           </div>
         </div>
       </section>
