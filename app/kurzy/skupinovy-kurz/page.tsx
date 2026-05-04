@@ -88,40 +88,29 @@ const tabs = ["Pondělí 10:00–12:30", "Praha 10", "16–18 min denní praxe",
 
 const testimonials = [
   {
-    quote: "be.mindful mi pomohl najít cestu zpět do těla. Opět vím, jak dýchat.",
-    name: "Betty R.",
-    text: "Bezpečný prostor pro návrat k sobě – když vás život rozhodí nebo když chcete udržet rovnováhu. Říkejte tomu své „wellbeing fitko pro mysl\".",
+    quote: "Kurz mi přinesl schopnost vnímání okamžiku.",
+    name: "Dušan Lužný",
     image: "/Pictures/AdobeStock_1844492057.jpeg",
   },
   {
-    quote: "Naučil jsem se dýchat dřív, než zareaguji – a to změnilo všechno.",
-    name: "Jakub M.",
-    text: "Skupinová dynamika a Michalovo vedení mi daly stabilní rámec, který drží i v náročných týdnech. Místo rychlých soudů přichází zvědavost.",
+    quote: "Vrátila jsem se zpátky do těla.",
+    name: "Pavla Fridrichová",
     image: "/Pictures/AdobeStock_313540527.jpeg",
   },
   {
-    quote: "Po kurzu mi mindfulness konečně dává smysl v praxi, ne jen na papíře.",
-    name: "Lenka V.",
-    text: "Krátké každodenní praxe a sdílení s ostatními mi pomohly udržet rytmus i po skončení kurzu. Cítím se klidnější a víc ve svém těle.",
+    quote: "Zklidnil jsem se a získal jsem řád do svého života.",
+    name: "Pavel Bohatý",
     image: "/Pictures/AdobeStock_1844492057.jpeg",
   },
   {
-    quote: "Konečně chápu, co znamená 'být tady a teď' – a co s tím dělat.",
-    name: "Martin K.",
-    text: "Skupina i Michal nabídli prostor bez tlaku. Naučil jsem se rozpoznávat automatické reakce dřív, než mě převálcují, a vracet pozornost k tomu, co opravdu chci.",
+    quote: "Kurz mi pomohl projít náročným obdobím mého života.",
+    name: "Julius Smolej",
     image: "/Pictures/AdobeStock_313540527.jpeg",
   },
   {
-    quote: "Mindfulness se stalo součástí mého dne, ne další položkou v kalendáři.",
-    name: "Tereza S.",
-    text: "Líbí se mi, jak Michal propojuje vědu s praxí. Po osmi týdnech mám konkrétní nástroje, které sahají dál než jen meditace u rána.",
+    quote: "Naučil jsem se pravidelně meditovat a vím, co dělat, když jsem ve stresu.",
+    name: "Ladislav Dobiáš",
     image: "/Pictures/AdobeStock_1844492057.jpeg",
-  },
-  {
-    quote: "Skupina mě držela v praxi i ve chvílích, kdy bych sám/sama přestal/a.",
-    name: "Petr H.",
-    text: "Bez té skupinové podpory bych pravděpodobně po druhém týdnu skončil. Společné sdílení mi ukázalo, že nejsem v tom sám – a to je obrovsky úlevné.",
-    image: "/Pictures/AdobeStock_313540527.jpeg",
   },
 ]
 
@@ -149,7 +138,7 @@ export default function SkupinovyKurzPage() {
             </p>
             <div className="mt-8">
               <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/objednavka">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link href="/objednavka/8-tydenni-kurz">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
@@ -211,7 +200,7 @@ export default function SkupinovyKurzPage() {
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Posilíte si „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
           </h2>
-          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
+          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
@@ -223,13 +212,12 @@ export default function SkupinovyKurzPage() {
                 </div>
               ))}
             </div>
-            <div className="overflow-hidden rounded-2xl lg:w-1/2">
+            <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
                 src="/BeMindful_Letna2026AnnaSolcova.55.jpg"
                 alt="Group mindfulness session"
-                width={600}
-                height={500}
-                className="w-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
@@ -239,7 +227,7 @@ export default function SkupinovyKurzPage() {
               variant="outline"
               className="h-auto rounded-full border-[#7BC0A4] px-10 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white"
             >
-              <Link href="/objednavka">Vstoupit do kurzu</Link>
+              <Link href="/objednavka/8-tydenni-kurz">Vstoupit do kurzu</Link>
             </Button>
           </div>
         </div>
@@ -280,6 +268,19 @@ export default function SkupinovyKurzPage() {
           <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
             14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
           </p>
+        </div>
+      </section>
+
+      {/* Device mockup */}
+      <section className="bg-white py-12 lg:py-16">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <Image
+            src="/Mockup photos/Na bílém pozadí/8ty.kurz.png"
+            alt="8týdenní kurz mindfulness na všech zařízeních"
+            width={900}
+            height={560}
+            className="w-full object-contain"
+          />
         </div>
       </section>
 
@@ -355,7 +356,7 @@ export default function SkupinovyKurzPage() {
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-                  <Link href="/objednavka">Vstoupit do kurzu</Link>
+                  <Link href="/objednavka/8-tydenni-kurz">Vstoupit do kurzu</Link>
                 </Button>
                 <button className="text-sm font-medium text-[#7BC0A4] underline hover:text-[#6BB194]">
                   Sledovat webinář zdarma
@@ -363,11 +364,13 @@ export default function SkupinovyKurzPage() {
               </div>
             </div>
             <div className="flex justify-center lg:w-1/2">
-              <div className="relative h-64 w-36 overflow-hidden rounded-3xl bg-[#1A2B3C] shadow-xl lg:h-72 lg:w-40">
-                <div className="flex h-full items-center justify-center text-white/30 text-xs">
-                  App mockup
-                </div>
-              </div>
+              <Image
+                src="/Pictures/8-weeks Course Mindfulness/Device Set_iPhone_Mockup.png"
+                alt="be.mindful aplikace"
+                width={400}
+                height={600}
+                className="h-auto w-full max-w-[280px] object-contain"
+              />
             </div>
           </div>
         </div>
@@ -410,13 +413,12 @@ export default function SkupinovyKurzPage() {
               Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
-          <div className="overflow-hidden rounded-2xl lg:w-1/2">
+          <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
               src="/Pictures/_DSC7728.jpg"
               alt="Michal Dvořák"
-              width={600}
-              height={500}
-              className="w-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
         </div>
