@@ -17,7 +17,7 @@ const benefits = [
 
 const includes = [
   {
-    image: "/Pictures/_DSC7728.jpg",
+    image: "/Pictures/be.mindful FOUNDATIONS/Portrety_BeMindful2026AnnaSolcova.22.jpg",
     title: "Mindfulness FOUNDATIONS",
     desc: "Krátká 10minutová videa se základy mindfulness – jak vytvořit prostor v zahlcené mysli, jak nacházet klid v napětí.",
   },
