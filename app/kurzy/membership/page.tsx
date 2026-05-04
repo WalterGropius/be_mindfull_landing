@@ -155,7 +155,7 @@ export default function MembershipPage() {
             </div>
             <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/membership-laptop.jpeg"
+                src="/Pictures/be.mindful FOUNDATIONS/Portrety_BeMindful2026AnnaSolcova.22.jpg"
                 alt="be.mindful member watching session on laptop"
                 fill
                 className="object-cover object-top"
