@@ -82,7 +82,7 @@ export default function AboutPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg"
+              src="/1320ea59166e2a5ba307126aaa80bb03c0da48af.jpg"
               alt="Michal Dvořák"
               fill
               className="object-cover object-top"
