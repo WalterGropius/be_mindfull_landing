@@ -5,7 +5,8 @@
       "Bash(sort -k6,7)",
       "Bash(xargs basename:*)",
       "Bash(ls -lR /Users/zen/Documents/GitHub/be_mindfull_landing/components/*.tsx)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(ffmpeg -version)"
     ]
   }
 }
