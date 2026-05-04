@@ -14,7 +14,7 @@ export function FeaturesSection() {
         </div>
 
         {/* Two Columns: List & Image */}
-        <div className="flex flex-col gap-12 lg:flex-row lg:items-stretch lg:gap-16">
+        <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
           <div className="lg:w-1/2 lg:pr-12">
             <Typography variant="p" className="font-bold">Tento program je pro vás, pokud chcete:</Typography>
             <div className="mt-8 space-y-6">
@@ -61,7 +61,7 @@ export function FeaturesSection() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <div className="h-full w-full min-h-[400px] overflow-hidden rounded-[1rem]">
+            <div className="aspect-[6/5] w-full overflow-hidden rounded-[1rem]">
               <img src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg" alt="Wellbeing" className="w-full h-full object-cover object-top" />
             </div>
           </div>

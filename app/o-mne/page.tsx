@@ -66,13 +66,12 @@ export default function AboutPage() {
               Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
             </p>
           </div>
-          <div className="overflow-hidden rounded-2xl lg:w-1/2">
+          <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
               src="/about-applifting-111.jpg"
               alt="Michal Dvořák při výuce"
-              width={600}
-              height={500}
-              className="w-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
         </div>
@@ -81,9 +80,9 @@ export default function AboutPage() {
       {/* Bio section 2 — gray bg */}
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl lg:w-1/2">
+          <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/about-applifting-70.jpg"
+              src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg"
               alt="Michal Dvořák"
               fill
               className="object-cover"

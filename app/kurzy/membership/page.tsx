@@ -90,7 +90,7 @@ export default function MembershipPage() {
             </p>
             <div className="mt-8">
               <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/objednavka">Přidat se <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link href="/objednavka/membership">Přidat se <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function MembershipPage() {
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Posílíte „sval mindfulness":<br />vytvořit prostor, kde můžete udržovat<br />všímavost živou
           </h2>
-          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
+          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
@@ -153,19 +153,18 @@ export default function MembershipPage() {
                 </div>
               ))}
             </div>
-            <div className="overflow-hidden rounded-2xl lg:w-1/2">
+            <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
                 src="/membership-laptop.jpeg"
                 alt="be.mindful member watching session on laptop"
-                width={600}
-                height={500}
-                className="w-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
           <div className="mt-12 text-center">
             <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              <Link href="/objednavka">Přidat se</Link>
+              <Link href="/objednavka/membership">Přidat se</Link>
             </Button>
           </div>
         </div>
@@ -247,7 +246,7 @@ export default function MembershipPage() {
           </div>
           <div className="mt-12 text-center">
             <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              <Link href="/objednavka">Staňte se členem <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Link href="/objednavka/membership">Staňte se členem <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
           </div>
         </div>

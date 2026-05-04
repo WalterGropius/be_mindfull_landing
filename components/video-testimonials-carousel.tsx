@@ -7,7 +7,7 @@ import { Play, X } from "lucide-react"
 export type VideoTestimonial = {
   quote: string
   name: string
-  text: string
+  text?: string
   image: string
   video?: string
 }
@@ -83,7 +83,9 @@ export function VideoTestimonialsCarousel({
               </div>
               <div className="p-6">
                 <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
-                <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">{t.text}</p>
+                {t.text && (
+                  <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">{t.text}</p>
+                )}
                 <p className="mt-4 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
               </div>
             </div>

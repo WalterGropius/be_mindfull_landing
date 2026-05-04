@@ -167,7 +167,7 @@ export default function FirmyPage() {
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             Není to situace, která se změní,<br />ale způsob, jak na ni reagujete
           </h2>
-          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start">
+          <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
@@ -179,13 +179,12 @@ export default function FirmyPage() {
                 </div>
               ))}
             </div>
-            <div className="overflow-hidden rounded-2xl lg:w-1/2">
+            <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
                 src="/Pictures/_DSC7728.jpg"
                 alt="Michal Dvořák"
-                width={600}
-                height={500}
-                className="w-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
@@ -314,13 +313,12 @@ export default function FirmyPage() {
               ))}
             </div>
           </div>
-          <div className="overflow-hidden rounded-2xl lg:w-1/2">
+          <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
               src="/Pictures/Company Courses/BeMindful_Letn†2026AnnaÊolcov†.98.jpg"
               alt="Michal Dvořák"
-              width={600}
-              height={500}
-              className="w-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
         </div>

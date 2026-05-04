@@ -1,10 +1,10 @@
 import { ObjednavkaPage } from "@/components/objednavka-page"
 
-export default function CheckoutPage() {
+export default function OsmiTydenniKurzCheckoutPage() {
   return (
     <ObjednavkaPage
       title="Jste jeden krok od své mindful cesty"
-      intro="Tady je přehled toho, co vás v 8týdenním kurzu mindfulness čeká, a možnosti, jak za něj zaplatit."
+      intro="Tady je přehled toho, co vás v 8týdenním kurzu mindfulness čeká, a možnosti, jak za něj zaplatit. (Sem doplňte konkrétní popis kurzu.)"
       includesHeading="8týdenní kurz mindfulness obsahuje:"
       includes={[
         { title: "8 x 2,5 hodinová setkání (1 setkání týdně)" },
