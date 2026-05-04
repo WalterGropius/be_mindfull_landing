@@ -90,31 +90,31 @@ const testimonials = [
   {
     quote: "Kurz mi přinesl schopnost vnímání okamžiku.",
     name: "Dušan Lužný",
-    image: "/Pictures/AdobeStock_1844492057.jpeg",
+    image: "",
     video: "/videos/testimonials/medailonek-1.mp4",
   },
   {
     quote: "Vrátila jsem se zpátky do těla.",
     name: "Pavla Fridrichová",
-    image: "/Pictures/AdobeStock_313540527.jpeg",
+    image: "",
     video: "/videos/testimonials/medailonek-2.mp4",
   },
   {
     quote: "Zklidnil jsem se a získal jsem řád do svého života.",
     name: "Pavel Bohatý",
-    image: "/Pictures/AdobeStock_1844492057.jpeg",
+    image: "",
     video: "/videos/testimonials/medailonek-3.mp4",
   },
   {
     quote: "Kurz mi pomohl projít náročným obdobím mého života.",
     name: "Julius Smolej",
-    image: "/Pictures/AdobeStock_313540527.jpeg",
+    image: "",
     video: "/videos/testimonials/medailonek-4.mp4",
   },
   {
     quote: "Naučil jsem se pravidelně meditovat a vím, co dělat, když jsem ve stresu.",
     name: "Ladislav Dobiáš",
-    image: "/Pictures/AdobeStock_1844492057.jpeg",
+    image: "",
     video: "/videos/testimonials/medailonek-5.mp4",
   },
 ]

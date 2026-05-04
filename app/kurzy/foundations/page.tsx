@@ -274,7 +274,7 @@ export default function FoundationsPage() {
       <section className="bg-white py-12 lg:py-16">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <Image
-            src="/Mockup photos/Na bílém pozadí/nove_online.jpg"
+            src="/Mockup photos/Na bílém pozadí/univerz.png"
             alt="be.mindful na všech zařízeních"
             width={900}
             height={560}

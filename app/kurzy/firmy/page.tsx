@@ -181,8 +181,8 @@ export default function FirmyPage() {
             </div>
             <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/Pictures/_DSC7728.jpg"
-                alt="Michal Dvořák"
+                src="/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.100.jpg"
+                alt="Skupinová mindfulness lekce"
                 fill
                 className="object-cover object-top"
               />
