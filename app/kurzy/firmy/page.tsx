@@ -184,7 +184,7 @@ export default function FirmyPage() {
                 src="/Pictures/_DSC7728.jpg"
                 alt="Michal Dvořák"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>

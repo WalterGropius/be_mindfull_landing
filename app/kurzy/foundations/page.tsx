@@ -184,12 +184,12 @@ export default function FoundationsPage() {
                 </div>
               ))}
             </div>
-            <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl lg:aspect-auto lg:h-[560px] lg:w-1/2">
               <Image
                 src="/Pictures/be.mindful FOUNDATIONS/Portrety_BeMindful2026AnnaSolcova.22.jpg"
                 alt="Mindfulness practice"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>

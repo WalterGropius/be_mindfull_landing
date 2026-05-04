@@ -71,7 +71,7 @@ export default function AboutPage() {
               src="/about-applifting-111.jpg"
               alt="Michal Dvořák při výuce"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
               src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg"
               alt="Michal Dvořák"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
           <div className="lg:w-1/2">

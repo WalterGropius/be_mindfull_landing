@@ -41,20 +41,9 @@ export function Header() {
             </div>
           </div>
 
-          <div className="group relative">
-            <button className="flex items-center gap-1 text-[18px] font-bold text-primary-green transition-colors hover:text-primary-green-hover">
-              Zdroje <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
-            </button>
-            <div className="pointer-events-none absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="relative w-48 rounded-[0.2rem] bg-border-subtle py-2">
-                <div className="absolute -top-2 left-1/2 h-0 w-0 -translate-x-1/2 border-x-8 border-b-8 border-x-transparent border-b-border-subtle"></div>
-                <div className="flex flex-col">
-                  <Link href="/blog" className="block px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Blog</Link>
-                  <Link href="/podcast" className="block px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Podcast</Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Link href="/blog" className="text-[18px] font-bold text-primary-green transition-colors hover:text-primary-green-hover">
+            Blog
+          </Link>
 
           <Link href="/o-mne" className="text-[18px] font-bold text-primary-green transition-colors hover:text-primary-green-hover">
             O mně
@@ -85,7 +74,7 @@ export function Header() {
             <Link href="/kurzy/skupinovy-kurz" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>8týdenní kurz mindfulness (MBSR)</Link>
             <Link href="/kurzy/firmy" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Firemní kurzy mindfulness</Link>
             <Link href="/o-mne" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>O mně</Link>
-            <Link href="/blog" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Zdroje</Link>
+            <Link href="/blog" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
             <Link href="/kontakt" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Kontakt</Link>
             <Button variant="secondary" size="sm" className="mt-2 w-fit">
               Přihlásit se

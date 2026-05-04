@@ -12,8 +12,6 @@ export type VideoTestimonial = {
   video?: string
 }
 
-const SAMPLE_VIDEO = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-
 export function VideoTestimonialsCarousel({
   testimonials,
 }: {
@@ -70,16 +68,18 @@ export function VideoTestimonialsCarousel({
                   height={280}
                   className="h-52 w-full object-cover"
                 />
-                <button
-                  type="button"
-                  onClick={() => setOpenIdx(i)}
-                  aria-label={`Přehrát video ${t.name}`}
-                  className="group absolute inset-0 flex items-center justify-center"
-                >
-                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#7BC0A4]/80 shadow-lg transition group-hover:scale-110">
-                    <Play className="ml-1 h-5 w-5 fill-white text-white" />
-                  </span>
-                </button>
+                {t.video && (
+                  <button
+                    type="button"
+                    onClick={() => setOpenIdx(i)}
+                    aria-label={`Přehrát video ${t.name}`}
+                    className="group absolute inset-0 flex items-center justify-center"
+                  >
+                    <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#7BC0A4]/80 shadow-lg transition group-hover:scale-110">
+                      <Play className="ml-1 h-5 w-5 fill-white text-white" />
+                    </span>
+                  </button>
+                )}
               </div>
               <div className="p-6">
                 <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
@@ -107,7 +107,7 @@ export function VideoTestimonialsCarousel({
         ))}
       </div>
 
-      {openTestimonial && (
+      {openTestimonial?.video && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 px-4 py-8"
           onClick={() => setOpenIdx(null)}
@@ -125,8 +125,8 @@ export function VideoTestimonialsCarousel({
               <X className="h-5 w-5" />
             </button>
             <video
-              key={openTestimonial.video ?? SAMPLE_VIDEO}
-              src={openTestimonial.video ?? SAMPLE_VIDEO}
+              key={openTestimonial.video}
+              src={openTestimonial.video}
               controls
               autoPlay
               className="aspect-video w-full rounded-2xl bg-black"
