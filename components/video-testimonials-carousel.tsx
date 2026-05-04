@@ -80,10 +80,10 @@ export function VideoTestimonialsCarousel({
             return (
               <div
                 key={i}
-                className={`shrink-0 overflow-hidden rounded-2xl bg-[#F5F6F7] transition-[width] duration-500 ease-out ${cardWidthClass}`}
+                className={`flex shrink-0 flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] transition-[width] duration-500 ease-out ${cardWidthClass}`}
               >
                 <div
-                  className={`relative w-full bg-black transition-[aspect-ratio] duration-500 ease-out ${
+                  className={`relative w-full shrink-0 bg-black transition-[aspect-ratio] duration-500 ease-out ${
                     isPlaying ? "aspect-video" : "aspect-[9/16]"
                   }`}
                 >
@@ -125,12 +125,34 @@ export function VideoTestimonialsCarousel({
                     />
                   )}
                 </div>
-                <div className="p-6">
-                  <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
+                <div
+                  className={`flex flex-1 flex-col p-6 transition-[padding] duration-500 ease-out ${
+                    isPlaying ? "justify-center px-10 py-8" : ""
+                  }`}
+                >
+                  <p
+                    className={`font-bold text-[#2D2C2B] transition-[font-size,line-height] duration-500 ease-out ${
+                      isPlaying ? "text-[24px] leading-[34px]" : "text-[18px] leading-[30px]"
+                    }`}
+                  >
+                    &ldquo;{t.quote}&rdquo;
+                  </p>
                   {t.text && (
-                    <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">{t.text}</p>
+                    <p
+                      className={`mt-3 text-[#4B4C4D] transition-[font-size,line-height] duration-500 ease-out ${
+                        isPlaying ? "text-[20px] leading-[32px]" : "text-[18px] leading-[30px]"
+                      }`}
+                    >
+                      {t.text}
+                    </p>
                   )}
-                  <p className="mt-4 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
+                  <p
+                    className={`font-semibold text-[#2D2C2B] transition-[font-size,line-height,margin] duration-500 ease-out ${
+                      isPlaying ? "mt-5 text-base" : "mt-4 text-sm"
+                    }`}
+                  >
+                    {t.name}
+                  </p>
                 </div>
               </div>
             )
