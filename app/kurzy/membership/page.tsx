@@ -158,7 +158,7 @@ export default function MembershipPage() {
                 src="/membership-laptop.jpeg"
                 alt="be.mindful member watching session on laptop"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>

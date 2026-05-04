@@ -27,7 +27,7 @@ export function AboutSection() {
         </div>
         <div className="relative w-full h-[300px] md:h-[450px] lg:h-auto lg:w-1/2 lg:flex-shrink-0">
           <div className="absolute inset-0 overflow-hidden rounded-[1rem]">
-               <img src="/Pictures/_DSC7728.jpg" alt="Michal Dvořák" className="w-full h-full object-cover" />
+               <img src="/about-applifting-111.jpg" alt="Michal Dvořák" className="w-full h-full object-cover object-top" />
           </div>
         </div>
       </div>

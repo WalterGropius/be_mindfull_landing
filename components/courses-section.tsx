@@ -23,7 +23,7 @@ export function CoursesSection() {
         <div className="bg-[#f5f6f4] rounded-[1rem] overflow-hidden">
           <div className="flex flex-col lg:flex-row">
             <div className="lg:w-1/2 h-64 lg:h-auto relative">
-               <img src="/Pictures/WhatsApp%20Image%202026-03-02%20at%2013.29.56.jpeg" alt="Foundations Course" className="w-full h-full object-cover absolute inset-0" />
+               <img src="/Pictures/be.mindful%20MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.40.jpg" alt="Foundations Course" className="w-full h-full object-cover absolute inset-0" />
             </div>
             <div className="lg:w-1/2 p-8 lg:p-14">
               <Typography variant="h3" className="uppercase mb-6">be.mindful FOUNDATIONS</Typography>

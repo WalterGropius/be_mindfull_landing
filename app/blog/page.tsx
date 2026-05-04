@@ -3,12 +3,12 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { getBlogPosts } from "@/lib/blog"
+import { getBlogPosts, getHomepageBlogPosts, HOMEPAGE_PINNED_SLUGS } from "@/lib/blog"
 
 export default async function BlogPage() {
   const allPosts = getBlogPosts()
-  const topReads = allPosts.slice(0, 3)
-  const morePosts = allPosts.slice(3)
+  const topReads = getHomepageBlogPosts()
+  const morePosts = allPosts.filter((p) => !HOMEPAGE_PINNED_SLUGS.includes(p.slug))
 
   return (
     <main className="min-h-screen font-sans">

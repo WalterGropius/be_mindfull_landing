@@ -3,10 +3,10 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Typography } from "@/components/ui/typography"
 
-import { getBlogPosts } from "@/lib/blog"
+import { getHomepageBlogPosts } from "@/lib/blog"
 
 export async function BlogSection() {
-  const blogPosts = getBlogPosts().slice(0, 3)
+  const blogPosts = getHomepageBlogPosts()
   return (
     <section className="bg-surface-white py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

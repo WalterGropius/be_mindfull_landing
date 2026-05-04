@@ -217,7 +217,7 @@ export default function SkupinovyKurzPage() {
                 src="/BeMindful_Letna2026AnnaSolcova.55.jpg"
                 alt="Group mindfulness session"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>
@@ -268,19 +268,6 @@ export default function SkupinovyKurzPage() {
           <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
             14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
           </p>
-        </div>
-      </section>
-
-      {/* Device mockup */}
-      <section className="bg-white py-12 lg:py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <Image
-            src="/Mockup photos/Na bílém pozadí/8ty.kurz.png"
-            alt="8týdenní kurz mindfulness na všech zařízeních"
-            width={900}
-            height={560}
-            className="w-full object-contain"
-          />
         </div>
       </section>
 
@@ -365,11 +352,11 @@ export default function SkupinovyKurzPage() {
             </div>
             <div className="flex justify-center lg:w-1/2">
               <Image
-                src="/Pictures/8-weeks Course Mindfulness/Device Set_iPhone_Mockup.png"
-                alt="be.mindful aplikace"
+                src="/Mockup photos/Na bílém pozadí/8ty.kurz.png"
+                alt="be.mindful aplikace pro 8týdenní kurz"
                 width={400}
                 height={600}
-                className="h-auto w-full max-w-[280px] object-contain"
+                className="h-auto w-full max-w-[320px] object-contain"
               />
             </div>
           </div>

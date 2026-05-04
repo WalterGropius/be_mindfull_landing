@@ -61,7 +61,7 @@ export function FeaturesSection() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <div className="aspect-[6/5] w-full overflow-hidden rounded-[1rem]">
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-[1rem] lg:aspect-auto lg:h-[560px]">
               <img src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg" alt="Wellbeing" className="w-full h-full object-cover object-top" />
             </div>
           </div>

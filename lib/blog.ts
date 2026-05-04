@@ -42,3 +42,18 @@ export function getBlogPost(slug: string): BlogPost | undefined {
   const posts = getBlogPosts()
   return posts.find((post) => post.slug === slug)
 }
+
+// Slugs the client wants pinned to the homepage blog row, in this order.
+export const HOMEPAGE_PINNED_SLUGS = [
+  'proc-nemuzeme-vypnout',
+  'proc-prestavame-meditovat',
+  'kazda-minuta-musi-byt-vyuzita',
+]
+
+export function getHomepageBlogPosts(): BlogPost[] {
+  const all = getBlogPosts()
+  const bySlug = new Map(all.map((p) => [p.slug, p]))
+  return HOMEPAGE_PINNED_SLUGS
+    .map((slug) => bySlug.get(slug))
+    .filter((p): p is BlogPost => Boolean(p))
+}

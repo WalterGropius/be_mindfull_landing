@@ -113,7 +113,7 @@ export default function StartToPausePage() {
                 src="/Pictures/FREE 4-days course/AdobeStock_542235713_Preview.jpeg"
                 alt="Mindfulness practice"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>
