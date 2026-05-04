@@ -33,6 +33,22 @@ export function VideoTestimonialsCarousel({
     return () => clearInterval(id)
   }, [maxStart, playingIdx])
 
+  // Whenever playingIdx changes, pause every other video and reset its
+  // playback position so its preview frame shows again.
+  useEffect(() => {
+    videoRefs.current.forEach((v, i) => {
+      if (!v) return
+      if (i !== playingIdx && !v.paused) {
+        v.pause()
+        try {
+          v.currentTime = 0
+        } catch {
+          /* some browsers throw before metadata loads — safe to ignore */
+        }
+      }
+    })
+  }, [playingIdx])
+
   const handlePlay = (i: number) => {
     setPlayingIdx(i)
     const v = videoRefs.current[i]
@@ -57,12 +73,20 @@ export function VideoTestimonialsCarousel({
             // Append a small time fragment so browsers render a real frame as the
             // initial preview instead of a black box (works without separate poster files).
             const videoSrc = t.video ? `${t.video}#t=0.5` : undefined
+            // Playing card spans roughly two columns so the landscape video has room to breathe.
+            const cardWidthClass = isPlaying
+              ? "w-full md:w-[calc((100%-3rem)*2/3+1.5rem/3)]"
+              : "w-full md:w-[calc((100%-3rem)/3)]"
             return (
               <div
                 key={i}
-                className="w-full shrink-0 overflow-hidden rounded-2xl bg-[#F5F6F7] md:w-[calc((100%-3rem)/3)]"
+                className={`shrink-0 overflow-hidden rounded-2xl bg-[#F5F6F7] transition-[width] duration-500 ease-out ${cardWidthClass}`}
               >
-                <div className="relative aspect-[9/16] w-full bg-black">
+                <div
+                  className={`relative w-full bg-black transition-[aspect-ratio] duration-500 ease-out ${
+                    isPlaying ? "aspect-video" : "aspect-[9/16]"
+                  }`}
+                >
                   {videoSrc ? (
                     <>
                       <video
@@ -76,7 +100,7 @@ export function VideoTestimonialsCarousel({
                         controls={isPlaying}
                         onPause={() => setPlayingIdx((cur) => (cur === i ? null : cur))}
                         onEnded={() => setPlayingIdx((cur) => (cur === i ? null : cur))}
-                        className="h-full w-full bg-black object-cover"
+                        className={`h-full w-full bg-black ${isPlaying ? "object-contain" : "object-cover"}`}
                       />
                       {!isPlaying && (
                         <button
