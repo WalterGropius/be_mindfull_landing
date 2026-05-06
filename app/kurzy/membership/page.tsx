@@ -74,10 +74,10 @@ export default function MembershipPage() {
       {/* Hero */}
       <section className="relative min-h-[500px] overflow-hidden bg-[#1A1A1A] lg:min-h-[580px]">
         <Image
-          src="/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.9.jpg"
+          src="/Pictures/be.mindful MEMBERSHIP/Header_membership.jpg"
           alt="be.mindful Membership"
           fill
-          className="object-cover object-top"
+          className="object-cover"
           priority
         />
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
@@ -155,7 +155,7 @@ export default function MembershipPage() {
             </div>
             <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/Pictures/be.mindful FOUNDATIONS/Portrety_BeMindful2026AnnaSolcova.22.jpg"
+                src="/Pictures/be.mindful MEMBERSHIP/Header_membership.jpg"
                 alt="be.mindful member watching session on laptop"
                 fill
                 className="object-cover object-top"
@@ -206,10 +206,10 @@ export default function MembershipPage() {
       />
 
       {/* Device mockup */}
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-2 lg:py-4">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <Image
-            src="/Mockup photos/Na bílém pozadí/univerz.png"
+            src="/Mockup photos/Průhledné/univerz.png"
             alt="be.mindful na všech zařízeních"
             width={900}
             height={560}

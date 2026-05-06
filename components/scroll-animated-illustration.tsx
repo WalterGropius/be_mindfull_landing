@@ -22,8 +22,22 @@ type OutlineInline = {
   strokeWidth?: number
 }
 
+/** A single styled SVG path. Used for `frontPaths` so each path can opt
+ * into its own fill (e.g. only the rim of a glass needs to occlude). */
+export type StyledPath = {
+  d: string
+  fill?: string
+  stroke?: string
+  strokeWidth?: number
+}
+
 type Props = {
   outline: OutlineImg | OutlineInline
+  /** Optional paths drawn AFTER the dots, on top of everything. Use this
+   * for the parts of an illustration that should occlude the dots — e.g.
+   * the rim of a glass when the dot passes behind it on its way up. Fill
+   * an occluding path with the section's background colour. */
+  frontPaths?: StyledPath[]
   /** SVG viewBox matching the outline + dot coordinate space. */
   viewBox: string
   dots: IllustrationDot[]
@@ -33,9 +47,9 @@ type Props = {
   width?: number
   height?: number
   /** Scroll progress (0..1 across the element's traversal of the
-   * viewport) at which the animation starts. Default 0.30. */
+   * viewport) at which the animation starts. Default 0.40. */
   startProgress?: number
-  /** Scroll progress at which the animation ends. Default 0.65. */
+  /** Scroll progress at which the animation ends. Default 0.60. */
   endProgress?: number
 }
 
@@ -45,13 +59,14 @@ function isInline(o: OutlineImg | OutlineInline): o is OutlineInline {
 
 export function ScrollAnimatedIllustration({
   outline,
+  frontPaths,
   viewBox,
   dots,
   dotsBehind = false,
   width = 320,
   height = 320,
-  startProgress = 0.3,
-  endProgress = 0.65,
+  startProgress = 0.4,
+  endProgress = 0.6,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState(0)
@@ -135,6 +150,17 @@ export function ScrollAnimatedIllustration({
             />
           ))}
         {!dotsBehind && circles}
+        {frontPaths?.map((p, i) => (
+          <path
+            key={`f-${i}`}
+            d={p.d}
+            fill={p.fill ?? "none"}
+            stroke={p.stroke ?? "#010101"}
+            strokeWidth={p.strokeWidth ?? 0.6}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        ))}
       </svg>
     </div>
   )

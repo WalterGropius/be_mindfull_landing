@@ -271,10 +271,10 @@ export default function FoundationsPage() {
       </section>
 
       {/* Device mockup */}
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-2 lg:py-4">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <Image
-            src="/Mockup photos/Na bílém pozadí/univerz.png"
+            src="/Mockup photos/Průhledné/univerz.png"
             alt="be.mindful na všech zařízeních"
             width={900}
             height={560}
@@ -335,7 +335,7 @@ export default function FoundationsPage() {
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/Pictures/_DSC7728.jpg"
+              src="/Pictures/Portrety_BeMindful2026AnnaSolcova.44.jpg"
               alt="Michal Dvořák"
               fill
               className="object-cover"

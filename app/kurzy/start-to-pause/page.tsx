@@ -110,7 +110,7 @@ export default function StartToPausePage() {
             </div>
             <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/Pictures/FREE 4-days course/AdobeStock_542235713_Preview.jpeg"
+                src="/Pictures/FREE 4-days course/AdobeStock_542235713.jpeg"
                 alt="Mindfulness practice"
                 fill
                 className="object-cover object-top"
@@ -130,12 +130,35 @@ export default function StartToPausePage() {
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <div className="mx-auto mb-6 flex justify-center">
             <ScrollAnimatedIllustration
-              outline={{ src: "/Illustrations/glass_00.svg" }}
+              // Back layer: the ladder (two diagonal rails + horizontal
+              // rungs). The dot sits on top of these.
+              outline={{
+                paths: [
+                  { d: "M69.42,141.55c1.58-8.5,3.15-17,4.73-25.51,2.86-15.46,5.73-30.91,8.59-46.37,2.42-13.07,4.84-26.14,7.26-39.21l.19-1.02" },
+                  { d: "M87.2,141.98c2.7-15.51,5.39-31.01,8.1-46.52,1.18-6.8,2.37-13.6,3.55-20.4,1.65-6.59,2.36-13.57,3.53-20.27,1.16-6.68,2.31-13.36,3.47-20.04l.7-4.03" },
+                  { d: "M70.82,134.02c.92.01,1.84.01,2.76.01,4.08,0,8.16-.08,12.24-.08.93,0,1.85,0,2.78.01" },
+                  { d: "M73.16,121.37c1.59.03,3.19.03,4.78.03,1.86,0,3.72,0,5.58,0,2.42,0,4.84.02,7.24.09" },
+                  { d: "M75.23,110.17c.27,0,.53,0,.8,0,5.6,0,11.18-.3,16.78-.44" },
+                  { d: "M77.46,98.18c3.52,0,7.04-.05,10.56-.05,2.27,0,4.53.02,6.8.09" },
+                  { d: "M80.19,83.42c5.77-.41,11.53-.61,17.31-.62" },
+                  { d: "M82.94,68.59c5.72.21,11.44.48,17.16.59" },
+                  { d: "M85.49,54.8c3.61.25,7.21.29,10.81.29,2,0,4.01-.02,6.03-.02" },
+                  { d: "M87.92,41.69c5.53.3,11.08.53,16.62.63" },
+                ],
+                fill: "none",
+              }}
+              // Front layer: the glass itself. The rim is filled with the
+              // section's bg colour so it occludes the dot when the dot
+              // passes behind it climbing up through the rim.
+              frontPaths={[
+                { d: "M75.6,49.72c-4.39.17-8.76.6-13.06,1.32-2.09.35-4.21.98-6.15,1.7-1.12.41-2.31,1.01-2.61,2.01-.42,1.41,1.15,2.65,2.62,3.4,4.26,2.15,9.12,3.27,13.95,4.09,8.5,1.46,17.38,2.12,25.89.35,3.69-.77,8.24-2.11,9.83-5.31.48-.96.53-2.12-.08-3.02-.64-.95-1.87-1.48-3.07-1.88-4.14-1.38-8.72-1.89-13.12-2.29-4.71-.42-9.46-.55-14.2-.37Z" },
+                { d: "M53.78,54.75c.51,11.79,1.02,23.58,1.54,35.37.62,14.22,1.24,28.44,1.85,42.66.13,2.98.26,5.95.39,8.93,0,0,42.54.61,42.54.61.25,0,1.91-26.09,2.03-27.7,1.15-15.68,2.3-31.36,3.45-47.03.28-3.84.56-7.68.84-11.52" },
+              ]}
               viewBox="0 0 170.08 170.08"
               dots={[
                 {
                   from: { cx: 72.53, cy: 130.29, r: 11.17 },
-                  to: { cx: 103.44, cy: 30.73, r: 11.17 },
+                  to: { cx: 96, cy: 42, r: 11.17 },
                 },
               ]}
               width={320}
@@ -227,7 +250,7 @@ export default function StartToPausePage() {
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/Pictures/_DSC7728.jpg"
+              src="/Pictures/Portrety_BeMindful2026AnnaSolcova.44.jpg"
               alt="Michal Dvořák"
               fill
               className="object-cover"

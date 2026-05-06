@@ -83,9 +83,7 @@ export function VideoTestimonialsCarousel({
                 className={`flex shrink-0 flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] transition-[width] duration-500 ease-out ${cardWidthClass}`}
               >
                 <div
-                  className={`relative w-full shrink-0 bg-black transition-[aspect-ratio] duration-500 ease-out ${
-                    isPlaying ? "aspect-video" : "aspect-[9/16]"
-                  }`}
+                  className="relative w-full shrink-0 bg-black aspect-video"
                 >
                   {videoSrc ? (
                     <>
