@@ -110,7 +110,7 @@ export default function StartToPausePage() {
             </div>
             <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/Pictures/FREE 4-days course/AdobeStock_542235713_Preview.jpeg"
+                src="/Pictures/AdobeStock_1844492057.jpeg"
                 alt="Mindfulness practice"
                 fill
                 className="object-cover object-top"
@@ -227,7 +227,7 @@ export default function StartToPausePage() {
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/Pictures/_DSC7728.jpg"
+              src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg"
               alt="Michal Dvořák"
               fill
               className="object-cover"

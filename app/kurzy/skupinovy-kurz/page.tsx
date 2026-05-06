@@ -359,9 +359,9 @@ export default function SkupinovyKurzPage() {
               <Image
                 src="/Mockup photos/Na bílém pozadí/8ty.kurz.png"
                 alt="be.mindful aplikace pro 8týdenní kurz"
-                width={400}
-                height={600}
-                className="h-auto w-full max-w-[320px] object-contain"
+                width={600}
+                height={900}
+                className="h-auto w-full max-w-[480px] object-contain"
               />
             </div>
           </div>
@@ -407,7 +407,7 @@ export default function SkupinovyKurzPage() {
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
             <Image
-              src="/Pictures/_DSC7728.jpg"
+              src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg"
               alt="Michal Dvořák"
               fill
               className="object-cover"

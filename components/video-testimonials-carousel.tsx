@@ -73,19 +73,14 @@ export function VideoTestimonialsCarousel({
             // Append a small time fragment so browsers render a real frame as the
             // initial preview instead of a black box (works without separate poster files).
             const videoSrc = t.video ? `${t.video}#t=0.5` : undefined
-            // Playing card spans roughly two columns so the landscape video has room to breathe.
-            const cardWidthClass = isPlaying
-              ? "w-full md:w-[calc((100%-3rem)*2/3+1.5rem/3)]"
-              : "w-full md:w-[calc((100%-3rem)/3)]"
+            const cardWidthClass = "w-full md:w-[calc((100%-3rem)/3)]"
             return (
               <div
                 key={i}
-                className={`flex shrink-0 flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] transition-[width] duration-500 ease-out ${cardWidthClass}`}
+                className={`flex shrink-0 flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] ${cardWidthClass}`}
               >
                 <div
-                  className={`relative w-full shrink-0 bg-black transition-[aspect-ratio] duration-500 ease-out ${
-                    isPlaying ? "aspect-video" : "aspect-[9/16]"
-                  }`}
+                  className="relative aspect-video w-full shrink-0 bg-black"
                 >
                   {videoSrc ? (
                     <>
