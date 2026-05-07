@@ -89,8 +89,10 @@ export default function MembershipPage() {
               Váš každodenní prostor k zastavení – udržujte rovnováhu
             </p>
             <div className="mt-8">
-              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/objednavka/membership">Přidat se <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Button asChild variant="primary-orange" className="group">
+                <Link href="/objednavka/membership">
+                  <span className="flex items-center gap-2">Přidat se <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                </Link>
               </Button>
             </div>
           </div>
@@ -155,15 +157,15 @@ export default function MembershipPage() {
             </div>
             <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
               <Image
-                src="/Pictures/be.mindful MEMBERSHIP/Header_membership.jpg"
+                src="/Mockup photos/Na bílém pozadí/nove_online.jpg"
                 alt="be.mindful member watching session on laptop"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
               />
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+            <Button asChild variant="primary">
               <Link href="/objednavka/membership">Přidat se</Link>
             </Button>
           </div>
@@ -206,16 +208,14 @@ export default function MembershipPage() {
       />
 
       {/* Device mockup */}
-      <section className="bg-white py-2 lg:py-4">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <Image
-            src="/Mockup photos/Průhledné/univerz.png"
-            alt="be.mindful na všech zařízeních"
-            width={900}
-            height={560}
-            className="w-full object-contain"
-          />
-        </div>
+      <section className="bg-white">
+        <Image
+          src="/Mockup photos/Průhledné/univerz.png"
+          alt="be.mindful na všech zařízeních"
+          width={1600}
+          height={900}
+          className="block w-full object-contain"
+        />
       </section>
 
       {/* What you get */}
@@ -245,8 +245,10 @@ export default function MembershipPage() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-              <Link href="/objednavka/membership">Staňte se členem <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Button asChild variant="primary" className="group">
+              <Link href="/objednavka/membership">
+                <span className="flex items-center gap-2">Staňte se členem <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+              </Link>
             </Button>
           </div>
         </div>

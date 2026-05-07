@@ -107,14 +107,11 @@ export function Hero() {
                   {slide.subtitle}
                 </p>
                 <div className="mt-8">
-                  <Button
-                    asChild
-                    className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]"
-                  >
+                  <Button asChild variant="primary-orange" className="group">
                     <Link href={slide.href}>
                       <span className="flex items-center gap-2">
                         {slide.cta}
-                        <ArrowRight className="h-4 w-4" />
+                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                       </span>
                     </Link>
                   </Button>

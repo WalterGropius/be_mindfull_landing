@@ -142,8 +142,10 @@ export default function SkupinovyKurzPage() {
               Staňte se stabilními i v bouřlivých časech
             </p>
             <div className="mt-8">
-              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/objednavka/8-tydenni-kurz">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Button asChild variant="primary-orange" className="group">
+                <Link href="/objednavka/8-tydenni-kurz">
+                  <span className="flex items-center gap-2">Vstoupit do kurzu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                </Link>
               </Button>
             </div>
           </div>
@@ -227,11 +229,7 @@ export default function SkupinovyKurzPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button
-              asChild
-              variant="outline"
-              className="h-auto rounded-full border-[#7BC0A4] px-10 py-3 text-sm font-semibold text-[#7BC0A4] hover:bg-[#7BC0A4] hover:text-white"
-            >
+            <Button asChild variant="primary">
               <Link href="/objednavka/8-tydenni-kurz">Vstoupit do kurzu</Link>
             </Button>
           </div>
@@ -333,37 +331,37 @@ export default function SkupinovyKurzPage() {
           <div className="mt-8">
             <CourseModules modules={courseModules} />
           </div>
+        </div>
 
-          {/* Bonus app section */}
-          <div className="mt-12 flex flex-col gap-8 lg:flex-row lg:items-center">
-            <div className="lg:w-1/2">
-              <h3 className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-                Bonus: Získejte novou<br />aplikaci be.mindful ZDARMA
-              </h3>
-              <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-                Mindfulness is not only an approach – it is deeply embedded into my life. XXXX brought me to my first mindfulness experience here xxx.
-              </p>
-              <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">
-                From this situation xxx happened and I discovered, that xxx.
-              </p>
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
-                  <Link href="/objednavka/8-tydenni-kurz">Vstoupit do kurzu</Link>
-                </Button>
-                <button className="text-sm font-medium text-[#7BC0A4] underline hover:text-[#6BB194]">
-                  Sledovat webinář zdarma
-                </button>
-              </div>
+        {/* Bonus app section — full width so the mockup fills its column */}
+        <div className="mx-auto mt-12 flex max-w-7xl flex-col items-center gap-0 px-6 lg:flex-row lg:px-8">
+          <div className="lg:w-1/2 lg:pr-8">
+            <h3 className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
+              Bonus: Získejte novou<br />aplikaci be.mindful ZDARMA
+            </h3>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
+              Mindfulness is not only an approach – it is deeply embedded into my life. XXXX brought me to my first mindfulness experience here xxx.
+            </p>
+            <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">
+              From this situation xxx happened and I discovered, that xxx.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Button asChild variant="primary">
+                <Link href="/objednavka/8-tydenni-kurz">Vstoupit do kurzu</Link>
+              </Button>
+              <button className="text-sm font-medium text-[#7BC0A4] underline hover:text-[#6BB194]">
+                Sledovat webinář zdarma
+              </button>
             </div>
-            <div className="flex justify-center lg:w-1/2">
-              <Image
-                src="/Mockup photos/Průhledné/8ty.kurz.png"
-                alt="be.mindful aplikace pro 8týdenní kurz"
-                width={400}
-                height={600}
-                className="h-auto w-full max-w-[420px] object-contain"
-              />
-            </div>
+          </div>
+          <div className="lg:w-1/2">
+            <Image
+              src="/Mockup photos/Průhledné/8ty.kurz.png"
+              alt="be.mindful aplikace pro 8týdenní kurz"
+              width={800}
+              height={1200}
+              className="block h-auto w-full object-contain"
+            />
           </div>
         </div>
       </section>
