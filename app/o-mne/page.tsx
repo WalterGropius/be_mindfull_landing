@@ -85,7 +85,7 @@ export default function AboutPage() {
               src="/1320ea59166e2a5ba307126aaa80bb03c0da48af.jpg"
               alt="Michal Dvořák"
               fill
-              className="object-cover object-top"
+              className="object-cover object-bottom"
             />
           </div>
           <div className="lg:w-1/2">

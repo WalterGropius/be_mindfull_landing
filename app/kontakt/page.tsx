@@ -112,8 +112,8 @@ export default function ContactPage() {
                   placeholder="Vaše zpráva..."
                 />
               </div>
-              <Button type="submit" className="h-auto rounded-full bg-[#7BC0A4] px-8 py-3 text-sm text-white hover:bg-[#6BB194]">
-                Odeslat zprávu <ArrowRight className="ml-2 h-4 w-4" />
+              <Button type="submit" variant="primary" className="group">
+                <span className="flex items-center gap-2">Odeslat zprávu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
               </Button>
             </form>
           </div>

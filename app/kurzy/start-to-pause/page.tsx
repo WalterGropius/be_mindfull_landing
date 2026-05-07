@@ -47,8 +47,10 @@ export default function StartToPausePage() {
               Začněte, jak do svého života přidat trochu prostoru – a krok za krokem přeměníte způsoby, jak začleníte toto každodenního života.
             </p>
             <div className="mt-8">
-              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/objednavka">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Button asChild variant="primary-orange" className="group">
+                <Link href="/objednavka">
+                  <span className="flex items-center gap-2">Vstoupit do kurzu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                </Link>
               </Button>
             </div>
           </div>
@@ -118,7 +120,7 @@ export default function StartToPausePage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+            <Button asChild variant="primary">
               <Link href="/kontakt">Kontaktujte nás pro osobní nabídku</Link>
             </Button>
           </div>
@@ -178,16 +180,14 @@ export default function StartToPausePage() {
       </section>
 
       {/* Device mockup */}
-      <section className="bg-white py-12 lg:py-16">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <Image
-            src="/Mockup photos/Na bílém pozadí/univerz.png"
-            alt="be.mindful Start-to-PAUSE na všech zařízeních"
-            width={900}
-            height={560}
-            className="w-full object-contain"
-          />
-        </div>
+      <section className="bg-white">
+        <Image
+          src="/Mockup photos/Průhledné/univerz.png"
+          alt="be.mindful Start-to-PAUSE na všech zařízeních"
+          width={1600}
+          height={900}
+          className="block w-full object-contain"
+        />
       </section>
 
       {/* Course days */}
@@ -224,7 +224,7 @@ export default function StartToPausePage() {
           </div>
 
           <div className="mt-8 text-center">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+            <Button asChild variant="primary">
               <Link href="/objednavka">Vstoupit do START to PAUSE</Link>
             </Button>
           </div>

@@ -90,8 +90,10 @@ export default function FirmyPage() {
               Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
             </p>
             <div className="mt-8">
-              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/kontakt">Zobrazit kurzy <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Button asChild variant="primary-orange" className="group">
+                <Link href="/kontakt">
+                  <span className="flex items-center gap-2">Zobrazit kurzy <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                </Link>
               </Button>
             </div>
           </div>
@@ -189,7 +191,7 @@ export default function FirmyPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+            <Button asChild variant="primary">
               <Link href="/kontakt">Kontaktujte nás pro osobní nabídku</Link>
             </Button>
           </div>
@@ -290,8 +292,10 @@ export default function FirmyPage() {
             Vyplňte dotazník a my vám připravíme řešení na míru potřebám vaší firmy.
           </p>
           <div className="mt-8">
-            <Button asChild className="h-auto rounded-full bg-white px-10 py-3 text-sm font-semibold text-[#5E767E] hover:bg-white/90">
-              <Link href="/kontakt">Kontaktujte nás <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            <Button asChild variant="secondary" className="group">
+              <Link href="/kontakt">
+                <span className="flex items-center gap-2">Kontaktujte nás <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+              </Link>
             </Button>
           </div>
         </div>

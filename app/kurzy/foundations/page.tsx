@@ -120,8 +120,10 @@ export default function FoundationsPage() {
               Vše, co potřebujete k přechodu od stresu k odolnosti
             </p>
             <div className="mt-8">
-              <Button asChild className="h-auto rounded-full bg-[#E2763A] px-8 py-3 text-sm font-semibold text-white hover:bg-[#D96B2E]">
-                <Link href="/objednavka/foundations">Vstoupit do kurzu <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              <Button asChild variant="primary-orange" className="group">
+                <Link href="/objednavka/foundations">
+                  <span className="flex items-center gap-2">Vstoupit do kurzu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                </Link>
               </Button>
             </div>
           </div>
@@ -194,7 +196,7 @@ export default function FoundationsPage() {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+            <Button asChild variant="primary">
               <Link href="/objednavka/foundations">Vstoupit do kurzu</Link>
             </Button>
           </div>
@@ -271,16 +273,14 @@ export default function FoundationsPage() {
       </section>
 
       {/* Device mockup */}
-      <section className="bg-white py-2 lg:py-4">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <Image
-            src="/Mockup photos/Průhledné/univerz.png"
-            alt="be.mindful na všech zařízeních"
-            width={900}
-            height={560}
-            className="w-full object-contain"
-          />
-        </div>
+      <section className="bg-white">
+        <Image
+          src="/Mockup photos/Průhledné/univerz.png"
+          alt="be.mindful na všech zařízeních"
+          width={1600}
+          height={900}
+          className="block w-full object-contain"
+        />
       </section>
 
       {/* Modules */}
@@ -309,7 +309,7 @@ export default function FoundationsPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <Button asChild className="h-auto rounded-full bg-[#7BC0A4] px-10 py-3 text-sm font-semibold text-white hover:bg-[#6BB194]">
+            <Button asChild variant="primary">
               <Link href="/objednavka/foundations">Vstoupit do kurzu</Link>
             </Button>
           </div>

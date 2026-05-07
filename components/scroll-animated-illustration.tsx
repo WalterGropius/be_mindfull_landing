@@ -47,9 +47,9 @@ type Props = {
   width?: number
   height?: number
   /** Scroll progress (0..1 across the element's traversal of the
-   * viewport) at which the animation starts. Default 0.40. */
+   * viewport) at which the animation starts. Default 0.50. */
   startProgress?: number
-  /** Scroll progress at which the animation ends. Default 0.60. */
+  /** Scroll progress at which the animation ends. Default 0.55. */
   endProgress?: number
 }
 
@@ -65,8 +65,8 @@ export function ScrollAnimatedIllustration({
   dotsBehind = false,
   width = 320,
   height = 320,
-  startProgress = 0.4,
-  endProgress = 0.6,
+  startProgress = 0.5,
+  endProgress = 0.55,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState(0)
