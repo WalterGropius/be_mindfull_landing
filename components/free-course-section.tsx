@@ -26,7 +26,7 @@ const CLOUD_PATHS = [
 // states. Both values are in [0..1] of the section's full traversal of
 // the viewport.
 const START_PROGRESS = 0.32
-const END_PROGRESS = 0.7
+const END_PROGRESS = 0.51
 
 export function FreeCourseSection() {
   const ref = useRef<HTMLDivElement>(null)
