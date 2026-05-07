@@ -66,7 +66,7 @@ export function FeaturesSection() {
                 src="/Pictures/Homepage/Portrety_BeMindful2026AnnaSolcova.25.jpg"
                 alt="Wellbeing"
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "50% 10%" }}
+                style={{ objectPosition: "50% 30%" }}
               />
             </div>
           </div>
