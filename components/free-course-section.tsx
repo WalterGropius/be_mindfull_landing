@@ -94,16 +94,16 @@ export function FreeCourseSection() {
           </div>
 
           <Typography variant="span" align="center" color="inverse" className="text-sm font-bold uppercase tracking-[0.2em] block">
-            Bezplatný 3denní program
+            Bezplatný 4denní program
           </Typography>
           <Typography variant="h2" align="center" className="mt-4">
-            Start-to-PAUSE: Tři dny k větší rovnováze
+            Nauč se zastavit. Restart hlavy za čtyři dny.
           </Typography>
           <Typography variant="p" align="center" className="mt-6">
-            Naučíte se zastavit uprostřed rušeného dne. Budete schopni rychleji zklidnit mysl a uvolnit tělo.
+            Dokážeš se zastavit i uprostřed rušného dne a rychleji zklidnit mysl i tělo.
           </Typography>
           <Typography variant="p" align="center" className="mt-4">
-            Odnesete si 3 konkrétní nástroje, které vám pomohou přepnout během pěti minut ze stresu do uvolnění.
+            Odneseš si čtyři konkrétní nástroje, které ti pomohou rychleji přepnout z napětí do klidu.
           </Typography>
           <div className="mt-10 mx-auto max-w-md">
             <form className="flex flex-col sm:flex-row gap-4">
@@ -114,7 +114,7 @@ export function FreeCourseSection() {
                  className="h-auto py-[18px] px-[24px] flex-1 rounded-2xl border border-border-subtle bg-surface-white text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
                />
                <Button type="submit" variant="primary-orange" size="default" className="group gap-0">
-                 <span className="flex items-center gap-2">Začít hned <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                 <span className="flex items-center gap-2">Začni hned teď <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
                </Button>
             </form>
           </div>

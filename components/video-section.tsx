@@ -10,16 +10,16 @@ export function VideoSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
            <div className="mx-auto max-w-2xl text-center">
             <Typography variant="h2" align="center" className="text-balance">
-              Malé posuny, které přinášejí velké změny
+              Stačí malé kroky, které zvládne každý.
             </Typography>
             <Typography variant="p" align="center" className="mt-5">
-              Pusťte představu, že jednou bude život bez výzev. <br></br>To, jak k nim přistupujeme, dělá v životě ten skutečný rozdíl.
+              Pusť představu, že jednou budeš mít život bez problémů. <br></br>Nejde o to se zbavit náročných situací, ale naučit se k nim přistupovat jinak. V tom spočívá zásadní změna.
             </Typography>
             <Typography variant="p" align="center" className="mt-4">
-              Je překvapivé, jak málo stačí, aby se chaos proměnil v prostor, stres v klid. Dokáže to každý. Udělejte dnes první krok.
+              Je překvapivé, jak málo někdy stačí, aby se chaos proměnil v prostor a stres v klid. Nemusíš hned všechno měnit. Stačí začít postupnými kroky, které zvládne každý.
             </Typography>
             <Typography variant="p" align="center" className="mt-4">
-              Vytváření trvalé změny ve formě větší emoční odolnosti, lepší kontroly myšlenek, přerušení nefunkčních vzorců a fyzických přínosů pro zdraví.
+              Zklidnění hlavy, větší emoční odolnost i změnu nefunkčních vzorců máš ve svých rukách. Začni dnes.
             </Typography>
           </div>
         </div>
@@ -29,10 +29,10 @@ export function VideoSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <Typography variant="span" color="primary" align="center" className="font-bold uppercase tracking-wider block">
-              MINDFULNESS NENÍ JEDEN PŘÍSTUP PRO VŠECHNY
+              MINDFULNESS NA MÍRU - PRO TVŮJ ŽIVOT
             </Typography>
             <Typography variant="h2" align="center" className="mt-4 text-pretty leading-tight">
-              Ověřený a osobní přístup k mindfulness pro běžný život od Senior Mindfulness Teacher Michala Dvořáka
+              Ověřený a osobní přístup k mindfulness pro běžný život – Michal Dvořák, Senior Mindfulness Teacher.
             </Typography>
           </div>
 
@@ -47,10 +47,7 @@ export function VideoSection() {
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
             <Button asChild variant="primary">
-              <Link href="/kurzy/foundations">Začni s mindfulness ještě dnes!</Link>
-            </Button>
-            <Button asChild variant="secondary">
-              <Link href="/kurzy/skupinovy-kurz">Skupinové kurzy v Praze</Link>
+              <Link href="/kurzy/start-to-pause">Začni ještě dnes s 4denním kurzem mindfulness zdarma</Link>
             </Button>
           </div>
         </div>

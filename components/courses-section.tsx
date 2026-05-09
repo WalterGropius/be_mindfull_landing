@@ -28,17 +28,17 @@ export function CoursesSection() {
             <div className="lg:w-1/2 p-8 lg:p-14">
               <Typography variant="h3" className="uppercase mb-6">be.mindful FOUNDATIONS</Typography>
               <Typography variant="p" className="leading-relaxed">
-                Krok za krokem k větší lehkosti a prostoru v životě pro každého, kdo chce začít s mindfulness. Budete odolnější a budete jednat s větším klidem a nadhledem.
+                Krok za krokem k větší lehkosti v životě.
               </Typography>
               <Typography variant="p" className="mt-4 leading-relaxed">
-                Tento 4týdenní online kurz je pro každého, kdo chce začít implementovat mindfulness do každodenního života – s minimálním úsilím, ale spoustou zábavy.
+                Získáš větší odolnost a víc klidu v každodenním jednání.
+              </Typography>
+              <Typography variant="p" className="mt-4 leading-relaxed">
+                To nejdůležitější z mindfulness pro tvůj život.
               </Typography>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button asChild variant="primary">
                   <Link href="/kurzy/foundations">Více informací</Link>
-                </Button>
-                <Button asChild variant="secondary">
-                  <Link href="/kurzy/start-to-pause">ZDARMA 3denní kurz</Link>
                 </Button>
               </div>
             </div>
@@ -50,20 +50,17 @@ export function CoursesSection() {
           <div className="flex flex-col-reverse lg:flex-row">
             <div className="lg:w-1/2 p-8 lg:p-14 border-r border-white/40">
               <Typography variant="span" color="primary" className="text-sm font-bold uppercase tracking-[0.15em] mb-2 block">
-                SKUPINOVÉ KURZY v Praze
+                8TÝDENNÍ KURZ MINDFULNESS (MBSR)
               </Typography>
               <Typography variant="h4" className="text-xl leading-relaxed mb-4">
-                Hledáte osobní vedení a skupinu kolem sebe, abyste společně zvládli mindfulness?
+                Hledáte osobní vedení a skupinu kolem sebe?<br />Začni reagovat jinak na každodenní problémy.
               </Typography>
               <Typography variant="p" className="leading-relaxed">
-                Posílíte svůj vnitřní kompas. Začnete jinak reagovat na každodenní problémy. Skupinové kurzy jsou silným prostorem pro maximální živou podporu, která garantuje rychlé výsledky a radost s každým krokem na vaší cestě.
+                Získáš svůj vnitřní kompas, který tě povede i v období stresu, nejistoty a složitých situací s větší jasností a klidem. Získáš podporu šitou na míru přesně tomu, kde se právě nacházíš. Staneš se součástí skupiny, se kterou budeš kurzem společně procházet.
               </Typography>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button asChild variant="primary">
                   <Link href="/kurzy/skupinovy-kurz">Více informací</Link>
-                </Button>
-                <Button variant="secondary">
-                  ZDARMA Masterclass
                 </Button>
               </div>
             </div>
@@ -80,12 +77,9 @@ export function CoursesSection() {
               <img src="/Pictures/Homepage/BeMindful_Applifting2026Annaśolcov†.5.jpg" alt="Companies Courses" className="w-full h-full object-cover absolute inset-0" />
             </div>
             <div className="lg:w-1/2 p-8 lg:p-14">
-              <Typography variant="h3" className="uppercase mb-6">Mindfulness pro FIRMY</Typography>
+              <Typography variant="h3" className="uppercase mb-6">MINDFULNESS VE FIRMÁCH</Typography>
               <Typography variant="p" className="leading-relaxed">
-                Od stresu k odolnosti. Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
-              </Typography>
-              <Typography variant="p" className="mt-4 leading-relaxed">
-                Od krátkého úvodu do mindfulness, přes aplikovatelná témata až po rozšířený mindfulness program – nechte mě přizpůsobit mindfulness potřebám vaší firmy.
+                V době neustálého spěchu, deadlinů a nečekaných změn je potřeba se umět na chvíli zastavit, zklidnit hlavu a dokázat reagovat s klidem a nadhledem. Díky tomu budou vaši lidé nejen odolnější a ve větší pohodě, ale také budou schopni lépe spolupracovat.
               </Typography>
               <div className="mt-10">
                 <Button asChild variant="primary">

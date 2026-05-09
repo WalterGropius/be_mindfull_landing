@@ -65,10 +65,10 @@ export function Hero() {
                 variant="display"
                 className="text-balance sm:text-5xl lg:text-[64px] lg:leading-[1.1]"
               >
-                Zastav se a vytvoř si<br />prostor pro změnu tvého života.
+                Zastav se a vytvoř si<br />prostor pro změnu ve svém životě.
               </Typography>
               <Typography variant="p" className="mt-6 max-w-md text-pretty">
-                Schopnost se zastavit patří dnes k nejdůležitějším dovednostem – pomáhá nám orientovat se v každodenních rozhodnutích, stresu a změnách s větší jasností a lehkostí.
+                Schopnost zastavit se patří v dnešním světě k důležitým dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
               </Typography>
               <div className="mt-8">
                 <Button asChild variant="primary-orange" className="group">
