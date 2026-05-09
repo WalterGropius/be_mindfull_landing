@@ -11,17 +11,14 @@ export function AboutSection() {
             Jsem Michal Dvořák,<br />zakladatel be.mindful
           </Typography>
           <Typography variant="p" className="mt-6 leading-relaxed">
-            Jsem Michal Dvořák, senior mindfulness teacher. Mindfulness jsem vystudoval ve dvou světových centrech – UMASS Medical School a Brown University – a od roku 2018 ji učím na plný úvazek.
+            Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
           </Typography>
           <Typography variant="p" className="mt-4 leading-relaxed">
-            Učím to, co sám žiju, a snažím se přistupovat k praxi i životu s nadhledem a nohama pevně na zemi. Protože právě o tom mindfulness je – měnit to, jak reagujeme na problémy a náročné situace. S laskavostí, ale také pevně a důsledně.
-          </Typography>
-          <Typography variant="p" className="mt-4 leading-relaxed">
-            Dnes jsem jediný Senior Mindfulness Teacher v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness tisícům lidí za posledních 15 let.
+            Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
           </Typography>
           <div className="mt-10">
             <Button asChild variant="primary-orange" className="h-auto whitespace-normal text-center">
-              <Link href="/o-mne">Poznejte svého průvodce mindfulness</Link>
+              <Link href="/o-mne">Zjisti víc o mně</Link>
             </Button>
           </div>
         </div>

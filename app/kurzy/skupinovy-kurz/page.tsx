@@ -136,10 +136,10 @@ export default function SkupinovyKurzPage() {
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
           <div className="max-w-xl">
             <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              8týdenní kurz<br />mindfulness
+              8týdenní kurz<br />mindfulness (MBSR)
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Staňte se stabilními i v bouřlivých časech
+              Chceš jít do hloubky? S vedením a se skupinou podobně naladěných lidí?
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -159,7 +159,7 @@ export default function SkupinovyKurzPage() {
             Hluboké propojení a vnitřní stabilita
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Tento pokročilý kurz je určen pro ty, kteří chtějí jít do hloubky a udělat z mindfulness pevnou a přirozenou součást každodenního života. Naučíte se rozvíjet stálý vnitřní kompas, který vás povede i v období stresu, nejistoty a složitých situací s větší jasností a klidem. Získáte podporu šitou na míru přesně tomu, kde se právě nacházíte – a stanete se součástí silné a propojené skupiny, která kráčí vpřed společně.
+            Osm týdnů intenzivní praxe s osobním vedením a skupinou, která ti dá energii pokračovat. Vytvoříš si vnitřní kompas, o který se opřeš i v těžkých chvílích. Získáš podporu šitou na míru přesně tomu, kde se právě nacházíš.
           </p>
         </div>
       </section>
@@ -168,9 +168,9 @@ export default function SkupinovyKurzPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
+              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -310,7 +310,7 @@ export default function SkupinovyKurzPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
-            Mindfulness není pro každého stejné
+            Mindfulness, které zapadne do tvého života
           </p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">8týdenní kurz mindfulness</h2>
           <p className="mt-1 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">To vás čeká</p>
@@ -394,13 +394,10 @@ export default function SkupinovyKurzPage() {
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
+              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Z této situace xxx se stalo a zjistil jsem, že xxx.
-            </p>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
+              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">

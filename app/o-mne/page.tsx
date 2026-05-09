@@ -7,11 +7,11 @@ import { Footer } from "@/components/footer"
 import { StatsBar } from "@/components/stats-bar"
 
 const credentials = [
-  { bold: "Vystudoval mindfulness na", rest: " UMASS Medical School a Brown University." },
-  { bold: "Jediný Senior Mindfulness Teacher", rest: " v České republice" },
-  { bold: "Od roku 2018", rest: " učí mindfulness na plný úvazek" },
-  { bold: "Zkušenosti s", rest: " certifikačními procesy MBSR" },
-  { bold: "Zázemí i v psychologii", rest: " jako dobrý doplněk mindfulness" },
+  { bold: "Výcvik z UMASS Medical School a Brown University,", rest: " kde mindfulness vzniklo." },
+  { bold: "Jediný držitel mezinárodního titulu Senior Mindfulness Teacher", rest: " v České republice." },
+  { bold: "Pětiletý psychoterapeutický výcvik", rest: " v systému SUR." },
+  { bold: "Od roku 2018", rest: " učí mindfulness na plný úvazek." },
+  { bold: "Praktický a lidský přístup", rest: " s humorem, laskavostí a důsledností." },
 ]
 
 export default function AboutPage() {
@@ -34,7 +34,7 @@ export default function AboutPage() {
               Můj přístup<br />k mindfulness
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
+              Praktický a lidský přístup k mindfulness pro běžný život – s nohama pevně na zemi, s humorem a laskavostí.
             </p>
           </div>
         </div>
@@ -57,13 +57,10 @@ export default function AboutPage() {
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
+              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Z této situace xxx se stalo a zjistil jsem, že xxx.
-            </p>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
+              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
@@ -93,13 +90,10 @@ export default function AboutPage() {
               Toto je jedna konkrétní věta z mého života s mindfulness
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
+              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Z této situace xxx se stalo a zjistil jsem, že xxx.
-            </p>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
+              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
             </p>
           </div>
         </div>

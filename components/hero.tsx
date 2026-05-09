@@ -10,29 +10,29 @@ import { Typography } from "@/components/ui/typography"
 const courseSlides = [
   {
     src: "/Theme_4-days_FREE.jpg",
-    title: "FREE 4denní online kurz Start-to-PAUSE",
-    subtitle: "Začněte, jak do svého života přidat trochu prostoru.",
+    title: "Restart hlavy za čtyři dny. Zdarma.",
+    subtitle: "Bezplatný 4denní program.",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/start-to-pause",
   },
   {
     src: "/Theme_Foundations.jpg",
     title: "be.mindful FOUNDATIONS",
-    subtitle: "Vše, co potřebujete k přechodu od stresu k odolnosti.",
+    subtitle: "Základ, který ti vydrží. 30 lekcí, 10 minut denně.",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/foundations",
   },
   {
     src: "/Theme_8-weeks-course.jpg",
-    title: "8týdenní kurz mindfulness",
-    subtitle: "Staňte se stabilními i v bouřlivých časech.",
+    title: "8týdenní kurz mindfulness (MBSR)",
+    subtitle: "Začni reagovat jinak na každodenní problémy.",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/skupinovy-kurz",
   },
   {
     src: "/Theme_Companies.jpg",
-    title: "Mindfulness pro firmy",
-    subtitle: "Cítit se lépe znamená vést lépe.",
+    title: "Mindfulness ve firmách",
+    subtitle: "Klid a nadhled i v době spěchu, deadlinů a změn.",
     cta: "Zobrazit programy",
     href: "/kurzy/firmy",
   },
@@ -65,16 +65,16 @@ export function Hero() {
                 variant="display"
                 className="text-balance sm:text-5xl lg:text-[64px] lg:leading-[1.1]"
               >
-                Zastav se a vytvoř si<br />prostor pro změnu tvého života.
+                Zastav se a vytvoř si<br />prostor pro změnu ve svém životě.
               </Typography>
               <Typography variant="p" className="mt-6 max-w-md text-pretty">
-                Schopnost se zastavit patří dnes k nejdůležitějším dovednostem – pomáhá nám orientovat se v každodenních rozhodnutích, stresu a změnách s větší jasností a lehkostí.
+                Schopnost zastavit se patří v dnešním světě k nejdůležitějším dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
               </Typography>
               <div className="mt-8">
                 <Button asChild variant="primary-orange" className="group">
                   <Link href="/kurzy/foundations">
                     <span className="flex items-center gap-2">
-                      Zobrazit kurzy{" "}
+                      Podívej se na kurzy{" "}
                       <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </Link>

@@ -117,7 +117,7 @@ export default function FoundationsPage() {
               be.mindful<br />FOUNDATIONS
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Vše, co potřebujete k přechodu od stresu k odolnosti
+              Základ, který ti vydrží. 30 lekcí, 10 minut denně. To nejdůležitější z mindfulness pro tvůj život.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -134,10 +134,10 @@ export default function FoundationsPage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Toto je základ vašeho duševního<br />zdraví a pohody
+            Toto je základ tvého duševního<br />zdraví a pohody
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Schopnost se zastavit patří dnes k těm nejdůležitějším dovednostem. Právě v tom okamžiku se můžeme znovu propojit sami se sebou, obrátit pozornost dovnitř místo ven a tím najít větší jasnost, klid a prostor pro vědomou reakci místo automatické.
+            Schopnost zastavit se patří v dnešním světě k nejdůležitějším dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
           </p>
         </div>
       </section>
@@ -146,9 +146,9 @@ export default function FoundationsPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
+              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -287,7 +287,7 @@ export default function FoundationsPage() {
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
-            Mindfulness není pro každého stejné
+            Mindfulness, které zapadne do tvého života
           </p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">be.mindful FOUNDATIONS</h2>
 
@@ -324,13 +324,10 @@ export default function FoundationsPage() {
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Mindfulness není jen přístup – je hluboce zakořeněn v mém životě. XXXX mě přivedl k první zkušenosti s mindfulness xxx.
+              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Z této situace xxx se stalo a zjistil jsem, že xxx.
-            </p>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Dnes jsem jediným Senior Mindfulness Teacherem v České republice a můj specifický a radostný přístup zpřístupňuje mindfulness xxx lidem za posledních xxx let.
+              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
