@@ -87,7 +87,7 @@ export default function FirmyPage() {
               Mindfulness<br />ve firmách
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              V době neustálého spěchu, deadlinů a nečekaných změn je potřeba se umět na chvíli zastavit, zklidnit hlavu a dokázat reagovat s klidem a nadhledem.
+              Vyhoření, stres, ztráta soustředění – to stojí firmy víc, než si myslí.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -141,9 +141,9 @@ export default function FirmyPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness na míru – pro tvůj život</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený a osobní přístup k mindfulness pro běžný život – Michal Dvořák, Senior Mindfulness Teacher.
+              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">

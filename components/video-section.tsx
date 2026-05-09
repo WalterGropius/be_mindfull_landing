@@ -10,13 +10,13 @@ export function VideoSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
            <div className="mx-auto max-w-2xl text-center">
             <Typography variant="h2" align="center" className="text-balance">
-              Stačí malé kroky, které zvládne každý.
+              Každá změna začíná malým krokem, který zvládne každý.
             </Typography>
             <Typography variant="p" align="center" className="mt-5">
-              Pusť představu, že jednou budeš mít život bez problémů. <br></br>Nejde o to se zbavit náročných situací, ale naučit se k nim přistupovat jinak. V tom spočívá zásadní změna.
+              Problémy nepřestanou přicházet. Ale způsob, jak je prožíváš, se změnit dá. A to mění úplně vše.
             </Typography>
             <Typography variant="p" align="center" className="mt-4">
-              Je překvapivé, jak málo někdy stačí, aby se chaos proměnil v prostor a stres v klid. Nemusíš hned všechno měnit. Stačí začít postupnými kroky, které zvládne každý.
+              Je překvapivé, jak málo někdy stačí, aby se chaos proměnil v prostor a stres v klid. Nemusíš hned všechno měnit. Stačí začít postupnými kroky.
             </Typography>
             <Typography variant="p" align="center" className="mt-4">
               Zklidnění hlavy, větší emoční odolnost i změnu nefunkčních vzorců máš ve svých rukách. Začni dnes.
@@ -29,10 +29,10 @@ export function VideoSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <Typography variant="span" color="primary" align="center" className="font-bold uppercase tracking-wider block">
-              MINDFULNESS NA MÍRU - PRO TVŮJ ŽIVOT
+              MINDFULNESS, KTERÉ ZAPADNE DO TVÉHO ŽIVOTA
             </Typography>
             <Typography variant="h2" align="center" className="mt-4 text-pretty leading-tight">
-              Ověřený a osobní přístup k mindfulness pro běžný život – Michal Dvořák, Senior Mindfulness Teacher.
+              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
             </Typography>
           </div>
 
@@ -47,7 +47,7 @@ export function VideoSection() {
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
             <Button asChild variant="primary">
-              <Link href="/kurzy/start-to-pause">Začni ještě dnes s 4denním kurzem mindfulness zdarma</Link>
+              <Link href="/kurzy/start-to-pause">Vyzkoušej 4denní kurz mindfulness zdarma</Link>
             </Button>
           </div>
         </div>

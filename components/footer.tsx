@@ -100,7 +100,7 @@ export function Footer() {
         <div className="mt-8 grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Typography variant="span" className="max-w-sm block text-sm leading-relaxed text-typography-body">
-              Síla jedné všímavé pauzy – posunout svůj život od stresu k prostoru.
+              Síla jedné všímavé pauzy – posuň se od stresu k většímu prostoru a klidu.
             </Typography>
             <div className="mt-6 flex items-center gap-3">
               {socialLinks.map((social) => (
@@ -137,10 +137,10 @@ export function Footer() {
         <div className="mt-12 grid gap-x-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="md:col-start-2 lg:col-start-3 lg:col-span-3">
             <Typography variant="h4" className="text-base text-typography-heading mb-4">
-              Získejte všechny novinky, aktualizace a oznámení:
+              Mindfulness přímo do schránky. Jednou za 14 dní.
             </Typography>
             <div className="mb-5 flex flex-wrap gap-x-6 gap-y-2">
-              {["Bezplatná videa", "Přednostní přístup k programům a kurzům", "Zůstaňte propojeni s tématy mindfulness"].map((b) => (
+              {["Tipy a cvičení pro běžný den", "Novinky ze světa mindfulness", "Akce a kurzy jako první"].map((b) => (
                 <div key={b} className="flex items-center gap-2 text-sm text-typography-body">
                   <Check className="h-4 w-4 text-primary-green" />
                   {b}

@@ -7,9 +7,9 @@ import { useState } from "react"
 import { ArrowRight, Check } from "lucide-react"
 
 const benefits = [
-  "Bezplatná videa",
-  "Přednostní přístup k programům a kurzům",
-  "Zůstaňte propojeni s tématy mindfulness",
+  "Tipy a cvičení pro běžný den",
+  "Novinky ze světa mindfulness",
+  "Akce a kurzy jako první",
 ]
 
 export function NewsletterSection() {
@@ -22,7 +22,7 @@ export function NewsletterSection() {
           {/* Left - Title */}
           <div className="lg:w-1/3">
             <Typography variant="h2" color="inverse">
-              Získejte všechny novinky,<br />aktualizace a oznámení!
+              Mindfulness přímo<br />do schránky. Jednou za 14 dní.
             </Typography>
           </div>
 

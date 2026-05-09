@@ -117,7 +117,7 @@ export default function FoundationsPage() {
               be.mindful<br />FOUNDATIONS
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Krok za krokem k větší lehkosti v životě. To nejdůležitější z mindfulness pro tvůj život.
+              Základ, který ti vydrží. 30 lekcí, 10 minut denně. To nejdůležitější z mindfulness pro tvůj život.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -137,10 +137,7 @@ export default function FoundationsPage() {
             Toto je základ tvého duševního<br />zdraví a pohody
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Schopnost zastavit se patří v dnešním světě k důležitým dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
-          </p>
-          <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Získáš větší odolnost a víc klidu v každodenním jednání.
+            Schopnost zastavit se patří v dnešním světě k nejdůležitějším dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
           </p>
         </div>
       </section>
@@ -149,9 +146,9 @@ export default function FoundationsPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness na míru – pro tvůj život</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený a osobní přístup k mindfulness pro běžný život – Michal Dvořák, Senior Mindfulness Teacher.
+              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -290,7 +287,7 @@ export default function FoundationsPage() {
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold text-[#7BC0A4]">
-            Mindfulness na míru – pro tvůj život
+            Mindfulness, které zapadne do tvého života
           </p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">be.mindful FOUNDATIONS</h2>
 
@@ -327,13 +324,10 @@ export default function FoundationsPage() {
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Jsem certifikovaný lektor s výcvikem z UMASS Medical School a Brown University, kde mindfulness vzniklo. V ČR jsem jediným držitelem mezinárodního titulu Senior Mindfulness Teacher. Mindfulness učím od roku 2018 a absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
+              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
-            </p>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Můj přístup stojí na praktičnosti, lidskosti a hledání řešení na míru. Snažím se mít obě nohy pevně na zemi, využívat humor a být laskavý, ale zároveň důsledný.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">

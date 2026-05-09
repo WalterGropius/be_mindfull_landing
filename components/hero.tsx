@@ -10,7 +10,7 @@ import { Typography } from "@/components/ui/typography"
 const courseSlides = [
   {
     src: "/Theme_4-days_FREE.jpg",
-    title: "Nauč se zastavit. Restart hlavy za čtyři dny.",
+    title: "Restart hlavy za čtyři dny. Zdarma.",
     subtitle: "Bezplatný 4denní program.",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/start-to-pause",
@@ -18,7 +18,7 @@ const courseSlides = [
   {
     src: "/Theme_Foundations.jpg",
     title: "be.mindful FOUNDATIONS",
-    subtitle: "Krok za krokem k větší lehkosti v životě.",
+    subtitle: "Základ, který ti vydrží. 30 lekcí, 10 minut denně.",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/foundations",
   },
@@ -68,13 +68,13 @@ export function Hero() {
                 Zastav se a vytvoř si<br />prostor pro změnu ve svém životě.
               </Typography>
               <Typography variant="p" className="mt-6 max-w-md text-pretty">
-                Schopnost zastavit se patří v dnešním světě k důležitým dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
+                Schopnost zastavit se patří v dnešním světě k nejdůležitějším dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
               </Typography>
               <div className="mt-8">
                 <Button asChild variant="primary-orange" className="group">
                   <Link href="/kurzy/foundations">
                     <span className="flex items-center gap-2">
-                      Zobrazit kurzy{" "}
+                      Podívej se na kurzy{" "}
                       <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </Link>

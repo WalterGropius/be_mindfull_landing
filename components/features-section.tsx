@@ -9,7 +9,7 @@ export function FeaturesSection() {
         {/* Centered Header */}
         <div className="mx-auto max-w-3xl mb-12 lg:mb-20">
           <Typography variant="h2" align="center" className="text-balance">
-            Mindfulness je vědecky podložený přístup, který pomáhá lépe zvládat stres a rozvíjet větší klid a nadhled.
+            Výsledky, které ucítíš. Věda to potvrzuje.
           </Typography>
         </div>
 
@@ -39,7 +39,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Emotional Resilience" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Být emočně odolnější a pracovat s emocemi tak, aby tě neovládaly ani v náročných chvílích.
+                  Nenechat se pohltit emocemi – ani v těch nejnáročnějších chvílích.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -47,7 +47,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Present moment" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Být víc tady a teď – netrávit tolik času v minulosti a budoucnosti a opravdu prožívat svůj život.
+                  Přestat žít v hlavě a začít žít naplno – tady a teď.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -55,7 +55,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Inner calm" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Posílit vnitřní klid, zklidnit tělo i mysl a zmírnit projevy stresu, jako je nespavost nebo úzkost.
+                  Lépe spát, méně se trápit, více si odpočinout – bez pocitu viny.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -63,7 +63,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Compassion" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Rozvíjet větší laskavost a soucit k sobě i druhým a budovat vyrovnanější vztahy.
+                  Být laskavější k sobě i k těm, na kom ti záleží.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -71,7 +71,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Pause" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Dokázat se zastavit a získat si větší odstup a nadhled.
+                  Získat nadhled i ve chvílích, kdy vše jede naplno.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">

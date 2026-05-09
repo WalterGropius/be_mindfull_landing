@@ -28,7 +28,7 @@ export function CoursesSection() {
             <div className="lg:w-1/2 p-8 lg:p-14">
               <Typography variant="h3" className="uppercase mb-6">be.mindful FOUNDATIONS</Typography>
               <Typography variant="p" className="leading-relaxed">
-                Krok za krokem k větší lehkosti v životě.
+                Základ, který ti vydrží. 30 lekcí, 10 minut denně.
               </Typography>
               <Typography variant="p" className="mt-4 leading-relaxed">
                 Získáš větší odolnost a víc klidu v každodenním jednání.
@@ -38,7 +38,7 @@ export function CoursesSection() {
               </Typography>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button asChild variant="primary">
-                  <Link href="/kurzy/foundations">Více informací</Link>
+                  <Link href="/kurzy/foundations">Chci vědět víc</Link>
                 </Button>
               </div>
             </div>
@@ -53,10 +53,10 @@ export function CoursesSection() {
                 8TÝDENNÍ KURZ MINDFULNESS (MBSR)
               </Typography>
               <Typography variant="h4" className="text-xl leading-relaxed mb-4">
-                Hledáte osobní vedení a skupinu kolem sebe?<br />Začni reagovat jinak na každodenní problémy.
+                Chceš jít do hloubky? S vedením a se skupinou podobně naladěných lidí?<br />Začni reagovat jinak na každodenní problémy.
               </Typography>
               <Typography variant="p" className="leading-relaxed">
-                Získáš svůj vnitřní kompas, který tě povede i v období stresu, nejistoty a složitých situací s větší jasností a klidem. Získáš podporu šitou na míru přesně tomu, kde se právě nacházíš. Staneš se součástí skupiny, se kterou budeš kurzem společně procházet.
+                Osm týdnů intenzivní praxe s osobním vedením a skupinou, která ti dá energii pokračovat. Vytvoříš si vnitřní kompas, o který se opřeš i v těžkých chvílích. Získáš podporu šitou na míru přesně tomu, kde se právě nacházíš.
               </Typography>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button asChild variant="primary">
@@ -79,7 +79,7 @@ export function CoursesSection() {
             <div className="lg:w-1/2 p-8 lg:p-14">
               <Typography variant="h3" className="uppercase mb-6">MINDFULNESS VE FIRMÁCH</Typography>
               <Typography variant="p" className="leading-relaxed">
-                V době neustálého spěchu, deadlinů a nečekaných změn je potřeba se umět na chvíli zastavit, zklidnit hlavu a dokázat reagovat s klidem a nadhledem. Díky tomu budou vaši lidé nejen odolnější a ve větší pohodě, ale také budou schopni lépe spolupracovat.
+                Vyhoření, stres, ztráta soustředění – to stojí firmy víc, než si myslí. Mindfulness je investice, která se vrátí: odolnější lidé, lepší komunikace, klidnější vedení.
               </Typography>
               <div className="mt-10">
                 <Button asChild variant="primary">

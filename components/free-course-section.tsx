@@ -97,13 +97,13 @@ export function FreeCourseSection() {
             Bezplatný 4denní program
           </Typography>
           <Typography variant="h2" align="center" className="mt-4">
-            Nauč se zastavit. Restart hlavy za čtyři dny.
+            Restart hlavy za čtyři dny. Zdarma.
           </Typography>
           <Typography variant="p" align="center" className="mt-6">
-            Dokážeš se zastavit i uprostřed rušného dne a rychleji zklidnit mysl i tělo.
+            Naučíš se zastavit – i tehdy, když to vypadá nemožně.
           </Typography>
           <Typography variant="p" align="center" className="mt-4">
-            Odneseš si čtyři konkrétní nástroje, které ti pomohou rychleji přepnout z napětí do klidu.
+            4 nástroje, které zvládneš použít hned – a fungují.
           </Typography>
           <div className="mt-10 mx-auto max-w-md">
             <form className="flex flex-col sm:flex-row gap-4">
