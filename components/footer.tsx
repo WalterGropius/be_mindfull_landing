@@ -49,8 +49,8 @@ const footerLinks = {
   courses: [
     { label: "be.mindful FOUNDATIONS", href: "/kurzy/foundations" },
     { label: "be.mindful MEMBERSHIP", href: "/kurzy/membership" },
-    { label: "Skupinové kurzy Praha", href: "/kurzy/skupinovy-kurz" },
-    { label: "Mindfulness pro firmy", href: "/kurzy/firmy" },
+    { label: "8týdenní kurz mindfulness (MBSR)", href: "/kurzy/skupinovy-kurz" },
+    { label: "Mindfulness ve firmách", href: "/kurzy/firmy" },
   ],
   bemindful: [
     { label: "O mně", href: "/o-mne" },

@@ -59,12 +59,12 @@ const programs = [
 ]
 
 const teacherPoints = [
-  { bold: "Nejvyšší kvalifikace", rest: " jediný plně certifikovaný Senior Mindfulness Teacher v ČR" },
-  { bold: "Mezinárodní Know-How", rest: " zkušenosti z UMASS, Brown University, ověřené metody MBSR" },
-  { bold: "Dlouhodobý vývoj vlastní metody", rest: " testované a laděné kurzy" },
-  { bold: "Zkušený tým lektorů s garantovanou supervizí", rest: " a metodickým vedením" },
-  { bold: "Různé úrovně kurzů", rest: " od workshopů po dlouhodobé programy, online i offline" },
-  { bold: "Více než 8 let praxe, přes 2000 účastníků kurzů", rest: "" },
+  { bold: "Nejvyšší kvalifikace:", rest: " jediný držitel mezinárodního titulu Senior Mindfulness Teacher v ČR." },
+  { bold: "Mezinárodní know-how:", rest: " výcvik z UMASS Medical School a Brown University, kde mindfulness vzniklo." },
+  { bold: "Pětiletý psychoterapeutický výcvik:", rest: " v systému SUR jako doplněk mindfulness." },
+  { bold: "Praktický a lidský přístup:", rest: " hledání řešení na míru, s humorem, laskavě a důsledně." },
+  { bold: "Různé úrovně kurzů:", rest: " od workshopů po dlouhodobé programy, online i offline." },
+  { bold: "Od roku 2018 učí mindfulness na plný úvazek,", rest: " s tisíci absolventy." },
 ]
 
 export default function FirmyPage() {
@@ -84,10 +84,10 @@ export default function FirmyPage() {
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
           <div className="max-w-xl">
             <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              Od stresu<br />k odolnosti
+              Mindfulness<br />ve firmách
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Cítit se lépe znamená vést lépe – naučte se přejít od stresu k vnitřní stabilitě.
+              V době neustálého spěchu, deadlinů a nečekaných změn je potřeba se umět na chvíli zastavit, zklidnit hlavu a dokázat reagovat s klidem a nadhledem.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -141,9 +141,9 @@ export default function FirmyPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness na míru – pro tvůj život</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
+              Ověřený a osobní přístup k mindfulness pro běžný život – Michal Dvořák, Senior Mindfulness Teacher.
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">

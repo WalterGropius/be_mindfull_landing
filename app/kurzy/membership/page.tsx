@@ -115,9 +115,9 @@ export default function MembershipPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
+            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness na míru – pro tvůj život</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřeno pro každodenní život a osobní přístup:<br />Vaše cesta k mindfulness<br />se Senior Mindfulness Teacherem Michalem Dvořákem
+              Ověřený a osobní přístup k mindfulness pro běžný život – Michal Dvořák, Senior Mindfulness Teacher.
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -221,7 +221,7 @@ export default function MembershipPage() {
       {/* What you get */}
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-center text-sm font-semibold text-[#7BC0A4]">Mindfulness není pro každého stejné</p>
+          <p className="text-center text-sm font-semibold text-[#7BC0A4]">Mindfulness na míru – pro tvůj život</p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
             be.mindful MEMBERSHIP<br />Co získáte
           </h2>
