@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Twitter, Linkedin, ArrowRight, Check } from "lucide-react"
+import { Facebook, Linkedin, ArrowRight, Check } from "lucide-react"
 
 // Custom filled Instagram icon — outer rounded square with inner ring + dot cut out via SVG mask
 function InstagramIcon({ className }: { className?: string }) {
@@ -65,11 +65,10 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: InstagramIcon, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: YoutubeIcon, href: "#", label: "YouTube" },
+  { icon: InstagramIcon, href: "https://www.instagram.com/bemindfulcz/", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/bemindful.cz", label: "Facebook" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/michal-dvořák-27437946/", label: "LinkedIn" },
+  { icon: YoutubeIcon, href: "https://www.youtube.com/@bemindfulcz3945", label: "YouTube" },
 ]
 
 export function Footer() {
@@ -104,7 +103,7 @@ export function Footer() {
             </Typography>
             <div className="mt-6 flex items-center gap-3">
               {socialLinks.map((social) => (
-                <Link key={social.label} href={social.href} className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-green text-surface-white transition-transform hover:scale-110 hover:bg-primary-green-hover" aria-label={social.label}>
+                <Link key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-green text-surface-white transition-transform hover:scale-110 hover:bg-primary-green-hover" aria-label={social.label}>
                   <social.icon className="h-4 w-4 fill-current" />
                 </Link>
               ))}
