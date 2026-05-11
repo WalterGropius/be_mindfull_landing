@@ -6,7 +6,7 @@ import { Plus, Minus } from "lucide-react"
 export type UpcomingDate = {
   date: string
   location: string
-  details?: string
+  sessions?: string[]
 }
 
 export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
@@ -56,18 +56,11 @@ export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
                   >
                     {d.date}
                   </span>
-                  <div className="flex-1 text-[18px] leading-[30px] text-white">
-                    {d.details ?? (
-                      <>
-                        Mindfulness is not only an approach – it is deeply embedded into my life.
-                        <br />
-                        XXXX brought me to my first mindfulness experience here xxx.
-                        <br />
-                        <br />
-                        From this situation xxx happened and I discovered, that xxx.
-                      </>
-                    )}
-                  </div>
+                  <ul className="flex-1 space-y-1 text-[18px] leading-[30px] text-white">
+                    {(d.sessions ?? []).map((s, idx) => (
+                      <li key={idx}>{s}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
