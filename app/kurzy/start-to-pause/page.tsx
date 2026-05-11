@@ -7,22 +7,38 @@ import { Footer } from "@/components/footer"
 import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 import { StatsBar } from "@/components/stats-bar"
 
-const benefits = [
-  "Naučíte se, jak se zastavit i v okamžicích, kdy máte pocit, že to nejde",
-  "Pochopíte, proč je pauza důležitá a proč je to první krok k tomu, jak přestat být ve stresu",
-  "Objevíte různé způsoby, jak se zastavit: dechem, tělem, nebo během jídla",
-  "Dozvíte se, co se děje v mozku, když se zastavíme – a jaké to má pozitivní dopady na soustředění, klid mysli i spánek",
-  "Získáte základní vhled do fungování mysli a do toho, jak s ní můžeme vědomě pracovat",
+const benefits: Array<{ bold?: string; rest: string }> = [
+  { rest: "Zastavíš se i tehdy, kdy máš pocit, že na to není čas." },
+  { bold: "Pochopíš, proč pauza funguje", rest: " – a proč je prvním krokem ven ze stresu." },
+  { bold: "Vyzkoušíš si 3 různé způsoby zastavení", rest: " – dechem, tělem a jídlem." },
+  { bold: "Zjistíš, co se děje v mozku", rest: " – a proč ti na změnu stačí 10 minut denně." },
+  { bold: "Uděláš první konkrétní krok ke změně", rest: " – bez přemáhání." },
 ]
 
 const days = [
-  { day: "DAY 1", title: "Síla mindfulness" },
-  { day: "DAY 2", title: "Jak funguje mozek a jak mu mindfulness pomáhá" },
-  { day: "DAY 3", title: "Jak využívat mindfulness během dne" },
-  { day: "DAY 4", title: "Jak vytvořit základ pro trvalou změnu" },
+  {
+    day: "DAY 1",
+    title: "Proč je tak těžké se zastavit",
+    desc: "Pochopíš, proč je tak těžké zpomalit – a co s tím. Vyzkoušíš si první jednoduché cvičení, které zvládneš hned.",
+  },
+  {
+    day: "DAY 2",
+    title: "Myšlenky přicházejí, nemusíš je následovat.",
+    desc: "Naučíš se pracovat s myšlenkami bez boje a vyzkoušíš si cvičení, které ti pomůže rychle uvolnit napětí. A zjistíš, jak využívat mindfulness během dne.",
+  },
+  {
+    day: "DAY 3",
+    title: "Mindfulness při jídle?",
+    desc: "Zjistíš, jak moc z dne prožíváš na autopilota – a jak to změnit. Naučíš se využívat mindfulness při jídle.",
+  },
+  {
+    day: "DAY 4",
+    title: "Klid a soustředění jsou dovednosti, ne talent.",
+    desc: "Ukážeme si, jak odolnost, nebo klid dál pěstovat.",
+  },
 ]
 
-const tabs = ["4denní", "Online", "5–10 min denní praxe", "WhatsApp podpora"]
+const tabs = ["4denní", "Online", "5–10 min denní praxe", "Videolekce a audionahrávky cvičení"]
 
 export default function StartToPausePage() {
   return (
@@ -41,15 +57,15 @@ export default function StartToPausePage() {
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
           <div className="max-w-xl">
             <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              Restart hlavy<br />za čtyři dny.<br />Zdarma.
+              Nauč se zastavit.<br />Restart hlavy za 4 dny.<br />Zdarma.
             </h1>
             <p className="mt-4 max-w-md text-[18px] leading-[30px] text-white/75">
-              Bezplatný 4denní program. Naučíš se zastavit – i tehdy, když to vypadá nemožně.
+              Dokážeš se zastavit i uprostřed rušného dne a rychleji zklidníš mysl i tělo.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
                 <Link href="/objednavka">
-                  <span className="flex items-center gap-2">Vstoupit do kurzu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                  <span className="flex items-center gap-2">Chci začít zdarma <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
                 </Link>
               </Button>
             </div>
@@ -61,13 +77,10 @@ export default function StartToPausePage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Ukážu ti,<br />jak silná může být krátká pauza!
+            I krátká pauza má sílu,<br />když víš, jak na to.
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Schopnost zastavit se patří v dnešním světě k nejdůležitějším dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
-          </p>
-          <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-            4 nástroje, které zvládneš použít hned – a fungují.
+            Mozek pod tlakem funguje hůř. Pauza ho resetuje. A naučit se zastavit správně – to je dovednost, ne luxus.
           </p>
         </div>
       </section>
@@ -76,9 +89,9 @@ export default function StartToPausePage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Nauč se zastavit</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
+              Restart hlavy za 4 dny.
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -102,14 +115,17 @@ export default function StartToPausePage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Jak se budete cítit po kurzu
+            Co si odneseš za 4 dny
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
               {benefits.map((b, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">{b}</p>
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
+                    {b.bold ? <strong>{b.bold}</strong> : null}
+                    {b.rest}
+                  </p>
                 </div>
               ))}
             </div>
@@ -124,7 +140,7 @@ export default function StartToPausePage() {
           </div>
           <div className="mt-12 text-center">
             <Button asChild variant="primary">
-              <Link href="/kontakt">Kontaktujte nás pro osobní nabídku</Link>
+              <Link href="/objednavka">Jdu do toho</Link>
             </Button>
           </div>
         </div>
@@ -171,13 +187,13 @@ export default function StartToPausePage() {
             />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Výzkumy potvrzují:
+            Věda hovoří jasně
           </h2>
-          <p className="mt-2 text-[28px] leading-[38px] text-[#2D2C2B]">
-            krátká každodenní praxe může mít překvapivě silný dopad!
+          <p className="mt-6 text-[20px] leading-[32px] text-[#2D2C2B]">
+            10 minut denně po dobu 14 dnů prokazatelně snižuje mentální putování z myšlenky na myšlenku a zlepšuje soustředění.
           </p>
-          <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-            14–20% snížení stresu<br />při 5–10 minutách meditace denně během osmi týdnů.
+          <p className="mt-4 text-[14px] leading-[22px] text-[#2D2C2B]/70 italic">
+            Feruglio et al. (2021). The Impact of Mindfulness Meditation on the Wandering Mind: a Systematic Review.
           </p>
         </div>
       </section>
@@ -196,11 +212,12 @@ export default function StartToPausePage() {
       {/* Course days */}
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
-          <p className="text-center text-sm font-semibold text-[#7BC0A4]">
-            Mindfulness, které zapadne do tvého života
+          <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">
+            Bezplatný 4denní program
           </p>
-          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">ZDARMA 4denní online kurz</h2>
-          <p className="mt-1 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">START to PAUSE</p>
+          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
+            Nauč se zastavit. Restart hlavy za 4 dny.
+          </h2>
 
           {/* Meta row (informational, not clickable tabs) */}
           <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3">
@@ -215,20 +232,25 @@ export default function StartToPausePage() {
           </div>
 
           {/* Day rows */}
-          <div className="mt-8 flex flex-col gap-1">
+          <div className="mt-8 flex flex-col gap-3">
             {days.map((d, i) => (
-              <div key={i} className="flex items-center gap-4 rounded-xl bg-[#F5F6F7] px-5 py-4">
-                <span className="min-w-[100px] text-[18px] font-bold uppercase tracking-wider leading-[30px] text-[#7BC0A4]">
-                  {d.day}
-                </span>
-                <span className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{d.title}</span>
+              <div key={i} className="rounded-xl bg-[#F5F6F7] px-5 py-4">
+                <div className="flex items-start gap-4">
+                  <span className="min-w-[100px] text-[18px] font-bold uppercase tracking-wider leading-[30px] text-[#7BC0A4]">
+                    {d.day}
+                  </span>
+                  <div className="flex-1">
+                    <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">{d.title}</p>
+                    <p className="mt-1 text-[16px] leading-[26px] text-[#4B4C4D]">{d.desc}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
 
           <div className="mt-8 text-center">
             <Button asChild variant="primary">
-              <Link href="/objednavka">Vstoupit do START to PAUSE</Link>
+              <Link href="/objednavka">Jdu do toho</Link>
             </Button>
           </div>
         </div>
@@ -239,7 +261,7 @@ export default function StartToPausePage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
+              Jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
               Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.

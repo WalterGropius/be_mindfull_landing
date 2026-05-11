@@ -6,13 +6,77 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { StatsBar } from "@/components/stats-bar"
 
-const credentials = [
-  { bold: "Výcvik z UMASS Medical School a Brown University,", rest: " kde mindfulness vzniklo." },
-  { bold: "Jediný držitel mezinárodního titulu Senior Mindfulness Teacher", rest: " v České republice." },
-  { bold: "Pětiletý psychoterapeutický výcvik", rest: " v systému SUR." },
-  { bold: "Od roku 2018", rest: " učí mindfulness na plný úvazek." },
-  { bold: "Praktický a lidský přístup", rest: " s humorem, laskavostí a důsledností." },
+type CredentialRow = { year: string; rest: string }
+
+const credentials: CredentialRow[] = [
+  {
+    year: "2023",
+    rest:
+      "Získání nejvyšší kvalifikace **Senior mindfulness teacher** dle mezinárodních standardů (International Mindfulness Integrity Network). Tuto kvalifikaci mám nyní jako jediný v ČR.",
+  },
+  {
+    year: "2021 – 2022",
+    rest: "**Mindfulness Supervision Training** (Present Mind, Nizozemsko).",
+  },
+  {
+    year: "2021 – 2022",
+    rest:
+      "**MBSR Teacher Certification** na Brown University (USA) a tím získání nejvyšší možné kvalifikace Certified MBSR Teacher (Level 3). Tuto certifikaci mám nyní jako jediný v ČR a jako 136. na světě.",
+  },
+  {
+    year: "2021",
+    rest:
+      "MBSR **Individual Mentoring** – dvouměsíční program na Brown University, USA (Colleen Camenisch) a dokončení certifikace MBSR Teacher Level 2.",
+  },
+  {
+    year: "2019",
+    rest:
+      "**8týdenní MBSR Group Supervision** (Margareth Fletcher, UMASS Medical School, USA).",
+  },
+  {
+    year: "2018",
+    rest:
+      "8týdenní **Mindful Eating Facilitator training** (Judson Brewer, UMASS Medical School, USA).",
+  },
+  {
+    year: "2018",
+    rest:
+      "**Practise Teaching Intensive** (Bob Stahl, Carolyne West, Christiane Wolf, UMASS Medical School, USA) a získání certifikátu CFM Qualified MBSR Teacher (Level 1).",
+  },
+  {
+    year: "2017 – 2023",
+    rest:
+      "Absolvování nebo spoluvedení více než **15 meditačních retreatů**.",
+  },
+  {
+    year: "2017",
+    rest:
+      "**8týdenní MBSR Fundamental** (Carolyne West, UMASS Medical School, USA).",
+  },
+  {
+    year: "2016",
+    rest: "**Základní 8týdenní MBSR kurz** (Rebecca Eldridge).",
+  },
+  {
+    year: "2010 – 2015",
+    rest: "**Psychoterapeutický výcvik** v systému SUR.",
+  },
+  {
+    year: "2004 – 2009",
+    rest:
+      "**Studium Andragogiky a sociologie**, Univerzita Palackého v Olomouci.",
+  },
 ]
+
+function renderBold(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g)
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i} className="font-bold text-[#2D2C2B]">{part.slice(2, -2)}</strong>
+    }
+    return <span key={i}>{part}</span>
+  })
+}
 
 export default function AboutPage() {
   return (
@@ -31,10 +95,10 @@ export default function AboutPage() {
         <div className="relative z-10 mx-auto flex min-h-[520px] max-w-7xl items-center px-6 py-20 lg:min-h-[620px] lg:px-8 lg:py-28">
           <div className="ml-auto max-w-xl">
             <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              Můj přístup<br />k mindfulness
+              Mindfulness pro reálný život – to je můj přístup.
             </h1>
-            <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Praktický a lidský přístup k mindfulness pro běžný život – s nohama pevně na zemi, s humorem a laskavostí.
+            <p className="mt-4 text-[18px] leading-[30px] text-white/85">
+              Nejsem teoretik. Mindfulness žiju každý den – v dobrých i náročných chvílích. A přesně to učím.
             </p>
           </div>
         </div>
@@ -44,7 +108,7 @@ export default function AboutPage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <p className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-            &ldquo;Toto je věta, která je pro mě velmi důležitá. Buď moje poslání, nebo něco podstatného o mindfulness.&rdquo;
+            &ldquo;Mindfulness mě nenaučilo utéct od problémů. Naučilo mě jimi procházet jinak.&rdquo;
           </p>
         </div>
       </section>
@@ -56,11 +120,11 @@ export default function AboutPage() {
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
               Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
             </h2>
-            <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
+            <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/85">
+              Jsem jediný Senior Mindfulness Teacher v ČR s výcvikem z UMASS Medical School a Brown University. Mindfulness učím od roku 2018 a absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR. Mými kurzy prošlo přes 3 000 lidí.
             </p>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/85">
+              Nejsem guru. Jsem manžel, otec, člověk, který má špatné dny – a ví, jak s nimi pracovat. Mindfulness učím tak, aby ho ostatní opravdu dokázali použít.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
@@ -87,13 +151,16 @@ export default function AboutPage() {
           </div>
           <div className="lg:w-1/2">
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Toto je jedna konkrétní věta z mého života s mindfulness
+              Mindfulness mě nezachránilo od problémů. Změnilo, jak jimi procházím. S větším klidem a nadhledem.
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
+              K mindfulness mě přivedla zvědavost a trochu zoufalství. Hektický život, přemýšlivá hlava, potřeba dostat se ze spirály myšlenek. A 8 týdnů kurzu změnilo víc, než jsem čekal.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
+              Mindfulness neznamená vypnutí hlavy. Znamená to, že se s hlavou naučíš pracovat. Náročné dny mám dál – ale už vím, jak jimi lépe procházet.
+            </p>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
+              Chci, aby mindfulness bylo pro každého dostupné, pochopitelné a použitelné. Bez ezoteriky – ale s důkazem, že to funguje.
             </p>
           </div>
         </div>
@@ -103,7 +170,7 @@ export default function AboutPage() {
       <section className="bg-[#BFD1C6] py-20 lg:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <p className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-            &ldquo;Mluvte přímo s lidmi, sdílejte něco osobního. Něco lehkého a přístupného.&rdquo;
+            &ldquo;S narozením syna se můj život obrátil naruby. O to víc jsem si uvědomil, jak moc mindfulness potřebuju – a co mi v náročných chvílích skutečně pomáhá. To dnes učím dál.&rdquo;
           </p>
         </div>
       </section>
@@ -113,24 +180,23 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
             <div className="lg:w-2/5">
-              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">15 let zkušeností</h2>
+              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Mgr. Michal Dvořák</h2>
               <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
-                Dopad nekončí u vás – rozšiřuje se i na ostatní:
+                Senior mindfulness teacher (International Mindfulness Integrity Network)
               </p>
-              <div className="mt-4 space-y-2">
-                {["Lepší komunikace a zdravější hranice", "Silnější vztahy postavené na empatii", "Ukotvenější leadership i v tlaku"].map((item) => (
-                  <p key={item} className="text-[18px] leading-[30px] text-[#4B4C4D]">{item}</p>
-                ))}
-              </div>
+              <ul className="mt-4 space-y-2 text-[18px] leading-[30px] text-[#4B4C4D]">
+                <li>• Certified MBSR teacher (Brown University, USA)</li>
+                <li>• Mindfulness supervisor (Present Mind, Netherlands)</li>
+                <li>• Mindful eating facilitator (UMASS Medical School, USA)</li>
+              </ul>
             </div>
             <div className="flex flex-col gap-4 lg:w-3/5">
               {credentials.map((c, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
-                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
-                    <strong className="font-bold text-[#2D2C2B]">{c.bold}</strong>
-                    {c.rest}
-                  </p>
+                  <span className="min-w-[110px] text-[15px] font-bold uppercase tracking-wider text-[#7BC0A4]">
+                    {c.year}
+                  </span>
+                  <p className="text-[18px] leading-[30px] text-[#4B4C4D]">{renderBold(c.rest)}</p>
                 </div>
               ))}
             </div>
@@ -146,17 +212,17 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Připojte se k mé cestě</h2>
-              <p className="mt-2 text-[18px] leading-[30px] text-[#4B4C4D]">Začněte svou cestu k mindfulness s osobním vedením.</p>
+              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Mindfulness pro skutečný život</h2>
+              <p className="mt-2 text-[18px] leading-[30px] text-[#4B4C4D]">Udělej první krok s mojí podporou.</p>
             </div>
             <div className="flex shrink-0 flex-wrap gap-4">
               <Button asChild variant="primary-orange" className="group">
                 <Link href="/kurzy/start-to-pause">
-                  <span className="flex items-center gap-2">Vstoupit do FREE kurzu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                  <span className="flex items-center gap-2">Začni 4denní kurz Restart hlavy zdarma <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
                 </Link>
               </Button>
               <Button asChild variant="primary">
-                <Link href="/kontakt">Kontaktovat mě</Link>
+                <Link href="/kontakt">Napiš mi</Link>
               </Button>
             </div>
           </div>
