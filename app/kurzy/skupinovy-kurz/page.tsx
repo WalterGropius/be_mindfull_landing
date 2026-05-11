@@ -9,6 +9,7 @@ import { VideoTestimonialsCarousel } from "@/components/video-testimonials-carou
 import { UpcomingDates } from "@/components/upcoming-dates"
 import { CourseModules } from "@/components/course-modules"
 import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
+import { SmileyIcon } from "@/components/list-icons"
 
 const benefits = [
   {
@@ -41,27 +42,70 @@ const upcomingDates = [
   {
     date: "31. 8. – 19. 10. 2026",
     location: "Online",
-    details:
-      "pondělí 31. 8. 18:00–20:45 · pondělí 7. 9. 18:00–20:30 · pondělí 14. 9. 18:00–20:30 · pondělí 21. 9. 18:00–20:30 · pondělí 28. 9. 18:00–20:30 · pondělí 5. 10. 18:00–20:30 · sobota 10. 10. 9:00–15:00 · pondělí 12. 10. 18:00–20:30 · pondělí 19. 10. 18:00–20:45",
+    sessions: [
+      "pondělí 31. 8. 18:00–20:45",
+      "pondělí 7. 9. 18:00–20:30",
+      "pondělí 14. 9. 18:00–20:30",
+      "pondělí 21. 9. 18:00–20:30",
+      "pondělí 28. 9. 18:00–20:30",
+      "pondělí 5. 10. 18:00–20:30",
+      "sobota 10. 10. 9:00–15:00",
+      "pondělí 12. 10. 18:00–20:30",
+      "pondělí 19. 10. 18:00–20:45",
+    ],
   },
   {
     date: "1. 9. – 20. 10. 2026",
     location: "Praha",
-    details:
-      "úterý 1. 9. 18:00–20:45 · úterý 8. 9. 18:00–20:30 · úterý 15. 9. 18:00–20:30 · úterý 22. 9. 18:00–20:30 · úterý 29. 9. 18:00–20:30 · úterý 6. 10. 18:00–20:30 · neděle 11. 10. 10:00–16:00 · úterý 13. 10. 18:00–20:30 · úterý 20. 10. 18:00–20:45",
+    sessions: [
+      "úterý 1. 9. 18:00–20:45",
+      "úterý 8. 9. 18:00–20:30",
+      "úterý 15. 9. 18:00–20:30",
+      "úterý 22. 9. 18:00–20:30",
+      "úterý 29. 9. 18:00–20:30",
+      "úterý 6. 10. 18:00–20:30",
+      "neděle 11. 10. 10:00–16:00",
+      "úterý 13. 10. 18:00–20:30",
+      "úterý 20. 10. 18:00–20:45",
+    ],
   },
   {
     date: "26. 10. – 14. 12. 2026",
     location: "Online",
-    details:
-      "pondělí 26. 10. 18:00–20:45 · pondělí 2. 11. 18:00–20:30 · pondělí 9. 11. 18:00–20:30 · pondělí 16. 11. 18:00–20:30 · pondělí 23. 11. 18:00–20:30 · pondělí 30. 11. 18:00–20:30 · sobota 5. 12. 9:00–15:00 · pondělí 7. 12. 18:00–20:30 · pondělí 14. 12. 18:00–20:45",
+    sessions: [
+      "pondělí 26. 10. 18:00–20:45",
+      "pondělí 2. 11. 18:00–20:30",
+      "pondělí 9. 11. 18:00–20:30",
+      "pondělí 16. 11. 18:00–20:30",
+      "pondělí 23. 11. 18:00–20:30",
+      "pondělí 30. 11. 18:00–20:30",
+      "sobota 5. 12. 9:00–15:00",
+      "pondělí 7. 12. 18:00–20:30",
+      "pondělí 14. 12. 18:00–20:45",
+    ],
   },
   {
     date: "27. 10. – 14. 12. 2026",
     location: "Praha",
-    details:
-      "úterý 27. 10. 18:00–20:45 · úterý 3. 11. 18:00–20:30 · úterý 10. 11. 18:00–20:30 · úterý 17. 11. 18:00–20:30 · úterý 24. 11. 18:00–20:30 · úterý 1. 12. 18:00–20:30 · neděle 6. 12. 10:00–16:00 · úterý 8. 12. 18:00–20:30 · úterý 15. 12. 18:00–20:45",
+    sessions: [
+      "úterý 27. 10. 18:00–20:45",
+      "úterý 3. 11. 18:00–20:30",
+      "úterý 10. 11. 18:00–20:30",
+      "úterý 17. 11. 18:00–20:30",
+      "úterý 24. 11. 18:00–20:30",
+      "úterý 1. 12. 18:00–20:30",
+      "neděle 6. 12. 10:00–16:00",
+      "úterý 8. 12. 18:00–20:30",
+      "úterý 15. 12. 18:00–20:45",
+    ],
   },
+]
+
+const howCourseWorks = [
+  "Kurz můžeš absolvovat buď naživo v Praze, nebo online přes platformu Zoom. Na online kurz se tak můžeš připojit odkudkoliv. Průběh kurzů je identický.",
+  "Čeká tě osm 2,5h setkání a jedno celodenní setkání (6 h).",
+  "Na každém setkání probíhá společný trénink mindfulness meditace. Po tréninku probíhá diskuse, která má za cíl upevnit správné provádění cvičení. Následně se zabýváme jedním tématem více do hloubky (například, jak využívat mindfulness pro lepší zvládání stresu).",
+  "Mezi setkáními probíhá každodenní individuální trénink – každý trénuje sám dle nahrávek řízených meditací, které dostane.",
 ]
 
 const courseModules = [
@@ -318,26 +362,27 @@ export default function SkupinovyKurzPage() {
 
       {/* How the course works */}
       <section className="bg-[#8ECDB5] py-16 lg:py-24">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Jak kurz probíhá a pro koho je určený?
-          </h2>
-          <div className="mt-8 space-y-5 text-[18px] leading-[30px] text-[#2D2C2B]/90">
-            <p>
-              <strong>Kurz je pro tebe, pokud chceš jít do hloubky.</strong> Ať už máš za sebou Foundations nebo Membership – anebo s mindfulness začínáš a víš, že do toho chceš jít naplno. Čeká tě 30–50 minut denně pravidelné praxe, skupina lidí na stejné cestě a moje osobní podpora.
-            </p>
-            <p>
-              Kurz můžeš absolvovat buď naživo v Praze, nebo online přes platformu Zoom. Na online kurz se tak můžeš připojit odkudkoliv. Průběh kurzů je identický.
-            </p>
-            <p>
-              Čeká tě osm 2,5h setkání a jedno celodenní setkání (6 h).
-            </p>
-            <p>
-              Na každém setkání probíhá společný trénink mindfulness meditace. Po tréninku probíhá diskuse, která má za cíl upevnit správné provádění cvičení. Následně se zabýváme jedním tématem více do hloubky (například, jak využívat mindfulness pro lepší zvládání stresu).
-            </p>
-            <p>
-              Mezi setkáními probíhá každodenní individuální trénink – každý trénuje sám dle nahrávek řízených meditací, které dostane.
-            </p>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
+            <div className="lg:w-2/5">
+              <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
+                Jak kurz probíhá a pro koho je určený?
+              </h2>
+              <p className="mt-6 text-[18px] font-bold leading-[30px] text-[#2D2C2B]">
+                Kurz je pro tebe, pokud chceš jít do hloubky.
+              </p>
+              <p className="mt-3 text-[18px] leading-[30px] text-[#2D2C2B]/85">
+                Ať už máš za sebou Foundations nebo Membership – anebo s mindfulness začínáš a víš, že do toho chceš jít naplno. Čeká tě 30–50 minut denně pravidelné praxe, skupina lidí na stejné cestě a moje osobní podpora.
+              </p>
+            </div>
+            <div className="flex flex-col gap-5 lg:w-3/5">
+              {howCourseWorks.map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <SmileyIcon className="h-10 w-10 shrink-0" />
+                  <p className="text-[18px] leading-[30px] text-[#2D2C2B]">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
