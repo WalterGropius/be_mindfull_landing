@@ -27,14 +27,11 @@ export function CoursesSection() {
             </div>
             <div className="lg:w-1/2 p-8 lg:p-14">
               <Typography variant="h3" className="uppercase mb-6">be.mindful FOUNDATIONS</Typography>
-              <Typography variant="p" className="leading-relaxed">
-                Základ, který ti vydrží. 30 lekcí, 10 minut denně.
+              <Typography variant="p" className="leading-relaxed font-bold">
+                Chceš mít konečně klid v hlavě a zvládat stres jinak?
               </Typography>
               <Typography variant="p" className="mt-4 leading-relaxed">
-                Získáš větší odolnost a víc klidu v každodenním jednání.
-              </Typography>
-              <Typography variant="p" className="mt-4 leading-relaxed">
-                To nejdůležitější z mindfulness pro tvůj život.
+                Základ, který ti vydrží. 30 lekcí, 10 minut denně. Stres, zahlcení, myšlenky v kruhu – to zná každý. Krok za krokem se naučíš s nimi pracovat jinak. Získáš větší klid, soustředění i odolnost a přestaneš mít pocit, že tě život přejíždí. To nejdůležitější z mindfulness – pro tvůj reálný každodenní život.
               </Typography>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button asChild variant="primary">
@@ -53,7 +50,7 @@ export function CoursesSection() {
                 8TÝDENNÍ KURZ MINDFULNESS (MBSR)
               </Typography>
               <Typography variant="h4" className="text-xl leading-relaxed mb-4">
-                Chceš jít do hloubky? S vedením a se skupinou podobně naladěných lidí?<br />Začni reagovat jinak na každodenní problémy.
+                Chceš jít do hloubky? S vedením a se skupinou podobně naladěných lidí?
               </Typography>
               <Typography variant="p" className="leading-relaxed">
                 Osm týdnů intenzivní praxe s osobním vedením a skupinou, která ti dá energii pokračovat. Vytvoříš si vnitřní kompas, o který se opřeš i v těžkých chvílích. Získáš podporu šitou na míru přesně tomu, kde se právě nacházíš.

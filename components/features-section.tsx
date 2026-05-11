@@ -23,7 +23,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Thought Control" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Lépe zvládat myšlenky a vystoupit z kruhů, které nikam nevedou.
+                  <strong>Lépe zvládat myšlenky</strong> a vystoupit z kruhů, které nikam nevedou.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -31,7 +31,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Manage Stress" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Zvládat stres s větším nadhledem – ne ho jen překousnout a jít dál.
+                  <strong>Zvládat stres</strong> s větším nadhledem – ne ho jen překousnout a jít dál.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -39,7 +39,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Emotional Resilience" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Nenechat se pohltit emocemi – ani v těch nejnáročnějších chvílích.
+                  <strong>Nenechat se pohltit emocemi</strong> – ani v těch nejnáročnějších chvílích.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -47,7 +47,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Present moment" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Přestat žít v hlavě a začít žít naplno – tady a teď.
+                  <strong>Přestat žít v hlavě</strong> a začít žít naplno – tady a teď.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -55,23 +55,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Inner calm" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Lépe spát, méně se trápit, více si odpočinout – bez pocitu viny.
-                </Typography>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-end justify-start rounded-full bg-secondary">
-                  <img src="/tic.png" alt="Compassion" className="w-10 h-10" />
-                </div>
-                <Typography variant="p" className="pt-2">
-                  Být laskavější k sobě i k těm, na kom ti záleží.
-                </Typography>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 flex-shrink-0 items-end justify-start rounded-full bg-secondary">
-                  <img src="/tic.png" alt="Pause" className="w-10 h-10" />
-                </div>
-                <Typography variant="p" className="pt-2">
-                  Získat nadhled i ve chvílích, kdy vše jede naplno.
+                  <strong>Lépe spát</strong>, méně se trápit, více si odpočinout – bez pocitu viny.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -79,7 +63,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Daily practice" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Osvojit si mindfulness a naučit se mindfulness meditace využívat v běžném životě.
+                  <strong>Osvojit si mindfulness</strong> a naučit se mindfulness meditace využívat v běžném životě.
                 </Typography>
               </div>
             </div>
