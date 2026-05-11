@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react"
 type Stat = { num: string; label: string }
 
 const defaultStats: Stat[] = [
-  { num: "15+", label: "Let praxe" },
-  { num: "2K+", label: "Absolventi" },
+  { num: "9+", label: "Let praxe" },
+  { num: "3000+", label: "Absolventi" },
   { num: "1", label: "Senior Mindfulness Teacher v ČR" },
 ]
 
