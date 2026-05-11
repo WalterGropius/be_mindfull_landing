@@ -23,7 +23,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B] sm:text-5xl lg:text-[64px] lg:leading-[1.1]">Kontakt</h1>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">Ozvěte se mi, rád vám pomohu na vaší cestě k mindfulness.</p>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">Napiš mi. Rád odpovím.</p>
           </div>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-[#2D2C2B]">Telefon</p>
-                  <p className="mt-1 text-sm text-[#4B4C4D]">+420 XXX XXX XXX</p>
+                  <p className="mt-1 text-sm text-[#4B4C4D]">+420 777 945 605</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -59,7 +59,18 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-[#2D2C2B]">Adresa</p>
-                  <p className="mt-1 text-sm text-[#4B4C4D]">Praha 10, Česká republika</p>
+                  <p className="mt-1 text-sm leading-[22px] text-[#4B4C4D]">
+                    Michal Dvořák<br />
+                    Karla Nového 432, 257 51, Bystřice<br />
+                    IČ: 75934949 · DIČ: CZ8503280401<br />
+                    Fyzická osoba zapsaná v Živnostenském rejstříku v Benešově od 23. 10. 2007
+                  </p>
+                  <p className="mt-3 text-sm leading-[22px] text-[#4B4C4D]">
+                    bemindfulcz s.r.o.<br />
+                    Krupská 3084/3, 100 00, Praha 10<br />
+                    IČ: 08362840 · DIČ: CZ08362840<br />
+                    Spisová značka C 317662, Městský soud v Praze (26. 7. 2019)
+                  </p>
                 </div>
               </div>
             </div>

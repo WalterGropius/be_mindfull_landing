@@ -18,9 +18,9 @@ export default async function BlogPage() {
       <section className="bg-white pt-16 pb-4 lg:pt-24 lg:pb-6">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-[36px] font-bold leading-[46px] text-[#2D2C2B]">Top Reads</h1>
+            <h1 className="text-[36px] font-bold leading-[46px] text-[#2D2C2B]">Blog</h1>
             <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-              V době neustálého spěchu a hluku už pauza není luxus, ale klíčová dovednost. Všímavé zastavení vytváří prostor mezi podnětem a reakcí, díky čemuž jednáme s jasností místo automatické reakce na stres.
+              Mindfulness v reálném životě – praktické tipy, cvičení a inspirace pro každý den. To najdete na blogu.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -35,7 +35,7 @@ export default async function BlogPage() {
       {morePosts.length > 0 && (
         <section className="bg-white py-12 lg:py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="mb-10 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">More about mindfulness</h2>
+            <h2 className="mb-10 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Mohlo by tě dál zajímat</h2>
             <div className="grid gap-6 md:grid-cols-3">
               {morePosts.map((post) => (
                 <BlogCard key={post.slug} post={post} />
