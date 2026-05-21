@@ -89,10 +89,10 @@ export default function AboutPage() {
           src="/about-hero-98.jpg"
           alt="Michal Dvořák"
           fill
-          className="object-cover"
+          className="object-cover object-top lg:object-center"
           priority
         />
-        <div className="relative z-10 mx-auto flex min-h-[520px] max-w-7xl items-center px-6 py-20 lg:min-h-[620px] lg:px-8 lg:py-28">
+        <div className="relative z-10 mx-auto flex min-h-[520px] max-w-7xl items-end px-6 pb-10 pt-20 lg:min-h-[620px] lg:items-center lg:px-8 lg:py-28">
           <div className="ml-auto max-w-xl">
             <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
               Mindfulness pro reálný život – to je můj přístup.
@@ -215,10 +215,10 @@ export default function AboutPage() {
               <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Mindfulness pro skutečný život</h2>
               <p className="mt-2 text-[18px] leading-[30px] text-[#4B4C4D]">Udělej první krok s mojí podporou.</p>
             </div>
-            <div className="flex shrink-0 flex-wrap gap-4">
-              <Button asChild variant="primary-orange" className="group">
+            <div className="flex w-full shrink-0 flex-wrap gap-4 lg:w-auto">
+              <Button asChild variant="primary-orange" className="group h-auto max-w-full whitespace-normal py-4 text-center leading-tight">
                 <Link href="/kurzy/start-to-pause">
-                  <span className="flex items-center gap-2">Začni 4denní kurz Restart hlavy zdarma <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
+                  <span className="flex items-center justify-center gap-2">Začni 4denní kurz Restart hlavy zdarma <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" /></span>
                 </Link>
               </Button>
               <Button asChild variant="primary">

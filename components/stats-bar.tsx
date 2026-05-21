@@ -64,14 +64,14 @@ function AnimatedNumber({ value }: { value: string }) {
 export function StatsBar({ stats = defaultStats }: { stats?: Stat[] }) {
   return (
     <section className="bg-[#7BC0A4] py-14">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-3 divide-x-2 divide-[#E3FFE2] text-center">
           {stats.map((s) => (
-            <div key={s.label} className="px-6">
-              <p className="text-5xl font-bold text-[#E3FFE2] lg:text-6xl">
+            <div key={s.label} className="px-2 sm:px-6">
+              <p className="text-3xl font-bold text-[#E3FFE2] sm:text-5xl lg:text-6xl">
                 <AnimatedNumber value={s.num} />
               </p>
-              <p className="mt-2 text-[18px] font-semibold leading-[30px] text-[#E3FFE2]">{s.label}</p>
+              <p className="mt-2 text-sm font-semibold leading-snug text-[#E3FFE2] sm:text-[18px] sm:leading-[30px]">{s.label}</p>
             </div>
           ))}
         </div>

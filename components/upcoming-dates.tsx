@@ -27,13 +27,13 @@ export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
               type="button"
               onClick={() => setOpen(isOpen ? null : i)}
               aria-expanded={isOpen}
-              className="flex w-full items-center justify-between px-8 py-6 text-left transition-colors hover:bg-[#6BB194]"
+              className="flex w-full items-center justify-between gap-3 px-5 py-5 text-left transition-colors hover:bg-[#6BB194] sm:px-8 sm:py-6"
             >
-              <div className="flex items-baseline gap-5">
-                <span className="text-3xl font-bold text-[#E3FFE2]">{d.date}</span>
-                <span className="text-3xl text-[#E3FFE2]">{d.location}</span>
+              <div className="flex flex-1 flex-col items-start gap-1 sm:flex-row sm:items-baseline sm:gap-5">
+                <span className="text-xl font-bold text-[#E3FFE2] sm:text-3xl">{d.date}</span>
+                <span className="text-lg text-[#E3FFE2] sm:text-3xl">{d.location}</span>
               </div>
-              <span className="text-[#E3FFE2]">
+              <span className="shrink-0 text-[#E3FFE2]">
                 {isOpen ? (
                   <Minus className="h-6 w-6" />
                 ) : (
@@ -49,14 +49,14 @@ export function UpcomingDates({ dates }: { dates: UpcomingDate[] }) {
               }`}
             >
               <div className="overflow-hidden">
-                <div className="flex items-start gap-5 px-8 pb-6 pt-3">
+                <div className="flex items-start gap-5 px-5 pb-6 pt-3 sm:px-8">
                   <span
                     aria-hidden="true"
-                    className="invisible select-none whitespace-nowrap text-3xl font-bold leading-none"
+                    className="hidden select-none whitespace-nowrap text-3xl font-bold leading-none sm:inline-block"
                   >
                     {d.date}
                   </span>
-                  <ul className="flex-1 space-y-1 text-[18px] leading-[30px] text-white">
+                  <ul className="flex-1 space-y-1 text-[16px] leading-[26px] text-white sm:text-[18px] sm:leading-[30px]">
                     {(d.sessions ?? []).map((s, idx) => (
                       <li key={idx}>{s}</li>
                     ))}

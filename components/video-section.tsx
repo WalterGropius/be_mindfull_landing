@@ -46,7 +46,7 @@ export function VideoSection() {
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
-            <Button asChild variant="primary">
+            <Button asChild variant="primary" className="h-auto max-w-full whitespace-normal py-4 text-center leading-tight">
               <Link href="/kurzy/start-to-pause">Vyzkoušej 4denní kurz mindfulness zdarma</Link>
             </Button>
           </div>
