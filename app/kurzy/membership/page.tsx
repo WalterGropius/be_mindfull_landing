@@ -99,7 +99,7 @@ export default function MembershipPage() {
           src="/Pictures/be.mindful MEMBERSHIP/Header_membership.jpg"
           alt="be.mindful Membership"
           fill
-          className="object-cover"
+          className="object-cover object-[75%_center] lg:object-center"
           priority
         />
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
@@ -139,7 +139,7 @@ export default function MembershipPage() {
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, který zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený přístup, který funguje v reálném životě. Michal Dvořák, Senior Mindfulness Teacher.
+              Ověřený přístup, který funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">

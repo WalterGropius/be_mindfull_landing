@@ -78,28 +78,13 @@ export function Footer() {
   return (
     <footer className="border-t border-border-subtle bg-surface-white">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-        {/* Row 1: Logo + Column Headers */}
-        <div className="grid gap-x-10 md:grid-cols-2 lg:grid-cols-5 items-end">
+        {/* Logo + tagline/social + link columns */}
+        <div className="grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-1 translate-y-4">
-              <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={300} height={80} className="h-20 w-auto opacity-70" />
+            <Link href="/" className="-ml-1 inline-flex items-center gap-1">
+              <Image src="/Logo/bemindful_logo.svg" alt="be.mindful logo" width={300} height={80} className="h-14 w-auto opacity-70 sm:h-20" />
             </Link>
-          </div>
-          <div>
-            <Typography variant="h4" className="text-base text-typography-heading">Kurzy</Typography>
-          </div>
-          <div>
-            <Typography variant="h4" className="text-base text-typography-heading">be.mindful</Typography>
-          </div>
-          <div>
-            <Typography variant="h4" className="text-base text-typography-heading">Více</Typography>
-          </div>
-        </div>
-
-        {/* Row 2: Tagline/Social + Links */}
-        <div className="mt-8 grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <Typography variant="span" className="max-w-sm block text-sm leading-relaxed text-typography-body">
+            <Typography variant="span" className="mt-4 block max-w-sm text-sm leading-relaxed text-typography-body">
               Síla jedné všímavé pauzy – posuň se od stresu k většímu prostoru a klidu.
             </Typography>
             <div className="mt-6 flex items-center gap-3">
@@ -111,6 +96,7 @@ export function Footer() {
             </div>
           </div>
           <div>
+            <Typography variant="h4" className="mb-4 text-base text-typography-heading">Kurzy</Typography>
             <ul className="space-y-3">
               {footerLinks.courses.map((link) => (
                 <li key={link.label}><Link href={link.href} className="text-[15px] font-bold text-primary-green transition-colors hover:text-primary-green-hover">{link.label}</Link></li>
@@ -118,6 +104,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
+            <Typography variant="h4" className="mb-4 text-base text-typography-heading">be.mindful</Typography>
             <ul className="space-y-3">
               {footerLinks.bemindful.map((link) => (
                 <li key={link.label}><Link href={link.href} className="text-[15px] font-bold text-primary-green transition-colors hover:text-primary-green-hover">{link.label}</Link></li>
@@ -125,6 +112,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
+            <Typography variant="h4" className="mb-4 text-base text-typography-heading">Více</Typography>
             <ul className="space-y-3">
               {footerLinks.more.map((link) => (
                 <li key={link.label}><Link href={link.href} className="text-[15px] font-bold text-primary-green transition-colors hover:text-primary-green-hover">{link.label}</Link></li>

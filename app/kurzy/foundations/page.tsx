@@ -146,7 +146,7 @@ export default function FoundationsPage() {
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený přístup, který funguje v reálném životě. Michal Dvořák, Senior Mindfulness Teacher.
+              Ověřený přístup, který funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">

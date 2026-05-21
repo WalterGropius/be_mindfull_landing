@@ -138,11 +138,11 @@ export default function FirmyPage() {
       {/* Client logos */}
       <section className="bg-white py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
+          <div className="-mx-6 flex items-center gap-x-8 overflow-x-auto px-6 sm:mx-0 sm:flex-wrap sm:justify-center sm:gap-x-10 sm:gap-y-6 sm:overflow-visible sm:px-0">
             {clientLogos.map((logo) => (
               <div
                 key={logo.alt}
-                className="relative flex h-16 w-32 items-center justify-center"
+                className="relative flex h-16 w-28 shrink-0 items-center justify-center sm:w-32"
               >
                 <Image
                   src={logo.src}

@@ -215,7 +215,7 @@ export default function SkupinovyKurzPage() {
           src="/Theme_8-weeks-course.jpg"
           alt="8týdenní kurz mindfulness"
           fill
-          className="object-cover"
+          className="object-cover object-[75%_center] lg:object-center"
           priority
         />
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
@@ -256,7 +256,7 @@ export default function SkupinovyKurzPage() {
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený přístup, který funguje v reálném životě. Michal Dvořák, Senior Mindfulness Teacher.
+              Ověřený přístup, který funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
             </h2>
           </div>
           <div className="relative mt-10 overflow-hidden rounded-2xl">
@@ -414,8 +414,8 @@ export default function SkupinovyKurzPage() {
         </div>
 
         {/* Bonus app section — full width so the mockup fills its column */}
-        <div className="mx-auto mt-12 flex max-w-7xl flex-col items-center gap-0 px-6 lg:flex-row lg:px-8">
-          <div className="lg:w-1/2 lg:pr-8">
+        <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-0 px-6 lg:flex-row lg:items-center lg:px-8">
+          <div className="w-full lg:w-1/2 lg:pr-8">
             <h3 className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
               Bonus: Přístup do aplikace be.mindful –<br />vše přehledně na jednom místě
             </h3>
@@ -431,13 +431,13 @@ export default function SkupinovyKurzPage() {
               </Button>
             </div>
           </div>
-          <div className="lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <Image
               src="/Mockup photos/Průhledné/8ty.kurz.png"
               alt="be.mindful aplikace pro 8týdenní kurz"
               width={800}
               height={1200}
-              className="block h-auto w-full object-contain"
+              className="mx-auto block h-auto w-full max-w-md object-contain lg:max-w-none"
             />
           </div>
         </div>
