@@ -61,6 +61,7 @@ const footerLinks = {
   more: [
     { label: "Členská zóna", href: "/kurzy/membership" },
     { label: "Start-to-PAUSE", href: "/kurzy/start-to-pause" },
+    { label: "Ochrana osobních údajů", href: "/ochrana-osobnich-udaju" },
   ],
 }
 

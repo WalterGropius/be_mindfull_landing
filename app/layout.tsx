@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata } from 'next'
 import { Noto_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { CookieConsent } from '@/components/cookie-consent'
 import './globals.css'
 
 const notoSans = Noto_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
@@ -38,6 +39,7 @@ export default function RootLayout({
     <html lang="cs">
       <body className={`${notoSans.className} antialiased`}>
         {children}
+        <CookieConsent />
         <Analytics />
       </body>
     </html>
