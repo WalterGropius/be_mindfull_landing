@@ -261,7 +261,7 @@ export default function SkupinovyKurzPage() {
             </h2>
           </div>
           <TrailerEmbed
-            driveId="1wXopTNuyPvZ3FN8tcloe799Qq0ANfoVu"
+            videoSrc="/trailers/8tydenni-kurz.mp4"
             poster="/trailers/cover-8tydenni-kurz.jpg"
             alt="Michal Dvořák – Senior Mindfulness Teacher"
             className="mt-10"
