@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { TrailerEmbed } from "@/components/trailer-embed"
 import { Typography } from "@/components/ui/typography"
 
 export function VideoSection() {
@@ -32,17 +32,16 @@ export function VideoSection() {
               MINDFULNESS, KTERÉ ZAPADNE DO TVÉHO ŽIVOTA
             </Typography>
             <Typography variant="h2" align="center" className="mt-4 text-pretty leading-tight">
-              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
+              Praktický, lidský a vědecky podložený přístup.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.</span>
             </Typography>
           </div>
 
-          <div className="relative mx-auto mt-12 max-w-5xl">
-            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-[1rem] bg-secondary">
-              <img src="/Pictures/_DSC7728.jpg" alt="Michal Dvořák" className="w-full h-full object-cover" />
-              <button className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-border-subtle transition-transform hover:scale-110" aria-label="Play video">
-                <Play className="ml-1 h-8 w-8 fill-surface-white text-surface-white" />
-              </button>
-            </div>
+          <div className="mx-auto mt-12 max-w-5xl">
+            <TrailerEmbed
+              driveId="17qP2SqWNkvjXAF3yrstJ7HPOUmFUOoiX"
+              poster="/Pictures/_DSC7728.jpg"
+              alt="Michal Dvořák"
+            />
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-6">

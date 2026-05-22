@@ -10,29 +10,50 @@ import { Typography } from "@/components/ui/typography"
 const courseSlides = [
   {
     src: "/Theme_4-days_FREE.jpg",
-    title: "Restart hlavy za čtyři dny. Zdarma.",
-    subtitle: "Bezplatný 4denní program.",
+    alt: "FREE 4denní online kurz Start-to-PAUSE",
+    eyebrow: null as string | null,
+    title: (
+      <>
+        Nauč se zastavit.<br />Restart hlavy za 4 dny.<br />Zdarma.
+      </>
+    ),
+    subtitle: "Dokážeš se zastavit i uprostřed rušného dne a rychleji zklidníš mysl i tělo.",
+    imgClassName: "object-cover",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/start-to-pause",
   },
   {
     src: "/Theme_Foundations.jpg",
-    title: "be.mindful FOUNDATIONS",
-    subtitle: "Základ, který ti vydrží. 30 lekcí, 10 minut denně.",
+    alt: "be.mindful Foundations",
+    eyebrow: null,
+    title: (
+      <>
+        be.mindful<br />FOUNDATIONS
+      </>
+    ),
+    subtitle: "Základ, který ti vydrží. Od stresu a zahlcení ke klidu a větší lehkosti.",
+    imgClassName: "object-cover",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/foundations",
   },
   {
     src: "/Theme_8-weeks-course.jpg",
-    title: "8týdenní kurz mindfulness (MBSR)",
-    subtitle: "Začni reagovat jinak na každodenní problémy.",
+    alt: "8týdenní kurz mindfulness",
+    eyebrow: "Skupinový kurz",
+    title: <>8týdenní kurz mindfulness (MBSR)</>,
+    subtitle: "Nejuznávanější program na světě. Klid, který vydrží – i když přijde bouře.",
+    imgClassName: "object-cover object-[75%_center] lg:object-center",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/skupinovy-kurz",
   },
   {
     src: "/Theme_Companies.jpg",
-    title: "Mindfulness ve firmách",
-    subtitle: "Klid a nadhled i v době spěchu, deadlinů a změn.",
+    alt: "Mindfulness pro firmy",
+    eyebrow: "Firemní programy",
+    title: <>Od stresu k odolnosti vašich lidí.</>,
+    subtitle:
+      "Lidé, kteří zvládají tlak, jsou silnějšími leadery, spolupracují bez tření a podávají výkon – i v těžších chvílích.",
+    imgClassName: "object-cover",
     cta: "Zobrazit programy",
     href: "/kurzy/firmy",
   },
@@ -87,23 +108,29 @@ export function Hero() {
         {/* Course slides */}
         {courseSlides.map((slide) => (
           <div
-            key={slide.title}
+            key={slide.href}
             className="relative min-h-[500px] min-w-full overflow-hidden bg-[#1A1A1A] lg:min-h-[580px]"
           >
             <Image
               src={slide.src}
-              alt={slide.title}
+              alt={slide.alt}
               fill
-              className="object-cover"
+              className={slide.imgClassName}
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
             <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
-              <div className="max-w-2xl">
-                <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
+              <div className="max-w-xl">
+                {slide.eyebrow && (
+                  <p className="text-sm font-semibold uppercase tracking-wider text-[#E58C34]">
+                    {slide.eyebrow}
+                  </p>
+                )}
+                <h1
+                  className={`${slide.eyebrow ? "mt-2 " : ""}text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]`}
+                >
                   {slide.title}
                 </h1>
-                <p className="mt-4 max-w-md text-[18px] leading-[30px] text-white/85">
+                <p className="mt-4 text-[18px] leading-[30px] text-white/85">
                   {slide.subtitle}
                 </p>
                 <div className="mt-8">
