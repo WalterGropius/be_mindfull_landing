@@ -22,6 +22,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# downloaded Drive folder archives (processed by scripts/process-trailers.sh)
+*.zip
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

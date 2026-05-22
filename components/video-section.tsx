@@ -38,7 +38,7 @@ export function VideoSection() {
 
           <div className="mx-auto mt-12 max-w-5xl">
             <TrailerEmbed
-              driveId="17qP2SqWNkvjXAF3yrstJ7HPOUmFUOoiX"
+              videoSrc="/trailers/home-page.mp4"
               poster="/Pictures/_DSC7728.jpg"
               alt="Michal Dvořák"
             />

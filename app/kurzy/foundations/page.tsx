@@ -151,7 +151,7 @@ export default function FoundationsPage() {
             </h2>
           </div>
           <TrailerEmbed
-            driveId="1wuaBuY6MfrvhM-VsJL8evTPTKc1Zz43n"
+            videoSrc="/trailers/foundations.mp4"
             poster="/trailers/cover-foundations.jpg"
             alt="Michal Dvořák – Senior Mindfulness Teacher"
             className="mt-10"

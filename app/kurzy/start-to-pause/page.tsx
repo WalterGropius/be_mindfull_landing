@@ -96,7 +96,7 @@ export default function StartToPausePage() {
             </h2>
           </div>
           <TrailerEmbed
-            driveId="1jzCVwBNQl4gm30vIzVmZKNf4nMm5iU0z"
+            videoSrc="/trailers/4denni-kurz.mp4"
             poster="/trailers/cover-4denni-kurz.jpg"
             alt="Michal Dvořák – Senior Mindfulness Teacher"
             className="mt-10"
