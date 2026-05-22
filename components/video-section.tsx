@@ -32,7 +32,7 @@ export function VideoSection() {
               MINDFULNESS, KTERÉ ZAPADNE DO TVÉHO ŽIVOTA
             </Typography>
             <Typography variant="h2" align="center" className="mt-4 text-pretty leading-tight">
-              Praktický, lidský a vědecky podložený přístup. Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.
+              Praktický, lidský a vědecky podložený přístup.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.</span>
             </Typography>
           </div>
 
