@@ -424,7 +424,7 @@ export default function SkupinovyKurzPage() {
               </Button>
             </div>
           </div>
-          <div className="w-full lg:w-1/2">
+          <div className="hidden w-full lg:block lg:w-1/2">
             <Image
               src="/Mockup photos/Průhledné/8ty.kurz.png"
               alt="be.mindful aplikace pro 8týdenní kurz"
