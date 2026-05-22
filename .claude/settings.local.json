@@ -6,7 +6,16 @@
       "Bash(xargs basename:*)",
       "Bash(ls -lR /Users/zen/Documents/GitHub/be_mindfull_landing/components/*.tsx)",
       "Bash(npx tsc:*)",
-      "Bash(ffmpeg -version)"
+      "Bash(ffmpeg -version)",
+      "Bash(unzip -l \"Trailery. Videa-20260522T170529Z-3-001.zip\")",
+      "Bash(unzip -l \"1_Covers na weby_trailery-20260522T170503Z-3-001.zip\")",
+      "Bash(command -v ffmpeg)",
+      "Read(//private/tmp/**)",
+      "Bash(rm -rf ztest_unzip ztest_ditto)",
+      "Bash(mkdir ztest_unzip ztest_ditto)",
+      "Bash(unzip -o -q \"/Users/zen/Documents/GitHub/be_mindfull_landing/1_Covers na weby_trailery-20260522T170503Z-3-001.zip\" -d ztest_unzip)",
+      "Bash(ditto -x -k \"/Users/zen/Documents/GitHub/be_mindfull_landing/1_Covers na weby_trailery-20260522T170503Z-3-001.zip\" ztest_ditto)",
+      "Bash(rm -rf /tmp/ztest_unzip /tmp/ztest_ditto; bash scripts/process-trailers.sh 2>&1)"
     ]
   }
 }

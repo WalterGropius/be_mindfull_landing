@@ -13,7 +13,7 @@
 #
 # REQUIREMENTS
 #   - ffmpeg   ->  brew install ffmpeg
-#   - unzip    (preinstalled on macOS)
+#   - ditto    (preinstalled on macOS; handles UTF-8 zip filenames correctly)
 #   - sips     (preinstalled on macOS; used for the cover images)
 #
 # OUTPUT  ->  public/trailers/
@@ -44,7 +44,7 @@ WORK_DIR="$(mktemp -d)"
 trap 'rm -rf "$WORK_DIR"' EXIT
 
 command -v ffmpeg >/dev/null 2>&1 || { echo "ERROR: ffmpeg not found. Install it with:  brew install ffmpeg"; exit 1; }
-command -v unzip  >/dev/null 2>&1 || { echo "ERROR: unzip not found."; exit 1; }
+command -v ditto  >/dev/null 2>&1 || { echo "ERROR: ditto not found (expected on macOS)."; exit 1; }
 
 mkdir -p "$OUT_DIR"
 
@@ -60,7 +60,7 @@ fi
 echo "==> Extracting:"
 for z in "${ZIPS[@]}"; do
   echo "    - $z"
-  unzip -o -q "$z" -d "$WORK_DIR"
+  ditto -x -k "$z" "$WORK_DIR"
 done
 
 # --- 2. compress the trailer videos ---------------------------------------
