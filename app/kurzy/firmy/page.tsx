@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Check, Play } from "lucide-react"
+import { ArrowRight, Check } from "lucide-react"
+import { TrailerEmbed } from "@/components/trailer-embed"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -166,20 +167,12 @@ export default function FirmyPage() {
               Učím lidi, jak se neztratit ve stresu, změnách a tlaku – prakticky a lidsky. Mindfulness, které funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
             </h2>
           </div>
-          <div className="relative mt-10 overflow-hidden rounded-2xl">
-            <Image
-              src="/Pictures/_DSC7728.jpg"
-              alt="Michal Dvořák – Senior Mindfulness Teacher"
-              width={900}
-              height={560}
-              className="w-full object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#C0D1C6] shadow-lg backdrop-blur-sm">
-                <Play className="ml-1 h-6 w-6 fill-white text-white" />
-              </div>
-            </div>
-          </div>
+          <TrailerEmbed
+            driveId="19fmwRqyHSKqtbhL2g9koPtJZvAa3PeMn"
+            poster="/trailers/cover-firmy.jpg"
+            alt="Michal Dvořák – Senior Mindfulness Teacher"
+            className="mt-10"
+          />
         </div>
       </section>
 
