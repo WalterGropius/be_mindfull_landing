@@ -144,7 +144,7 @@ export default function MembershipPage() {
             </h2>
           </div>
           <TrailerEmbed
-            driveId="1poMuX2QbOel9N_RWLYUthSfBBQh2_8I4"
+            videoSrc="/trailers/membership.mp4"
             poster="/trailers/cover-membership.jpg"
             alt="Michal Dvořák – Senior Mindfulness Teacher"
             className="mt-10"

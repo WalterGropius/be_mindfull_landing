@@ -168,7 +168,7 @@ export default function FirmyPage() {
             </h2>
           </div>
           <TrailerEmbed
-            driveId="19fmwRqyHSKqtbhL2g9koPtJZvAa3PeMn"
+            videoSrc="/trailers/firmy.mp4"
             poster="/trailers/cover-firmy.jpg"
             alt="Michal Dvořák – Senior Mindfulness Teacher"
             className="mt-10"
