@@ -10,6 +10,11 @@ export interface BlogPost {
   date: string
   excerpt: string
   content: string
+  video?: {
+    src: string
+    poster: string
+    alt: string
+  }
 }
 
 export function getBlogPosts(): BlogPost[] {

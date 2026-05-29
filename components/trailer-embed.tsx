@@ -12,24 +12,25 @@ interface TrailerEmbedProps {
 }
 
 export function TrailerEmbed({ videoSrc, poster, alt, className }: TrailerEmbedProps) {
+  const [started, setStarted] = useState(false)
   const [playing, setPlaying] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   const start = () => {
     const video = videoRef.current
     if (!video) return
-    setPlaying(true)
-    video.currentTime = 0
+    setStarted(true)
     video.play().catch(() => {})
   }
 
-  const reset = () => {
+  const toggle = () => {
     const video = videoRef.current
-    if (video) {
+    if (!video) return
+    if (video.paused) {
+      video.play().catch(() => {})
+    } else {
       video.pause()
-      video.currentTime = 0
     }
-    setPlaying(false)
   }
 
   return (
@@ -42,24 +43,32 @@ export function TrailerEmbed({ videoSrc, poster, alt, className }: TrailerEmbedP
         poster={poster}
         playsInline
         preload="none"
-        onEnded={reset}
-        onError={reset}
-        className="absolute inset-0 h-full w-full object-cover"
+        onClick={toggle}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        onEnded={() => {
+          setStarted(false)
+          if (videoRef.current) videoRef.current.currentTime = 0
+        }}
+        onError={() => setStarted(false)}
+        className="absolute inset-0 h-full w-full cursor-pointer object-cover"
       />
       {!playing && (
         <button
           type="button"
-          onClick={start}
+          onClick={started ? toggle : start}
           aria-label="Přehrát video"
           className="group absolute inset-0 h-full w-full cursor-pointer"
         >
-          <Image
-            src={poster}
-            alt={alt}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 1024px"
-          />
+          {!started && (
+            <Image
+              src={poster}
+              alt={alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          )}
           <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#C0D1C6] shadow-lg transition-transform group-hover:scale-110">
             <Play className="ml-1 h-6 w-6 fill-white text-white" />
           </span>

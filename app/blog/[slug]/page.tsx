@@ -2,6 +2,7 @@ import { getBlogPost, getBlogPosts } from "@/lib/blog"
 import { notFound } from "next/navigation"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { BlogContent } from "@/components/blog-content"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 
@@ -41,10 +42,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p className="text-[18px] leading-[30px] text-[#4B4C4D]">{post.excerpt}</p>
         </header>
 
-        <div
-          className="blog-content mx-auto max-w-none"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+        <BlogContent html={post.content} video={post.video} />
       </article>
 
       <Footer />

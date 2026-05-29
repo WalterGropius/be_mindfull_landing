@@ -5,5 +5,10 @@
   "image": "/Pictures/8-weeks Course Mindfulness/BeMindful_Letn†2026AnnaÊolcov†.55.jpg",
   "date": "2026-05-07",
   "excerpt": "Před nedávnem jsem vedl půldenní kurz mindfulness. Vzniklo z něj krátké video, díky kterému můžeš nahlédnout do atmosféry kurzu i toho, jak probíhá.",
-  "content": "<div style=\"position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1.5rem 0;border-radius:1rem;\"><iframe src=\"https://drive.google.com/file/d/1zk1MjuXiIxyawMSyfkD6C9a5BRe1X9SZ/preview\" allow=\"autoplay\" allowfullscreen style=\"position:absolute;top:0;left:0;width:100%;height:100%;border:0;\"></iframe></div><p><a href=\"https://drive.google.com/file/d/1zk1MjuXiIxyawMSyfkD6C9a5BRe1X9SZ/view?usp=sharing\" target=\"_blank\" rel=\"noopener\">Otevřít video v novém okně</a></p>"
+  "content": "[[VIDEO]]",
+  "video": {
+    "src": "/videos/blog/ukazka-kurzu-mindfulness.mp4",
+    "poster": "/videos/blog/ukazka-kurzu-mindfulness.jpg",
+    "alt": "Ukázka z kurzu mindfulness"
+  }
 }
