@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { Play } from "lucide-react"
+import { webmFrom } from "@/components/trailer-embed"
 
 export type VideoTestimonial = {
   quote: string
@@ -72,34 +73,32 @@ export function VideoTestimonialsCarousel({
             const isPlaying = playingIdx === i
             // Append a small time fragment so browsers render a real frame as the
             // initial preview instead of a black box (works without separate poster files).
-            const videoSrc = t.video ? `${t.video}#t=0.5` : undefined
-            // Playing card spans roughly two columns so the landscape video has room to breathe.
-            const cardWidthClass = isPlaying
-              ? "w-full md:w-[calc((100%-3rem)*2/3+1.5rem/3)]"
-              : "w-full md:w-[calc((100%-3rem)/3)]"
+            const fragment = t.video ? "#t=0.5" : ""
             return (
               <div
                 key={i}
-                className={`flex shrink-0 flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] transition-[width] duration-500 ease-out ${cardWidthClass}`}
+                className="flex w-full shrink-0 flex-col overflow-hidden rounded-2xl bg-[#F5F6F7] md:w-[calc((100%-3rem)/3)]"
               >
                 <div
                   className="relative w-full shrink-0 bg-black aspect-video"
                 >
-                  {videoSrc ? (
+                  {t.video ? (
                     <>
                       <video
                         ref={(el) => {
                           videoRefs.current[i] = el
                         }}
-                        src={videoSrc}
                         poster={t.poster}
                         playsInline
                         preload="metadata"
                         controls={isPlaying}
                         onPause={() => setPlayingIdx((cur) => (cur === i ? null : cur))}
                         onEnded={() => setPlayingIdx((cur) => (cur === i ? null : cur))}
-                        className={`h-full w-full bg-black ${isPlaying ? "object-contain" : "object-cover"}`}
-                      />
+                        className="h-full w-full bg-black object-cover"
+                      >
+                        <source src={`${webmFrom(t.video)}${fragment}`} type="video/webm" />
+                        <source src={`${t.video}${fragment}`} type="video/mp4" />
+                      </video>
                       {!isPlaying && (
                         <button
                           type="button"
@@ -123,32 +122,16 @@ export function VideoTestimonialsCarousel({
                     />
                   )}
                 </div>
-                <div
-                  className={`flex flex-1 flex-col p-6 transition-[padding] duration-500 ease-out ${
-                    isPlaying ? "justify-center px-10 py-8" : ""
-                  }`}
-                >
-                  <p
-                    className={`font-bold text-[#2D2C2B] transition-[font-size,line-height] duration-500 ease-out ${
-                      isPlaying ? "text-[24px] leading-[34px]" : "text-[18px] leading-[30px]"
-                    }`}
-                  >
+                <div className="flex flex-1 flex-col p-6">
+                  <p className="font-bold text-[#2D2C2B] text-[18px] leading-[30px]">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   {t.text && (
-                    <p
-                      className={`mt-3 text-[#4B4C4D] transition-[font-size,line-height] duration-500 ease-out ${
-                        isPlaying ? "text-[20px] leading-[32px]" : "text-[18px] leading-[30px]"
-                      }`}
-                    >
+                    <p className="mt-3 text-[#4B4C4D] text-[18px] leading-[30px]">
                       {t.text}
                     </p>
                   )}
-                  <p
-                    className={`font-semibold text-[#2D2C2B] transition-[font-size,line-height,margin] duration-500 ease-out ${
-                      isPlaying ? "mt-5 text-base" : "mt-4 text-sm"
-                    }`}
-                  >
+                  <p className="mt-4 font-semibold text-[#2D2C2B] text-sm">
                     {t.name}
                   </p>
                 </div>
