@@ -92,6 +92,16 @@ export function VideoTestimonialsCarousel({
                         playsInline
                         preload="metadata"
                         controls={isPlaying}
+                        onError={(e) => {
+                          // If the committed webm source fails to decode, force the
+                          // mp4 and keep playing instead of dropping back to the poster.
+                          const v = e.currentTarget
+                          if (t.video && !v.src.endsWith(".mp4")) {
+                            v.src = `${t.video}${fragment}`
+                            v.load()
+                            if (isPlaying) v.play().catch(() => {})
+                          }
+                        }}
                         onPause={() => setPlayingIdx((cur) => (cur === i ? null : cur))}
                         onEnded={() => setPlayingIdx((cur) => (cur === i ? null : cur))}
                         className="h-full w-full bg-black object-cover"
