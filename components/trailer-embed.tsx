@@ -19,12 +19,31 @@ export function webmFrom(src: string) {
 export function TrailerEmbed({ videoSrc, poster, alt, className }: TrailerEmbedProps) {
   const [started, setStarted] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
+  const fellBack = useRef(false)
 
   const start = () => {
     const video = videoRef.current
     if (!video) return
     setStarted(true)
     video.play().catch(() => {})
+  }
+
+  // A <source> the browser commits to (e.g. the VP9 webm) can fail to decode
+  // without falling through to the next <source> — it just fires `error`. Force
+  // the mp4 and keep playing so the poster overlay doesn't bounce back and make
+  // the user click play a second time.
+  const handleError = () => {
+    const video = videoRef.current
+    if (!video || fellBack.current) {
+      setStarted(false)
+      return
+    }
+    fellBack.current = true
+    const at = video.currentTime || 0
+    video.src = videoSrc
+    video.load()
+    video.currentTime = at
+    if (started) video.play().catch(() => setStarted(false))
   }
 
   return (
@@ -37,11 +56,11 @@ export function TrailerEmbed({ videoSrc, poster, alt, className }: TrailerEmbedP
         playsInline
         preload="none"
         controls={started}
+        onError={handleError}
         onEnded={() => {
           setStarted(false)
           if (videoRef.current) videoRef.current.currentTime = 0
         }}
-        onError={() => setStarted(false)}
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src={webmFrom(videoSrc)} type="video/webm" />
