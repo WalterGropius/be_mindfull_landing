@@ -7,6 +7,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 import { StatsBar } from "@/components/stats-bar"
+import { FreeCourseForm } from "@/components/free-course-form"
 
 const benefits: Array<{ bold?: string; rest: string }> = [
   { rest: "Zastavíš se i tehdy, kdy máš pocit, že na to není čas." },
@@ -65,7 +66,7 @@ export default function StartToPausePage() {
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
-                <Link href="/objednavka">
+                <Link href="#registrace">
                   <span className="flex items-center gap-2">Chci začít zdarma <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
                 </Link>
               </Button>
@@ -133,7 +134,7 @@ export default function StartToPausePage() {
           </div>
           <div className="mt-12 text-center">
             <Button asChild variant="primary">
-              <Link href="/objednavka">Jdu do toho</Link>
+              <Link href="#registrace">Jdu do toho</Link>
             </Button>
           </div>
         </div>
@@ -243,8 +244,26 @@ export default function StartToPausePage() {
 
           <div className="mt-8 text-center">
             <Button asChild variant="primary">
-              <Link href="/objednavka">Jdu do toho</Link>
+              <Link href="#registrace">Jdu do toho</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Registration form */}
+      <section id="registrace" className="scroll-mt-28 bg-[#F5F6F7] py-16 lg:py-24">
+        <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">
+            Bezplatná registrace
+          </p>
+          <h2 className="mt-3 text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
+            Zaregistruj se a začni hned teď
+          </h2>
+          <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
+            Nech nám svoje jméno a e-mail – první den kurzu ti dorazí rovnou do schránky.
+          </p>
+          <div className="mt-10">
+            <FreeCourseForm source="start-to-pause" />
           </div>
         </div>
       </section>

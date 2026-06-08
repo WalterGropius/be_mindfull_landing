@@ -9,9 +9,29 @@ import { Footer } from "@/components/footer"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" })
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [error, setError] = useState("")
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    setStatus("loading")
+    setError("")
+    try {
+      const res = await fetch("/api/kontakt", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data?.error || "Něco se pokazilo. Zkus to prosím znovu.")
+      }
+      setStatus("success")
+      setFormData({ name: "", email: "", subject: "", message: "" })
+    } catch (err) {
+      setStatus("error")
+      setError(err instanceof Error ? err.message : "Něco se pokazilo. Zkus to prosím znovu.")
+    }
   }
 
   return (
@@ -95,6 +115,7 @@ export default function ContactPage() {
                   <Input
                     id="email"
                     type="email"
+                    required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
@@ -117,15 +138,25 @@ export default function ContactPage() {
                 <textarea
                   id="message"
                   rows={5}
+                  required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full rounded-lg border border-[#C0D1C6] bg-background px-3 py-2 text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] outline-none focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
                   placeholder="Vaše zpráva..."
                 />
               </div>
-              <Button type="submit" variant="primary" className="group">
-                <span className="flex items-center gap-2">Odeslat zprávu <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
-              </Button>
+              <div className="space-y-3">
+                <Button type="submit" variant="primary" disabled={status === "loading"} className="group">
+                  <span className="flex items-center gap-2">
+                    {status === "loading" ? "Odesílám…" : "Odeslat zprávu"}
+                    {status !== "loading" && <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />}
+                  </span>
+                </Button>
+                {status === "success" && (
+                  <p className="text-sm font-medium text-primary-green">Děkuji! Tvoje zpráva byla odeslána. Brzy se ozvu.</p>
+                )}
+                {status === "error" && <p className="text-sm font-medium text-[#b00020]">{error}</p>}
+              </div>
             </form>
           </div>
         </div>

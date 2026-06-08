@@ -31,6 +31,11 @@ const END_PROGRESS = 0.51
 export function FreeCourseSection() {
   const ref = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState(0)
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [error, setError] = useState("")
 
   useEffect(() => {
     let frame = 0
@@ -63,6 +68,27 @@ export function FreeCourseSection() {
   const t = Math.min(1, Math.max(0, (progress - START_PROGRESS) / span))
   const dotCx = DOT_START.cx + (DOT_END.cx - DOT_START.cx) * t
   const dotCy = DOT_START.cy + (DOT_END.cy - DOT_START.cy) * t
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    setStatus("loading")
+    setError("")
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ firstName, lastName, email, source: "homepage" }),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data?.error || "Něco se pokazilo. Zkus to prosím znovu.")
+      }
+      setStatus("success")
+    } catch (err) {
+      setStatus("error")
+      setError(err instanceof Error ? err.message : "Něco se pokazilo. Zkus to prosím znovu.")
+    }
+  }
 
   return (
     <section className="bg-[#C0D1C6] relative overflow-hidden py-20 lg:py-28">
@@ -105,18 +131,53 @@ export function FreeCourseSection() {
           <Typography variant="p" align="center" className="mt-4">
             4 nástroje, které zvládneš použít hned – a fungují.
           </Typography>
-          <div className="mt-10 mx-auto max-w-md">
-            <form className="flex flex-col sm:flex-row gap-4">
-               <Input
-                 type="email"
-                 placeholder="Váš e-mail"
-                 required
-                 className="h-auto py-[18px] px-[24px] flex-1 rounded-2xl border border-border-subtle bg-surface-white text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
-               />
-               <Button type="submit" variant="primary-orange" size="default" className="group gap-0">
-                 <span className="flex items-center gap-2">Začni hned teď <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
-               </Button>
-            </form>
+          <div className="mt-10 mx-auto max-w-xl">
+            {status === "success" ? (
+              <p className="rounded-2xl bg-surface-white/95 px-6 py-5 text-[18px] font-medium text-typography-heading">
+                Hotovo! 🎉 Za chvíli ti dorazí první e-mail – mrkni i do složky s hromadnou poštou.
+              </p>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <Input
+                    type="text"
+                    placeholder="Jméno"
+                    required
+                    autoComplete="given-name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    className="h-auto flex-1 rounded-2xl border border-border-subtle bg-surface-white px-[24px] py-[18px] text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
+                  />
+                  <Input
+                    type="text"
+                    placeholder="Příjmení"
+                    required
+                    autoComplete="family-name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    className="h-auto flex-1 rounded-2xl border border-border-subtle bg-surface-white px-[24px] py-[18px] text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
+                  />
+                </div>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <Input
+                    type="email"
+                    placeholder="Váš e-mail"
+                    required
+                    autoComplete="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="h-auto flex-1 rounded-2xl border border-border-subtle bg-surface-white px-[24px] py-[18px] text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
+                  />
+                  <Button type="submit" variant="primary-orange" size="default" disabled={status === "loading"} className="group gap-0">
+                    <span className="flex items-center gap-2">
+                      {status === "loading" ? "Odesílám…" : "Začni hned teď"}
+                      {status !== "loading" && <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />}
+                    </span>
+                  </Button>
+                </div>
+                {status === "error" && <p className="text-sm font-medium text-[#7a1f1f]">{error}</p>}
+              </form>
+            )}
           </div>
         </div>
       </div>
