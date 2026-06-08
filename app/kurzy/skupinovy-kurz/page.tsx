@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
@@ -106,11 +107,29 @@ const upcomingDates = [
   },
 ]
 
-const howCourseWorks = [
-  "Kurz můžeš absolvovat živě v Praze nebo online přes Zoom, kam se můžeš připojit kdykoliv a odkudkoliv. Obsah i průběh kurzu jsou v obou variantách stejné.",
-  "Součástí kurzu je 8 setkání v délce 2,5 hodiny a jedno celodenní 6hodinové setkání o víkendu.",
-  "Každé setkání kombinuje společnou mindfulness praxi – mindfulness meditace – s následnou diskuzí pro správné upevnění praxe. Potom se pustíme do jednoho tématu do hloubky – třeba jak mindfulness využít pro lepší zvládání stresu.",
-  "Mezi jednotlivými setkáními probíhá individuální praxe s vedenými meditacemi, které budeš mít k dispozici na audionahrávkách. Mají asi 30 minut a pomohou ti rozvinout větší všímavost a odolnost.",
+const howCourseWorks: ReactNode[] = [
+  <>
+    Kurz můžeš <strong className="font-semibold">absolvovat živě v Praze</strong> nebo{" "}
+    <strong className="font-semibold">online přes Zoom</strong>, kam se můžeš připojit kdykoliv a
+    odkudkoliv. Obsah i průběh kurzu jsou v obou variantách stejné.
+  </>,
+  <>
+    Součástí kurzu je{" "}
+    <strong className="font-semibold">8 setkání v délce 2,5 hodiny a jedno celodenní 6hodinové</strong>{" "}
+    setkání o víkendu.
+  </>,
+  <>
+    Každé setkání <strong className="font-semibold">kombinuje společnou mindfulness praxi </strong>–
+    mindfulness meditace – s následnou diskuzí pro správné upevnění praxe. Potom se pustíme{" "}
+    <strong className="font-semibold">do jednoho tématu do hloubky</strong> – třeba jak mindfulness
+    využít pro lepší zvládání stresu.
+  </>,
+  <>
+    Mezi jednotlivými setkáními{" "}
+    <strong className="font-semibold">probíhá individuální praxe s vedenými meditacemi</strong>, které
+    budeš mít k dispozici na audionahrávkách. Mají asi 30 minut a pomohou ti rozvinout větší všímavost
+    a odolnost.
+  </>,
 ]
 
 const courseModules = [

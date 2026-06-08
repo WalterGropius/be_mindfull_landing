@@ -64,8 +64,32 @@ export default function OsmiTydenniKurzCheckoutPage() {
       plansHeading="Naživo, nebo online? Vyber si kurz, který ti sedne"
       plansSubheading="Jeden kurz, dvě formy. Obsah i lektor jsou stejné, vybíráš jen, kde u toho budeš."
       plans={[
-        { title: "Kurz MBSR v Praze", subtitle: "Naživo se skupinou. Osobní setkání, energie skupiny v jedné místnosti.", price: "7 800 Kč", suffix: null, cta: "Jdu do toho" },
-        { title: "Kurz MBSR online", subtitle: "Z domova, se skupinou. Připojíš se odkudkoliv, skupinu máš na obrazovce.", price: "7 500 Kč", suffix: null, cta: "Hlásím se" },
+        {
+          title: "Kurz MBSR v Praze",
+          subtitle: (
+            <>
+              <span className="font-bold">Naživo se skupinou</span>
+              <br />
+              Osobní setkání, energie skupiny v jedné místnosti.
+            </>
+          ),
+          price: "7 800 Kč",
+          suffix: null,
+          cta: "Jdu do toho",
+        },
+        {
+          title: "Kurz MBSR online",
+          subtitle: (
+            <>
+              <span className="font-bold">Z domova, se skupinou</span>
+              <br />
+              Připojíš se odkudkoliv, skupinu máš na obrazovce.
+            </>
+          ),
+          price: "7 500 Kč",
+          suffix: null,
+          cta: "Hlásím se",
+        },
       ]}
     />
   )

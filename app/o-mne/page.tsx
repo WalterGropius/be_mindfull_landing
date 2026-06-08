@@ -21,12 +21,12 @@ const credentials: CredentialRow[] = [
   {
     year: "2021–2022",
     rest:
-      "**MBSR Teacher Certification** na Brown University v USA a získání nejvyšší možné kvalifikace Certified MBSR Teacher (Level 3). Tuto certifikaci mám nyní jako jediný v ČR a jako 136. na světě.",
+      "**MBSR Teacher Certification** na Brown University v USA a získání nejvyšší možné kvalifikace **Certified MBSR Teacher (Level 3)**. Tuto certifikaci mám nyní jako jediný v ČR a jako 136. na světě.",
   },
   {
     year: "2021",
     rest:
-      "MBSR **Individual Mentoring**, dvouměsíční program na Brown University v USA (Colleen Camenisch) a dokončení certifikace MBSR Teacher Level 2.",
+      "**MBSR Individual Mentoring**, dvouměsíční program na Brown University v USA (Colleen Camenisch) a dokončení certifikace **MBSR Teacher Level 2**.",
   },
   {
     year: "2019",
@@ -36,12 +36,12 @@ const credentials: CredentialRow[] = [
   {
     year: "2018",
     rest:
-      "8týdenní **Mindful Eating Facilitator training** (Judson Brewer, UMASS Medical School, USA).",
+      "**8týdenní Mindful Eating Facilitator training** (Judson Brewer, UMASS Medical School, USA).",
   },
   {
     year: "2018",
     rest:
-      "**Practise Teaching Intensive** (Bob Stahl, Carolyne West, Christiane Wolf, UMASS Medical School, USA) a získání certifikátu CFM Qualified MBSR Teacher (Level 1).",
+      "**Practise Teaching Intensive** (Bob Stahl, Carolyne West, Christiane Wolf, UMASS Medical School, USA) a získání certifikátu **CFM Qualified MBSR Teacher (Level 1)**.",
   },
   {
     year: "2017–2023",
@@ -59,12 +59,12 @@ const credentials: CredentialRow[] = [
   },
   {
     year: "2010–2015",
-    rest: "**Psychoterapeutický výcvik** v systému SUR.",
+    rest: "**Psychoterapeutický výcvik v systému SUR**.",
   },
   {
     year: "2004–2009",
     rest:
-      "**Studium andragogiky a sociologie**, Univerzita Palackého v Olomouci.",
+      "Studium andragogiky a sociologie, Univerzita Palackého v Olomouci.",
   },
 ]
 

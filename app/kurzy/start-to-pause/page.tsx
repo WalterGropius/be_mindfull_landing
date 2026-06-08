@@ -1,3 +1,4 @@
+import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Check, Plus } from "lucide-react"
@@ -9,12 +10,18 @@ import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustr
 import { StatsBar } from "@/components/stats-bar"
 import { FreeCourseForm } from "@/components/free-course-form"
 
-const benefits: Array<{ bold?: string; rest: string }> = [
-  { rest: "Zvládneš se zastavit i tehdy, kdy ti připadá, že na to nemáš čas." },
-  { rest: "Zjistíš, proč správná pauza zatočí se stresem víc než hodina na gauči." },
-  { rest: "Naučíš se tři techniky, které fungují v tramvaji, mezi schůzkami i u oběda." },
-  { rest: "Pochopíš lépe, co se děje v tvém mozku a proč pro změnu stačí 10 minut denně." },
-  { rest: "Uděláš první krok, po kterém se věci skutečně začnou měnit." },
+const benefits: React.ReactNode[] = [
+  <>
+    <strong>Zvládneš se zastavit </strong>i tehdy, kdy ti připadá, že na to nemáš čas.
+  </>,
+  <>
+    Zjistíš, <strong>proč správná pauza zatočí se stresem</strong> víc než hodina na gauči.
+  </>,
+  <>Naučíš se tři techniky, které fungují v tramvaji, mezi schůzkami i u oběda.</>,
+  <>
+    Pochopíš lépe, <strong>co se děje v tvém mozku</strong> a proč pro změnu stačí 10 minut denně.
+  </>,
+  <>Uděláš první krok, po kterém se věci skutečně začnou měnit.</>,
 ]
 
 const days = [
@@ -62,7 +69,7 @@ export default function StartToPausePage() {
               4denní kurz mindfulness
             </h1>
             <p className="mt-4 max-w-md text-[18px] leading-[30px] text-white/75">
-              Nauč se zastavit.<br />Restart hlavy za 4 dny a zdarma<br />Zklidni roztěkanou hlavu a nauč se líp zvládat každodenní tlak.
+              <strong>Nauč se zastavit.<br />Restart hlavy za 4 dny a zdarma</strong><br />Zklidni roztěkanou hlavu a nauč se líp zvládat každodenní tlak.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -117,8 +124,7 @@ export default function StartToPausePage() {
                 <div key={i} className="flex items-start gap-4">
                   <img src="/tic.png" alt="" className="h-10 w-10 shrink-0" />
                   <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
-                    {b.bold ? <strong>{b.bold}</strong> : null}
-                    {b.rest}
+                    {b}
                   </p>
                 </div>
               ))}

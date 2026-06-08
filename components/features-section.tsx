@@ -31,7 +31,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Manage Stress" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  <strong>Zvládat stres</strong> s nadhledem namísto režimu „musím to vydržet“.
+                  Zvládat stres s nadhledem namísto režimu „musím to vydržet“.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -55,7 +55,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Inner calm" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  <strong>Lépe spát</strong>, hluboce si odpočinout a nebýt neustále v napětí.
+                  <strong>Lépe spát, hluboce si odpočinout</strong> a nebýt neustále v napětí.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">
@@ -63,7 +63,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Relationships" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  <strong>Nenechat napětí ničit</strong> tvůj soukromý život a vztahy s okolím.
+                  <strong>Nenechat napětí ničit tvůj soukromý život</strong> a vztahy s okolím.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">

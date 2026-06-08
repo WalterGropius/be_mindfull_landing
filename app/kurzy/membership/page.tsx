@@ -13,28 +13,22 @@ const benefits: Array<{ bold?: string; rest: string }> = [
     rest: "Co netrénuješ, ochabne. Posiluj svůj mindfulness sval pro větší životní rovnováhu",
   },
   {
-    bold: "Návyk, který vydrží i podrží:",
-    rest: " vytvoříš si zvyk, ke kterému se budeš bez přemáhání vracet. Podrží tě i ve dnech, kdy se ti zrovna nebude chtít do meditace.",
+    rest: "Návyk, který vydrží i podrží: vytvoříš si zvyk, ke kterému se budeš bez přemáhání vracet. Podrží tě i ve dnech, kdy se ti zrovna nebude chtít do meditace.",
   },
   {
-    bold: "Pořád něco nového:",
-    rest: " nové techniky, nová témata, nový obsah. Tvůj rozvoj se nezastaví na jednom místě a i po měsících tě bude pořád bavit.",
+    rest: "Pořád něco nového: nové techniky, nová témata, nový obsah. Tvůj rozvoj se nezastaví na jednom místě a i po měsících tě bude pořád bavit.",
   },
   {
-    bold: "Víc klidu v situacích, které tě dřív rozhodily:",
-    rest: " naučíš se zacházet s emocemi a stresem s větším nadhledem a laskavostí. Náročné chvíle začneš zvládat s větším nadhledem.",
+    rest: "Víc klidu v situacích, které tě dřív rozhodily: naučíš se zacházet s emocemi a stresem s větším nadhledem a laskavostí. Náročné chvíle začneš zvládat s větším nadhledem.",
   },
   {
-    bold: "Přítomnost, která vydrží nápor, méně bloudění v myšlenkách:",
-    rest: " naučíš se zůstat dlouhodobě v klidu a vnímat, co se děje tady a teď, i ve chvílích, které by tě dřív rozhodily.",
+    rest: "Přítomnost, která vydrží nápor, méně bloudění v myšlenkách: naučíš se zůstat dlouhodobě v klidu a vnímat, co se děje tady a teď, i ve chvílích, které by tě dřív rozhodily.",
   },
   {
-    bold: "Postoje, které mění všechno:",
-    rest: " změníš to, jak vnímáš sebe, druhé i svět kolem. Rozvineš laskavost, zvídavost, důvěru, nehodnocení a postupně i další mindfulness postoje.",
+    rest: "Postoje, které mění všechno: změníš to, jak vnímáš sebe, druhé i svět kolem. Rozvineš laskavost, zvídavost, důvěru, nehodnocení a postupně i další mindfulness postoje.",
   },
   {
-    bold: "Lidé, kteří to mají podobně:",
-    rest: " staneš se součástí komunity, která pomáhá a nehodnotí. Získáš motivaci, když polevuješ, inspiraci, když nevíš kudy dál, a třeba i pár nových přátelství.",
+    rest: "Lidé, kteří to mají podobně: staneš se součástí komunity, která pomáhá a nehodnotí. Získáš motivaci, když polevuješ, inspiraci, když nevíš kudy dál, a třeba i pár nových přátelství.",
   },
 ]
 

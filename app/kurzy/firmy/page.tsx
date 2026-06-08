@@ -1,3 +1,4 @@
+import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Check } from "lucide-react"
@@ -44,11 +45,19 @@ const benefits = [
   },
 ]
 
-const investmentRight = [
+const investmentRight: React.ReactNode[] = [
   "Z přetížených lidí se stane tým, který zvládá nápor, tlak a drží dlouhodobě stabilní výkon.",
-  "Místo emočních výkyvů přijde stabilita a větší schopnost procházet náročnými situacemi s klidem a nadhledem.",
+  <>
+    Místo emočních výkyvů přijde{" "}
+    <strong className="font-semibold text-[#2D2C2B]">stabilita a větší schopnost procházet náročnými situacemi </strong>
+    s klidem a nadhledem.
+  </>,
   "Otevřenější komunikace a zdravější spolupráce nahradí častá nedorozumění v týmech.",
-  "Místo vyčerpaných a vyhořelých zaměstnanců angažovanější lidé, kteří mají energii, chuť i motivaci do práce.",
+  <>
+    Místo vyčerpaných a vyhořelých zaměstnanců{" "}
+    <strong className="font-semibold text-[#2D2C2B]">angažovanější lidé, kteří mají energii, chuť </strong>
+    i motivaci do práce.
+  </>,
 ]
 
 const programs = [

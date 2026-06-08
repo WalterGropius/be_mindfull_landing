@@ -43,7 +43,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B] sm:text-5xl lg:text-[64px] lg:leading-[1.1]">Kontakt</h1>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">Co ti leží v hlavě?<br />Napiš mi, rád ti odpovím.</p>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]"><strong>Co ti leží v hlavě?</strong><br />Napiš mi, rád ti odpovím.</p>
           </div>
         </div>
       </section>

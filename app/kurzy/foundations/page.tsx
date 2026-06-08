@@ -11,26 +11,21 @@ import { SmileyIcon } from "@/components/list-icons"
 import { CourseModules } from "@/components/course-modules"
 import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustration"
 
-const benefits = [
+const benefits: Array<{ bold?: string; rest: string }> = [
   {
-    bold: "Mindfulness i pro pondělní ráno:",
-    rest: " naučíš se jednoduché techniky a to, jak je přirozeně zapojit do běžného dne, aby ti pomáhaly být klidnější, soustředěnější a víc v pohodě.",
+    rest: "Mindfulness i pro pondělní ráno: naučíš se jednoduché techniky a to, jak je přirozeně zapojit do běžného dne, aby ti pomáhaly být klidnější, soustředěnější a víc v pohodě.",
   },
   {
-    bold: "Větší soustředění i pod tlakem:",
-    rest: " přestaneš se tolik ztrácet v myšlenkách a rychleji vrátíš pozornost k tomu, co je právě důležité.",
+    rest: "Větší soustředění i pod tlakem: přestaneš se tolik ztrácet v myšlenkách a rychleji vrátíš pozornost k tomu, co je právě důležité.",
   },
   {
-    bold: "Emoce a stres, které tě nepohltí:",
-    rest: " naučíš se pracovat se stresem i emocemi tak, aby tě méně ovládaly a vyčerpávaly.",
+    rest: "Emoce a stres, které tě nepohltí: naučíš se pracovat se stresem i emocemi tak, aby tě méně ovládaly a vyčerpávaly.",
   },
   {
-    bold: "Víc radosti z běžných chvil:",
-    rest: " začneš si víc všímat momentů, které ti dnes často utíkají mezi povinnostmi, a získáš víc lehkosti v běžném životě.",
+    rest: "Víc radosti z běžných chvil: začneš si víc všímat momentů, které ti dnes často utíkají mezi povinnostmi, a získáš víc lehkosti v běžném životě.",
   },
   {
-    bold: "Lepší spánek a méně napětí:",
-    rest: " naučíš se pracovat se stresem tak, aby se ti nehromadil v těle a neovlivňoval tolik tvůj spánek, energii ani psychickou pohodu.",
+    rest: "Lepší spánek a méně napětí: naučíš se pracovat se stresem tak, aby se ti nehromadil v těle a neovlivňoval tolik tvůj spánek, energii ani psychickou pohodu.",
   },
 ]
 
@@ -218,7 +213,7 @@ export default function FoundationsPage() {
           <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
             Už 10 minut meditace denně po dobu 8 týdnů<br />prokazatelně snižuje stres o 20 %.
           </p>
-          <p className="mt-4 text-[14px] leading-[22px] text-[#2D2C2B]/70 italic">
+          <p className="mt-4 text-[14px] font-bold leading-[22px] text-[#2D2C2B]/70 italic">
             Radin et al. (2025). JAMA Network Open.
           </p>
         </div>

@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -5,7 +6,7 @@ import { ExpandableItems, type ExpandableItem } from "@/components/expandable-it
 
 export type PricingPlan = {
   title: string
-  subtitle: string
+  subtitle: ReactNode
   price: string
   suffix: string | null
   cta?: string

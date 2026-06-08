@@ -26,7 +26,7 @@ export function ExpandableItems({ items }: { items: ExpandableItem[] }) {
               aria-expanded={isOpen}
               className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left text-[18px] leading-[30px] text-[#2D2C2B] transition-colors hover:bg-[#9DC4AE]"
             >
-              <span>{item.title}</span>
+              <span className="font-bold">{item.title}</span>
               {isOpen ? (
                 <Minus className="h-5 w-5 shrink-0 text-[#2D2C2B]/70" />
               ) : (
