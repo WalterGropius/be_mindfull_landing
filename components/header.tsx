@@ -31,7 +31,7 @@ export function Header() {
               <div className="relative w-96 rounded-[0.2rem] bg-border-subtle py-2">
                 <div className="absolute -top-2 left-1/2 h-0 w-0 -translate-x-1/2 border-x-8 border-b-8 border-x-transparent border-b-border-subtle"></div>
                 <div className="flex flex-col">
-                  <Link href="/kurzy/start-to-pause" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">ZASTAVIT (zdarma)</Link>
+                  <Link href="/kurzy/start-to-pause" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">Kurz zdarma</Link>
                   <Link href="/kurzy/foundations" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">be.mindful FOUNDATIONS</Link>
                   <Link href="/kurzy/membership" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">be.mindful MEMBERSHIP</Link>
                   <Link href="/kurzy/skupinovy-kurz" className="block whitespace-nowrap px-5 py-2.5 text-[18px] font-medium text-typography-body transition-colors hover:font-bold hover:text-typography-heading">8týdenní kurz mindfulness (MBSR)</Link>
@@ -68,7 +68,7 @@ export function Header() {
         <div className="border-t border-border-subtle bg-surface-white lg:hidden">
           <nav className="flex flex-col gap-4 px-6 py-6">
             <Link href="/" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Domů</Link>
-            <Link href="/kurzy/start-to-pause" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>ZASTAVIT (zdarma)</Link>
+            <Link href="/kurzy/start-to-pause" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>Kurz zdarma</Link>
             <Link href="/kurzy/foundations" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>be.mindful FOUNDATIONS</Link>
             <Link href="/kurzy/membership" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>be.mindful MEMBERSHIP</Link>
             <Link href="/kurzy/skupinovy-kurz" className="text-base font-bold text-primary-green" onClick={() => setMobileMenuOpen(false)}>8týdenní kurz mindfulness (MBSR)</Link>
