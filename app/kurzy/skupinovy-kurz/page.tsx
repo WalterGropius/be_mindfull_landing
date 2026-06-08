@@ -174,10 +174,10 @@ const tabs = [
 
 const testimonials = [
   {
-    quote: "Kurz mi přinesl schopnost vnímání okamžiku.",
-    name: "Dušan Lužný",
+    quote: "Zklidnil jsem se a získal jsem řád do svého života.",
+    name: "Pavel Bohatý",
     image: "",
-    video: "/videos/testimonials/medailonek-1.mp4",
+    video: "/videos/testimonials/medailonek-3.mp4",
   },
   {
     quote: "Vrátila jsem se zpátky do těla.",
@@ -186,10 +186,10 @@ const testimonials = [
     video: "/videos/testimonials/medailonek-2.mp4",
   },
   {
-    quote: "Zklidnil jsem se a získal jsem řád do svého života.",
-    name: "Pavel Bohatý",
+    quote: "Kurz mi přinesl schopnost vnímání okamžiku.",
+    name: "Dušan Lužný",
     image: "",
-    video: "/videos/testimonials/medailonek-3.mp4",
+    video: "/videos/testimonials/medailonek-1.mp4",
   },
   {
     quote: "Kurz mi pomohl projít náročným obdobím mého života.",
