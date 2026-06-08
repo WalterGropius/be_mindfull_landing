@@ -14,28 +14,32 @@ import { SmileyIcon } from "@/components/list-icons"
 
 const benefits = [
   {
-    bold: "Více jistoty a klidu:",
-    rest: " stres, emoce a negativní myšlenky tě nebudou tolik strhávat – naučíš se reagovat jinak.",
+    bold: "Víc jistoty a klidu:",
+    rest: " Emoce ani černé myšlenky tě nebudou ovládat tak jako dřív. Naučíš se na ně reagovat jinak.",
   },
   {
-    bold: "Větší důvěra v sebe:",
-    rest: " i ve chvílích pochybností budeš vědět, že se máš o co opřít.",
+    bold: "Větší sebedůvěru:",
+    rest: " I když přijde těžký den, budeš vědět, že se máš o co opřít.",
+  },
+  {
+    bold: "Lepší zvládání stresu:",
+    rest: " Naučíš se včas rozpoznat přetížení, zklidnit hlavu a reagovat s větším nadhledem.",
   },
   {
     bold: "Všímavé jedení a komunikace:",
-    rest: " začneš více vnímat své potřeby, návyky i automatické reakce.",
+    rest: " Začneš víc vnímat své potřeby, návyky, druhé lidi i sebe a reagovat s větším klidem a porozuměním.",
   },
   {
-    bold: "Méně sebekritiky, víc laskavosti k sobě i druhým:",
-    rest: " budeš na sebe i ostatní vytvářet menší tlak a přistupovat k sobě s větší laskavostí.",
+    bold: "Polevíš v tlaku na sebe:",
+    rest: " Méně sebekritiky, víc laskavosti k sobě i k lidem kolem.",
   },
   {
-    bold: "Mindfulness ne jako technika, ale jako způsob života:",
-    rest: " mindfulness a meditace se stane pevnou součástí tvého života.",
+    bold: "Mindfulness pro každodenní život:",
+    rest: " Ne jako další úkol navíc, ale dovednost, kterou začneš přirozeně využívat v běžných situacích.",
   },
   {
-    bold: "Podpora šitá tobě na míru:",
-    rest: " získáš podporu pro to, co právě řešíš a čím si procházíš.",
+    bold: "Nezůstaneš na to sám/sama:",
+    rest: " Podpora šitá tobě na míru, přesně na to, čím zrovna procházíš a co řešíš, ne obecné rady pro každého.",
   },
 ]
 
@@ -94,8 +98,8 @@ const upcomingDates = [
       "úterý 10. 11. 18:00–20:30",
       "úterý 17. 11. 18:00–20:30",
       "úterý 24. 11. 18:00–20:30",
+      "neděle 29. 11. 10:00–16:00",
       "úterý 1. 12. 18:00–20:30",
-      "neděle 6. 12. 10:00–16:00",
       "úterý 8. 12. 18:00–20:30",
       "úterý 15. 12. 18:00–20:45",
     ],
@@ -103,78 +107,78 @@ const upcomingDates = [
 ]
 
 const howCourseWorks = [
-  "Kurz můžeš absolvovat buď naživo v Praze, nebo online přes platformu Zoom. Na online kurz se tak můžeš připojit odkudkoliv. Průběh kurzů je identický.",
-  "Čeká tě osm 2,5h setkání a jedno celodenní setkání (6 h).",
-  "Na každém setkání probíhá společný trénink mindfulness meditace. Po tréninku probíhá diskuse, která má za cíl upevnit správné provádění cvičení. Následně se zabýváme jedním tématem více do hloubky (například, jak využívat mindfulness pro lepší zvládání stresu).",
-  "Mezi setkáními probíhá každodenní individuální trénink – každý trénuje sám dle nahrávek řízených meditací, které dostane.",
+  "Kurz můžeš absolvovat živě v Praze nebo online přes Zoom, kam se můžeš připojit kdykoliv a odkudkoliv. Obsah i průběh kurzu jsou v obou variantách stejné.",
+  "Součástí kurzu je 8 setkání v délce 2,5 hodiny a jedno celodenní 6hodinové setkání o víkendu.",
+  "Každé setkání kombinuje společnou mindfulness praxi – mindfulness meditace – s následnou diskuzí pro správné upevnění praxe. Potom se pustíme do jednoho tématu do hloubky – třeba jak mindfulness využít pro lepší zvládání stresu.",
+  "Mezi jednotlivými setkáními probíhá individuální praxe s vedenými meditacemi, které budeš mít k dispozici na audionahrávkách. Mají asi 30 minut a pomohou ti rozvinout větší všímavost a odolnost.",
 ]
 
 const courseModules = [
   {
-    label: "MODULE 1",
+    label: "MODUL 1",
     title: "Úvod do mindfulness, základy praxe a všímavé jedení",
     content:
-      "První setkání je zaměřené na základy mindfulness a motivaci k pravidelné praxi. Seznámíš se s tím, co mindfulness je, projdeme společně několik cvičení a zaměříme se také na všímavé jedení. Cílem je dát ti vše, co potřebuješ pro dobrý start do osmitýdenního kurzu. Doporučená samostatná praxe: 35 minut denně.",
+      "První setkání se věnuje základům a tomu, proč se vyplatí praxi udržet. Zjistíš, co mindfulness doopravdy je, projdeme si několik prvních cvičení a zastavíme se i u všímavého jedení. Cílem je dát ti všechno, co potřebuješ pro dobrý start do kurzu. Doporučená samostatná mindfulness praxe: 35 minut denně do dalšího setkání.",
   },
   {
-    label: "MODULE 2",
+    label: "MODUL 2",
     title: "Práce s obtížnými myšlenkami a všímavost",
     content:
-      "Po společném cvičení se ohlédneme za uplynulým týdnem. Budeme se věnovat tomu, jak zvládat chvíle, kdy se praxe nedaří podle představ, a povíme si, v čem spočívá všímavost. Zaměříme se také na práci s myšlenkami, aby nad tebou neměly takovou kontrolu. Doporučená samostatná praxe: 35 + 10 minut denně.",
+      "Po společném cvičení se ohlédneme za uplynulým týdnem. Povíme si, co dělat ve dnech, kdy praxe nejde podle našich představ, a v čem všímavost vlastně spočívá. A hlavně: jak pracovat s myšlenkami, aby nad námi neměly takovou moc. Doporučená samostatná mindfulness praxe: 35 + 10 minut denně do dalšího setkání.",
   },
   {
-    label: "MODULE 3",
+    label: "MODUL 3",
     title: "Radost, spokojenost a přeměna obyčejného v neobyčejné",
     content:
-      "Po společné praxi se zaměříme na to, jak být během dne všímavější a víc vnímat drobné každodenní momenty, které často přehlížíme. Ranní káva. Procházka. Rozhovor s přítelem. Věci, které máš každý den – a přesto je nevnímáš. Ukážeme si, jak díky větší přítomnosti začneš nacházet radost a spokojenost tam, kde jsi je dosud přehlížel/a. Doporučená samostatná praxe: 35 + 15 minut denně.",
+      "Ranní káva, procházka, rozhovor s blízkým. Chvíle, které většinou automaticky přejdeme. Po společné praxi se zaměříme na to, jak být během dne přítomnější, víc si užívat každodenní drobné momenty, které nám často unikají. Ukážeme si, jak díky větší všímavosti nacházet více radosti a spokojenosti v obyčejných chvílích každodenního života. Doporučená samostatná mindfulness praxe: 35 + 15 minut denně do dalšího setkání.",
   },
   {
-    label: "MODULE 4",
+    label: "MODUL 4",
     title: "Přerušení stresových vzorců a práce s tělem",
     content:
-      "Začínáme společnou praxí a ohlédnutím za uplynulým týdnem. Zaměříme se na automatické reakce, které přispívají ke stresu a napětí – prozkoumáme reakce „boj, útěk, zamrznutí“, zmapujeme osobní vzorce a hledáme nové způsoby, jak na stresové situace reagovat s větší otevřeností a zvědavostí. Doporučená samostatná praxe: 35 + 20 minut denně.",
+      "Začneme společnou mindfulness praxí a sdílením zkušeností z uplynulého týdne. Zaměříme se na vzorce chování, které nás automaticky stahují do stresu a napětí, včetně reakcí typu boj, útěk nebo zamrznutí. Ukážeme si, jak na náročné situace reagovat s větším nadhledem, otevřeností a zvídavosti. Doporučená samostatná mindfulness praxe: 35 + 20 minut denně do dalšího setkání.",
   },
   {
-    label: "MODULE 5",
+    label: "MODUL 5",
     title: "Zvládání stresu a obtížných emocí",
     content:
-      "Začínáme novým cvičením mindfulness a reflexí uplynulého týdne. Hlavním tématem je porozumění stresu, jeho reakcím a dopadům na tělo i mysl. Naučíš se, jak stres zvládat pomocí mindfulness – včetně praktických technik, jako je metoda STOP a krátké dechové cvičení. Doporučená samostatná praxe: 35 minut denně.",
+      "Setkání otevřeme novým mindfulness cvičením a reflexí uplynulého týdne. Podíváme se na to, jak stres ovlivňuje tělo i mysl. Naučíš se praktické techniky mindfulness pro zvládání náročných situací, včetně techniky STOP a dalších cvičení. Doporučená samostatná mindfulness praxe: 35 minut denně do dalšího setkání.",
   },
   {
-    label: "MODULE 6",
-    title: "Všímavá komunikace a zvládání obtížné komunikace",
+    label: "MODUL 6",
+    title: "Všímavá komunikace a zvládání náročné komunikace",
     content:
-      "Jak nasloucháš? Jak reaguješ, když je to těžké? Na tomto setkání se zaměříme na komunikaci – jak mluvit srozumitelněji, lépe naslouchat a být víc v kontaktu s tím, co při rozhovoru prožíváš. Principy všímavé komunikace si prakticky vyzkoušíš a naučíš se, jak mindfulness pomáhá zvládat i obtížné nebo konfliktní situace. Doporučená samostatná praxe: 35 minut denně.",
+      "Umíš naslouchat? A co se v tobě děje, když komunikace začne být nepříjemná? Při setkání se zaměříme na vědomější komunikaci, naslouchání i lepší práci s obtížnými emocemi během rozhovorů. Prakticky si vyzkoušíš principy všímavé komunikace a naučíš se zvládat konfliktní situace s větším klidem, nadhledem a menší impulzivností. Doporučená samostatná praxe: 35 minut denně do dalšího setkání.",
   },
   {
-    label: "MODULE 7",
-    title: "Celodenní setkání o víkendu: Prohloubení dovedností a hlubší praxe",
+    label: "MODUL 7",
+    title: "Celodenní setkání o víkendu: hlubší praxe a prohloubení dovedností",
     content:
-      "Jeden celý den věnovaný mindfulness. Žádné deadliny, žádné notifikace – jen praxe, skupina a prostor opravdu zpomalit. Účastníci tento den často označují za jeden z nejsilnějších momentů celého kurzu. Čeká tě šest hodin společné praxe (včetně pauzy na oběd) – projdeme dosavadní cvičení a vyzkoušíš si dvě nová. Odcházíš s prohloubenými dovednostmi, novou energií a zážitkem toho, jaké to je věnovat mindfulness celý den.",
+      "Den plný mindfulness. Žádné deadliny, žádné notifikace, jen mindfulness praxe, skupina a prostor skutečně zpomalit. Šest hodin společné praxe včetně oběda: projdeš známá cvičení a vyzkoušíš si dvě nová. Odcházíš s hlubšími dovednostmi a novou energií. Účastníci ho často označují za jeden z nejsilnějších momentů kurzu.",
   },
   {
-    label: "MODULE 8",
-    title: "Všímavost v každodenním životě a vytváření zdravých návyků",
+    label: "MODUL 8",
+    title: "Všímavost v každodenním životě a budování zdravých návyků",
     content:
-      "Spěch. Multitasking. Telefon. Co ti bere energii – a co tě dobíjí? Po reflexi celodenního setkání se zaměříme na návyky, které tě drží v automatickém režimu, a na to, jak z něj vědomě vystupovat. Odcházíš s konkrétními technikami pro vědomější každodenní fungování. Doporučená samostatná praxe: 35 minut denně.",
+      "Spěch, multitasking, telefon. Co ti bere energii a co tě naopak dobíjí? Po reflexi celodenního setkání se podíváme na návyky, které ti už neslouží, a na to, jak z nich vědomě vystupovat. Odcházíš s konkrétními technikami pro vědomější každodenní fungování. Doporučená samostatná praxe: 35 minut denně do dalšího setkání.",
   },
   {
-    label: "MODULE 9",
-    title: "Závěr kurzu: Nekončíme, ale pokračujeme",
+    label: "MODUL 9",
+    title: "Závěr kurzu: nekončíme, pokračujeme",
     content:
-      "V první části setkání se budeme věnovat společnému cvičení a reflexi uplynulého týdne. Poté se ohlédneme za celým kurzem a zaměříme se na to, co si chceš z mindfulness odnést do běžného života. Budeme se věnovat také tomu, jak si udržet pravidelnou praxi a postupně udělat z mindfulness přirozenou součást svého života.",
+      "I když skončí kurz, život jede dál naplno. Právě proto se na posledním setkání zaměříme na to, jak si pravidelnou praxi udržet dlouhodobě. Ohlédneme se za celým kurzem, ujasníš si, co ti funguje nejlépe, a vytvoříš si způsob, jak dostat mindfulness přirozeně do každého dne.",
   },
 ]
 
 const tabs = [
-  "8 setkání (2,5 hodiny) + 1 celodenní setkání",
+  "8 setkání (2,5 hodiny) + 1 víkendové celodenní setkání (6 hodin)",
   "35–50 minut denní praxe",
   "Soukromý chat a možnost individuálních konzultací",
 ]
 
 const testimonials = [
   {
-    quote: "Zklidnil jsem se a získal jsem řád do svého života.",
+    quote: "Zklidnil jsem se a získal řád do svého života.",
     name: "Pavel Bohatý",
     image: "",
     video: "/videos/testimonials/medailonek-3.mp4",
@@ -186,13 +190,13 @@ const testimonials = [
     video: "/videos/testimonials/medailonek-2.mp4",
   },
   {
-    quote: "Kurz mi přinesl schopnost vnímání okamžiku.",
+    quote: "Kurz mi přinesl schopnost vnímat přítomný okamžik.",
     name: "Dušan Lužný",
     image: "",
     video: "/videos/testimonials/medailonek-1.mp4",
   },
   {
-    quote: "Kurz mi pomohl projít náročným obdobím mého života.",
+    quote: "Kurz mi pomohl projít náročným obdobím života.",
     name: "Julius Smolej",
     image: "",
     video: "/videos/testimonials/medailonek-4.mp4",
@@ -226,7 +230,7 @@ export default function SkupinovyKurzPage() {
               8týdenní kurz mindfulness (MBSR)
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/85">
-              Nejuznávanější program na světě. Klid, který vydrží – i když přijde bouře.
+              Nejlépe vědecky podložený mindfulness program na světě. Pro klid, který vydrží i v náročných dnech.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -243,10 +247,10 @@ export default function SkupinovyKurzPage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Vnitřní kompas, který tě povede –<br />i když je kolem bouře.
+            Když se kolem strhne bouře, ty zůstaneš v klidu
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            MBSR kurz je celosvětově nejuznávanější mindfulness program s desetiletími vědeckého výzkumu. 8 týdnů hlubší praxe, osobního vedení a skupiny, která tě podrží. Pro ty, kdo chtějí skutečnou a trvalou změnu.
+            Mindfulness-based stress reduction (MBSR) je nejprověřenější mindfulness program na světě, stojí na desítkách let výzkumu a milionech lidí, kteří jím prošli. Osm týdnů hluboké praxe, osobního vedení a skupiny, co tě podrží. Pro ty, kdo chtějí změnu, která zůstane.
           </p>
         </div>
       </section>
@@ -257,7 +261,7 @@ export default function SkupinovyKurzPage() {
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený přístup, který funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
+              8 týdnů, které promění způsob, jak zvládáš náročné situace<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher</span>
             </h2>
           </div>
           <TrailerEmbed
@@ -272,7 +276,7 @@ export default function SkupinovyKurzPage() {
       {/* Upcoming dates */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Kdy se můžeme vidět</h2>
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Vyber si termín, který ti sedne. Online i naživo</h2>
           <p className="mt-1 text-center text-[18px] leading-[30px] text-[#4B4C4D]">8týdenní kurz mindfulness (MBSR)</p>
           <div className="mt-10">
             <UpcomingDates dates={upcomingDates} />
@@ -284,7 +288,7 @@ export default function SkupinovyKurzPage() {
       <section className="bg-[#F5F6F4] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Co ti 8týdenní kurz přinese
+            Co si z 8týdenního kurzu odneseš?
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
@@ -342,10 +346,10 @@ export default function SkupinovyKurzPage() {
             />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Výzkum ukazuje:
+            Výzkumy mluví jasně
           </h2>
           <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-            8týdenní kurz mindfulness snižuje stres o 30 %.<br />Efekt přetrvává i po skončení kurzu.
+            Osmitýdenní kurz mindfulness snižuje stres o 30 % a efekt přetrvává i po jeho skončení.
           </p>
           <p className="mt-4 text-[14px] leading-[22px] text-[#2D2C2B]/70 italic">
             Khoury et al. (2013). Mindfulness-based therapy: A comprehensive meta-analysis. Clinical Psychology Review.
@@ -359,13 +363,16 @@ export default function SkupinovyKurzPage() {
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start">
             <div className="lg:w-2/5">
               <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-                Jak kurz probíhá a pro koho je určený?
+                Pro koho je kurz a jak probíhá?
               </h2>
               <p className="mt-6 text-[18px] font-bold leading-[30px] text-[#2D2C2B]">
-                Kurz je pro tebe, pokud chceš jít do hloubky.
+                Intenzivní trénink mysli pro ty, kdo chtějí jít do hloubky
               </p>
               <p className="mt-3 text-[18px] leading-[30px] text-[#2D2C2B]/85">
-                Ať už máš za sebou Foundations nebo Membership – anebo s mindfulness začínáš a víš, že do toho chceš jít naplno. Čeká tě 30–50 minut denně pravidelné praxe, skupina lidí na stejné cestě a moje osobní podpora.
+                Ať už znáš mindfulness z programu FOUNDATIONS či MEMBERSHIPU, nebo začínáš od začátku a chceš jít víc do hloubky, kurz tě provede pravidelnou praxí, kterou postupně přeneseš i do běžného života.
+              </p>
+              <p className="mt-3 text-[18px] leading-[30px] text-[#2D2C2B]/85">
+                Počítej s každodenní praxí v délce alespoň 30 minut po dobu 8 týdnů. Během celého kurzu tě bude podporovat lektor i skupina lidí na podobné cestě.
               </p>
             </div>
             <div className="flex flex-col gap-5 lg:w-3/5">
@@ -384,9 +391,9 @@ export default function SkupinovyKurzPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">
-            Roky vybroušený kurz
+            Léty vyladěný kurz
           </p>
-          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Co tě čeká na 8týdenním kurzu mindfulness</h2>
+          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Co tě v 8týdenním kurzu mindfulness čeká?</h2>
 
           {/* Meta row (no underline / index line — these are not clickable tabs) */}
           <div className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3">
@@ -410,13 +417,19 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto mt-12 flex max-w-7xl flex-col gap-0 px-6 lg:flex-row lg:items-center lg:px-8">
           <div className="w-full lg:w-1/2 lg:pr-8">
             <h3 className="text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-              Bonus: Přístup do aplikace be.mindful –<br />vše přehledně na jednom místě
+              Bonus | přístup do be.mindful app – mindfulness v kapse
             </h3>
             <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Součástí kurzu je přístup do aplikace be.mindful. Najdeš tu všechny audionahrávky k 8týdennímu kurzu i online verzi materiálů.
+              V rámci kurzu získáš přístup do aplikace be.mindful se všemi meditacemi, materiály i podklady k celé 8týdenní praxi.
             </p>
             <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">
-              K dispozici máš také soukromý chat jen pro účastníky kurzu. A po skončení kurzu získáš tříměsíční přístup do be.mindful Membership.
+              Součástí je také soukromý chat jen pro účastníky kurzu a po dokončení kurzu navíc měsíční přístup do be.mindful MEMBERSHIPU.
+            </p>
+            <h3 className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
+              Bonus | Certifikát o absolvování
+            </h3>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
+              Na vyžádání obdržíš po dokončení kurzu certifikát o absolvování programu.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button asChild variant="primary">
@@ -440,10 +453,10 @@ export default function SkupinovyKurzPage() {
       <section className="bg-[#8ECDB5] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Každodenní praxe. Skutečná podpora.<br />Trvalá změna.
+            Život je stejný. Ty už ne
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/75">
-            8týdenní kurz je určen pro ty, kteří chtějí, aby mindfulness nebylo jen konceptem, ale pevnou součástí jejich života.
+            Okolnosti nezměníš, ale za 8 týdnů se změní to, jak je prožíváš – s větším klidem a nadhledem.
           </p>
         </div>
       </section>
@@ -451,7 +464,7 @@ export default function SkupinovyKurzPage() {
       {/* Video testimonials */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="mb-10 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Hlasy našich účastníků</h2>
+          <h2 className="mb-10 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Skutečné zkušenosti účastníků kurzu</h2>
           <VideoTestimonialsCarousel testimonials={testimonials} />
         </div>
       </section>
@@ -461,13 +474,16 @@ export default function SkupinovyKurzPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
+              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful a lektor
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
+              Mindfulness mě zachránilo před vyhořením a pomáhá mi zvládat stres i každodenní tlak. Studoval jsem ho přímo tam, kde vzniklo, na UMASS Medical School a na Brown University v USA.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
+              Kurzy vedu od roku 2018. Jako jediný v Česku mám nejvyšší kvalifikaci Senior Mindfulness Teacher. Absolvoval jsem pětiletý psychoterapeutický výcvik SUR.
+            </p>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
+              Jsem manžel, táta i člověk s nabitým diářem. Mindfulness mi pomáhá zklidnit hlavu a získat větší nadhled. A přesně to učím i ostatní. Prakticky, lidsky, tak aby to fungovalo i uprostřed každodenního shonu.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">

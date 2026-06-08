@@ -8,6 +8,7 @@ export type PricingPlan = {
   subtitle: string
   price: string
   suffix: string | null
+  cta?: string
 }
 
 export type ObjednavkaPageProps = {
@@ -17,6 +18,8 @@ export type ObjednavkaPageProps = {
   includes: ExpandableItem[]
   bonusesHeading?: string
   bonuses?: ExpandableItem[]
+  plansHeading?: string
+  plansSubheading?: string
   plans: PricingPlan[]
 }
 
@@ -27,6 +30,8 @@ export function ObjednavkaPage({
   includes,
   bonusesHeading = "Bonusy",
   bonuses,
+  plansHeading = "Vyberte si platební plán",
+  plansSubheading,
   plans,
 }: ObjednavkaPageProps) {
   return (
@@ -69,8 +74,13 @@ export function ObjednavkaPage({
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Vyberte si platební plán
+            {plansHeading}
           </h2>
+          {plansSubheading && (
+            <p className="mx-auto mt-4 max-w-2xl text-center text-[18px] leading-[30px] text-[#4B4C4D]">
+              {plansSubheading}
+            </p>
+          )}
           <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
             {plans.map((p) => (
               <div
@@ -93,7 +103,7 @@ export function ObjednavkaPage({
                   <Button
                     className="h-auto w-full rounded-full bg-[#7BC0A4] px-8 py-3 text-[18px] font-semibold text-white hover:bg-[#6BB194]"
                   >
-                    Pokračovat k platbě
+                    {p.cta ?? "Pokračovat k platbě"}
                   </Button>
                 </div>
               </div>

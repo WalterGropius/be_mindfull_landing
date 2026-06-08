@@ -10,33 +10,33 @@ import { StatsBar } from "@/components/stats-bar"
 import { FreeCourseForm } from "@/components/free-course-form"
 
 const benefits: Array<{ bold?: string; rest: string }> = [
-  { rest: "Zastavíš se i tehdy, kdy máš pocit, že na to není čas." },
-  { bold: "Pochopíš, proč pauza funguje", rest: " – a proč je prvním krokem ven ze stresu." },
-  { bold: "Vyzkoušíš si 3 různé způsoby zastavení", rest: " – dechem, tělem a jídlem." },
-  { bold: "Zjistíš, co se děje v mozku", rest: " – a proč ti na změnu stačí 10 minut denně." },
-  { bold: "Uděláš první konkrétní krok ke změně", rest: " – bez přemáhání." },
+  { rest: "Zvládneš se zastavit i tehdy, kdy ti připadá, že na to nemáš čas." },
+  { rest: "Zjistíš, proč správná pauza zatočí se stresem víc než hodina na gauči." },
+  { rest: "Naučíš se tři techniky, které fungují v tramvaji, mezi schůzkami i u oběda." },
+  { rest: "Pochopíš lépe, co se děje v tvém mozku a proč pro změnu stačí 10 minut denně." },
+  { rest: "Uděláš první krok, po kterém se věci skutečně začnou měnit." },
 ]
 
 const days = [
   {
-    day: "DAY 1",
-    title: "Proč je tak těžké se zastavit",
-    desc: "Pochopíš, proč je tak těžké zpomalit – a co s tím. Vyzkoušíš si první jednoduché cvičení, které zvládneš hned.",
+    day: "DEN 1",
+    title: "Když hlava neumí zastavit",
+    desc: "Pochopíš, proč je dnes tak těžké zpomalit, a vyzkoušíš si první jednoduché cvičení.",
   },
   {
-    day: "DAY 2",
-    title: "Myšlenky přicházejí, nemusíš je následovat.",
-    desc: "Naučíš se pracovat s myšlenkami bez boje a vyzkoušíš si cvičení, které ti pomůže rychle uvolnit napětí. A zjistíš, jak využívat mindfulness během dne.",
+    day: "DEN 2",
+    title: "Myšlenky nemusí řídit celý tvůj den",
+    desc: "Přestat myslet nejde. Ale můžeš se naučit nebýt ve vleku vlastních myšlenek. Vyzkoušíš si techniku, která pomáhá rychle uvolnit napětí a zklidnit hlavu. Zjistíš, jak využít mindfulness během dne.",
   },
   {
-    day: "DAY 3",
-    title: "Mindfulness při jídle?",
-    desc: "Zjistíš, jak moc z dne prožíváš na autopilota – a jak to změnit. Naučíš se využívat mindfulness při jídle.",
+    day: "DEN 3",
+    title: "Jak přestat fungovat automaticky",
+    desc: "Naučíš se víc vnímat běžný život místo neustálého odškrtávání úkolů. A zjistíš, jak využít mindfulness při jídle.",
   },
   {
-    day: "DAY 4",
-    title: "Klid a soustředění jsou dovednosti, ne talent.",
-    desc: "Ukážeme si, jak odolnost, nebo klid dál pěstovat.",
+    day: "DEN 4",
+    title: "Klid a soustředění se nerodí. Trénují se",
+    desc: "Zjistíš, jak dál rozvíjet větší vnitřní stabilitu i ve dnech, kdy je toho na tebe moc.",
   },
 ]
 
@@ -59,10 +59,10 @@ export default function StartToPausePage() {
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
           <div className="max-w-xl">
             <h1 className="text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              Nauč se zastavit.<br />Restart hlavy za 4 dny.<br />Zdarma.
+              4denní kurz mindfulness
             </h1>
             <p className="mt-4 max-w-md text-[18px] leading-[30px] text-white/75">
-              Dokážeš se zastavit i uprostřed rušného dne a rychleji zklidníš mysl i tělo.
+              Nauč se zastavit.<br />Restart hlavy za 4 dny a zdarma<br />Zklidni roztěkanou hlavu a nauč se líp zvládat každodenní tlak.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -79,10 +79,10 @@ export default function StartToPausePage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            I krátká pauza má sílu,<br />když víš, jak na to.
+            I krátké zastavení má sílu,<br />když víš jak na to
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Mozek pod tlakem funguje hůř. Pauza ho resetuje. A naučit se zastavit správně – to je dovednost, ne luxus.
+            Málokdo se umí skutečně zastavit. A mozek pod neustálým tlakem funguje hůř. Nauč se jej restartovat a během pár minut změnit, jak se cítíš.
           </p>
         </div>
       </section>
@@ -93,7 +93,7 @@ export default function StartToPausePage() {
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Nauč se zastavit</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Restart hlavy za 4 dny.
+              4 dny, po kterých bude tvoje hlava fungovat jinak
             </h2>
           </div>
           <TrailerEmbed
@@ -109,7 +109,7 @@ export default function StartToPausePage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Co si odneseš za 4 dny
+            Tohle zvládneš za 4 dny. I když teď možná nevěříš, že to jde
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
@@ -181,10 +181,10 @@ export default function StartToPausePage() {
             />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Věda hovoří jasně
+            Věda mluví jasně
           </h2>
           <p className="mt-6 text-[20px] leading-[32px] text-[#2D2C2B]">
-            10 minut denně po dobu 14 dnů prokazatelně snižuje mentální putování z myšlenky na myšlenku a zlepšuje soustředění.
+            Už 10 minut vědomého zastavení denně prokazatelně snižuje mentální putování z myšlenky na myšlenku a zlepšuje soustředění.
           </p>
           <p className="mt-4 text-[14px] leading-[22px] text-[#2D2C2B]/70 italic">
             Feruglio et al. (2021). The Impact of Mindfulness Meditation on the Wandering Mind: a Systematic Review.
@@ -210,7 +210,7 @@ export default function StartToPausePage() {
             Bezplatný 4denní program
           </p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Nauč se zastavit. Restart hlavy za 4 dny.
+            4 dny, které dokážou změnit víc, než čekáš
           </h2>
 
           {/* Meta row (informational, not clickable tabs) */}
@@ -273,13 +273,16 @@ export default function StartToPausePage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Jsem Michal Dvořák,<br />zakladatel be.mindful
+              Jsem Michal Dvořák<br />Zakladatel be.mindful a lektor
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
+              Mindfulness mě zachránilo před vyhořením a pomáhá mi zvládat stres i každodenní tlak. Studoval jsem ho přímo tam, kde vzniklo, na UMASS Medical School a na Brown University v USA.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
+              Kurzy vedu od roku 2018. Jako jediný v Česku mám nejvyšší kvalifikaci Senior Mindfulness Teacher. Absolvoval jsem pětiletý psychoterapeutický výcvik SUR.
+            </p>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
+              Jsem manžel, táta i člověk s nabitým diářem. Mindfulness mi pomáhá zklidnit hlavu a získat větší nadhled. A přesně to učím i ostatní. Prakticky, lidsky, tak aby to fungovalo i uprostřed každodenního shonu.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">

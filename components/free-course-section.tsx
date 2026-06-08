@@ -120,16 +120,16 @@ export function FreeCourseSection() {
           </div>
 
           <Typography variant="span" align="center" color="inverse" className="text-sm font-bold uppercase tracking-[0.2em] block">
-            Bezplatný 4denní program
+            4denní program pro tvůj vnitřní klid
           </Typography>
           <Typography variant="h2" align="center" className="mt-4">
-            Restart hlavy za čtyři dny. Zdarma.
+            Dej si restart hlavy. Zdarma a hned
           </Typography>
           <Typography variant="p" align="center" className="mt-6">
-            Naučíš se zastavit – i tehdy, když to vypadá nemožně.
+            Nauč se zastavit, i když máš plný kalendář.
           </Typography>
           <Typography variant="p" align="center" className="mt-4">
-            4 nástroje, které zvládneš použít hned – a fungují.
+            Získej 4 nástroje, které fungují okamžitě a kdekoli.
           </Typography>
           <div className="mt-10 mx-auto max-w-xl">
             {status === "success" ? (

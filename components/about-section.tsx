@@ -8,13 +8,16 @@ export function AboutSection() {
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-stretch lg:gap-16 lg:px-8">
         <div className="flex flex-col justify-center lg:w-1/2">
           <Typography variant="h2" className="leading-tight">
-            Jsem Michal Dvořák,<br />zakladatel be.mindful
+            Jsem Michal Dvořák,<br />zakladatel be.mindful a lektor
           </Typography>
           <Typography variant="p" className="mt-6 leading-relaxed">
-            Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
+            Mindfulness mě zachránilo před vyhořením a pomáhá mi zvládat stres i každodenní tlak. Studoval jsem ho přímo tam, kde vzniklo, na UMASS Medical School a na Brown University v USA.
           </Typography>
           <Typography variant="p" className="mt-4 leading-relaxed">
-            Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
+            Kurzy vedu od roku 2018. Jako jediný v Česku mám nejvyšší kvalifikaci Senior Mindfulness Teacher. Absolvoval jsem pětiletý psychoterapeutický výcvik SUR.
+          </Typography>
+          <Typography variant="p" className="mt-4 leading-relaxed">
+            Jsem manžel, táta i člověk s nabitým diářem. Mindfulness mi pomáhá zklidnit hlavu a získat větší nadhled. A přesně to učím i ostatní. Prakticky, lidsky, tak aby to fungovalo i uprostřed každodenního shonu.
           </Typography>
           <div className="mt-10">
             <Button asChild variant="primary-orange" className="h-auto whitespace-normal text-center">

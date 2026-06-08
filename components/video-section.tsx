@@ -10,16 +10,16 @@ export function VideoSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
            <div className="mx-auto max-w-2xl text-center">
             <Typography variant="h2" align="center" className="text-balance">
-              Každá změna začíná malým krokem, který zvládne každý.
+              Problémy nezmizí, ale můžeš změnit způsob, jak je zvládáš
             </Typography>
             <Typography variant="p" align="center" className="mt-5">
-              Problémy nepřestanou přicházet. Ale způsob, jak je prožíváš, se změnit dá. A to mění úplně vše.
+              Nemusíš obrátit svůj život naruby ani jet meditovat do hor. Stačí pár minut mindfulness denně a začnou se dít věci.
             </Typography>
             <Typography variant="p" align="center" className="mt-4">
-              Je překvapivé, jak málo někdy stačí, aby se chaos proměnil v prostor a stres v klid. Nemusíš hned všechno měnit. Stačí začít postupnými kroky.
+              Získáš větší nadhled, klidnější hlavu a schopnost zvládat stres s větším klidem.
             </Typography>
             <Typography variant="p" align="center" className="mt-4">
-              Zklidnění hlavy, větší emoční odolnost i změnu nefunkčních vzorců máš ve svých rukách. Začni dnes.
+              Mindfulness nevyžaduje talent. Je to dovednost, která se dá snadno trénovat, a naučit se ji krok za krokem můžeš i ty.
             </Typography>
           </div>
         </div>
@@ -32,7 +32,7 @@ export function VideoSection() {
               MINDFULNESS, KTERÉ ZAPADNE DO TVÉHO ŽIVOTA
             </Typography>
             <Typography variant="h2" align="center" className="mt-4 text-pretty leading-tight">
-              Praktický, lidský a vědecky podložený přístup.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, jediný Senior Mindfulness Teacher v ČR.</span>
+              Chceš se zastavit, ale hlava jede dál? Podívej se, jak z toho ven<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, jediný Senior Mindfulness Teacher v ČR</span>
             </Typography>
           </div>
 

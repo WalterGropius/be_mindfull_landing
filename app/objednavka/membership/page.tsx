@@ -3,57 +3,63 @@ import { ObjednavkaPage } from "@/components/objednavka-page"
 export default function MembershipCheckoutPage() {
   return (
     <ObjednavkaPage
-      title="Skvělé. Už tě dělí jen jeden krok od začátku be.mindful MEMBERSHIP."
-      intro="Tady je přehled toho, co vše získáš v be.mindful MEMBERSHIP a možnosti, jak jej uhradit."
-      includesHeading="be.mindful MEMBERSHIP obsahuje:"
+      title="Skvělé rozhodnutí. Zbývá jediný krok"
+      intro="Podívej se, co najdeš uvnitř, a vyber si způsob platby."
+      includesHeading="be.mindful MEMBERSHIP obsahuje"
       includes={[
         {
           title: "be.mindful LIBRARY",
           content:
-            "Získáš přístup na 12 měsíců do knihovny plné článků, praktických tipů a další inspirace pro klidnější a vědomější život.",
+            "Když tě něco zajímá nebo se chceš ponořit do tématu hlouběji. Články, tipy a inspirace pro klidnější běžné dny, vždycky po ruce.",
         },
         {
           title: "be.mindful COMMUNITY",
           content:
-            "Lidé, kteří řeší podobné věci jako ty. Stres, přetížení, hledání rovnováhy – nebo prostě chuť nepřestat. Najdeš tu podporu, inspiraci i přátelství, které tě drží v praxi.",
+            "Nejtěžší je zůstat na mindfulness praxi sám/sama. Tady potkáš lidi, kteří řeší podobné věci jako ty: stres, přetížení, hledání rovnováhy. Najdeš tu nejen inspiraci, ale i podporu a přátelství.",
         },
         {
-          title: "Pravidelné meditace naživo (online)",
+          title: "Společná meditace online naživo",
           content:
-            "Nejsi v tom sám/a. Jednou za 14 dní se zastavíme společně – vedená meditace s Michalem, která ti pomáhá udržet rytmus, motivaci i klid v každodenním životě.",
+            "Nejsi v tom sám. Dvakrát za měsíc se zastavíme společně. Vedená meditace s Michalem, díky které si udržíš rytmus, motivaci i klid v běžném dni.",
         },
         {
-          title: "Pravidelná Q&A setkání naživo (online)",
+          title: "Otázky a odpovědi naživo online",
           content:
-            "Jednou za 14 dní proběhne online Q&A, kde se můžeš zeptat na cokoliv, co tě zajímá nebo právě řešíš. Rád ti odpovím. Získáš podporu pro pokračování v praxi, větší motivaci i kontakt s lidmi, kteří řeší podobné věci jako ty. Jeden týden meditace, druhý týden Q&A – takže se potkáme naživo každý týden.",
+            "Když ti něco nejde, máš se koho zeptat. Jednou za měsíc se můžeš ptát na cokoliv, co zrovna řešíš, a slyšíš zkušenosti lidí, kteří to mají podobně. Jeden týden meditace, druhý týden Q&A.",
         },
         {
           title: "Audionahrávky cvičení mindfulness",
           content:
-            "Soustředění. Stres. Spánek. Všímavost. Na každou situaci jiná nahrávka – a databáze stále roste.",
+            "Stres, spánek, obtížné emoce, ať už řešíš cokoliv, máš k dispozici desítky nahrávek meditací pro chvíle, kdy potřebuješ zklidnit hlavu, vrátit pozornost k sobě nebo si vydechnout. Databáze stále roste.",
         },
         {
-          title: "be.mindful videokurzy – Mindful eating, Digitální svoboda, Mindfulness II. a další",
+          title: "be.mindful videokurzy | Mindful eating, Digitální svoboda, Mindfulness II",
           content:
-            "Zdravý vztah k jídlu. Digitální technologie. Emoce. Překážky při meditaci. Mindfulness postoje. Každé oblasti věnovaný vlastní videokurz. 200 videolekcí a 100+ audionahrávek, které tě posouvají tam, kde to právě potřebuješ. A základy mindfulness v be.mindful Foundations máš vždy po ruce.",
+            "Oblíbené videokurzy na aktuální témata: zdravější vztah k jídlu, digitální technologie a boj o pozornost, emoce nebo mindfulness postoje. Celkem 200 videolekcí a 100+ audionahrávek, ze kterých si vybereš podle toho, co zrovna řešíš. A Foundations máš pořád po ruce jako základ.",
         },
       ]}
       bonuses={[
         {
-          title: "BONUS 1: Nové lekce a nahrávky přibývají celý rok – a ty k nim máš přístup v ceně členství.",
+          title: "Bonus | Nový obsah po celý rok",
           content:
-            "Během roku budou přibývat nové nahrávky a videolekce, ke kterým budeš mít samozřejmě přístup.",
+            "Během roku neustále přibývají nové nahrávky i videolekce. Nudit se rozhodně nebudeš.",
         },
         {
-          title: "BONUS 2: Dvakrát ročně offline setkání v Praze – jen pro členy komunity.",
+          title: "Bonus | Živá setkání 2× ročně v Praze",
           content:
-            "Jednou za půl roku se společně potkáme na jednodenní mindfulness akci v Praze určené pouze pro členy be.mindful komunity. Bude to prostor pro společnou praxi, inspiraci i povídání.",
+            "Dvakrát do roka mindfulness akce jen pro členy be.mindful komunity. Společná praxe, nové podněty i čas s inspirativními lidmi.",
+        },
+        {
+          title: "Bonus | Certifikát o absolvování",
+          content:
+            "Na vyžádání obdržíš certifikát o absolvování programu MEMBERSHIP.",
         },
       ]}
+      plansHeading="Vyber si plán, který sedne tobě i tvé peněžence"
       plans={[
-        { title: "Roční členství – jednorázově", subtitle: "Nejlepší cena", price: "2 200 Kč", suffix: "(183 Kč měsíčně)" },
-        { title: "Roční členství – dvě platby", subtitle: "Rozložená platba", price: "1 250 Kč", suffix: "/ 6 měsíců (208 Kč měsíčně)" },
-        { title: "Roční členství – měsíční platby", subtitle: "Nejmenší jednorázová částka", price: "230 Kč", suffix: "/ měsíc" },
+        { title: "Roční členství", subtitle: "Jen 183 Kč měsíčně. Ušetříš 560 Kč. Nejoblíbenější volba", price: "2 200 Kč", suffix: "/ rok", cta: "To beru" },
+        { title: "Roční členství ve dvou platbách", subtitle: "Platbu si rozložíš na 2 × 1 250 Kč. Vychází na 208 Kč měsíčně.", price: "1 250 Kč", suffix: "/ 6 měsíců", cta: "Jdu toho" },
+        { title: "Roční členství s měsíční platbou", subtitle: "Žádná velká částka na začátku.", price: "230 Kč", suffix: "/ měsíc", cta: "Tady začnu" },
       ]}
     />
   )

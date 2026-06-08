@@ -10,31 +10,31 @@ import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustr
 
 const benefits: Array<{ bold?: string; rest: string }> = [
   {
-    rest: "Posílíš svůj mindfulness sval a udržíš ho živý – v klidných i náročných dnech.",
+    rest: "Co netrénuješ, ochabne. Posiluj svůj mindfulness sval pro větší životní rovnováhu",
   },
   {
-    bold: "Zdravý návyk:",
-    rest: " tvůj mindfulness sval se bude dál rozvíjet a nezakrní. Vytvoříš si pravidelnost a návyk, který tě podrží v klidných i náročných dnech.",
+    bold: "Návyk, který vydrží i podrží:",
+    rest: " vytvoříš si zvyk, ke kterému se budeš bez přemáhání vracet. Podrží tě i ve dnech, kdy se ti zrovna nebude chtít do meditace.",
   },
   {
-    bold: "Pravidelnost bez přemáhání:",
-    rest: " návyk, který tě podrží i v těžkých chvílích. Nové techniky, nová témata, nový obsah. Rozvoj, který se nezastaví.",
+    bold: "Pořád něco nového:",
+    rest: " nové techniky, nová témata, nový obsah. Tvůj rozvoj se nezastaví na jednom místě a i po měsících tě bude pořád bavit.",
   },
   {
-    bold: "Posílíš odolnost:",
-    rest: " naučíš se přistupovat k emocím s větším klidem, laskavostí a soucitem.",
+    bold: "Víc klidu v situacích, které tě dřív rozhodily:",
+    rest: " naučíš se zacházet s emocemi a stresem s větším nadhledem a laskavostí. Náročné chvíle začneš zvládat s větším nadhledem.",
   },
   {
-    bold: "Posílíš schopnost být tady a teď",
-    rest: " – základ pro naplněný život i dlouhodobou odolnost.",
+    bold: "Přítomnost, která vydrží nápor, méně bloudění v myšlenkách:",
+    rest: " naučíš se zůstat dlouhodobě v klidu a vnímat, co se děje tady a teď, i ve chvílích, které by tě dřív rozhodily.",
   },
   {
-    bold: "Rozvineš mindfulness postoje,",
-    rest: " které mění všechno – jak vnímáš sebe, druhé i svět kolem tebe. Laskavost, zvídavost, důvěra, nehodnocení – a postupně i další.",
+    bold: "Postoje, které mění všechno:",
+    rest: " změníš to, jak vnímáš sebe, druhé i svět kolem. Rozvineš laskavost, zvídavost, důvěru, nehodnocení a postupně i další mindfulness postoje.",
   },
   {
-    bold: "Staneš se součástí podpůrné komunity",
-    rest: " bez hodnocení. Motivace, inspirace, přátelství.",
+    bold: "Lidé, kteří to mají podobně:",
+    rest: " staneš se součástí komunity, která pomáhá a nehodnotí. Získáš motivaci, když polevuješ, inspiraci, když nevíš kudy dál, a třeba i pár nových přátelství.",
   },
 ]
 
@@ -42,50 +42,50 @@ const includes = [
   {
     image: "/Theme_Foundations.jpg",
     title: "be.mindful FOUNDATIONS",
-    desc: "Kdykoli potřebuješ základ nebo chceš jít víc do hloubky. 30 videolekcí a audionahrávek, ke kterým se můžeš vracet vlastním tempem.",
+    desc: "Základ, ke kterému se můžeš vracet. 30 videolekcí a audionahrávek pro chvíle, kdy si potřebuješ znovu připomenout to nejdůležitější z mindfulness nebo jít víc do hloubky.",
   },
   {
     image: "/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.40.jpg",
     title: "be.mindful LIBRARY",
-    desc: "Vše, co chceš vědět o mindfulness – na jednom místě. Články, tipy a inspirace pro klidnější každodenní život.",
+    desc: "Když si nevíš rady nebo hledáš inspiraci, máš kam sáhnout. Články, tipy a praktické rady pro všímavější dny a klidnější život. Všechno o mindfulness na jednom místě.",
   },
   {
     image: "/Pictures/be.mindful MEMBERSHIP/BeMindful_Applifting2026Annaśolcov†.6.jpg",
     title: "be.mindful COMMUNITY",
-    desc: "Staneš se součástí skupiny lidí, kteří řeší podobné věci jako ty – od stresu a přetížení až po hledání větší rovnováhy. Najdeš tu podporu, inspiraci i motivaci nepřestat.",
+    desc: "Ve dvou se to lépe táhne, a co teprve v partě lidí, kteří řeší to co ty? Můžeš si sem přijít pro inspiraci i podporu, když tě bude opouštět motivace a měl/a bys chuť to vzdát.",
   },
   {
     image: "/Pictures/be.mindful MEMBERSHIP/_DSC7734.jpg",
     title: "Pravidelné meditace a Q&A naživo (online)",
-    desc: "Každý týden se potkáme online – jeden týden vedená meditace s Michalem, druhý týden Q&A, kde se ptáš na cokoliv, co právě řešíš.",
+    desc: "Nebudeš na to sám/sama. Každý měsíc tě čekají dvě vedené meditace s Michalem a jedno Q&A setkání pro otázky z praxe.",
   },
   {
     image: "/Mockup photos/Na bílém pozadí/nove_online.jpg",
     title: "be.mindful videokurzy – mindfulness pro reálný život",
-    desc: "Čekají tu na tebe tematické videokurzy zaměřené na mindfulness v každodenním životě – od Mindful eating pro zdravější vztah k jídlu přes Digitální svobodu pro vědomější práci s technologiemi až po kurzy zaměřené na práci s emocemi, překážky při meditaci, mindfulness postoje nebo rozvoj laskavosti.",
+    desc: "Tematické videokurzy pro situace, které právě řešíš: zdravější vztah k jídlu, omezení digitálního zahlcení, práci s emocemi i to, jak to nevzdat, když se ti zdá, že ti meditace zrovna nejde.",
   },
   {
     image: "/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.36.jpg",
     title: "Audionahrávky cvičení mindfulness",
-    desc: "Najdeš tu stále rostoucí databázi nahrávek zaměřených na soustředění, zvládání stresu, kvalitnější spánek i rozvoj všímavosti.",
+    desc: "Najdeš tu nahrávky na všechno, co zrovna řešíš – soustředění, stres, spánek i rozvoj všímavosti. A pořád přibývají.",
   },
 ]
 
 const testimonials = [
   {
     quote: "Pomohl mi začít přepínat z autopilota zpět na vědomé řízení.",
-    name: "Běla Nedvědová",
-    text: "Dřív jsem měla pocit, že se jen vezu – práce, povinnosti, stres, hlava plná myšlenek. Všechno jelo samo a já s tím. Teprve díky kurzu mindfulness jsem se naučila, jak můžu zpomalit, nadechnout se a začít znovu vědomě rozhodovat, jak chci reagovat.",
+    name: "Eva Procházková",
+    text: "Dřív jsem měla pocit, že se jen vezu – práce, povinnosti, stres, hlava plná myšlenek. Všechno jelo samo a já s tím. Teprve díky kurzu mindfulness jsem se naučila, jak můžu zpomalit, nadechnout se a začít se znovu vědomě rozhodovat, jak chci reagovat.",
   },
   {
     quote: "Vnímám dění v sobě i kolem sebe – bez hodnocení.",
-    name: "Martina Junková",
-    text: "Už se tolik neztotožňuji s tím, co se mi honí v hlavě. Víc vnímám dění v sobě i kolem sebe, bez hodnocení. To mi dává víc prostoru reagovat s klidem a nadhledem.",
+    name: "Lukáš Beneš",
+    text: "Už se tolik neztotožňuji s tím, co se mi honí hlavou. Víc vnímám dění v sobě i kolem sebe, bez hodnocení. To mi dává víc prostoru reagovat s klidem a nadhledem.",
   },
   {
     quote: "Jsem v lepším kontaktu sama se sebou.",
-    name: "Jitka Selingerová",
-    text: "Díky mindfulness se mi daří být v lepším kontaktu sama se sebou a tím i s klienty.",
+    name: "Barbora Marešová",
+    text: "Díky mindfulness se mi daří být v lepším kontaktu sama se sebou, a tím i s klienty.",
   },
 ]
 
@@ -109,7 +109,7 @@ export default function MembershipPage() {
               be.mindful<br />MEMBERSHIP
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Tvůj každodenní prostor k zastavení. Rovnováha, kterou si pěstuješ – den po dni.
+              Tvůj každodenní prostor k zastavení. Pro rovnováhu, kterou neztratíš ani v náročných dnech.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -126,10 +126,10 @@ export default function MembershipPage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Výzvy nepřestanou přicházet.<br />Pravidelná praxe ti pomůže je zvládat jinak.
+            Výzvy tu budou vždycky.<br />Mindfulness ti pomůže zvládat je s nadhledem
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Život se skládá z okamžiků. Většinu z nich ale přehlédneme – jsme příliš zaneprázdnění, abychom je vůbec zaregistrovali. Schopnost zastavit se to mění. A Membership tě v tom podrží každý den.
+            Pár týdnů to jde samo. Pak přijde náročný měsíc a první, co odpadne, je čas pro sebe. Znáš to. Membership je tu proto, aby tvá praxe nevyšuměla ve chvíli, kdy ji potřebuješ nejvíc, a aby tvá schopnost zastavit se nevyprchala s počátečním nadšením.
           </p>
         </div>
       </section>
@@ -138,9 +138,9 @@ export default function MembershipPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, který zapadne do tvého života</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený přístup, který funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
+              Víš, co rozhoduje o tom, jestli ti mindfulness bude fungovat i za půl roku?<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher</span>
             </h2>
           </div>
           <TrailerEmbed
@@ -205,10 +205,10 @@ export default function MembershipPage() {
             />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Rovnováha se tvoří z okamžiků.
+            Každodenní zastavení pro větší rovnováhu
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-            Tady je vše, co tě v každodenní praxi podrží. Podpora. Inspirace. Praktická cvičení.
+            Praktická cvičení, podpora a inspirace, díky kterým mindfulness zůstane součástí tvého života.
           </p>
         </div>
       </section>
@@ -236,9 +236,9 @@ export default function MembershipPage() {
       {/* What you get */}
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness pro reálný život</p>
+          <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Co tě čeká během 12 měsíců?</p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            be.mindful MEMBERSHIP<br />Vše, co dostaneš na 12 měsíců
+            be.mindful MEMBERSHIP<br />Mindfulness s živou podporou pro reálný život.
           </h2>
           <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
             {includes.map((item, i) => (
@@ -273,9 +273,9 @@ export default function MembershipPage() {
       <section className="bg-[#7BC0A4] py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-[28px] font-bold leading-[38px] text-white">Malé kroky. Každý den. Větší změna, než čekáš.</h2>
+            <h2 className="text-[28px] font-bold leading-[38px] text-white">Malé kroky každý den. Změny, které překvapí</h2>
             <p className="mx-auto mt-4 max-w-xl text-[18px] leading-[30px] text-white/80">
-              Větší klid, stabilita a opora – bez ohledu na to, jaký den tě čeká.
+              Víc klidu, stability a opory bez ohledu na to, co den přinese.
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@ type Stat = { num: string; label: string }
 
 const defaultStats: Stat[] = [
   { num: "9+", label: "Let praxe" },
-  { num: "3000+", label: "Absolventi" },
+  { num: "3000+", label: "Absolventů" },
   { num: "1", label: "Senior Mindfulness Teacher v ČR" },
 ]
 

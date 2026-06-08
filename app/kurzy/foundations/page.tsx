@@ -13,65 +13,66 @@ import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustr
 
 const benefits = [
   {
-    bold: "Mindfulness, které přežije pondělní ráno:",
-    rest: " naučíš se, jak mindfulness přirozeně zapojit do běžného dne, aby ti pomáhalo být klidnější, soustředěnější a víc v pohodě.",
+    bold: "Mindfulness i pro pondělní ráno:",
+    rest: " naučíš se jednoduché techniky a to, jak je přirozeně zapojit do běžného dne, aby ti pomáhaly být klidnější, soustředěnější a víc v pohodě.",
   },
   {
-    bold: "Soustředění, které funguje i ve chvílích, kdy ti to nejde:",
-    rest: " začneš se méně ztrácet v myšlenkách a rychleji vracet pozornost k tomu, co je právě důležité.",
+    bold: "Větší soustředění i pod tlakem:",
+    rest: " přestaneš se tolik ztrácet v myšlenkách a rychleji vrátíš pozornost k tomu, co je právě důležité.",
   },
   {
-    bold: "Emoce cítit, ale nedat se jimi ovládat:",
-    rest: " budeš pracovat s emocemi i stresem tak, aby tě méně ovládaly a nezahlcovaly.",
+    bold: "Emoce a stres, které tě nepohltí:",
+    rest: " naučíš se pracovat se stresem i emocemi tak, aby tě méně ovládaly a vyčerpávaly.",
   },
   {
     bold: "Víc radosti z běžných chvil:",
-    rest: " začneš si víc všímat drobných okamžiků, které běžně přehlížíme, a nacházet v nich větší pohodu, radost i energii.",
+    rest: " začneš si víc všímat momentů, které ti dnes často utíkají mezi povinnostmi, a získáš víc lehkosti v běžném životě.",
   },
   {
-    bold: "Méně napětí v těle, lepší spánek, víc energie:",
-    rest: " naučíš se pracovat se stresem tak, aby se nehromadil v těle a neovlivňoval tolik tvůj spánek, energii ani psychickou pohodu.",
+    bold: "Lepší spánek a méně napětí:",
+    rest: " naučíš se pracovat se stresem tak, aby se ti nehromadil v těle a neovlivňoval tolik tvůj spánek, energii ani psychickou pohodu.",
   },
 ]
 
 const howItWorks = [
-  "30 videolekcí – každá 10 minut",
-  "20 audionahrávek vedených meditací",
-  "Techniky, které ihned využiješ",
-  "Pravidelné setkání online s Michalem: vedená meditace a Q&A – ptej se na cokoliv",
+  "30 krátkých videolekcí po 10 minutách",
+  "20 audionahrávek vedených mindfulness cvičení",
+  "Techniky, které můžeš hned použít.",
+  "Pravidelné online skupinové setkání s Michalem: meditace + prostor pro tvé otázky",
   "Osobní konzultace, když si nevíš rady",
-  "10 minut denně stačí",
-  "Membership na 12 měsíců – až dokončíš be.mindful FOUNDATIONS, pokračuješ v be.mindful MEMBERSHIP",
+  "Stačí 10 minut denně",
+  "Členství na 12 měsíců.",
+  "Po dokončení FOUNDATIONS volně pokračuješ v navazujícím be.mindful MEMBERSHIP. Získáš tak přístup k dalším 200+ videolekcim a 150+ audionahrávkám",
 ]
 
 const courseModules = [
   {
     label: "MODULE 1",
-    title: "Začínáme: co je mindfulness, co není, a proč ti to může změnit každý den.",
+    title: "Mindfulness od základů: co to je a jak snadno začít",
     content:
-      "Objevíš kouzlo všímavosti a pochopíš, jak ji přirozeně začlenit do svého života. Osvojíš si techniky mindfulness meditace pro zklidnění mysli a položíš stabilní základy, o které se můžeš opřít v dalším rozvoji své praxe.",
+      "Zjistíš, co všímavost skutečně obnáší, bez ezo nálepek a planých slibů. Osvojíš si základní cvičení mindfulness pro zklidnění mysli i to, jak je zapojit, aniž bys měnil/a celý den. Položíš stabilní základy mindfulness, o které se opřeš v dalších lekcích i mimo ně.",
   },
   {
     label: "MODULE 2",
-    title: "Myšlenky přicházejí. Teď se naučíš, jak je nepouštět k sobě.",
+    title: "Myšlenky přicházejí, nauč se je nepouštět k sobě",
     content:
-      "Naučíš se zklidnit hlavu od neustále se opakujících myšlenek a pracovat s těmi náročnými. Získáš konkrétní tipy, jak nechávat být obavy, plány nebo výčitky, zlepšíš svou schopnost soustředit se a naučíš se překonávat ospalost, netrpělivost nebo pochyby, které se při meditaci objevují.",
+      "Ztišíš hlavu od myšlenek, co se vrací pořád dokola, a získáš nástroje, jak si poradit i s těmi náročnými. Zlepšíš své soustředění a získáš tipy, jak nechat být obavy, plány i výčitky. Naučíš se překonávat typické nástrahy mindfulness meditací, jako jsou pochyby, netrpělivost a ospalost.",
   },
   {
     label: "MODULE 3",
-    title: "Stres a těžké emoce – jak s nimi pracovat, ne se jich zbavit.",
+    title: "Stres a náročné emoce: jak se jimi nenechat pohltit a zachovat si nadhled",
     content:
-      "Budeš lépe zvládat stres a obtížné emoce. Získáš větší odolnost a nadhled v náročných situacích, osvojíš si nový přístup ke stresu a naučíš se techniky pro práci s negativními emocemi i s fyzickým diskomfortem.",
+      "Stres a obtížné emoce přestanou mít navrch. Získáš víc odolnosti a nadhledu v náročných chvílích, osvojíš si nový přístup ke stresu a praktické techniky pro práci s nepříjemnými emocemi i s tělesným diskomfortem.",
   },
   {
     label: "MODULE 4",
-    title: "Mindfulness v každodenním životě.",
+    title: "Mindfulness v každodenním životě",
     content:
-      "Přeneseš mindfulness do běžného dne. Získáš tipy, jak si vytvářet ostrůvky klidu i ve dnech plných povinností, naučíš se být všímavější při jídle a využívat mindful eating pro zdravější vztah ke stravování. Vyzkoušíš si všímavost při chůzi a pohybu a objevíš, jak mindfulness využít pro větší uvolnění a klid v každodenním životě.",
+      "Přeneseš všímavost z meditace do běžného dne. Vytvoříš si ostrůvky klidu i ve dnech plných povinností, objevíš mindfulness při jídle pro zdravější vztah k jídlu. Vyzkoušíš si všímavost při chůzi a pohybu. Zjistíš, že klid není něco, na co si musíš najít čas, ale způsob, jak čas prožíváš.",
   },
 ]
 
-const tabs = ["Každodenní", "Online", "10 min denní praxe", "Pravidelná podpora"]
+const tabs = ["Každodenní", "Online", "10 min. praxe denně", "Pravidelná podpora"]
 
 const testimonials = [
   {
@@ -80,18 +81,18 @@ const testimonials = [
     text: "Kurz mi pomohl být k sobě laskavější, méně se kritizovat a častěji se během dne zastavit.",
   },
   {
-    quote: "Méně se stresuju a lépe se soustředím.",
+    quote: "Méně se stresuji a lépe se soustředím.",
     name: "Martina Junková",
-    text: "Kurz mi přinesl více klidu do každodenního života. Vnímám své okolí jinak, s menším stresem, a lépe se soustředím. Moje mysl už není přeplněná myšlenkami, obavami a starostmi, které nikam nevedou. Rozhodně budu ve všímavosti pokračovat dál.",
+    text: "Kurz mi přinesl více klidu do každodenního života. Vnímám své okolí jinak, s menším stresem a lépe se soustředím. Moje mysl už není přeplněná myšlenkami, obavami a starostmi, které nikam nevedou. Rozhodně budu ve všímavosti pokračovat dál.",
   },
   {
     quote: "Díky všímavosti lze lépe zvládat náročné situace.",
     name: "Mira Šťovíček",
-    text: "Kurz je výborně sestavený s dobře propojenými tématy. Kurz bych doporučil každému, kdo se cítí ztracený v událostech a životních výzvách. Díky všímavosti lze tyto situace lépe zvládat a opuštěním špatných návyků zlepšit nejen současný, ale i budoucí život.",
+    text: "Kurz je výborně sestavený, s dobře propojenými tématy. Kurz bych doporučil každému, kdo se cítí ztracený v událostech a životních výzvách. Díky všímavosti lze tyto situace lépe zvládat a opuštěním špatných návyků zlepšit nejen současný, ale i budoucí život.",
   },
   {
     quote: "Kurz byl pro mě skutečným obohacením.",
-    name: "Helena Timrov",
+    name: "Helena Timrová",
     text: "Oceňuji perfektně připravený kurz, přátelskou atmosféru a jasně vysvětlené základy mindfulness. Pro mě je účast na kurzu skutečným životním obohacením. Doporučuji ho všem, kteří chtějí zlepšit kvalitu svého života a najít životní rovnováhu.",
   },
 ]
@@ -116,7 +117,7 @@ export default function FoundationsPage() {
               be.mindful<br />FOUNDATIONS
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-              Základ, který ti vydrží. Od stresu a zahlcení ke klidu a větší lehkosti.
+              Vylaď způsob, jakým zvládáš stres a zahlcení. Získej pevný základ pro klidnější dny.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -133,10 +134,10 @@ export default function FoundationsPage() {
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Pevný základ pro klidnější<br />a odolnější život.
+            Méně zmatku v hlavě. Víc prostoru pro všechno ostatní
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Stres, zahlcení, myšlenky v kruhu – to zná každý. Kurz tě naučí pracovat s tím, co máš uvnitř, tak aby tě to méně ovládalo.
+            Dny plné výkonu, hlava plná myšlenek. Kdo by to neznal. be.mindful FOUNDATIONS tě naučí, jak z toho vystoupit a získat větší odolnost i klid.
           </p>
         </div>
       </section>
@@ -145,9 +146,9 @@ export default function FoundationsPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, které zapadne do tvého života</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, které funguje i v pondělí ráno</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ověřený přístup, který funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
+              Stres nezmizí, ale nemusí řídit tvůj život<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher</span>
             </h2>
           </div>
           <TrailerEmbed
@@ -163,7 +164,7 @@ export default function FoundationsPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Situace se nezmění.<br />Ale tvoje reakce ano.
+            Věci kolem tebe se nezmění.<br />Ale tvoje reakce mohou
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
@@ -212,10 +213,10 @@ export default function FoundationsPage() {
             />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Výzkum ukazuje:
+            Podloženo vědou, ne dojmy
           </h2>
           <p className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-            10 minut meditace denně po dobu 8 týdnů<br />snižuje stres o 20 %.
+            Už 10 minut meditace denně po dobu 8 týdnů<br />prokazatelně snižuje stres o 20 %.
           </p>
           <p className="mt-4 text-[14px] leading-[22px] text-[#2D2C2B]/70 italic">
             Radin et al. (2025). JAMA Network Open.
@@ -232,7 +233,7 @@ export default function FoundationsPage() {
                 Ověřená cesta od stresu k nadhledu.
               </h2>
               <p className="mt-4 text-[18px] font-semibold leading-[30px] text-[#2D2C2B]/80">
-                Pro každého, kdo chce udělat první krok.
+                Pro každého, kdo chce výsledky, ne další dobrou radu
               </p>
             </div>
             <div className="flex flex-col gap-5 lg:w-3/5">
@@ -250,7 +251,7 @@ export default function FoundationsPage() {
       {/* Testimonials */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Ohlasy absolventů</h2>
+          <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Co říkají lidé po absolvování kurzu?</h2>
           <div className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
             {testimonials.map((t, i) => (
               <div key={i} className="rounded-2xl bg-[#F5F6F7] p-7">
@@ -278,7 +279,7 @@ export default function FoundationsPage() {
       <section className="bg-white pb-16 pt-4 lg:pb-24 lg:pt-8">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">
-            Mindfulness, které zapadne do tvého života
+            Mindfulness pro život, který je někdy až moc intenzivní
           </p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">be.mindful FOUNDATIONS</h2>
 
@@ -312,13 +313,16 @@ export default function FoundationsPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
+              Jsem Michal Dvořák,<br />zakladatel be.mindful a lektor
             </h2>
             <p className="mt-5 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Mindfulness mě zachránilo od vyhoření a změnilo způsob, jak žiju. Dnes jako jediný Senior Mindfulness Teacher v ČR pomáhám ostatním udělat totéž – prakticky a lidsky. Mindfulness jsem vystudoval na UMASS Medical School a Brown University a učím jej od roku 2018. Absolvoval jsem také pětiletý psychoterapeutický výcvik v systému SUR.
+              Mindfulness mě zachránilo před vyhořením a pomáhá mi zvládat stres i každodenní tlak. Studoval jsem ho přímo tam, kde vzniklo, na UMASS Medical School a na Brown University v USA.
             </p>
             <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-              Učím to, co sám žiju. Jsem také manžel a otec. Mindfulness mi přináší klid a větší nadhled a pomáhá mi zvládat stres i zklidnit hlavu.
+              Kurzy vedu od roku 2018. Jako jediný v Česku mám nejvyšší kvalifikaci Senior Mindfulness Teacher. Absolvoval jsem pětiletý psychoterapeutický výcvik SUR.
+            </p>
+            <p className="mt-4 text-[18px] leading-[30px] text-[#2D2C2B]/80">
+              Jsem manžel, táta i člověk s nabitým diářem. Mindfulness mi pomáhá zklidnit hlavu a získat větší nadhled. A přesně to učím i ostatní. Prakticky, lidsky, tak aby to fungovalo i uprostřed každodenního shonu.
             </p>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">

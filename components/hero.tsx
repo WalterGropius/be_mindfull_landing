@@ -12,12 +12,9 @@ const courseSlides = [
     src: "/Theme_4-days_FREE.jpg",
     alt: "FREE 4denní online kurz Start-to-PAUSE",
     eyebrow: null as string | null,
-    title: (
-      <>
-        Nauč se zastavit.<br />Restart hlavy za 4 dny.<br />Zdarma.
-      </>
-    ),
-    subtitle: "Dokážeš se zastavit i uprostřed rušného dne a rychleji zklidníš mysl i tělo.",
+    title: "Restart hlavy za čtyři dny a zdarma",
+    subtitle:
+      "Změna nezačíná akcí, začíná zastavením. Zažij, jaké to je během pár minut zklidnit roztěkanou hlavu a lépe zvládat každodenní tlak. Nečekej na ideální podmínky, začni hned.",
     imgClassName: "object-cover",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/start-to-pause",
@@ -26,12 +23,9 @@ const courseSlides = [
     src: "/Theme_Foundations.jpg",
     alt: "be.mindful Foundations",
     eyebrow: null,
-    title: (
-      <>
-        be.mindful<br />FOUNDATIONS
-      </>
-    ),
-    subtitle: "Základ, který ti vydrží. Od stresu a zahlcení ke klidu a větší lehkosti.",
+    title: "be.mindful foundations",
+    subtitle:
+      "Mindfulness pro život, který je občas až moc intenzivní. 30 krátkých lekcí, díky kterým se naučíš pracovat se stresem, myšlenkami i pozorností s větším klidem a nadhledem.",
     imgClassName: "object-cover",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/foundations",
@@ -40,8 +34,9 @@ const courseSlides = [
     src: "/Theme_8-weeks-course.jpg",
     alt: "8týdenní kurz mindfulness",
     eyebrow: "Skupinový kurz",
-    title: <>8týdenní kurz mindfulness (MBSR)</>,
-    subtitle: "Nejuznávanější program na světě. Klid, který vydrží – i když přijde bouře.",
+    title: "8týdenní kurz mindfulness – MBSR",
+    subtitle:
+      "Objev vědecky nejlépe ověřený mindfulness program na světě. Intenzivní trénink mysli, který tě naučí zpomalit a získat zpět nadhled i kontrolu nad svou přetíženou myslí.",
     imgClassName: "object-cover object-[75%_center] lg:object-center",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/skupinovy-kurz",
@@ -50,9 +45,9 @@ const courseSlides = [
     src: "/Theme_Companies.jpg",
     alt: "Mindfulness pro firmy",
     eyebrow: "Firemní programy",
-    title: <>Od stresu k odolnosti vašich lidí.</>,
+    title: "Mindfulness pro firmy",
     subtitle:
-      "Lidé, kteří zvládají tlak, jsou silnějšími leadery, spolupracují bez tření a podávají výkon – i v těžších chvílích.",
+      "Pomozte svým lidem zvládat tlak dřív, než vyhoří. Praktické kurzy mindfulness je naučí udržet si nadhled a budovat odolnost vůči stresu i uprostřed rychlého pracovního tempa a častých změn.",
     imgClassName: "object-cover",
     cta: "Zobrazit programy",
     href: "/kurzy/firmy",
@@ -86,10 +81,10 @@ export function Hero() {
                 variant="display"
                 className="text-balance sm:text-5xl lg:text-[64px] lg:leading-[1.1]"
               >
-                Zastav se a vytvoř si<br />prostor pro změnu ve svém životě.
+                Zastav se a začnou se dít věci
               </Typography>
               <Typography variant="p" className="mt-6 max-w-md text-pretty">
-                Schopnost zastavit se patří v dnešním světě k nejdůležitějším dovednostem. Pomůže ti zklidnit mysl, lépe zvládat stres a přinést do života víc klidu, lehkosti a nadhledu.
+                Umět se zastavit je dnes superschopnost. Mindfulness ti pomůže zklidnit hlavu, zpomalit a zvládat stres s větším nadhledem. A možná tě překvapí, že pár minut denně změní víc než týden dovolené.
               </Typography>
               <div className="mt-8">
                 <Button asChild variant="primary-orange" className="group">

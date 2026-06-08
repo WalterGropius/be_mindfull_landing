@@ -19,36 +19,36 @@ const clientLogos = [
 
 const benefits = [
   {
-    bold: "Odolnost vůči stresu a negativním emocím:",
-    rest: " méně zahlcení, rychlejší návrat ke klidu po náročných situacích.",
+    bold: "Větší odolnost vůči stresu a negativním emocím:",
+    rest: " méně zahlcení, větší nadhled a schopnost vrátit se rychleji do klidu i po náročných situacích.",
   },
   {
-    bold: "Méně přetížení:",
-    rest: " zklidníte hlavu od myšlenek, lepší regenerace a méně příznaků chronického stresu.",
+    bold: "Méně mentálního přetížení:",
+    rest: " klidnější hlava, lepší regenerace a menší dopad dlouhodobého stresu na psychiku i tělo.",
   },
   {
-    bold: "Soustředění a produktivita:",
-    rest: " méně roztěkanosti, více hluboké práce.",
+    bold: "Lepší soustředění a efektivnější práce:",
+    rest: " méně roztěkanosti, více mentální kapacity na hlubokou práci.",
   },
   {
-    bold: "Lepší komunikace:",
-    rest: " více naslouchání, méně automatických reakcí v konfliktu.",
+    bold: "Klidnější komunikace:",
+    rest: " schopnost víc naslouchat, reagovat s větším nadhledem, méně impulzivních reakcí a zbytečných konfliktů.",
   },
   {
     bold: "Prevence vyhoření:",
-    rest: " včasné rozpoznání přetížení a schopnost dobíjet se dřív, než dojde energie.",
+    rest: " schopnost včas rozpoznat přetížení a doplnění energie dřív, než dojde k úplnému vyčerpání.",
   },
   {
-    bold: "Kreativita a schopnost řešit problémy:",
-    rest: " klidnější mysl vidí jasněji a nachází řešení tam, kde zahlcená mysl vidí slepou uličku.",
+    bold: "Větší kreativita a lepší rozhodování:",
+    rest: " klidnější mysl dokáže vidět souvislosti, hledat řešení a nezaseknout se pod tlakem.",
   },
 ]
 
 const investmentRight = [
-  "Od přetížených lidí k větší odolnosti vůči stresu a dlouhodobě stabilnějšímu výkonu.",
-  "Od emočních výkyvů k větší stabilitě – zvládání náročných situací s klidem a nadhledem.",
-  "Od nedorozumění v týmech k otevřenější komunikaci a zdravější spolupráci.",
-  "Od vyčerpání a vyhoření k lidem, kteří mají energii, jsou angažovanější a motivaci.",
+  "Z přetížených lidí se stane tým, který zvládá nápor, tlak a drží dlouhodobě stabilní výkon.",
+  "Místo emočních výkyvů přijde stabilita a větší schopnost procházet náročnými situacemi s klidem a nadhledem.",
+  "Otevřenější komunikace a zdravější spolupráce nahradí častá nedorozumění v týmech.",
+  "Místo vyčerpaných a vyhořelých zaměstnanců angažovanější lidé, kteří mají energii, chuť i motivaci do práce.",
 ]
 
 const programs = [
@@ -56,35 +56,26 @@ const programs = [
     image: "/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.1.jpg",
     label: "1–2h workshop",
     title: "Rychlý restart mysli: Ochutnávka mindfulness v pracovním životě",
-    desc: "Seznámíte se se základními principy mindfulness a nejnovějšími poznatky neurovědy. Získáte jasnější pohled na to, co se děje ve vaší hlavě ve chvílích stresu a zahlcení. Vyzkoušíte si techniky pro rychlejší zklidnění i uprostřed náročného dne a pro vědomější práci s vlastními reakcemi. Nečekejte zázraky, ale solidní základ, na kterém můžete dál stavět.",
+    desc: "Seznamte se se základními principy mindfulness i tím, co se děje v hlavě ve chvílích stresu. To vše podle nejnovějších poznatků neurovědy. Vyzkoušíte si techniky pro rychlejší zklidnění i uprostřed náročného dne a vědomější práci s vlastními reakcemi. Nečekejte zázraky, ale solidní základ, na kterém se dá stavět.",
   },
   {
     image: "/Pictures/Company Courses/Portrety_BeMindful2026AnnaSolcova.5.jpg",
     label: "Celodenní kurz mindfulness",
     title: "Mozek pod tlakem: Jak získat klid a nadhled s mindfulness",
-    desc: "Zjistíte, jak mozek reaguje na stres a proč občas sabotuje náš výkon. Naučíte se techniky pro rychlé zklidnění, lepší soustředění a snížení stresu. Odnesete si nástroje pro lepší zvládání náročných situací s nadhledem. Podloženo vědou, použitelné ihned.",
+    desc: "Jak mozek reaguje na stres a proč občas sabotuje náš výkon? Osvojíte si techniky na rychlé zklidnění, lepší soustředění a snížení stresu. Odnesete si nástroje, jak zvládat náročné situace s nadhledem. Podloženo vědou, použitelné ihned.",
   },
   {
     image: "/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.45.jpg",
-    label: "Vícetýdenní kurz mindfulness",
+    label: "Několikatýdenní kurz",
     title: "Od multitaskingu k flow: Pro hlubší soustředění a klid",
-    desc: "Vícetýdenní program s pravidelnou praxí, ve kterém si lidé osvojí konkrétní techniky pro hlubší soustředění, zvládání stresu i komunikaci pod tlakem. Mindfulness se stane návykem, ne jednorázovým zážitkem – a změnu jde poznat v každodenním fungování týmu.",
+    desc: "Dlouhodobý program s pravidelnou mindfulness praxí, ve kterém si lidé osvojí konkrétní techniky na soustředění, zvládání stresu i komunikaci pod tlakem. Z mindfulness se stane návyk, ne jednorázový zážitek. Změnu poznáte i na každodenním fungování celého týmu.",
   },
   {
     image: "/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.128.jpg",
     label: "Aplikace be.mindful",
-    title: "Mindfulness v kapse: Pro lepší soustředění a klid",
-    desc: "Přístup pro celý tým do aplikace be.mindful s knihovnou videolekcí, audiomeditací a tematických kurzů. 10 minut denně stačí, aby si lidé krok za krokem osvojili základy mindfulness a dál v nich pokračovali ve vlastním tempu.",
+    title: "Mindfulness v kapse: klid a soustředění na pár kliků",
+    desc: "Přístup pro celý tým do aplikace be.mindful s knihovnou videolekcí, audiomeditací a tematických kurzů. Stačí 10 minut denně a lidé si krok za krokem osvojí základy mindfulness. Součástí jsou i pravidelná online setkání – vedené mindfulness praxe a prostor pro otázky, sdílení i podporu.",
   },
-]
-
-const teacherPoints = [
-  { bold: "Nejvyšší kvalifikace:", rest: " jediný držitel mezinárodního titulu Senior Mindfulness Teacher v ČR." },
-  { bold: "Mezinárodní know-how:", rest: " výcvik z UMASS Medical School a Brown University, kde mindfulness vzniklo." },
-  { bold: "Pětiletý psychoterapeutický výcvik:", rest: " v systému SUR jako doplněk mindfulness." },
-  { bold: "Praktický a lidský přístup:", rest: " hledání řešení na míru, s humorem, laskavě a důsledně." },
-  { bold: "Různé úrovně kurzů:", rest: " od workshopů po dlouhodobé programy, online i offline." },
-  { bold: "Od roku 2018 učí mindfulness na plný úvazek,", rest: " s tisíci absolventy." },
 ]
 
 export default function FirmyPage() {
@@ -103,9 +94,9 @@ export default function FirmyPage() {
         />
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
           <div className="max-w-xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[#E58C34]">Firemní programy</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#E58C34]">Pomozte svým lidem k větší odolnosti</p>
             <h1 className="mt-2 text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              Od stresu k odolnosti vašich lidí.
+              Tlak z práce nezmizí. Způsob, jak ho zvládat, se ale změnit dá. Vybudujte odolnější týmy a prostředí, kde výkon nestojí na dlouhodobém vyčerpání.
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/85">
               Lidé, kteří zvládají tlak, jsou silnějšími leadery, spolupracují bez tření a podávají výkon – i v těžších chvílích.
@@ -125,13 +116,13 @@ export default function FirmyPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 text-center lg:px-8">
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            V době neustálého tlaku je schopnost zastavit se klíčová dovednost.
+            Schopnost zastavit se je dnes stejně důležitá jako odbornost
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Zahlcení snižuje produktivitu. Chronický stres způsobuje vyhoření. Mindfulness dává lidem moment navíc – mezi tím, co se stane, a tím, jak zareagují. To se projeví v celém týmu. Klidnější hlava, větší nadhled, lepší spolupráce.
+            Zahlcení ukrajuje z produktivity. Chronický stres končí vyhořením. Mindfulness dává vašim lidem moment navíc, mezi tím, co se stane, a tím, jak zareagují. A to se násobí přes celý tým: klidnější komunikací, větším nadhledem a lepší spoluprací.
           </p>
           <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Firmám pomáhám zavádět programy, které jejich lidem pomáhají zvládat stres, udržet soustředění a zachovat vnitřní rovnováhu – i v náročném pracovním prostředí.
+            Pomáhám firmám zavádět programy, díky kterým jejich lidé zvládají stres, udrží soustředění a najdou rovnováhu i v náročném pracovním prostředí.
           </p>
         </div>
       </section>
@@ -139,6 +130,9 @@ export default function FirmyPage() {
       {/* Client logos */}
       <section className="bg-white py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <p className="mb-6 text-center text-[18px] leading-[30px] text-[#4B4C4D]">
+            ČEZ skupina · Europool · Kooperativa · Mibcon · Raiffeisen Bank · Česká spořitelna
+          </p>
           <div className="-mx-6 flex items-center gap-x-8 overflow-x-auto px-6 sm:mx-0 sm:flex-wrap sm:justify-center sm:gap-x-10 sm:gap-y-6 sm:overflow-visible sm:px-0">
             {clientLogos.map((logo) => (
               <div
@@ -162,9 +156,9 @@ export default function FirmyPage() {
       <section className="bg-[#F5F6F7] py-16 lg:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <div className="text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness přirozeně zapadne do vašeho pracovního života.</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness, které přirozeně zapadne do vašeho pracovního tempa</p>
             <h2 className="mx-auto mt-4 max-w-2xl text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Učím lidi, jak se neztratit ve stresu, změnách a tlaku – prakticky a lidsky. Mindfulness, které funguje v reálném životě.<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher.</span>
+              Přetížení zaměstnanci stojí firmu víc než špatné procesy. Změňte to<br /><span className="text-[18px] font-medium leading-[30px]">Michal Dvořák, Senior Mindfulness Teacher</span>
             </h2>
           </div>
           <TrailerEmbed
@@ -180,7 +174,7 @@ export default function FirmyPage() {
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Deadline nepůjde o hodinu zpozdit.<br />Ale reakce vašich lidí se změnit dá.
+            Deadline o hodinu neposunete. Ale to, jak na něj vaši lidé zareagují, ano
           </h2>
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-center">
             <div className="flex flex-col gap-5 lg:w-1/2">
@@ -233,10 +227,10 @@ export default function FirmyPage() {
             />
           </div>
           <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-            Pauza neznamená zpomalit výkon
+            Pauza není opak výkonu, je jeho součástí
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#2D2C2B]/80">
-            Nadhled, promyšlenější reakce na stres a tlak – a schopnost pracovat s tím, co se děje uvnitř. Naučíte se praktické techniky, které zvládnete za několik minut kdekoliv a kdykoliv.
+            Méně impulzivních reakcí, více soustředění a větší odolnost vůči stresu. Praktické techniky pro každodenní pracovní realitu, které se dají zvládnout za pár minut.
           </p>
         </div>
       </section>
@@ -250,7 +244,7 @@ export default function FirmyPage() {
           <div className="mt-12 flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16">
             <div className="lg:w-2/5">
               <p className="text-[18px] leading-[30px] text-[#4B4C4D]">
-                Mindfulness ve firmě není „další“ workshop. Je to změna způsobu, jak lidé pracují, komunikují a zvládají tlak.
+                Mindfulness ve firmě není „další“ workshop, na který se do týdne zapomene. Je to změna toho, jak lidé pracují, komunikují a zvládají tlak.
               </p>
             </div>
             <div className="flex flex-col gap-4 lg:w-3/5">
@@ -268,10 +262,10 @@ export default function FirmyPage() {
       {/* Programs */}
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">Mindfulness programy na míru</p>
-          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Nabídka programů</h2>
+          <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">MINDFULNESS PROGRAMY NA MÍRU</p>
+          <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Nabídka programů pro firmy</h2>
           <p className="mx-auto mt-3 max-w-3xl text-center text-[18px] leading-[30px] text-[#4B4C4D]">
-            V době neustálého tlaku, změn a nejistoty je odolnost klíčovou dovedností. Programy proto vytváříme na míru a propojujeme v nich teorii s praktickými cvičeními, abyste věděli, jak, kdy a proč je využít v každodenním životě i práci.
+            Odolnost se dnes cení stejně jako odbornost. Proto programy stavíme na míru a propojujeme v nich teorii s praxí. Aby vaši lidé věděli nejen co dělat, ale kdy a proč to v běžném dni i při práci použít.
           </p>
           <div className="mt-12 flex flex-col gap-12">
             {programs.map((p, i) => (
@@ -300,9 +294,9 @@ export default function FirmyPage() {
       {/* CTA */}
       <section className="bg-[#7BC0A4] py-16 lg:py-24">
         <div className="mx-auto max-w-2xl px-6 text-center lg:px-8">
-          <h2 className="text-[28px] font-bold leading-[38px] text-white">Požádejte o nabídku</h2>
+          <h2 className="text-[28px] font-bold leading-[38px] text-white">První krok k odolnějšímu týmu začíná zde</h2>
           <p className="mt-4 text-[18px] leading-[30px] text-white/80">
-            Vyplňte dotazník a my vám připravíme řešení na míru potřebám vaší firmy.
+            V be.mindful vám připravíme program na míru. Stačí vyplnit krátký dotazník.
           </p>
           <div className="mt-8">
             <Button asChild variant="secondary" className="group">
@@ -319,15 +313,15 @@ export default function FirmyPage() {
         <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
           <div className="lg:w-1/2">
             <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">
-              Ahoj, jsem Michal Dvořák,<br />zakladatel be.mindful
+              Těší mě, jsem Michal Dvořák, zakladatel be.mindful
             </h2>
             <div className="mt-8 space-y-4">
-              {teacherPoints.map((p, i) => (
-                <p key={i} className="text-[18px] leading-[30px] text-[#2D2C2B]/80">
-                  <strong className="font-bold text-[#2D2C2B]">{p.bold}</strong>
-                  {p.rest}
-                </p>
-              ))}
+              <p className="text-[18px] leading-[30px] text-[#2D2C2B]/80">
+                Jsem jediný Senior Mindfulness Teacher v ČR, s výcvikem z UMASS Medical School a Brown University. Mindfulness učím od roku 2018, mám za sebou pětiletý psychoterapeutický výcvik v systému SUR a mými kurzy prošlo přes 3 000 lidí.
+              </p>
+              <p className="text-[18px] leading-[30px] text-[#2D2C2B]/80">
+                Nejsem žádný guru. Jsem manžel, táta a člověk, který má také špatné dny, jen ví, jak s nimi pracovat. Mindfulness učím tak, aby ho lidé opravdu dokázali použít. Ne jako hezkou teorii, ale jako něco, co funguje i po pondělní poradě.
+              </p>
             </div>
           </div>
           <div className="relative aspect-[6/5] w-full overflow-hidden rounded-2xl lg:w-1/2">
