@@ -24,7 +24,9 @@ export async function POST(req: Request) {
 
   // TODO(integration): subscribe { firstName, lastName, email } to the
   // SmartEmailing list for the free 4-day course and create/sync the contact
-  // in the app. Requires SmartEmailing API credentials.
+  // in the app (incl. login credentials for the members' zone). Requires
+  // SmartEmailing + app API credentials. Until then the welcome e-mail below
+  // confirms the sign-up and the course content is sent manually/by automation.
 
   const fullName = [firstName, lastName].filter(Boolean).join(" ")
   const html = `
@@ -34,7 +36,19 @@ export async function POST(req: Request) {
     <p><strong>Zdroj:</strong> ${escapeHtml(source)}</p>
   `
 
+  const welcomeHtml = `
+    <p>Ahoj${firstName ? ` ${escapeHtml(firstName)}` : ""},</p>
+    <p>díky za registraci do bezplatného 4denního kurzu mindfulness <strong>Start-to-PAUSE</strong>.</p>
+    <p>První lekce ti brzy dorazí na tento e-mail. Kdyby nepřišla, mrkni prosím i do složky s hromadnou poštou nebo spamem.</p>
+    <p>Měj se všímavě,<br />Michal Dvořák<br />be.mindful | <a href="https://bemindful.cz">bemindful.cz</a></p>
+  `
+
   try {
+    await sendMail({
+      to: email,
+      subject: "Vítej ve 4denním kurzu mindfulness zdarma",
+      html: welcomeHtml,
+    })
     await sendMail({
       to: CONTACT_TO,
       subject: `Nová registrace (4denní kurz): ${fullName || email}`,

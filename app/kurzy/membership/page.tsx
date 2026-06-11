@@ -34,21 +34,6 @@ const benefits: Array<{ bold?: string; rest: string }> = [
 
 const includes = [
   {
-    image: "/Theme_Foundations.jpg",
-    title: "be.mindful FOUNDATIONS",
-    desc: "Základ, ke kterému se můžeš vracet. 30 videolekcí a audionahrávek pro chvíle, kdy si potřebuješ znovu připomenout to nejdůležitější z mindfulness nebo jít víc do hloubky.",
-  },
-  {
-    image: "/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.40.jpg",
-    title: "be.mindful LIBRARY",
-    desc: "Když si nevíš rady nebo hledáš inspiraci, máš kam sáhnout. Články, tipy a praktické rady pro všímavější dny a klidnější život. Všechno o mindfulness na jednom místě.",
-  },
-  {
-    image: "/Pictures/be.mindful MEMBERSHIP/BeMindful_Applifting2026Annaśolcov†.6.jpg",
-    title: "be.mindful COMMUNITY",
-    desc: "Ve dvou se to lépe táhne, a co teprve v partě lidí, kteří řeší to co ty? Můžeš si sem přijít pro inspiraci i podporu, když tě bude opouštět motivace a měl/a bys chuť to vzdát.",
-  },
-  {
     image: "/Pictures/be.mindful MEMBERSHIP/_DSC7734.jpg",
     title: "Pravidelné meditace a Q&A naživo (online)",
     desc: "Nebudeš na to sám/sama. Každý měsíc tě čekají dvě vedené meditace s Michalem a jedno Q&A setkání pro otázky z praxe.",
@@ -62,6 +47,21 @@ const includes = [
     image: "/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.36.jpg",
     title: "Audionahrávky cvičení mindfulness",
     desc: "Najdeš tu nahrávky na všechno, co zrovna řešíš – soustředění, stres, spánek i rozvoj všímavosti. A pořád přibývají.",
+  },
+  {
+    image: "/Theme_Foundations.jpg",
+    title: "be.mindful FOUNDATIONS",
+    desc: "Základ, ke kterému se můžeš vracet. 30 videolekcí a audionahrávek pro chvíle, kdy si potřebuješ znovu připomenout to nejdůležitější z mindfulness nebo jít víc do hloubky.",
+  },
+  {
+    image: "/Pictures/be.mindful MEMBERSHIP/Portrety_BeMindful2026AnnaSolcova.40.jpg",
+    title: "be.mindful LIBRARY",
+    desc: "Když si nevíš rady nebo hledáš inspiraci, máš kam sáhnout. Články, tipy a praktické rady pro všímavější dny a klidnější život. Všechno o mindfulness na jednom místě.",
+  },
+  {
+    image: "/Pictures/be.mindful MEMBERSHIP/BeMindful_Applifting2026Annaśolcov†.6.jpg",
+    title: "be.mindful COMMUNITY",
+    desc: "Ve dvou se to lépe táhne, a co teprve v partě lidí, kteří řeší to co ty? Můžeš si sem přijít pro inspiraci i podporu, když tě bude opouštět motivace a měl/a bys chuť to vzdát.",
   },
 ]
 

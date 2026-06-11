@@ -65,6 +65,35 @@ const footerLinks = {
   ],
 }
 
+// Odkazy na stažení aplikace be.mindful. Jakmile budou k dispozici finální
+// URL z App Store / Google Play, stačí je doplnit sem — badge se zobrazí
+// automaticky (s prázdnou hodnotou zůstává skrytý).
+const APP_STORE_URL = ""
+const PLAY_STORE_URL = ""
+
+// Filled Apple logo (brand icons are no longer shipped by lucide)
+function AppleIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+    </svg>
+  )
+}
+
+// Filled Google Play triangle
+function GooglePlayIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M3.61 1.81a1.5 1.5 0 0 0-.61 1.2v17.98a1.5 1.5 0 0 0 .61 1.2l9.07-10.19L3.61 1.81zm10.18 9.07 2.6-2.92-11.2-6.43a1.5 1.5 0 0 0-.48-.17l9.08 9.52zm0 2.24-9.08 9.52c.16-.03.32-.08.48-.17l11.2-6.43-2.6-2.92zm4.04-3.7 2.95 1.69c1 .57 1 2.01 0 2.58l-2.95 1.69-2.87-3.05 2.87-2.91z" />
+    </svg>
+  )
+}
+
+const appLinks = [
+  { icon: AppleIcon, href: APP_STORE_URL, label: "App Store", store: "Stáhnout v" },
+  { icon: GooglePlayIcon, href: PLAY_STORE_URL, label: "Google Play", store: "Stáhnout z" },
+].filter((l) => l.href)
+
 const socialLinks = [
   { icon: InstagramIcon, href: "https://www.instagram.com/bemindfulcz/", label: "Instagram" },
   { icon: Facebook, href: "https://www.facebook.com/bemindful.cz", label: "Facebook" },
@@ -74,6 +103,30 @@ const socialLinks = [
 
 export function Footer() {
   const [email, setEmail] = useState("")
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [error, setError] = useState("")
+
+  async function handleNewsletterSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    setStatus("loading")
+    setError("")
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data?.error || "Něco se pokazilo. Zkus to prosím znovu.")
+      }
+      setStatus("success")
+      setEmail("")
+    } catch (err) {
+      setStatus("error")
+      setError(err instanceof Error ? err.message : "Něco se pokazilo. Zkus to prosím znovu.")
+    }
+  }
 
   return (
     <footer className="border-t border-border-subtle bg-surface-white">
@@ -94,6 +147,31 @@ export function Footer() {
                 </Link>
               ))}
             </div>
+            {appLinks.length > 0 && (
+              <div className="mt-6">
+                <Typography variant="span" className="block text-sm font-medium text-typography-heading">
+                  Stáhni si aplikaci be.mindful
+                </Typography>
+                <div className="mt-3 flex flex-wrap items-center gap-3">
+                  {appLinks.map((app) => (
+                    <Link
+                      key={app.label}
+                      href={app.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2.5 rounded-xl bg-[#2D2C2B] px-4 py-2.5 text-surface-white transition-colors hover:bg-[#4B4C4D]"
+                      aria-label={`${app.store} ${app.label}`}
+                    >
+                      <app.icon className="h-6 w-6" />
+                      <span className="flex flex-col leading-none">
+                        <span className="text-[10px] uppercase tracking-wide opacity-80">{app.store}</span>
+                        <span className="mt-0.5 text-sm font-semibold">{app.label}</span>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
           <div>
             <Typography variant="h4" className="mb-4 text-base text-typography-heading">Kurzy</Typography>
@@ -135,26 +213,35 @@ export function Footer() {
                 </div>
               ))}
             </div>
-            <form
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <Input
-                type="email"
-                placeholder="E-mail"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="h-auto py-[18px] px-[24px] flex-1 rounded-2xl border border-border-subtle bg-surface-white text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
-              />
-              <Button
-                type="submit"
-                variant="primary-orange"
-                size="default"
-                className="group gap-0"
+            {status === "success" ? (
+              <p className="max-w-lg rounded-2xl bg-[#F5F6F4] px-6 py-[18px] text-[16px] font-medium text-typography-heading">
+                Hotovo! Od teď ti jednou za 14 dní přistane mindfulness přímo do schránky.
+              </p>
+            ) : (
+              <form
+                className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 max-w-lg"
+                onSubmit={handleNewsletterSubmit}
               >
-                <span className="flex items-center gap-2">Odebírat <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" /></span>
-              </Button>
-            </form>
+                <Input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="h-auto py-[18px] px-[24px] flex-1 rounded-2xl border border-border-subtle bg-surface-white text-[18px] text-typography-body placeholder:text-muted-foreground focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
+                />
+                <Button
+                  type="submit"
+                  variant="primary-orange"
+                  size="default"
+                  disabled={status === "loading"}
+                  className="group gap-0"
+                >
+                  <span className="flex items-center gap-2">{status === "loading" ? "Odesílám…" : "Odebírat"} {status !== "loading" && <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />}</span>
+                </Button>
+              </form>
+            )}
+            {status === "error" && <p className="mt-3 text-sm font-medium text-[#b00020]">{error}</p>}
           </div>
         </div>
 

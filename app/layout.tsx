@@ -4,14 +4,22 @@ import { Noto_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CookieConsent } from '@/components/cookie-consent'
 import { PromoBanner } from '@/components/promo-banner'
+import { CzechTypography } from '@/components/czech-typography'
+import { SITE_URL } from '@/lib/site'
 import './globals.css'
 
 const notoSans = Noto_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata: Metadata = {
-  title: 'Mindfulness - Find Your Inner Peace',
-  description: 'Discover mindfulness courses and resources to help you find inner peace and live a balanced life.',
-  generator: 'be_mindfull_landing',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'be.mindful – kurzy mindfulness',
+    template: '%s | be.mindful',
+  },
+  description:
+    'Kurzy mindfulness s Michalem Dvořákem, jediným Senior Mindfulness Teacherem v Česku. Online programy, 8týdenní kurz MBSR i mindfulness pro firmy.',
+  // Self-referencing canonical on every page, resolved against metadataBase.
+  alternates: { canonical: './' },
   icons: {
     icon: [
       {
@@ -41,6 +49,7 @@ export default function RootLayout({
       <body className={`${notoSans.className} antialiased`}>
         <PromoBanner />
         {children}
+        <CzechTypography />
         <CookieConsent />
         <Analytics />
       </body>
