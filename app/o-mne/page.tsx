@@ -185,7 +185,8 @@ export default function AboutPage() {
             <div className="lg:w-2/5">
               <h2 className="text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Mgr. Michal Dvořák</h2>
               <p className="mt-5 text-[18px] leading-[30px] text-[#4B4C4D]">
-                Senior Mindfulness Teacher (International Mindfulness Integrity Network)
+                Senior Mindfulness Teacher<br />
+                (International Mindfulness Integrity Network)
               </p>
               <ul className="mt-4 space-y-2 text-[18px] leading-[30px] text-[#4B4C4D]">
                 <li>• Certified MBSR Teacher (Brown University, USA)</li>

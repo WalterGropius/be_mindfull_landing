@@ -46,13 +46,19 @@ const benefits = [
 ]
 
 const investmentRight: React.ReactNode[] = [
-  "Z přetížených lidí se stane tým, který zvládá nápor, tlak a drží dlouhodobě stabilní výkon.",
+  <>
+    <strong className="font-semibold text-[#2D2C2B]">Z přetížených lidí se stane tým, který zvládá nápor, tlak </strong>
+    a drží dlouhodobě stabilní výkon.
+  </>,
   <>
     Místo emočních výkyvů přijde{" "}
     <strong className="font-semibold text-[#2D2C2B]">stabilita a větší schopnost procházet náročnými situacemi </strong>
     s klidem a nadhledem.
   </>,
-  "Otevřenější komunikace a zdravější spolupráce nahradí častá nedorozumění v týmech.",
+  <>
+    <strong className="font-semibold text-[#2D2C2B]">Otevřenější komunikace a zdravější spolupráce </strong>
+    nahradí častá nedorozumění v týmech.
+  </>,
   <>
     Místo vyčerpaných a vyhořelých zaměstnanců{" "}
     <strong className="font-semibold text-[#2D2C2B]">angažovanější lidé, kteří mají energii, chuť </strong>
@@ -83,7 +89,7 @@ const programs = [
     image: "/Pictures/Company Courses/BeMindful_Applifting2026Annaśolcov†.128.jpg",
     label: "Aplikace be.mindful",
     title: "Mindfulness v kapse: klid a soustředění na pár kliků",
-    desc: "Přístup pro celý tým do aplikace be.mindful s knihovnou videolekcí, audiomeditací a tematických kurzů. Stačí 10 minut denně a lidé si krok za krokem osvojí základy mindfulness. Součástí jsou i pravidelná online setkání – vedené mindfulness praxe a prostor pro otázky, sdílení i podporu.",
+    desc: "Přístup pro celý tým do aplikace be.mindful s knihovnou videolekcí, audiomeditací a tematických kurzů. Stačí 10 minut denně a lidé si krok za krokem osvojí základy mindfulness. Součástí jsou i pravidelná online setkání – vedené mindfulness praxe a prostor pro otázky, sdílení i podporu.",
   },
 ]
 
@@ -103,12 +109,12 @@ export default function FirmyPage() {
         />
         <div className="relative z-10 mx-auto flex min-h-[500px] max-w-7xl items-center px-6 py-20 lg:min-h-[580px] lg:px-8 lg:py-28">
           <div className="max-w-xl">
-            <p className="text-sm font-semibold uppercase tracking-wider text-[#E58C34]">Pomozte svým lidem k větší odolnosti</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#E58C34]">Firemní programy</p>
             <h1 className="mt-2 text-[28px] font-bold leading-[38px] text-white sm:text-5xl lg:text-[64px] lg:leading-[1.1]">
-              Tlak z práce nezmizí. Způsob, jak ho zvládat, se ale změnit dá. Vybudujte odolnější týmy a prostředí, kde výkon nestojí na dlouhodobém vyčerpání.
+              Pomozte svým lidem k větší odolnosti
             </h1>
             <p className="mt-4 text-[18px] leading-[30px] text-white/85">
-              Lidé, kteří zvládají tlak, jsou silnějšími leadery, spolupracují bez tření a podávají výkon – i v těžších chvílích.
+              Tlak z práce nezmizí. Způsob, jak ho zvládat, se ale změnit dá. Vybudujte odolnější týmy a prostředí, kde výkon nestojí na dlouhodobém vyčerpání.
             </p>
             <div className="mt-8">
               <Button asChild variant="primary-orange" className="group">
@@ -139,9 +145,6 @@ export default function FirmyPage() {
       {/* Client logos */}
       <section className="bg-white py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="mb-6 text-center text-[18px] leading-[30px] text-[#4B4C4D]">
-            ČEZ skupina · Europool · Kooperativa · Mibcon · Raiffeisen Bank · Česká spořitelna
-          </p>
           <div className="-mx-6 flex items-center gap-x-8 overflow-x-auto px-6 sm:mx-0 sm:flex-wrap sm:justify-center sm:gap-x-10 sm:gap-y-6 sm:overflow-visible sm:px-0">
             {clientLogos.map((logo) => (
               <div
@@ -274,7 +277,7 @@ export default function FirmyPage() {
           <p className="text-center text-sm font-semibold uppercase tracking-wider text-[#7BC0A4]">MINDFULNESS PROGRAMY NA MÍRU</p>
           <h2 className="mt-2 text-center text-[28px] font-bold leading-[38px] text-[#2D2C2B]">Nabídka programů pro firmy</h2>
           <p className="mx-auto mt-3 max-w-3xl text-center text-[18px] leading-[30px] text-[#4B4C4D]">
-            Odolnost se dnes cení stejně jako odbornost. Proto programy stavíme na míru a propojujeme v nich teorii s praxí. Aby vaši lidé věděli nejen co dělat, ale kdy a proč to v běžném dni i při práci použít.
+            Odolnost se dnes cení stejně jako odbornost. Proto programy stavíme na míru a propojujeme v nich teorii s praxí. Aby vaši lidé věděli nejen, co dělat, ale kdy a proč to v běžném dni i při práci použít.
           </p>
           <div className="mt-12 flex flex-col gap-12">
             {programs.map((p, i) => (

@@ -134,7 +134,7 @@ export function VideoTestimonialsCarousel({
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <p className="font-bold text-[#2D2C2B] text-[18px] leading-[30px]">
-                    &ldquo;{t.quote}&rdquo;
+                    „{t.quote}“
                   </p>
                   {t.text && (
                     <p className="mt-3 text-[#4B4C4D] text-[18px] leading-[30px]">

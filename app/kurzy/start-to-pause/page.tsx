@@ -21,7 +21,9 @@ const benefits: React.ReactNode[] = [
   <>
     Pochopíš lépe, <strong>co se děje v tvém mozku</strong> a proč pro změnu stačí 10 minut denně.
   </>,
-  <>Uděláš první krok, po kterém se věci skutečně začnou měnit.</>,
+  <>
+    <strong>Uděláš první krok</strong>, po kterém se věci skutečně začnou měnit.
+  </>,
 ]
 
 const days = [

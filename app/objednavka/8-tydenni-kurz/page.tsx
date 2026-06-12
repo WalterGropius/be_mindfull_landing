@@ -73,8 +73,10 @@ export default function OsmiTydenniKurzCheckoutPage() {
               Osobní setkání, energie skupiny v jedné místnosti.
             </>
           ),
-          price: "7 800 Kč",
+          oldPrice: "7 800 Kč",
+          price: "6 630 Kč",
           suffix: null,
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
           cta: "Jdu do toho",
         },
         {
@@ -86,8 +88,10 @@ export default function OsmiTydenniKurzCheckoutPage() {
               Připojíš se odkudkoliv, skupinu máš na obrazovce.
             </>
           ),
-          price: "7 500 Kč",
+          oldPrice: "7 500 Kč",
+          price: "6 375 Kč",
           suffix: null,
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
           cta: "Hlásím se",
         },
       ]}

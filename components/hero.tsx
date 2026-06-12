@@ -14,7 +14,7 @@ const courseSlides = [
     eyebrow: null as string | null,
     title: "Restart hlavy za čtyři dny a zdarma",
     subtitle:
-      "Změna nezačíná akcí, začíná zastavením. Zažij, jaké to je během pár minut zklidnit roztěkanou hlavu a lépe zvládat každodenní tlak. Nečekej na ideální podmínky, začni hned.",
+      "Změna nezačíná akcí, začíná zastavením. Zažij, jaké to je během pár minut zklidnit roztěkanou hlavu a lépe zvládat tlak.",
     imgClassName: "object-cover",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/start-to-pause",
@@ -25,7 +25,7 @@ const courseSlides = [
     eyebrow: null,
     title: "be.mindful foundations",
     subtitle:
-      "Mindfulness pro život, který je občas až moc intenzivní. 30 krátkých lekcí, díky kterým se naučíš pracovat se stresem, myšlenkami i pozorností s větším klidem a nadhledem.",
+      "Mindfulness pro život, který je někdy až moc intenzivní. 30 lekcí pro klidnější hlavu a lepší zvládání stresu.",
     imgClassName: "object-cover",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/foundations",
@@ -36,7 +36,7 @@ const courseSlides = [
     eyebrow: "Skupinový kurz",
     title: "8týdenní kurz mindfulness – MBSR",
     subtitle:
-      "Objev vědecky nejlépe ověřený mindfulness program na světě. Intenzivní trénink mysli, který tě naučí zpomalit a získat zpět nadhled i kontrolu nad svou přetíženou myslí.",
+      "Objev vědecky nejlépe ověřený mindfulness program na světě. Intenzivní trénink mysli, který tě naučí zpomalit a získat nadhled.",
     imgClassName: "object-cover object-[75%_center] lg:object-center",
     cta: "Vstoupit do kurzu",
     href: "/kurzy/skupinovy-kurz",
@@ -47,7 +47,7 @@ const courseSlides = [
     eyebrow: "Firemní programy",
     title: "Mindfulness pro firmy",
     subtitle:
-      "Pomozte svým lidem zvládat tlak dřív, než vyhoří. Praktické kurzy mindfulness je naučí udržet si nadhled a budovat odolnost vůči stresu i uprostřed rychlého pracovního tempa a častých změn.",
+      "Pomozte svým lidem zvládat tlak dřív, než vyhoří. Praktické kurzy mindfulness je naučí udržet si nadhled a budovat odolnost vůči stresu.",
     imgClassName: "object-cover",
     cta: "Zobrazit programy",
     href: "/kurzy/firmy",
@@ -84,7 +84,7 @@ export function Hero() {
                 Zastav se a začnou se dít věci
               </Typography>
               <Typography variant="p" className="mt-6 max-w-md text-pretty">
-                Umět se zastavit je dnes superschopnost. Mindfulness ti pomůže zklidnit hlavu, zpomalit a zvládat stres s větším nadhledem. A možná tě překvapí, že pár minut denně změní víc než týden dovolené.
+                Umět se zastavit je dnes superschopnost. Mindfulness ti pomůže zklidnit hlavu, zpomalit a zvládat stres s nadhledem.
               </Typography>
               <div className="mt-8">
                 <Button asChild variant="primary-orange" className="group">

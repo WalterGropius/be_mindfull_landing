@@ -1,12 +1,13 @@
 "use client"
 
+import type { ReactNode } from "react"
 import { useState } from "react"
 import { Plus, Minus } from "lucide-react"
 
 export type CourseModule = {
   label: string
   title: string
-  content?: string
+  content?: ReactNode
 }
 
 export function CourseModules({ modules }: { modules: CourseModule[] }) {

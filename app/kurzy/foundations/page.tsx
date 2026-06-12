@@ -13,19 +13,24 @@ import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustr
 
 const benefits: Array<{ bold?: string; rest: string }> = [
   {
-    rest: "Mindfulness i pro pondělní ráno: naučíš se jednoduché techniky a to, jak je přirozeně zapojit do běžného dne, aby ti pomáhaly být klidnější, soustředěnější a víc v pohodě.",
+    bold: "Mindfulness i pro pondělní ráno: ",
+    rest: "naučíš se jednoduché techniky a to, jak je přirozeně zapojit do běžného dne, aby ti pomáhaly být klidnější, soustředěnější a víc v pohodě.",
   },
   {
-    rest: "Větší soustředění i pod tlakem: přestaneš se tolik ztrácet v myšlenkách a rychleji vrátíš pozornost k tomu, co je právě důležité.",
+    bold: "Větší soustředění i pod tlakem: ",
+    rest: "přestaneš se tolik ztrácet v myšlenkách a rychleji vrátíš pozornost k tomu, co je právě důležité.",
   },
   {
-    rest: "Emoce a stres, které tě nepohltí: naučíš se pracovat se stresem i emocemi tak, aby tě méně ovládaly a vyčerpávaly.",
+    bold: "Emoce a stres, které tě nepohltí: ",
+    rest: "naučíš se pracovat se stresem i emocemi tak, aby tě méně ovládaly a vyčerpávaly.",
   },
   {
-    rest: "Víc radosti z běžných chvil: začneš si víc všímat momentů, které ti dnes často utíkají mezi povinnostmi, a získáš víc lehkosti v běžném životě.",
+    bold: "Víc radosti z běžných chvil: ",
+    rest: "začneš si víc všímat momentů, které ti dnes často utíkají mezi povinnostmi, a získáš víc lehkosti v běžném životě.",
   },
   {
-    rest: "Lepší spánek a méně napětí: naučíš se pracovat se stresem tak, aby se ti nehromadil v těle a neovlivňoval tolik tvůj spánek, energii ani psychickou pohodu.",
+    bold: "Lepší spánek a méně napětí: ",
+    rest: "naučíš se pracovat se stresem tak, aby se ti nehromadil v těle a neovlivňoval tolik tvůj spánek, energii ani psychickou pohodu.",
   },
 ]
 
@@ -36,7 +41,7 @@ const howItWorks = [
   "Pravidelné online skupinové setkání s Michalem: meditace + prostor pro tvé otázky",
   "Osobní konzultace, když si nevíš rady",
   "Stačí 10 minut denně",
-  "Členství na 12 měsíců.",
+  "Členství na 12 měsíců",
   "Po dokončení FOUNDATIONS volně pokračuješ v navazujícím be.mindful MEMBERSHIP. Získáš tak přístup k dalším 200+ videolekcim a 150+ audionahrávkám",
 ]
 
@@ -132,7 +137,8 @@ export default function FoundationsPage() {
             Méně zmatku v hlavě. Víc prostoru pro všechno ostatní
           </h2>
           <p className="mt-6 text-[18px] leading-[30px] text-[#4B4C4D]">
-            Dny plné výkonu, hlava plná myšlenek. Kdo by to neznal. be.mindful FOUNDATIONS tě naučí, jak z toho vystoupit a získat větší odolnost i klid.
+            Dny plné výkonu, hlava plná myšlenek. Kdo by to neznal.<br />
+            be.mindful FOUNDATIONS tě naučí, jak z toho vystoupit a získat větší odolnost i klid.
           </p>
         </div>
       </section>
@@ -250,7 +256,7 @@ export default function FoundationsPage() {
           <div className="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
             {testimonials.map((t, i) => (
               <div key={i} className="rounded-2xl bg-[#F5F6F7] p-7">
-                <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
+                <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">„{t.quote}“</p>
                 <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">{t.text}</p>
                 <p className="mt-5 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
               </div>
