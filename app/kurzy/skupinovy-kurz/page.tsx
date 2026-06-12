@@ -136,38 +136,68 @@ const courseModules = [
   {
     label: "MODUL 1",
     title: "Úvod do mindfulness, základy praxe a všímavé jedení",
-    content:
-      "První setkání se věnuje základům a tomu, proč se vyplatí praxi udržet. Zjistíš, co mindfulness doopravdy je, projdeme si několik prvních cvičení a zastavíme se i u všímavého jedení. Cílem je dát ti všechno, co potřebuješ pro dobrý start do kurzu. Doporučená samostatná mindfulness praxe: 35 minut denně do dalšího setkání.",
+    content: (
+      <>
+        První setkání se věnuje základům a tomu, proč se vyplatí praxi udržet. Zjistíš, co mindfulness doopravdy je, projdeme si několik prvních cvičení a zastavíme se i u všímavého jedení. Cílem je dát ti všechno, co potřebuješ pro dobrý start do kurzu.
+        <br />
+        <em>Doporučená samostatná mindfulness praxe: 35 minut denně do dalšího setkání.</em>
+      </>
+    ),
   },
   {
     label: "MODUL 2",
     title: "Práce s obtížnými myšlenkami a všímavost",
-    content:
-      "Po společném cvičení se ohlédneme za uplynulým týdnem. Povíme si, co dělat ve dnech, kdy praxe nejde podle našich představ, a v čem všímavost vlastně spočívá. A hlavně: jak pracovat s myšlenkami, aby nad námi neměly takovou moc. Doporučená samostatná mindfulness praxe: 35 + 10 minut denně do dalšího setkání.",
+    content: (
+      <>
+        Po společném cvičení se ohlédneme za uplynulým týdnem. Povíme si, co dělat ve dnech, kdy praxe nejde podle našich představ, a v čem všímavost vlastně spočívá. A hlavně: jak pracovat s myšlenkami, aby nad námi neměly takovou moc.
+        <br />
+        <em>Doporučená samostatná mindfulness praxe: 35 + 10 minut denně do dalšího setkání.</em>
+      </>
+    ),
   },
   {
     label: "MODUL 3",
     title: "Radost, spokojenost a přeměna obyčejného v neobyčejné",
-    content:
-      "Ranní káva, procházka, rozhovor s blízkým. Chvíle, které většinou automaticky přejdeme. Po společné praxi se zaměříme na to, jak být během dne přítomnější, víc si užívat každodenní drobné momenty, které nám často unikají. Ukážeme si, jak díky větší všímavosti nacházet více radosti a spokojenosti v obyčejných chvílích každodenního života. Doporučená samostatná mindfulness praxe: 35 + 15 minut denně do dalšího setkání.",
+    content: (
+      <>
+        Ranní káva, procházka, rozhovor s blízkým. Chvíle, které většinou automaticky přejdeme. Po společné praxi se zaměříme na to, jak být během dne přítomnější, víc si užívat každodenní drobné momenty, které nám často unikají. Ukážeme si, jak díky větší všímavosti nacházet více radosti a spokojenosti v obyčejných chvílích každodenního života.
+        <br />
+        <em>Doporučená samostatná mindfulness praxe: 35 + 15 minut denně do dalšího setkání.</em>
+      </>
+    ),
   },
   {
     label: "MODUL 4",
     title: "Přerušení stresových vzorců a práce s tělem",
-    content:
-      "Začneme společnou mindfulness praxí a sdílením zkušeností z uplynulého týdne. Zaměříme se na vzorce chování, které nás automaticky stahují do stresu a napětí, včetně reakcí typu boj, útěk nebo zamrznutí. Ukážeme si, jak na náročné situace reagovat s větším nadhledem, otevřeností a zvídavosti. Doporučená samostatná mindfulness praxe: 35 + 20 minut denně do dalšího setkání.",
+    content: (
+      <>
+        Začneme společnou mindfulness praxí a sdílením zkušeností z uplynulého týdne. Zaměříme se na vzorce chování, které nás automaticky stahují do stresu a napětí, včetně reakcí typu boj, útěk nebo zamrznutí. Ukážeme si, jak na náročné situace reagovat s větším nadhledem, otevřeností a zvídavosti.
+        <br />
+        <em>Doporučená samostatná mindfulness praxe: 35 + 20 minut denně do dalšího setkání.</em>
+      </>
+    ),
   },
   {
     label: "MODUL 5",
     title: "Zvládání stresu a obtížných emocí",
-    content:
-      "Setkání otevřeme novým mindfulness cvičením a reflexí uplynulého týdne. Podíváme se na to, jak stres ovlivňuje tělo i mysl. Naučíš se praktické techniky mindfulness pro zvládání náročných situací, včetně techniky STOP a dalších cvičení. Doporučená samostatná mindfulness praxe: 35 minut denně do dalšího setkání.",
+    content: (
+      <>
+        Setkání otevřeme novým mindfulness cvičením a reflexí uplynulého týdne. Podíváme se na to, jak stres ovlivňuje tělo i mysl. Naučíš se praktické techniky mindfulness pro zvládání náročných situací, včetně techniky STOP a dalších cvičení.
+        <br />
+        <em>Doporučená samostatná mindfulness praxe: 35 minut denně do dalšího setkání.</em>
+      </>
+    ),
   },
   {
     label: "MODUL 6",
     title: "Všímavá komunikace a zvládání náročné komunikace",
-    content:
-      "Umíš naslouchat? A co se v tobě děje, když komunikace začne být nepříjemná? Při setkání se zaměříme na vědomější komunikaci, naslouchání i lepší práci s obtížnými emocemi během rozhovorů. Prakticky si vyzkoušíš principy všímavé komunikace a naučíš se zvládat konfliktní situace s větším klidem, nadhledem a menší impulzivností. Doporučená samostatná praxe: 35 minut denně do dalšího setkání.",
+    content: (
+      <>
+        Umíš naslouchat? A co se v tobě děje, když komunikace začne být nepříjemná? Při setkání se zaměříme na vědomější komunikaci, naslouchání i lepší práci s obtížnými emocemi během rozhovorů. Prakticky si vyzkoušíš principy všímavé komunikace a naučíš se zvládat konfliktní situace s větším klidem, nadhledem a menší impulzivností.
+        <br />
+        <em>Doporučená samostatná praxe: 35 minut denně do dalšího setkání.</em>
+      </>
+    ),
   },
   {
     label: "MODUL 7",
@@ -178,8 +208,13 @@ const courseModules = [
   {
     label: "MODUL 8",
     title: "Všímavost v každodenním životě a budování zdravých návyků",
-    content:
-      "Spěch, multitasking, telefon. Co ti bere energii a co tě naopak dobíjí? Po reflexi celodenního setkání se podíváme na návyky, které ti už neslouží, a na to, jak z nich vědomě vystupovat. Odcházíš s konkrétními technikami pro vědomější každodenní fungování. Doporučená samostatná praxe: 35 minut denně do dalšího setkání.",
+    content: (
+      <>
+        Spěch, multitasking, telefon. Co ti bere energii a co tě naopak dobíjí? Po reflexi celodenního setkání se podíváme na návyky, které ti už neslouží, a na to, jak z nich vědomě vystupovat. Odcházíš s konkrétními technikami pro vědomější každodenní fungování.
+        <br />
+        <em>Doporučená samostatná praxe: 35 minut denně do dalšího setkání.</em>
+      </>
+    ),
   },
   {
     label: "MODUL 9",
@@ -443,12 +478,6 @@ export default function SkupinovyKurzPage() {
             </p>
             <p className="mt-3 text-[18px] leading-[30px] text-[#4B4C4D]">
               Součástí je také soukromý chat jen pro účastníky kurzu a po dokončení kurzu navíc měsíční přístup do be.mindful MEMBERSHIPU.
-            </p>
-            <h3 className="mt-6 text-[24px] font-bold leading-[34px] text-[#2D2C2B]">
-              Bonus | Certifikát o absolvování
-            </h3>
-            <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">
-              Na vyžádání obdržíš po dokončení kurzu certifikát o absolvování programu.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Button asChild variant="primary">

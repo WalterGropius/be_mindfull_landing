@@ -31,7 +31,7 @@ export function FeaturesSection() {
                   <img src="/tic.png" alt="Manage Stress" className="w-10 h-10" />
                 </div>
                 <Typography variant="p" className="pt-2">
-                  Zvládat stres s nadhledem namísto režimu „musím to vydržet“.
+                  <strong>Zvládat stres s nadhledem</strong> namísto režimu „musím to vydržet“.
                 </Typography>
               </div>
               <div className="flex items-start gap-4">

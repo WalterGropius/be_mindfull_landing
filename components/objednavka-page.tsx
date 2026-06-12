@@ -7,8 +7,12 @@ import { ExpandableItems, type ExpandableItem } from "@/components/expandable-it
 export type PricingPlan = {
   title: string
   subtitle: ReactNode
+  /** Původní cena před slevou – zobrazí se přeškrtnutá nad cenou. */
+  oldPrice?: string
   price: string
   suffix: string | null
+  /** Poznámka pod cenou, např. do kdy platí sleva. */
+  priceNote?: string
   cta?: string
 }
 
@@ -92,7 +96,12 @@ export function ObjednavkaPage({
                   {p.title}
                 </p>
                 <p className="mt-1 text-sm text-[#4B4C4D]">{p.subtitle}</p>
-                <p className="mt-8 text-[36px] font-bold leading-[46px] text-[#2D2C2B]">
+                {p.oldPrice && (
+                  <p className="mt-8 text-[22px] font-bold leading-[30px] text-[#4B4C4D] line-through decoration-2">
+                    {p.oldPrice}
+                  </p>
+                )}
+                <p className={`${p.oldPrice ? "mt-1" : "mt-8"} text-[36px] font-bold leading-[46px] text-[#2D2C2B]`}>
                   {p.price}
                   {p.suffix && (
                     <span className="ml-2 text-sm font-normal text-[#4B4C4D]">
@@ -100,6 +109,9 @@ export function ObjednavkaPage({
                     </span>
                   )}
                 </p>
+                {p.priceNote && (
+                  <p className="mt-1 text-sm font-semibold text-[#E58C34]">{p.priceNote}</p>
+                )}
                 <div className="mt-8">
                   <Button
                     className="h-auto w-full rounded-full bg-[#7BC0A4] px-8 py-3 text-[18px] font-semibold text-white hover:bg-[#6BB194]"

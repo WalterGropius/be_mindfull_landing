@@ -47,9 +47,39 @@ export default function FoundationsCheckoutPage() {
       ]}
       plansHeading="Vyber si plán, co sedne tobě i tvé peněžence"
       plans={[
-        { title: "Roční členství", subtitle: "Nejoblíbenější volba", price: "2 200 Kč / rok", suffix: "Jen 183 Kč měsíčně. Ušetříš 560 Kč.", cta: "To beru" },
-        { title: "Roční členství ve dvou platbách", subtitle: "Platbu si rozložíš na 2 × 1 250 Kč. Vychází na 208 Kč měsíčně.", price: "1 250 Kč / 6 měsíců", suffix: null, cta: "Jdu do toho" },
-        { title: "Roční členství s měsíční platbou", subtitle: "Žádná velká částka na začátku.", price: "230 Kč / měsíc", suffix: null, cta: "Tady začnu" },
+        {
+          title: "Roční členství",
+          subtitle: (
+            <>
+              Nejoblíbenější volba
+              <br />
+              Jen 183 Kč měsíčně. Ušetříš 560 Kč.
+            </>
+          ),
+          oldPrice: "2 200 Kč / rok",
+          price: "1 870 Kč / rok",
+          suffix: null,
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
+          cta: "To beru",
+        },
+        {
+          title: "Roční členství ve dvou platbách",
+          subtitle: "Platbu si rozložíš na 2 × 1 250 Kč. Vychází na 208 Kč měsíčně.",
+          oldPrice: "1 250 Kč / 6 měsíců",
+          price: "1 062 Kč / 6 měsíců",
+          suffix: null,
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
+          cta: "Jdu do toho",
+        },
+        {
+          title: "Roční členství s měsíční platbou",
+          subtitle: "Žádná velká částka na začátku.",
+          oldPrice: "230 Kč / měsíc",
+          price: "195 Kč / měsíc",
+          suffix: null,
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
+          cta: "Tady začnu",
+        },
       ]}
     />
   )

@@ -31,7 +31,7 @@ export function CoursesSection() {
                 Cítíš se nonstop pod tlakem? Mindfulness ti ukáže, jak z toho ven
               </Typography>
               <Typography variant="p" className="mt-4 leading-relaxed">
-                To nejdůležitější z mindfulness pro běžný život. Nauč se pracovat se stresem, zahlcením a otravnými myšlenkami s podporou zkušeného lektora. Získej lepší soustředění i nadhled. Kurz, který zvládneš i v tramvaji – 30 lekcí, 10 minut denně.
+                To nejdůležitější z mindfulness pro běžný život. Nauč se pracovat se stresem, zahlcením a otravnými myšlenkami s podporou zkušeného lektora. Získej lepší soustředění i nadhled. Kurz, který zvládneš i v tramvaji – 30 lekcí, 10 minut denně.
               </Typography>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Button asChild variant="primary">

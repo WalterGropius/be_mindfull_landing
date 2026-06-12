@@ -25,7 +25,7 @@ export default function MembershipCheckoutPage() {
         {
           title: "Otázky a odpovědi naživo online",
           content:
-            "Když ti něco nejde, máš se koho zeptat. Jednou za měsíc se můžeš ptát na cokoliv, co zrovna řešíš, a slyšíš zkušenosti lidí, kteří to mají podobně. Jeden týden meditace, druhý týden Q&A.",
+            "Když ti něco nejde, máš se koho zeptat. Jednou za tři týdny se můžeš ptát na cokoliv, co zrovna řešíš, a slyšíš zkušenosti lidí, kteří to mají podobně. Jeden týden meditace, druhý týden Q&A.",
         },
         {
           title: "Audionahrávky cvičení mindfulness",
@@ -35,7 +35,7 @@ export default function MembershipCheckoutPage() {
         {
           title: "be.mindful videokurzy | Mindful eating, Digitální svoboda, Mindfulness II",
           content:
-            "Oblíbené videokurzy na aktuální témata: zdravější vztah k jídlu, digitální technologie a boj o pozornost, emoce nebo mindfulness postoje. Celkem 200 videolekcí a 100+ audionahrávek, ze kterých si vybereš podle toho, co zrovna řešíš. A Foundations máš pořád po ruce jako základ.",
+            "Oblíbené videokurzy na aktuální témata: zdravější vztah k jídlu, digitální technologie a boj o pozornost, emoce nebo mindfulness postoje. Celkem 200+ videolekcí, ze kterých si vybereš podle toho, co zrovna řešíš. A Foundations máš pořád po ruce jako základ.",
         },
       ]}
       bonuses={[
@@ -57,9 +57,39 @@ export default function MembershipCheckoutPage() {
       ]}
       plansHeading="Vyber si plán, který sedne tobě i tvé peněžence"
       plans={[
-        { title: "Roční členství", subtitle: "Jen 183 Kč měsíčně. Ušetříš 560 Kč. Nejoblíbenější volba", price: "2 200 Kč", suffix: "/ rok", cta: "To beru" },
-        { title: "Roční členství ve dvou platbách", subtitle: "Platbu si rozložíš na 2 × 1 250 Kč. Vychází na 208 Kč měsíčně.", price: "1 250 Kč", suffix: "/ 6 měsíců", cta: "Jdu toho" },
-        { title: "Roční členství s měsíční platbou", subtitle: "Žádná velká částka na začátku.", price: "230 Kč", suffix: "/ měsíc", cta: "Tady začnu" },
+        {
+          title: "Roční členství",
+          subtitle: (
+            <>
+              Nejoblíbenější volba
+              <br />
+              Jen 183 Kč měsíčně. Ušetříš 560 Kč.
+            </>
+          ),
+          oldPrice: "2 200 Kč / rok",
+          price: "1 870 Kč",
+          suffix: "/ rok",
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
+          cta: "To beru",
+        },
+        {
+          title: "Roční členství ve dvou platbách",
+          subtitle: "Platbu si rozložíš na 2 × 1 250 Kč. Vychází na 208 Kč měsíčně.",
+          oldPrice: "1 250 Kč / 6 měsíců",
+          price: "1 062 Kč",
+          suffix: "/ 6 měsíců",
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
+          cta: "Jdu do toho",
+        },
+        {
+          title: "Roční členství s měsíční platbou",
+          subtitle: "Žádná velká částka na začátku.",
+          oldPrice: "230 Kč / měsíc",
+          price: "195 Kč",
+          suffix: "/ měsíc",
+          priceNote: "Sleva 15 % platí jen do 30. 6. 2026",
+          cta: "Tady začnu",
+        },
       ]}
     />
   )

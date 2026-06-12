@@ -77,7 +77,7 @@ export function FreeCourseForm({ source = "start-to-pause" }: { source?: string 
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        placeholder="Váš e-mail"
+        placeholder="Tvůj e-mail"
         autoComplete="email"
         className={`${inputClass} mt-4`}
       />

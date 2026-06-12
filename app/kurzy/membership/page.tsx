@@ -10,25 +10,31 @@ import { ScrollAnimatedIllustration } from "@/components/scroll-animated-illustr
 
 const benefits: Array<{ bold?: string; rest: string }> = [
   {
-    rest: "Co netrénuješ, ochabne. Posiluj svůj mindfulness sval pro větší životní rovnováhu",
+    rest: "Co netrénuješ, ochabne. Posiluj svůj mindfulness sval pro větší životní rovnováhu.",
   },
   {
-    rest: "Návyk, který vydrží i podrží: vytvoříš si zvyk, ke kterému se budeš bez přemáhání vracet. Podrží tě i ve dnech, kdy se ti zrovna nebude chtít do meditace.",
+    bold: "Návyk, který vydrží i podrží: ",
+    rest: "vytvoříš si zvyk, ke kterému se budeš bez přemáhání vracet. Podrží tě i ve dnech, kdy se ti zrovna nebude chtít do meditace.",
   },
   {
-    rest: "Pořád něco nového: nové techniky, nová témata, nový obsah. Tvůj rozvoj se nezastaví na jednom místě a i po měsících tě bude pořád bavit.",
+    bold: "Pořád něco nového: ",
+    rest: "nové techniky, nová témata, nový obsah. Tvůj rozvoj se nezastaví na jednom místě a i po měsících tě bude pořád bavit.",
   },
   {
-    rest: "Víc klidu v situacích, které tě dřív rozhodily: naučíš se zacházet s emocemi a stresem s větším nadhledem a laskavostí. Náročné chvíle začneš zvládat s větším nadhledem.",
+    bold: "Víc klidu v situacích, které tě dřív rozhodily: ",
+    rest: "naučíš se zacházet s emocemi a stresem s větším nadhledem a laskavostí. Náročné chvíle začneš zvládat s větším nadhledem.",
   },
   {
-    rest: "Přítomnost, která vydrží nápor, méně bloudění v myšlenkách: naučíš se zůstat dlouhodobě v klidu a vnímat, co se děje tady a teď, i ve chvílích, které by tě dřív rozhodily.",
+    bold: "Přítomnost, která vydrží nápor, méně bloudění v myšlenkách: ",
+    rest: "naučíš se zůstat dlouhodobě v klidu a vnímat, co se děje tady a teď, i ve chvílích, které by tě dřív rozhodily.",
   },
   {
-    rest: "Postoje, které mění všechno: změníš to, jak vnímáš sebe, druhé i svět kolem. Rozvineš laskavost, zvídavost, důvěru, nehodnocení a postupně i další mindfulness postoje.",
+    bold: "Postoje, které mění všechno: ",
+    rest: "změníš to, jak vnímáš sebe, druhé i svět kolem. Rozvineš laskavost, zvídavost, důvěru, nehodnocení a postupně i další mindfulness postoje.",
   },
   {
-    rest: "Lidé, kteří to mají podobně: staneš se součástí komunity, která pomáhá a nehodnotí. Získáš motivaci, když polevuješ, inspiraci, když nevíš kudy dál, a třeba i pár nových přátelství.",
+    bold: "Lidé, kteří to mají podobně: ",
+    rest: "staneš se součástí komunity, která pomáhá a nehodnotí. Získáš motivaci, když polevuješ, inspiraci, když nevíš kudy dál, a třeba i pár nových přátelství.",
   },
 ]
 
@@ -211,7 +217,7 @@ export default function MembershipPage() {
       <StatsBar
         stats={[
           { num: "200+", label: "Videolekcí" },
-          { num: "120", label: "Audionahrávek" },
+          { num: "180+", label: "Audionahrávek" },
           { num: "50 h", label: "Materiálu" },
         ]}
       />
@@ -282,7 +288,7 @@ export default function MembershipPage() {
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
             {testimonials.map((t, i) => (
               <div key={i} className="rounded-2xl bg-[#F5F6F7] p-7">
-                <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">&ldquo;{t.quote}&rdquo;</p>
+                <p className="text-[18px] font-bold leading-[30px] text-[#2D2C2B]">„{t.quote}“</p>
                 <p className="mt-4 text-[18px] leading-[30px] text-[#4B4C4D]">{t.text}</p>
                 <p className="mt-5 text-sm font-semibold text-[#2D2C2B]">{t.name}</p>
               </div>
