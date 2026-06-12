@@ -107,7 +107,7 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
-                    placeholder="Vaše jméno"
+                    placeholder="Jméno"
                   />
                 </div>
                 <div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   className="h-11 rounded-lg border-[#C0D1C6] bg-background text-sm text-[#2D2C2B] placeholder:text-[#4B4C4D] focus-visible:border-primary-green focus-visible:ring-0 focus-visible:shadow-none"
-                  placeholder="Čím vám mohu pomoct?"
+                  placeholder="S čím vám mohu pomoct?"
                 />
               </div>
               <div>
